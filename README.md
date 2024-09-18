@@ -1,7 +1,9 @@
 
 # Reproduction and further work code repository for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models]
 
-This repository contains the code, configuration files, datasets, and scripts to reproduce the experiments and results from the paper "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . It includes original predictions, and provides the necessary tools to reproduce and further experiment with new models and configurations.
+This repository contains the code, configuration files, datasets, and scripts to reproduce the experiments and results from the preprint "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . 
+
+This github repository provides the necessary tools to reproduce/reanalyse and further experiment with new models and configurations.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -92,7 +94,7 @@ This repository inherits its license from the original release, and all datasets
 
 Within this work, we introduce a dataset (and an annotation on an existing one) which are also available within our repository under the same license as the source dataset
 
-1. **AMR Paraphrases** (https://github.com/amrisi/amr-guidelines)
+1. **AMR Paraphrases** Link: (https://github.com/amrisi/amr-guidelines)
 
 2. **STS Benchmark (STS-H) with Human Annotation - Consensus (Column)** 
    Link: [STS Benchmark](https://ixa2.si.ehu.eus/stswiki/index.php/STSbenchmark)
