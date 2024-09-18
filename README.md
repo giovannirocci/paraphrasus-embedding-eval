@@ -1,7 +1,9 @@
 
 # Reproduction and further work code repository for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models]
 
-This repository contains the code, configuration files, datasets, and scripts to reproduce the experiments and results from the paper "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . It includes original predictions, and provides the necessary tools to reproduce and further experiment with new models and configurations.
+This repository contains the code, configuration files, datasets, and scripts to reproduce the experiments and results from the paper "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . 
+
+This github repository provides the necessary tools to reproduce/reanalyse and further experiment with new models and configurations.
 
 ## Table of Contents
 - [Overview](#overview)
