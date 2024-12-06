@@ -1,4 +1,4 @@
-
+(DRAFT - TO BE UPDATED FOR BETTER USABILITY)
 # Reproduction and further work code repository for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models]
 
 This repository contains the code, configuration files, datasets, and scripts to reproduce the experiments and results from the preprint "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . 
@@ -54,12 +54,14 @@ You can run your own experiments using different configurations provided in the 
 If you use this repository or the reproduced results in your work, please cite the original paper:
 
 \`\`\`bibtex
-@inproceedings{paper2024,
-  title={Title of the Paper},
-  author={Author Name and Other Authors},
-  year={2024},
-  journal={Conference Name},
-  url={link_to_the_paper}
+@misc{michail2024paraphrasuscomprehensivebenchmark,
+      title={PARAPHRASUS : A Comprehensive Benchmark for Evaluating Paraphrase Detection Models}, 
+      author={Andrianos Michail and Simon Clematide and Juri Opitz},
+      year={2024},
+      eprint={2409.12060},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.12060}, 
 }
 \`\`\`
 
