@@ -238,6 +238,8 @@ def bench(
                     batches.append(current_batch)
                     current_batch = []
                 current_batch.append(r_key)
+            if len(current_batch) > 0:
+                batches.append(current_batch)
 
             #### timekeeping ####
             batch_durations = []
