@@ -1,7 +1,0 @@
-{
-  "datasets": "all",
-  "run_name": "LLama3 zero-shot (Ex. Same Content)",
-  "method": "LLM zero-shot",
-  "prompt_type" : "(Ex. Same Content)",
-  "batch_size": 64
-}

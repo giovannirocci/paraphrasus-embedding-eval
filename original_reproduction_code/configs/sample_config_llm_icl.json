@@ -1,0 +1,7 @@
+{
+  "datasets": "all",
+  "run_name": "LLama3 ICL_4 (Sem Equiv)",
+  "method": "LLM icl_4",
+  "prompt_type" : "(Sem Equiv)",
+  "batch_size": 64
+}

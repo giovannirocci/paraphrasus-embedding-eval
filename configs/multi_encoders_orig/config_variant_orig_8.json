@@ -1,7 +1,0 @@
-{
-  "datasets": "all",
-  "run_name": "XLM-RoBERTa-EN-ORIG-V4-3",
-  "method": "Encoder trained",
-  "model_path": "models/XLM-R-EN-ORIG/XLM-R-EN-ORIG-V4-6176",
-  "batch_size": 64
-}
