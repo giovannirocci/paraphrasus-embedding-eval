@@ -1,5 +1,7 @@
 import time
+from logger import mylog
 
+logger = mylog.get_logger()
 
 def human_readable_time(seconds):
     # Simple placeholder; adjust formatting as desired.

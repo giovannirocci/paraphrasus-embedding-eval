@@ -108,37 +108,48 @@ dataset_key_to_base_fname = {
 }
 
 def method_check(name, method):
+    retries_left = 10
     err = f"{name} function should return a list of booleans! "
     samples = [
             ("sample1", "sample2"),
             ("sample3", "sample4")
         ]
-    try:
-        predictions = method(samples)
-    except Exception as e:
-        err += "Exception: " + str(e)
-        raise Exception(err)
-    # are we given a list of booleans as expected?
-    if isinstance(predictions, list):
-        non_boolean_values = [item for item in predictions if not isinstance(item, bool)]
-        if not non_boolean_values:
-            # then this batch was correctly processed
-            # is it the correct length tho?
-            # returned list should be equal to the given prediction samples.
-            # otherwise, since we can't correctly associate the prediction result with the original tuple, we have to discard it.
-            if len(predictions) != len(samples):
-                err += f"method was given {len(samples)} predictions but {len(predictions)} were returned."
-                raise Exception(err)
-        else:
-            # Error: the list contains non-boolean values
-            err += (
-                f"Returned predictions contain non-boolean values: {non_boolean_values}."
-            )
+    while retries_left > 0:
+        try:
+            predictions = method(samples)
+        except Exception as e:
+            err += "Exception: " + str(e)
             raise Exception(err)
-    else:
-        # Error: predictions is not a list
-        err += f"Returned predictions is not a list. I was instead given: {predictions!r}."
-        raise Exception(err)
+        # are we given a list of booleans as expected?
+        if isinstance(predictions, list):
+            non_boolean_values = [item for item in predictions if not isinstance(item, bool)]
+            if not non_boolean_values:
+                # then this batch was correctly processed
+                # is it the correct length tho?
+                # returned list should be equal to the given prediction samples.
+                # otherwise, since we can't correctly associate the prediction result with the original tuple, we have to discard it.
+                if len(predictions) != len(samples):
+                    err += f"method was given {len(samples)} predictions but {len(predictions)} were returned."
+                    if retries_left > 0:
+                        retries_left -= 1
+                    else:
+                        raise Exception(err)
+            else:
+                # Error: the list contains non-boolean values
+                err += (
+                    f"Returned predictions contain non-boolean values: {non_boolean_values}."
+                )
+                if retries_left > 0:
+                    retries_left -= 1
+                else:
+                    raise Exception(err)
+        else:
+            # Error: predictions is not a list
+            err += f"Returned predictions is not a list. I was instead given: {predictions!r}."
+            if retries_left > 0:
+                retries_left -= 1
+            else:
+                raise Exception(err)
 
 
 def bench(
