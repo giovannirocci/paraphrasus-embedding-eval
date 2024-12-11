@@ -103,20 +103,21 @@ def calc(bench_id: str, paths: dict[str, list[str]], method_names_to_prefixes: d
 
 if __name__ == '__main__':
     min_dataset_group_keys = {
+        "SNLI": [
+            "stanfordnlp_snli_pre_hyp",
+            "stanfordnlp_snli_hyp_pre"
+        ],
     "ANLI": [
         "fb_anli_pre_hyp",
         "fb_anli_hyp_pre"
     ],
-    "STS": ["stsbenchmark"],
-
-    "XNLI":[
+        "XNLI": [
             "fb_xnli_pre_hyp",
             "fb_xnli_hyp_pre"
         ],
-    "SNLI": [
-            "stanfordnlp_snli_pre_hyp",
-            "stanfordnlp_snli_hyp_pre"
-        ],
+    "STS": ["stsbenchmark"],
+
+
     "SICK": ["sickr_sts"]
     }
     max_dataset_group_keys = {
@@ -142,10 +143,10 @@ if __name__ == '__main__':
         "XLM-RoBERTa-EN-ORIG": "XLM-RoBERTa-EN-ORIG",
 
         "LLama3 zero-shot P1": "LLama3 zero-shot (Paraph)",
-        "LLama3 ICL_4 P1": "LLama3 ICL_4 (Paraph)",
         "LLama3 zero-shot P2": "LLama3 zero-shot (Sem Equiv)",
-        "LLama3 ICL_4 P2": "LLama3 ICL_4 (Sem Equiv)",
         "LLama3 zero-shot P3": "LLama3 zero-shot (Ex. Same Content)",
+        "LLama3 ICL_4 P1": "LLama3 ICL_4 (Paraph)",
+        "LLama3 ICL_4 P2": "LLama3 ICL_4 (Sem Equiv)",
         "LLama3 ICL_4 P3": "LLama3 ICL_4 (Ex. Same Content)",
     }
     # bench_id = "initial_alt"
