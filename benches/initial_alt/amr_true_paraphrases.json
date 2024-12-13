@@ -1,0 +1,1171 @@
+{
+  "simple_amr/0": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy desires to be believed by the girl.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/1": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy has a desire to be believed by the girl.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/2": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy\u2019s desire is for the girl to believe him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/3": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy is desirous of the girl believing him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/4": {
+    "sentence1": "The boy desires to be believed by the girl.",
+    "sentence2": "The boy has a desire to be believed by the girl.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/5": {
+    "sentence1": "The boy desires to be believed by the girl.",
+    "sentence2": "The boy\u2019s desire is for the girl to believe him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/6": {
+    "sentence1": "The boy desires to be believed by the girl.",
+    "sentence2": "The boy is desirous of the girl believing him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/7": {
+    "sentence1": "The boy has a desire to be believed by the girl.",
+    "sentence2": "The boy\u2019s desire is for the girl to believe him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/8": {
+    "sentence1": "The boy has a desire to be believed by the girl.",
+    "sentence2": "The boy is desirous of the girl believing him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/9": {
+    "sentence1": "The boy\u2019s desire is for the girl to believe him.",
+    "sentence2": "The boy is desirous of the girl believing him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/10": {
+    "sentence1": "The girl made adjustments to the machine.",
+    "sentence2": "The girl adjusted the machine.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/11": {
+    "sentence1": "The girl made adjustments to the machine.",
+    "sentence2": "The machine was adjusted by the girl.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/12": {
+    "sentence1": "The girl adjusted the machine.",
+    "sentence2": "The machine was adjusted by the girl.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/13": {
+    "sentence1": "The killing happened yesterday.",
+    "sentence2": "The killing took place yesterday.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/14": {
+    "sentence1": "the boy and the girl",
+    "sentence2": "both the boy and the girl",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/15": {
+    "sentence1": "his boat",
+    "sentence2": "his own boat",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/16": {
+    "sentence1": "The boy must not go.",
+    "sentence2": "It is obligatory that the boy not go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/17": {
+    "sentence1": "The boy may not go.",
+    "sentence2": "The boy is not permitted to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/18": {
+    "sentence1": "The boy may not go.",
+    "sentence2": "It is not permissible for the boy to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/19": {
+    "sentence1": "The boy may not go.",
+    "sentence2": "The boy does not have permission to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/20": {
+    "sentence1": "It is obligatory that the boy not go.",
+    "sentence2": "The boy is not permitted to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/21": {
+    "sentence1": "It is obligatory that the boy not go.",
+    "sentence2": "It is not permissible for the boy to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/22": {
+    "sentence1": "It is obligatory that the boy not go.",
+    "sentence2": "The boy does not have permission to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/23": {
+    "sentence1": "The boy is not permitted to go.",
+    "sentence2": "It is not permissible for the boy to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/24": {
+    "sentence1": "The boy is not permitted to go.",
+    "sentence2": "The boy does not have permission to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/25": {
+    "sentence1": "It is not permissible for the boy to go.",
+    "sentence2": "The boy does not have permission to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/26": {
+    "sentence1": "the white marble",
+    "sentence2": "the marble that is white",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/27": {
+    "sentence1": "The boy sees that the marble is white.",
+    "sentence2": "The boy sees the whiteness of the marble.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/28": {
+    "sentence1": "The boy sees the white marble.",
+    "sentence2": "The boy sees the marble that is white.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/29": {
+    "sentence1": "The boy saw the girl who wanted him.",
+    "sentence2": "The girl who wanted the boy was seen by him.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/30": {
+    "sentence1": "The boy saw the girl who wanted him.",
+    "sentence2": "The boy saw the girl who he was wanted by.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/31": {
+    "sentence1": "The girl who wanted the boy was seen by him.",
+    "sentence2": "The boy saw the girl who he was wanted by.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/32": {
+    "sentence1": "The girl who was seen by the boy wants him.",
+    "sentence2": "The boy is wanted by the girl he saw.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/33": {
+    "sentence1": "He described the mission as a failure.",
+    "sentence2": "As he described it, the mission was a failure.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/34": {
+    "sentence1": "He described the mission as a failure.",
+    "sentence2": "His description of the mission: failure.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/35": {
+    "sentence1": "As he described it, the mission was a failure.",
+    "sentence2": "His description of the mission: failure.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/36": {
+    "sentence1": "The boy can go.",
+    "sentence2": "It is possible that the boy goes.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/37": {
+    "sentence1": "The boy must go.",
+    "sentence2": "The boy is obligated to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/38": {
+    "sentence1": "The boy must go.",
+    "sentence2": "It is obligatory that the boy go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/39": {
+    "sentence1": "It is obligatory that the boy go.",
+    "sentence2": "The boy is obligated to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/40": {
+    "sentence1": "The boy may go.",
+    "sentence2": "The boy is permitted to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/41": {
+    "sentence1": "The boy may go.",
+    "sentence2": "It is permissible that the boy go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/42": {
+    "sentence1": "The boy is permitted to go.",
+    "sentence2": "It is permissible that the boy go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/43": {
+    "sentence1": "It may rain.",
+    "sentence2": "It might rain.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/44": {
+    "sentence1": "It may rain.",
+    "sentence2": "Rain is possible.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/45": {
+    "sentence1": "It may rain.",
+    "sentence2": "It\u2019s possible that it will rain.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/46": {
+    "sentence1": "It might rain.",
+    "sentence2": "Rain is possible.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/47": {
+    "sentence1": "It might rain.",
+    "sentence2": "It\u2019s possible that it will rain.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/48": {
+    "sentence1": "Rain is possible.",
+    "sentence2": "It\u2019s possible that it will rain.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/49": {
+    "sentence1": "The boy should go.",
+    "sentence2": "It is recommended that the boy go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/50": {
+    "sentence1": "The boy is likely to go.",
+    "sentence2": "It is likely that the boy will go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/51": {
+    "sentence1": "The boy would rather go.",
+    "sentence2": "The boy prefers to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/52": {
+    "sentence1": "The boy can\u2019t go.",
+    "sentence2": "It\u2019s not possible for the boy to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/53": {
+    "sentence1": "It is possible for the boy not to go.",
+    "sentence2": "It is possible for the boy to not go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/54": {
+    "sentence1": "The boy doesn\u2019t have to go.",
+    "sentence2": "It\u2019s not necessary for the boy to go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/55": {
+    "sentence1": "The boy must not go.",
+    "sentence2": "It\u2019s obligatory that the boy not go.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/56": {
+    "sentence1": "The boy thinks his team won\u2019t win.",
+    "sentence2": "The boy doesn\u2019t think his team will win.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/57": {
+    "sentence1": "It\u2019s not true that the boy thinks his team will win.",
+    "sentence2": "The boy doesn\u2019t think his team will win.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/58": {
+    "sentence1": "I don\u2019t have any money.",
+    "sentence2": "I have no money.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/59": {
+    "sentence1": "the dress is inappropriate",
+    "sentence2": "the dress is not appropriate",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/60": {
+    "sentence1": "the inappropriate dress",
+    "sentence2": "the dress that is not appropriate",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/61": {
+    "sentence1": "I know who you saw.",
+    "sentence2": "I know the person you saw.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/62": {
+    "sentence1": "The boy doesn\u2019t know whether the girl came.",
+    "sentence2": "The boy doesn\u2019t know if the girl came.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/63": {
+    "sentence1": "The boy doesn\u2019t know that the girl came.",
+    "sentence2": "The boy doesn\u2019t know the girl came.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/64": {
+    "sentence1": "Go.",
+    "sentence2": "Go!",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/65": {
+    "sentence1": "Let\u2019s go.",
+    "sentence2": "Let\u2019s go!",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/66": {
+    "sentence1": "Yes!!!",
+    "sentence2": "Yes!!",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/67": {
+    "sentence1": "The boy destroyed the room.",
+    "sentence2": "The destruction of the room by the boy",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/68": {
+    "sentence1": "The destruction of the room by the boy",
+    "sentence2": "The boy\u2019s destruction of the room",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/69": {
+    "sentence1": "the proposal",
+    "sentence2": "the thing proposed",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/70": {
+    "sentence1": "the thing proposed",
+    "sentence2": "what got proposed",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/71": {
+    "sentence1": "the boy\u2019s opinion",
+    "sentence2": "the opinion of the boy",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/72": {
+    "sentence1": "the boy\u2019s opinion",
+    "sentence2": "that which was opined by the boy",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/73": {
+    "sentence1": "the boy\u2019s opinion",
+    "sentence2": "what the boy opined",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/74": {
+    "sentence1": "the opinion of the boy",
+    "sentence2": "that which was opined by the boy",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/75": {
+    "sentence1": "the opinion of the boy",
+    "sentence2": "what the boy opined",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/76": {
+    "sentence1": "that which was opined by the boy",
+    "sentence2": "what the boy opined",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/77": {
+    "sentence1": "chip maker",
+    "sentence2": "maker of chips",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/78": {
+    "sentence1": "the boy is a hard worker",
+    "sentence2": "the boy works hard",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/79": {
+    "sentence1": "the man is attractive",
+    "sentence2": "the man is attracts",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/80": {
+    "sentence1": "the man is attractive to women",
+    "sentence2": "the man attracts women",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/81": {
+    "sentence1": "The soldier became aware of the battle.",
+    "sentence2": "The soldier realized there was a battle.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/82": {
+    "sentence1": "The boy is responsible for the work.",
+    "sentence2": "The boy is responsible for doing the work.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/83": {
+    "sentence1": "The boy is responsible for the work.",
+    "sentence2": "The boy has the responsibility for the work.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/84": {
+    "sentence1": "The boy is responsible for doing the work.",
+    "sentence2": "The boy has the responsibility for the work.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/85": {
+    "sentence1": "The girl was saddened by the disaster.",
+    "sentence2": "The disaster saddened the girl.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/86": {
+    "sentence1": "Girls are easy to please.",
+    "sentence2": "It is easy to please girls.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/87": {
+    "sentence1": "Girls are easy to please.",
+    "sentence2": "Pleasing girls is easy.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/88": {
+    "sentence1": "It is easy to please girls.",
+    "sentence2": "Pleasing girls is easy.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/89": {
+    "sentence1": "an edible sandwich",
+    "sentence2": "a sandwich that can be eaten",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/90": {
+    "sentence1": "an edible sandwich",
+    "sentence2": "a sandwich that it is possible to eat",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/91": {
+    "sentence1": "a sandwich that can be eaten",
+    "sentence2": "a sandwich that it is possible to eat",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/92": {
+    "sentence1": "I observed that the army moved quickly.",
+    "sentence2": "I observed the quick movement of the army",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/93": {
+    "sentence1": "I observed that the army moved quickly.",
+    "sentence2": "I observed the army moving quickly.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/94": {
+    "sentence1": "I observed the army moving quickly.",
+    "sentence2": "I observed the quick movement of the army",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/95": {
+    "sentence1": "The game continued although it rained.",
+    "sentence2": "The game continued despite the rain.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/96": {
+    "sentence1": "The boy will sing if he is given money.",
+    "sentence2": "If the boy is given money, he will sing.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/97": {
+    "sentence1": "The boy will sing if he is given money.",
+    "sentence2": "The boy will sing in case of a money donation.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/98": {
+    "sentence1": "If the boy is given money, he will sing.",
+    "sentence2": "The boy will sing in case of a money donation.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/99": {
+    "sentence1": "The boy will sing unless he is given money.",
+    "sentence2": "Unless the boy is given money, he will sing.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/100": {
+    "sentence1": "The torpedo struck, causing the ship to be damaged.",
+    "sentence2": "The torpedo struck, causing damage to the ship.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/101": {
+    "sentence1": "The torpedo struck, causing the ship to be damaged.",
+    "sentence2": "The torpedo struck, damaging the ship.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/102": {
+    "sentence1": "The torpedo struck, causing damage to the ship.",
+    "sentence2": "The torpedo struck, damaging the ship.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/103": {
+    "sentence1": "The boy provided chocolate to the girl.",
+    "sentence2": "The boy provided the girl with chocolate.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/104": {
+    "sentence1": "They built the bridge in Maryland in December.",
+    "sentence2": "The bridge was built by them in Maryland in December.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/105": {
+    "sentence1": "the engine of the car",
+    "sentence2": "the car\u2019s engine",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/106": {
+    "sentence1": "the south of France",
+    "sentence2": "southern France",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/107": {
+    "sentence1": "The singing boy from the college",
+    "sentence2": "There is a boy from the college who sang.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/108": {
+    "sentence1": "The girl adjusted the machine.",
+    "sentence2": "The girl made an adjustment to the machine.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/109": {
+    "sentence1": "The boy bathed.",
+    "sentence2": "The boy took a bath.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/110": {
+    "sentence1": "The boy looked up the answer.",
+    "sentence2": "The boy looked the answer up.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/111": {
+    "sentence1": "According to government sources, the killing happened yesterday.",
+    "sentence2": "Government sources said that the killing happened yesterday.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/112": {
+    "sentence1": "the big, heavy ball",
+    "sentence2": "the big and heavy ball",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/113": {
+    "sentence1": "The boy arrived and left on Tuesday.",
+    "sentence2": "On Tuesday, the boy arrived and left.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/114": {
+    "sentence1": "The boys all left.",
+    "sentence2": "All the boys left.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/115": {
+    "sentence1": "All the boys left.",
+    "sentence2": "Each of the boys left.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/116": {
+    "sentence1": "Each of the boys left.",
+    "sentence2": "The boys all left.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/117": {
+    "sentence1": "No boy left.",
+    "sentence2": "None of the boys left.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/118": {
+    "sentence1": "The girl believes that the boy works in a not-hard manner.",
+    "sentence2": "The girl believes that the boy doesn\u2019t work hard.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/119": {
+    "sentence1": "The girl believes that the boy works in a not-hard manner.",
+    "sentence2": "The girl doesn\u2019t believe that the boy works hard.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/120": {
+    "sentence1": "The girl believes that the boy doesn\u2019t work hard.",
+    "sentence2": "The girl doesn\u2019t believe that the boy works hard.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/121": {
+    "sentence1": "He is not tall enough to ride the rollercoaster.",
+    "sentence2": "He's too small to ride the rollercoaster.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/122": {
+    "sentence1": "Behavioral problems.",
+    "sentence2": "Behavior problems.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/123": {
+    "sentence1": "Behavioral problems.",
+    "sentence2": "Problems with behavior.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/124": {
+    "sentence1": "Behavioral problems.",
+    "sentence2": "Problems behaving.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/125": {
+    "sentence1": "Behavior problems.",
+    "sentence2": "Problems with behavior.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/126": {
+    "sentence1": "Behavior problems.",
+    "sentence2": "Problems behaving.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/127": {
+    "sentence1": "the second planet",
+    "sentence2": "planet number 2",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/128": {
+    "sentence1": "the orc-slaying Mollie Brown",
+    "sentence2": "Mollie Brown, who slays orcs",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/129": {
+    "sentence1": "Marina del Rey",
+    "sentence2": "the city of Marina del Rey",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/130": {
+    "sentence1": "advertising rates",
+    "sentence2": "ad rates",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/131": {
+    "sentence1": "the poet William Shakespeare",
+    "sentence2": "William Shakespeare, the poet",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/132": {
+    "sentence1": "the spaceship Shenzhou",
+    "sentence2": "the Shenzhou spacecraft",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/133": {
+    "sentence1": "Mr. Wu",
+    "sentence2": "Mister Wu",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/134": {
+    "sentence1": "forty thousand boys",
+    "sentence2": "40,000 boys",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/135": {
+    "sentence1": "one and half billion atoms",
+    "sentence2": "1.5 billion atoms",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/136": {
+    "sentence1": "one and half billion atoms",
+    "sentence2": "a billion and half atoms",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/137": {
+    "sentence1": "one and half billion atoms",
+    "sentence2": "1,500,000,000 atoms",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/138": {
+    "sentence1": "1.5 billion atoms",
+    "sentence2": "a billion and half atoms",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/139": {
+    "sentence1": "1.5 billion atoms",
+    "sentence2": "1,500,000,000 atoms",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/140": {
+    "sentence1": "a billion and half atoms",
+    "sentence2": "1,500,000,000 atoms",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/141": {
+    "sentence1": "more than four thousand boys",
+    "sentence2": "more than 4000 boys",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/142": {
+    "sentence1": "between 4000 and 5000 boys",
+    "sentence2": "between four and five thousand boys",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/143": {
+    "sentence1": "ten miles",
+    "sentence2": "10 miles",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/144": {
+    "sentence1": "10 miles",
+    "sentence2": "10-mile",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": false,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/145": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crash occurred 50 miles east of Moscow.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/146": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crashed 50 miles east of Moscow.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/147": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crashed fifty miles east of Moscow.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/148": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crashed fifty miles east of the capital of Russia.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/149": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "Fifty miles east of the Russian capital, the airplane crashed.",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/150": {
+    "sentence1": "C$20",
+    "sentence2": "20 Canadian dollars",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/151": {
+    "sentence1": "February 29, 2012",
+    "sentence2": "29.Feb.12",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/152": {
+    "sentence1": "February 29, 2012",
+    "sentence2": "2/29/2012",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/153": {
+    "sentence1": "29.Feb.12",
+    "sentence2": "2/29/2012",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/154": {
+    "sentence1": "2012",
+    "sentence2": "the year 2012",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/155": {
+    "sentence1": "2012",
+    "sentence2": "the year two years after 2010",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/156": {
+    "sentence1": "16:30",
+    "sentence2": "half past four",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/157": {
+    "sentence1": "16:30",
+    "sentence2": "4:30 in the afternoon",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": false
+  },
+  "simple_amr/158": {
+    "sentence1": "16:30",
+    "sentence2": "4:30 PM",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/159": {
+    "sentence1": "4:30 PM",
+    "sentence2": "4:30 in the afternoon",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/160": {
+    "sentence1": "4:30 PM",
+    "sentence2": "half past four",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/161": {
+    "sentence1": "4:30 in the afternoon",
+    "sentence2": "half past four",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/162": {
+    "sentence1": "4th quarter, 2011",
+    "sentence2": "2011Q4",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/163": {
+    "sentence1": "25%",
+    "sentence2": "twenty-five percent",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/164": {
+    "sentence1": "25%",
+    "sentence2": "25 percent",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/165": {
+    "sentence1": "twenty-five percent",
+    "sentence2": "25 percent",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  },
+  "simple_amr/166": {
+    "sentence1": "twenty-five percent",
+    "sentence2": "25.00%",
+    "label": 1,
+    "llama_3_3_70b_ins_q8": true,
+    "llama_3_8b_ins_q4_k_m": true
+  }
+}

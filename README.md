@@ -1,9 +1,30 @@
-(DRAFT - TO BE UPDATED FOR BETTER USABILITY)
-# Reproduction and further work code repository for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models]
+# Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models]
 
-This repository contains the code, configuration files, datasets, and scripts to reproduce the experiments and results from the preprint "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . 
+This repository contains the code, datasets, and scripts to reproduce the experiments and results from the preprint "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . 
 
-This github repository provides the necessary tools to reproduce/reanalyse and further experiment with new models and configurations.
+Any set of prediction methods can be used to run a benchmark on any of the specified datasets.
+
+For example, to run all datasets using some example prediction methods, predict_method1 and predict_method2:
+```python
+from benchmarking import bench
+
+def predict_method1(pairs):
+    return [False for _ in pairs]
+
+def predict_method2(pairs):
+    return [False for _ in pairs]
+methods = {
+        "m1": predict_method1,
+        "m2": predict_method2
+    }
+
+bench(methods, bench_id="mybench")
+```
+Then, to calculate the average error rate for each method, for each predicted dataset:
+```bash
+python3 extract_results.py mybench
+```
+which will save the error rates at: benches/mybench/results.json
 
 ## Table of Contents
 - [Overview](#overview)
@@ -26,28 +47,145 @@ This repository allows replication of the experiments from the research titled "
 
 The repository is organized as follows:
 
-\`\`\`
-├── configs
-│   └── Various configuration files for the models and experiments.
-├── datasets
-│   └── Contains the datasets used in the experiments, along with utility scripts.
+```
+├── original_reproduction_code
+│   └── The initial version of the repository.
+├── datasets_no_results
+│   └── Contains the datasets used in the experiments, in a JSON format. Copied for every new benchmark
 ├── models
 │   └── Empty models file used in the experiments.
-├── extract_results_*.py
-│   └── Scripts for extracting and analyzing results from experiments.
-├── full_experimentation_pipeline.py
-│   └── A pipeline script to run a new experiment.
-├── mass_experiment_with_different_configs.sh
-│   └── A bash script to run multiple experiments with different configurations.
-\`\`\`
+├── benchmarking.py
+│   └── the main benchmarking code, for running predictions on the datasets using specified methods.
+├── extract_results.py
+│   └── Script for extracting result of a benchmark.
+├── sample_llm.py
+│   └── Sample script to run benchmarks using LM Studio, with the LLMs used in the paper.
+├── logger.py
+│   └── Utility for managing logging: all events are logged both to stdout and to a local logs.log file.
+```
 
 ## Reproducing the Experiments
 
-Scripts are available to extract and reproduce the original results from the paper. You can use the \`extract_results_*.py\` scripts for different datasets and models, or run the entire experimentation pipeline with the \`full_experimentation_pipeline.py\` script by passing a config file parameter.
+Predictions using the LLMs in the paper can be run locally (provided LM Studio is running and serving the model meta-llama-3-8b-instruct (Meta-Llama-3-8B-Instruct-Q4_K_M.gguf)) like so:
+```bash
+python3 sample_llm.py reproduce
+```
+Then, to extract the results (average error rates):
+```bash
+python3 extract_results.py reproduce
+```
+Note: You can replace '*reproduce*' with any name
+
+The predictions of the methods mentioned in the paper are given as a benchmark with the identifier 'paper'.
+That means, the results (error rates) can be extracted like so:
+```bash
+python3 extract_results.py paper
+```
+At benches/paper the file results.json is generated:
+```json
+{
+    "CLF": {
+        "PAWSX": {
+            "XLM-RoBERTa-EN-ORIG": "15.23%",
+            "LLama3 zero-shot P1": "44.67%",
+            "LLama3 zero-shot P2": "40.73%",
+            "LLama3 zero-shot P3": "38.06%",
+            "LLama3 ICL_4 P1": "38.95%",
+            "LLama3 ICL_4 P2": "34.12%",
+            "LLama3 ICL_4 P3": "33.21%"
+        },
+        "STS-H": {
+            "XLM-RoBERTa-EN-ORIG": "54.07%",
+            "LLama3 zero-shot P1": "56.21%",
+            "LLama3 zero-shot P2": "37.57%",
+            "LLama3 zero-shot P3": "41.72%",
+            "LLama3 ICL_4 P1": "44.67%",
+            "LLama3 ICL_4 P2": "41.72%",
+            "LLama3 ICL_4 P3": "39.05%"
+        },
+        "MRPC": {
+            "XLM-RoBERTa-EN-ORIG": "33.41%",
+            "LLama3 zero-shot P1": "23.59%",
+            "LLama3 zero-shot P2": "45.86%",
+            "LLama3 zero-shot P3": "37.51%",
+            "LLama3 ICL_4 P1": "33.22%",
+            "LLama3 ICL_4 P2": "45.16%",
+            "LLama3 ICL_4 P3": "46.72%"
+        }
+    },
+    "MIN": {
+        "SNLI": {
+            "XLM-RoBERTa-EN-ORIG": "32.39%",
+            "LLama3 zero-shot P1": "7.29%",
+            "LLama3 zero-shot P2": "1.00%",
+            "LLama3 zero-shot P3": "1.25%",
+            "LLama3 ICL_4 P1": "1.95%",
+            "LLama3 ICL_4 P2": "0.84%",
+            "LLama3 ICL_4 P3": "0.50%"
+        },
+        "ANLI": {
+            "XLM-RoBERTa-EN-ORIG": "7.24%",
+            "LLama3 zero-shot P1": "13.03%",
+            "LLama3 zero-shot P2": "1.19%",
+            "LLama3 zero-shot P3": "1.69%",
+            "LLama3 ICL_4 P1": "2.01%",
+            "LLama3 ICL_4 P2": "0.75%",
+            "LLama3 ICL_4 P3": "0.75%"
+        },
+        "XNLI": {
+            "XLM-RoBERTa-EN-ORIG": "26.69%",
+            "LLama3 zero-shot P1": "12.33%",
+            "LLama3 zero-shot P2": "1.36%",
+            "LLama3 zero-shot P3": "1.32%",
+            "LLama3 ICL_4 P1": "2.79%",
+            "LLama3 ICL_4 P2": "0.30%",
+            "LLama3 ICL_4 P3": "0.25%"
+        },
+        "STS": {
+            "XLM-RoBERTa-EN-ORIG": "46.57%",
+            "LLama3 zero-shot P1": "12.89%",
+            "LLama3 zero-shot P2": "2.41%",
+            "LLama3 zero-shot P3": "3.54%",
+            "LLama3 ICL_4 P1": "3.54%",
+            "LLama3 ICL_4 P2": "3.12%",
+            "LLama3 ICL_4 P3": "2.41%"
+        },
+        "SICK": {
+            "XLM-RoBERTa-EN-ORIG": "37.01%",
+            "LLama3 zero-shot P1": "0.87%",
+            "LLama3 zero-shot P2": "0.13%",
+            "LLama3 zero-shot P3": "0.04%",
+            "LLama3 ICL_4 P1": "0.26%",
+            "LLama3 ICL_4 P2": "0.00%",
+            "LLama3 ICL_4 P3": "0.00%"
+        }
+    },
+    "MAX": {
+        "TRUE": {
+            "XLM-RoBERTa-EN-ORIG": "31.36%",
+            "LLama3 zero-shot P1": "8.98%",
+            "LLama3 zero-shot P2": "34.73%",
+            "LLama3 zero-shot P3": "35.33%",
+            "LLama3 ICL_4 P1": "29.94%",
+            "LLama3 ICL_4 P2": "40.12%",
+            "LLama3 ICL_4 P3": "50.90%"
+        },
+        "SIMP": {
+            "XLM-RoBERTa-EN-ORIG": "5.27%",
+            "LLama3 zero-shot P1": "14.67%",
+            "LLama3 zero-shot P2": "47.33%",
+            "LLama3 zero-shot P3": "37.50%",
+            "LLama3 ICL_4 P1": "33.33%",
+            "LLama3 ICL_4 P2": "42.33%",
+            "LLama3 ICL_4 P3": "45.50%"
+        }
+    }
+}
+```
 
 ## Further Experimentation
 
-You can run your own experiments using different configurations provided in the \`configs\` folder. For information about hte different configurations, please check the \`full_experimentation_pipeline.py\` file
+You can run your own experiments using any prediction methods of your choosing
 
 ## BibTeX Reference
 
@@ -104,4 +242,4 @@ Within this work, we introduce a dataset (and an annotation on an existing one) 
 
 ## Further Support
 
-In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. We plan to enable easier experimentation for our benchmark. If you are interested in contributing or need support reproducing/recreating/extending the results, please reach out to andrianos.michail@uzh.ch
+In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need support reproducing/recreating/extending the results, please reach out to andrianos.michail@uzh.ch

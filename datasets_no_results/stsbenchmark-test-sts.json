@@ -480,7 +480,7 @@
     "score": 0.0
   },
   "mteb/stsbenchmark-sts-867": {
-    "sentence1": "Yes, you should make a r\u00e9sum\u00e9.",
+    "sentence1": "Yes, you should make a résumé.",
     "sentence2": "Yes, you should talk to your professor.",
     "score": 0.0
   },
@@ -2516,7 +2516,7 @@
   },
   "mteb/stsbenchmark-sts-801": {
     "sentence1": "Yes, you should mention your experience.",
-    "sentence2": "Yes, you should make a r\u00e9sum\u00e9.",
+    "sentence2": "Yes, you should make a résumé.",
     "score": 2.0
   },
   "mteb/stsbenchmark-sts-802": {
@@ -3926,7 +3926,7 @@
   },
   "mteb/stsbenchmark-sts-1251": {
     "sentence1": "UBS settles US mortgage lawsuit",
-    "sentence2": "UBS settles US mortgage lawsuit and takes \u00a3600m charge",
+    "sentence2": "UBS settles US mortgage lawsuit and takes £600m charge",
     "score": 3.0
   },
   "mteb/stsbenchmark-sts-1260": {
@@ -4125,7 +4125,7 @@
     "score": 3.2
   },
   "mteb/stsbenchmark-sts-1221": {
-    "sentence1": "Critics say Putin\u2019s security restrictions violate rights",
+    "sentence1": "Critics say Putin’s security restrictions violate rights",
     "sentence2": "Putin's security decree for Sochi draws ire of critics",
     "score": 3.2
   },
@@ -4220,7 +4220,7 @@
     "score": 3.333
   },
   "mteb/stsbenchmark-sts-1066": {
-    "sentence1": "The government did not identify the taikonauts \u2014 a term coined from \u2018\u2018taikong,\u2019\u2019 the Chinese word for space \u2014 who would travel on the second mission.",
+    "sentence1": "The government did not identify the taikonauts — a term coined from ‘‘taikong,’’ the Chinese word for space — who would travel on the second mission.",
     "sentence2": "The government did not identify the taikonauts -- a term coined from taikong, the Chinese word for space.",
     "score": 3.333
   },
@@ -4486,7 +4486,7 @@
   },
   "mteb/stsbenchmark-sts-1267": {
     "sentence1": "Japan revises GDP growth to annual 1.1 pct in Q3",
-    "sentence2": "Japan\u2019s GDP growth downgraded to annual 1.1%",
+    "sentence2": "Japan’s GDP growth downgraded to annual 1.1%",
     "score": 3.4
   },
   "mteb/stsbenchmark-sts-1277": {
@@ -5140,7 +5140,7 @@
     "score": 3.8
   },
   "mteb/stsbenchmark-sts-1188": {
-    "sentence1": "Cheap generics no panacea for India\u2019s poorest",
+    "sentence1": "Cheap generics no panacea for India’s poorest",
     "sentence2": "Cheap cancer drugs no cure for India's poorest",
     "score": 3.8
   },
@@ -5191,7 +5191,7 @@
   },
   "mteb/stsbenchmark-sts-1286": {
     "sentence1": "Obama lashes North Korea as pariah state",
-    "sentence2": "Obama lashes North Korea as weak \u201a\u00c4\u0117pariah state\u201a\u00c4\u00f4",
+    "sentence2": "Obama lashes North Korea as weak ‚Äėpariah state‚Äô",
     "score": 3.8
   },
   "mteb/stsbenchmark-sts-1334": {
@@ -5207,2029 +5207,2029 @@
   "mteb/stsbenchmark-sts-56": {
     "sentence1": "A man puts three pieces of meat into a pan.",
     "sentence2": "A man is putting meat in a pan.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-67": {
     "sentence1": "A man is sitting and smoking.",
     "sentence2": "A man is smoking a cigarette.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-96": {
     "sentence1": "A woman is slicing some tofu.",
     "sentence2": "A woman is cutting a block of tofu into small cubes.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-152": {
     "sentence1": "A man is riding a horse by a creek.",
     "sentence2": "A man is riding a horse.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-165": {
     "sentence1": "A little boy hits a golf ball.",
     "sentence2": "The little boy swung at the golf ball.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-172": {
     "sentence1": "A woman is dicing some peeled potatoes cut into thick strips.",
     "sentence2": "A woman is chopping a peeled potato into slices.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-194": {
     "sentence1": "A person is scrubbing a zucchini.",
     "sentence2": "A woman is scrubbing a zucchini with a vegetable brush.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-232": {
     "sentence1": "A lady mixed up a meat mixture in bowl.",
     "sentence2": "A woman is stirring meat in a bowl.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-252": {
     "sentence1": "A man sleeps with a baby in his lap.",
     "sentence2": "A man asleep in a chair holding a baby.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-261": {
     "sentence1": "A bicycle is parked by a shop.",
     "sentence2": "A bicycle is parked outside a bookstore.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-263": {
     "sentence1": "Young couple sitting on a black couch.",
     "sentence2": "Young couple sitting on couch.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-270": {
     "sentence1": "A grey cat lying on a wooden table.",
     "sentence2": "A grey cat laying on a dining table.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-278": {
     "sentence1": "Two Indian women with two Indian girls near the water.",
     "sentence2": "Two Indian woman stand with two Indian girls on a beach.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-304": {
     "sentence1": "Several people on motorcycles in a market square.",
     "sentence2": "People on motorbikes in a city street.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-315": {
     "sentence1": "A black and white photo of a man driving a car and someone with a motorcycle.",
     "sentence2": "A black and white photo of a man in a classic car and a man with a classic motorcycle.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-337": {
     "sentence1": "The small dog is wearing a sweater and looking up at the camera.",
     "sentence2": "A small white dog wearing a jacket looks up at the camera.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-351": {
     "sentence1": "A woman riding a brown horse.",
     "sentence2": "A girl riding a brown horse.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-353": {
     "sentence1": "A black dog stands next to materials at a construction site.",
     "sentence2": "A black dog stands in the middle of a construction site.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-361": {
     "sentence1": "A pile of used wooden building materials with a chair on top.",
     "sentence2": "Pile of wooden debris with chair on top.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-367": {
     "sentence1": "Four people rowing down a river.",
     "sentence2": "Four people row a canoe in water.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-375": {
     "sentence1": "Older gentleman looking at red motorcycle.",
     "sentence2": "A man looking at a red motorcycle.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-380": {
     "sentence1": "Crowd of people walking past a giant mushroom.",
     "sentence2": "A group of four people walking past a giant mushroom.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-403": {
     "sentence1": "A small boy is building with some wooden blocks.",
     "sentence2": "A small boy wearing a blue shirt stacks wooden blocks.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-404": {
     "sentence1": "A man and a woman walk with a white dog on a leash.",
     "sentence2": "A man, woman and dog walk down a paved road.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-405": {
     "sentence1": "A young boy wearing a red winter coat is eating and holding up a candy bar.",
     "sentence2": "A young boy wearing a red coat eats a chocolate bar.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-419": {
     "sentence1": "The # 2 greyhound dog is running around a track.",
     "sentence2": "a muzzled greyhound dog is running around a track",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-447": {
     "sentence1": "A white dog with light brown markings has a stick in his mouth and his paws in the snow.",
     "sentence2": "A white dog holds a stick in its mouth while it runs through snow.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-465": {
     "sentence1": "A brown dog is running through the field.",
     "sentence2": "a brown dog with his tongue wagging as he runs through a field",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-467": {
     "sentence1": "Four girls in swimsuits are playing volleyball at the beach.",
     "sentence2": "Four ladies in swimsuits play sand volleyball on the beach.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-484": {
     "sentence1": "A brown dog runs towards the camera on a dirt trail with mountains in the background.",
     "sentence2": "A brown dog runs toward the camera down a rocky trail through the brush with mountains in the background.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-490": {
     "sentence1": "A light-colored dog runs through the grass.",
     "sentence2": "A dog runs through the grass.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-491": {
     "sentence1": "Child holding an object that is on fire.",
     "sentence2": "A child in pink holds an object that appears to be on fire.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-522": {
     "sentence1": "A boy climbs a forest hill.",
     "sentence2": "A boy is climbing a hill.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-574": {
     "sentence1": "A group of people living in the desert",
     "sentence2": "A group of people in the middle of the desert.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-638": {
     "sentence1": "You have to decide what you want to get out of this.",
     "sentence2": "You have to know what you want to do.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-639": {
     "sentence1": "I have few suggestions for you:",
     "sentence2": "I have two suggestions for you:",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-643": {
     "sentence1": "As soon as possible.",
     "sentence2": "Start them as early as possible.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-646": {
     "sentence1": "To give this an answer:",
     "sentence2": "I'll answer this question:",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-647": {
     "sentence1": "Unfortunately the answer to your question is we simply do not know.",
     "sentence2": "Sorry, I don't know the answer to your question.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-648": {
     "sentence1": "The rule - When in doubt throw it out!",
     "sentence2": "I always go by the rule \"When in doubt, throw it out!",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-649": {
     "sentence1": "This is not a good idea.",
     "sentence2": "This sound like a very bad idea.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-651": {
     "sentence1": "It probably depends on the cut of meat.",
     "sentence2": "It depends on the meat and how it's cut.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-655": {
     "sentence1": "Have you tried asking your employees?",
     "sentence2": "Have you tried asking?",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-658": {
     "sentence1": "There are two things to consider:",
     "sentence2": "There are two possible causes for this:",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-677": {
     "sentence1": "It depends on what you want to do next, and where you want to do it.",
     "sentence2": "In other words, it depends on where you go, when you do there and how.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-686": {
     "sentence1": "I have the same thing.",
     "sentence2": "I have had the same problem.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-688": {
     "sentence1": "My answer to your question is \"Probably Not\".",
     "sentence2": "I think that the short  answer to your question is: No.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-689": {
     "sentence1": "I don't think it makes any tremendous difference.",
     "sentence2": "I don't think it makes much difference.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-699": {
     "sentence1": "It's not a good idea.",
     "sentence2": "I do not think it's a good idea.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-700": {
     "sentence1": "You are on the right path.",
     "sentence2": "You are right on the mark.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-702": {
     "sentence1": "How should I proceed about this?",
     "sentence2": "So how should I do this?",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-703": {
     "sentence1": "Does this page answer your question?",
     "sentence2": "Does this answer your questions?",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-721": {
     "sentence1": "I'm going to be very direct here.",
     "sentence2": "I'm going to be blunt, here: You don't.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-726": {
     "sentence1": "It depends entirely on your company and your contract.",
     "sentence2": "I guess it depends on the nature of your contract.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-748": {
     "sentence1": "There are a few things I think you should do.",
     "sentence2": "There are quite a few things you would need to do;",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-759": {
     "sentence1": "How do you do that?",
     "sentence2": "How should you do that?",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-760": {
     "sentence1": "I was in a similar situation.",
     "sentence2": "I am in a similar situation.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-764": {
     "sentence1": "It depends on what you want to do next, and where you want to do it.",
     "sentence2": "It's up to you what you want to do next.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-768": {
     "sentence1": "Well, I wouldn't put it on my cv.",
     "sentence2": "I wouldn't put this job on my resume.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-774": {
     "sentence1": "I think there isn't a general answer.",
     "sentence2": "I don't think there is an answer for this.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-797": {
     "sentence1": "Work into it slowly.",
     "sentence2": "You work on it slowly.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-812": {
     "sentence1": "It varies by the situation.",
     "sentence2": "This varies by institution.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-813": {
     "sentence1": "I have the same thing.",
     "sentence2": "I have the same problem.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-814": {
     "sentence1": "I have the same thing.",
     "sentence2": "I have the exact same problem.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-821": {
     "sentence1": "You have to decide what you want to get out of this.",
     "sentence2": "You have to find out what works for you.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-828": {
     "sentence1": "It's not a good idea.",
     "sentence2": "No, it's not a good thing.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-831": {
     "sentence1": "You have a problem.",
     "sentence2": "This is a big problem.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-833": {
     "sentence1": "Unfortunately, this question cannot be answered in its full generality.",
     "sentence2": "This cannot be answered in general.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-835": {
     "sentence1": "I think there isn't a general answer.",
     "sentence2": "I don't think there is a single definition.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-840": {
     "sentence1": "My answer to your question is \"Probably Not\".",
     "sentence2": "The answer to your question is not really.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-842": {
     "sentence1": "I had the same problem as you.",
     "sentence2": "I had the same issue.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-843": {
     "sentence1": "Hope this is what you are looking for.",
     "sentence2": "Is this the kind of thing you're looking for ?",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-846": {
     "sentence1": "There are a few things you can do: ",
     "sentence2": "There are a few things you need to consider:",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-850": {
     "sentence1": "It depends on what you want to do next, and where you want to do it.",
     "sentence2": "It depends on what and where you are going to do.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-857": {
     "sentence1": "In the US, it will depend on the school.",
     "sentence2": "This will depend on the university.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-859": {
     "sentence1": "There are a few things I think you should do.",
     "sentence2": "There are a few minimally-effective things you can do at the personal level.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-869": {
     "sentence1": "I've had this same problem.",
     "sentence2": "I had this problem before.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-873": {
     "sentence1": "Not a direct answer to the question, but something to consider.",
     "sentence2": "Not a real answer to your question, but maybe it helps.",
-    "score": 4.0,
-    "label": true
+    "label": true,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-883": {
     "sentence1": "Claudette, the first hurricane of the Atlantic storm season, hit the mid-Texas coast July 15 with 85-mph wind.",
     "sentence2": "Claudette, the first hurricane of the Atlantic storm season, hit the mid-Texas coast July 15, classified as a Category 1 hurricane with maximum sustained winds of 85 mph.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-887": {
     "sentence1": "The AFL-CIO is waiting until October to decide if it will endorse a candidate.",
     "sentence2": "The AFL-CIO announced Wednesday that it will decide in October whether to endorse a candidate before the primaries.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-903": {
     "sentence1": "The civilian unemployment rate improved marginally last month -- slipping to 6.1 percent -- even as companies slashed payrolls by 93,000.",
     "sentence2": "The civilian unemployment rate improved marginally last month _ sliding down to 6.1 percent _ as companies slashed payrolls by 93,000 amid continuing mixed signals about the nation's economic health.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-907": {
     "sentence1": "Shares of Mandalay closed down eight cents to $29.42, before the earnings were announced.",
     "sentence2": "Shares of Mandalay closed down 8 cents at $29.42 Thursday.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-941": {
     "sentence1": "Under Mexican law, bounty hunting is considered a form of kidnapping.",
     "sentence2": "Bounty hunting is illegal in Mexico, and the bounty hunter was charged with kidnapping.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-956": {
     "sentence1": "The injured were taken to hospitals in Jefferson City and Columbia, a college town about 30 miles to the north.",
     "sentence2": "The injured were taken to hospitals in Jefferson City and Columbia, about 48km north; their conditions were not immediately available.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-962": {
     "sentence1": "Frank Quattrone, the former Credit Suisse First Boston technology investment-banking guru, reportedly pleaded not guilty Tuesday to charges of obstruction of justice and witness tampering.",
     "sentence2": "NEW YORK -(Dow Jones)- Former star investment banker Frank Quattrone pleaded not guilty Tuesday to criminal charges of obstruction of justice and witness tampering.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1019": {
     "sentence1": "It later emerged that he had broken his right thigh and bones in his right wrist and elbow.",
     "sentence2": "Tour doctors later confirmed that he had broken his right leg near the hip and also sustained wrist and elbow fractures.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1025": {
     "sentence1": "Klarman was arrested by FBI agents in the Hamptons, an exclusive summer resort enclave east of New York City.",
     "sentence2": "Klarman was arrested by FBI agents Monday morning at his home in New York.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1037": {
     "sentence1": "Bashir felt he was being tried by opinion not on the facts, Mahendradatta told Reuters.",
     "sentence2": "Bashir also felt he was being tried by opinion rather than facts of law, he added.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1058": {
     "sentence1": "Those conversations had not taken place as of Tuesday night, according to an Oracle spokeswoman.",
     "sentence2": "Those talks have not taken place, according to an Oracle spokeswoman.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1069": {
     "sentence1": "\"Tomorrow at the Mission Inn, I have the opportunity to congratulate the governor-elect of the great state of California.",
     "sentence2": "\"I have the opportunity to congratulate the governor-elect of the great state of California, and I'm looking forward to it.\"",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1081": {
     "sentence1": "He was referring to John S. Reed, the former Citicorp chief executive who became interim chairman and chief executive of the exchange last Sunday .",
     "sentence2": "Next week, John S. Reed, the former Citicorp chief executive who Sunday became interim chairman and chief executive of the exchange, will take up his position.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1102": {
     "sentence1": "The driver of the truck escaped and is now being sought by the police, Supoyo said.",
     "sentence2": "But police say the driver of the truck has not been found and is wanted for questioning.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1104": {
     "sentence1": "Geraldine Andrews, the pastor's daughter-in-law, said Robinson recently took her daughter out of a mental health facility.",
     "sentence2": "Geraldine Andrews, Reynolds' daughter-in-law and a friend of Wilson's family, said Robinson had recently taken Wilson out of a mental health facility.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1113": {
     "sentence1": "So in his State of the Union address in January, Bush declared that the British government \"has learned that Saddam Hussein recently sought significant quantities of uranium from Africa.\"",
     "sentence2": "In his Jan. 28 State of the Union message, Bush said, \"The British government has learned that Saddam Hussein recently sought significant quantities of uranium from Africa.\"",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1114": {
     "sentence1": "The other 24 members are split between representatives of the securities industry and so-called \"public\" board members.",
     "sentence2": "Of the 24 directors who are not exchange executives, half are representatives of the securities industry and half are designated public members.",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1139": {
     "sentence1": "Schiphol airport partly evacuated after bomb threat",
     "sentence2": "Schiphol airport evacuated due to bomb threat",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1160": {
     "sentence1": "Sunderland 2-2 Bolton: Davies double gets Trotters a point but they stay in bottom three",
     "sentence2": "Sunderland 2-2 Bolton: Davies in at the double",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1164": {
     "sentence1": "Trade newspaper Variety up for sale",
     "sentence2": "Hollywood trade publication Variety put up for sale",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1191": {
     "sentence1": "Syrian forces overrun rebel stronghold",
     "sentence2": "Syria army takes northern rebel stronghold",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1196": {
     "sentence1": "Libya postpones assembly election to July 7",
     "sentence2": "Libya postpones landmark election to July 7",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1226": {
     "sentence1": "Defiant Mugabe sworn in for seventh term blasts 'vile' West",
     "sentence2": "Mugabe sworn in for another term",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1228": {
     "sentence1": "Iran, six global powers sign landmark nuclear deal",
     "sentence2": "Iran, world powers agree nuclear deal",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1285": {
     "sentence1": "Powerful quake strikes off eastern Indonesia",
     "sentence2": "6.6-mag quake strikes off eastern Indonesia",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1335": {
     "sentence1": "UK's Ex-Premier Margaret Thatcher Dies At 87",
     "sentence2": "Former British PM Margaret Thatcher dies",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1354": {
     "sentence1": "Twitter reports blocking in Venezuela",
     "sentence2": "Twitter says images blocked in Venezuela",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1358": {
     "sentence1": "More than 100 injured in Texas plant blast",
     "sentence2": "Hundreds believed injured in Texas fertiliser plant blast",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-1361": {
     "sentence1": "South Korean soldier reportedly flees after killing 5 comrades at border with North Korea",
     "sentence2": "South Korean Soldier Kills Comrades And Flees",
-    "score": 4.0,
-    "label": false
+    "label": false,
+    "score": 4.0
   },
   "mteb/stsbenchmark-sts-3": {
     "sentence1": "A man is cutting up a cucumber.",
     "sentence2": "A man is slicing a cucumber.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-22": {
     "sentence1": "Two zebras play in an open field.",
     "sentence2": "Two zebras are playing in a field.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-143": {
     "sentence1": "A polar bear is running towards a group of walruses.",
     "sentence2": "A polar bear is chasing a group of walruses.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-190": {
     "sentence1": "A man pours rice into a pot.",
     "sentence2": "A man is putting rice in a bowling pot.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-217": {
     "sentence1": "A cat gets stuck on a moving ceiling fan.",
     "sentence2": "A cat is swinging on a fan.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-274": {
     "sentence1": "Green and white bird perched on tree branch.",
     "sentence2": "Bird with a green head and white chest perched on a tree branch.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-283": {
     "sentence1": "a small bird sitting on a branch in winter.",
     "sentence2": "A small bird perched on an icy branch.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-285": {
     "sentence1": "A brown duck and white duck stand on the grass.",
     "sentence2": "Brown and white ducks walking on green grass.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-293": {
     "sentence1": "A train is at a train station.",
     "sentence2": "The train sits at the train station.",
-    "score": 4.2,
-    "label": true
+    "label": true,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-306": {
     "sentence1": "Group of people posing with two men dressed as Elvis.",
     "sentence2": "A group of people standing with two other people dressed as Elvis.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-308": {
     "sentence1": "Man in yellow canoe paddling through water.",
     "sentence2": "Man paddling a yellow canoe towards a the shore.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-348": {
     "sentence1": "An elderly man works on his laptop at home.",
     "sentence2": "Older gentleman sitting on couch with laptop.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-359": {
     "sentence1": "A gray cat laying on a brown table.",
     "sentence2": "A grey cat lying on a wooden table.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-417": {
     "sentence1": "Three children playing on a floor with toys.",
     "sentence2": "Three children sitting in floor playing with several toys.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-444": {
     "sentence1": "Two dogs are running through the grass near a house and trees.",
     "sentence2": "Two dogs are running through a green yard",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-544": {
     "sentence1": "Two women give a demonstration at a Renaissance Fair.",
     "sentence2": "Two people are doing a demonstration at a renaissance fair.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-599": {
     "sentence1": "A group of people are sitting at at a beach on towels watching the Blue Angels.",
     "sentence2": "A group of people are sitting at a beach watching the Blue Angels.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-619": {
     "sentence1": "A kid sits on a soccer ball outside.",
     "sentence2": "A kid sitting on a soccer ball at the park.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-886": {
     "sentence1": "But Odette is the first to form over the Caribbean Sea in December, the Center said.",
     "sentence2": "It is the first named storm to develop in the Caribbean in December.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-901": {
     "sentence1": "The next court session will be when the three-judge tribunal announces its verdict in mid-February.",
     "sentence2": "The court's three-judge tribunal was expected to give its verdict next February.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-952": {
     "sentence1": "But in the first 30 seconds after Young entered the ring, the family knew it was an uneven match, Meyers said.",
     "sentence2": "But in the first 30 seconds of the bout, family members knew it was an uneven match, Jodie Meyers, Stacy Young's sister, said.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1006": {
     "sentence1": "Authorities said the scientist properly quarantined himself at home after he developed SARS symptoms Dec. 10.",
     "sentence2": "The scientist also quarantined himself at home as soon as he developed SARS symptoms, officials said.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1021": {
     "sentence1": "Some 95 million Americans -- half of all households -- invest in mutual funds.",
     "sentence2": "About half of all U.S. households have money in mutual funds.",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1147": {
     "sentence1": "Iraq searches Syria bound Iran plane: officials",
     "sentence2": "Iraq searches Syrian-bound Iranian plane",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1197": {
     "sentence1": "London 2012 Olympics Opening Ceremony 'to feature a green and pleasant land'",
     "sentence2": "London 2012 Olympics: Opening Ceremony to be a 'green and pleasant land', says Danny Boyle",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1207": {
     "sentence1": "Vehicles ablaze in collapsed Japan tunnel",
     "sentence2": "Vehicles 'left burning' as smoke emits from Japan tunnel",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1212": {
     "sentence1": "Chinese general's son gets 10 years jail for rape",
-    "sentence2": "Chinese general\u2019s son gets 10 years\u2019 jail for gang-rape",
-    "score": 4.2,
-    "label": false
+    "sentence2": "Chinese general’s son gets 10 years’ jail for gang-rape",
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1233": {
     "sentence1": "Dhawan smashes India to big win over South Africa",
     "sentence2": "Dhawan ton sets up India Trophy win over South Africa",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1258": {
     "sentence1": "Internet, phone service restored in Syrian capital",
     "sentence2": "Internet service resumes in Syria",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1265": {
     "sentence1": "Gunmen kidnap airline pilots in Lebanon",
     "sentence2": "Gunmen kidnap 2 Turkish Airlines pilots in Lebanon",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1266": {
     "sentence1": "Kurdish rebels to withdraw from Turkey in March: report",
     "sentence2": "Kurdish rebels to withdraw from Turkey",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1310": {
     "sentence1": "Greece suspends state broadcaster",
     "sentence2": "Greece to close state broadcaster to save money",
-    "score": 4.2,
-    "label": false
+    "label": false,
+    "score": 4.2
   },
   "mteb/stsbenchmark-sts-1016": {
     "sentence1": "According to SunnComm's Peter Jacobs, \"MediaMax performs exactly as 'advertised' to the companies who purchased it.",
     "sentence2": "\"MediaMax performs EXACTLY as \"advertised\" to the companies who purchased it,\" Jacobs said in the statement.",
-    "score": 4.222,
-    "label": false
+    "label": false,
+    "score": 4.222
   },
   "mteb/stsbenchmark-sts-33": {
     "sentence1": "A cat is eating some corn.",
     "sentence2": "A cat is eating corn on the cob.",
-    "score": 4.25,
-    "label": false
+    "label": false,
+    "score": 4.25
   },
   "mteb/stsbenchmark-sts-129": {
     "sentence1": "A person wipes butter on a tray.",
     "sentence2": "A person is buttering a tray.",
-    "score": 4.25,
-    "label": true
+    "label": true,
+    "score": 4.25
   },
   "mteb/stsbenchmark-sts-918": {
     "sentence1": "On the cell's surface, the foreign components are recognised by other cells that then realise it is infected and kill it.",
     "sentence2": "The foreign bits are recognized by other cells that realize it is infected and kill it.",
-    "score": 4.25,
-    "label": false
+    "label": false,
+    "score": 4.25
   },
   "mteb/stsbenchmark-sts-924": {
     "sentence1": "Hormone replacement therapy that combines estrogen and progestin doubles a woman's risk of breast cancer, a British study of more than a million women has found.",
     "sentence2": "A major British study has added to the evidence that hormone replacement therapy increases the risk of breast cancer, especially when women receive a combination of estrogen and progestin.",
-    "score": 4.25,
-    "label": false
+    "label": false,
+    "score": 4.25
   },
   "mteb/stsbenchmark-sts-966": {
     "sentence1": "The agency will \"consider as timely any tax returns or payments due\" Aug. 15 if they are submitted by Aug. 22.",
     "sentence2": "The agency said it would consider as timely any tax returns or payments due from Friday through Aug. 22 if they are completed by Aug. 22.",
-    "score": 4.25,
-    "label": false
+    "label": false,
+    "score": 4.25
   },
   "mteb/stsbenchmark-sts-1103": {
     "sentence1": "\"In so many different ways, the artistry of black musicians has conveyed the experience of black Americans throughout our history,\" Bush said.",
     "sentence2": "Surrounded by singers from Harlem, Bush said: ''The artistry of black musicians has conveyed the experience of black Americans throughout our history.",
-    "score": 4.25,
-    "label": false
+    "label": false,
+    "score": 4.25
   },
   "mteb/stsbenchmark-sts-13": {
     "sentence1": "A man is slicing open a fish.",
     "sentence2": "A man is cutting up a fish.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-16": {
     "sentence1": "A baby panda goes down a slide.",
     "sentence2": "A panda slides down a slide.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-23": {
     "sentence1": "A man is cutting a potato.",
     "sentence2": "A man is slicing some potato.",
-    "score": 4.4,
-    "label": true
+    "label": true,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-48": {
     "sentence1": "A boy studies a calendar.",
     "sentence2": "A boy is looking at a calendar.",
-    "score": 4.4,
-    "label": true
+    "label": true,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-113": {
     "sentence1": "A cheetah is running behind its prey.",
     "sentence2": "A cheetah chases prey on across a field.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-251": {
     "sentence1": "A moped in front of steps of ruins.",
     "sentence2": "A moped in front of ruins.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-273": {
     "sentence1": "a close up head of an ostrich.",
     "sentence2": "A close up of an ostrich face.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-300": {
     "sentence1": "A red and white bus drives down an England street.",
     "sentence2": "A red and white England bus drives down the street.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-360": {
     "sentence1": "Motorcycle parked next to a car outside.",
     "sentence2": "A motorcycle parked next to a car.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-369": {
     "sentence1": "Two men talking in front of a plane.",
     "sentence2": "Two men talking in front of a small plane.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-410": {
     "sentence1": "Boy and white dog running in grassy field",
     "sentence2": "A boy and a dog running on grass",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-457": {
     "sentence1": "Boy lies on stomach in grass.",
     "sentence2": "Small boy lying on his stomach on the grass.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-471": {
     "sentence1": "A yellow car speeds along a snowy field.",
     "sentence2": "A yellow car drives quickly in the snow.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-548": {
     "sentence1": "A girl is talking to her dad on a cellphone.",
     "sentence2": "a girl is talking on her phone.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-549": {
     "sentence1": "One person wields an umbrella.",
     "sentence2": "One person is holding an umbrella.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-602": {
     "sentence1": "A line of scooters are parking in the middle of a street.",
     "sentence2": "A line of motor bikes are parked in the middle of a street.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-947": {
     "sentence1": "Second comes HP (27 percent with $2.9 billion, up just 0.4 percent).",
     "sentence2": "HP fell to second place with server sales growing 0.4 percent to $2.9 billion.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1034": {
     "sentence1": "Sources within the racing industry have told the Daily Bulletin that Fontana will get a second NASCAR race on Labor Day weekend starting next season.",
     "sentence2": "Sources in the racing industry said Fontana will get a second NASCAR race on Labor Day weekend starting next season.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1056": {
     "sentence1": "Now, with the agency's last three shuttles grounded in the wake of the Columbia disaster, that wait could be even longer.",
     "sentence2": "With the remaining three shuttles grounded in the wake of the Columbia accident, the rookies will have to wait even longer.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1153": {
     "sentence1": "Not 'hiding the ball' on Russia: Obama",
     "sentence2": "Obama says he's not 'hiding the ball' on Russia",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1163": {
     "sentence1": "Apple buying security firm AuthenTec for $356 million",
     "sentence2": "News Summary: Apple buying AuthenTec for $356M",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1176": {
     "sentence1": "Some Syria violence amounts to civil war-Red Cross",
     "sentence2": "Some Syria violence qualifies as civil war -Red Cross",
-    "score": 4.4,
-    "label": true
+    "label": true,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1185": {
     "sentence1": "Not a good beginning: Hollande's plane hit by lightning en route to Berlin",
     "sentence2": "French President Francois Hollande's plane hit by lightning en route to Berlin",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1203": {
     "sentence1": "Pussy Riot member Alyokhina released from jail in Russia",
     "sentence2": "Pussy Riot member Maria Alyokhina freed from jail",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1245": {
     "sentence1": "Ankeet Chavan granted conditional bail for marriage",
     "sentence2": "Ankeet Chavan granted bail to get married",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1249": {
     "sentence1": "25 bodies found at raided Algerian gas plant",
     "sentence2": "25 more bodies found at Algerian gas plant",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1296": {
     "sentence1": "Woman remanded over child's death A woman has been remanded in custody charged with murder after an eight-year-old girl was found dead in a block of flats.",
     "sentence2": "Mother held over daughter's death A mother has been remanded in custody charged with murder after her eight-year-old daughter was found dead in a block of flats.",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1315": {
     "sentence1": "Neymar powers Brazil into last 16",
     "sentence2": "Neymar powers Brazil into World Cup last 16",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1340": {
     "sentence1": "Strong new quake hits shattered Pak region",
     "sentence2": "6.8 quake in shattered Pakistan region",
-    "score": 4.4,
-    "label": false
+    "label": false,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-1347": {
     "sentence1": "France warns of extremists benefiting from Egypt violence",
     "sentence2": "France fears extremists will benefit from Egypt violence",
-    "score": 4.4,
-    "label": true
+    "label": true,
+    "score": 4.4
   },
   "mteb/stsbenchmark-sts-97": {
     "sentence1": "Someone typed on a keyboard.",
     "sentence2": "Someone is typing.",
-    "score": 4.5,
-    "label": false
+    "label": false,
+    "score": 4.5
   },
   "mteb/stsbenchmark-sts-142": {
     "sentence1": "A woman is climbing a cliff.",
     "sentence2": "A woman is climbing a rock face.",
-    "score": 4.5,
-    "label": false
+    "label": false,
+    "score": 4.5
   },
   "mteb/stsbenchmark-sts-1038": {
     "sentence1": "Schofield got Toepfer to admit on cross-examination that she ignored many of O'Donnell's suggestions and projects.",
     "sentence2": "But under cross-examination by O'Donnell's attorney, Lorna Schofield, Toepfer conceded she had ignored many of O'Donnell's suggestions and projects.",
-    "score": 4.5,
-    "label": false
+    "label": false,
+    "score": 4.5
   },
   "mteb/stsbenchmark-sts-1080": {
     "sentence1": "Shares of Corixa fell 12 cents to $6.88 on the Nasdaq stock market.",
     "sentence2": "Corixa's stock barely flinched on the news, dipping 12 cents to close at $6.88.",
-    "score": 4.5,
-    "label": false
+    "label": false,
+    "score": 4.5
   },
   "mteb/stsbenchmark-sts-1173": {
     "sentence1": "Coroner: Whitney Houston died in bathtub",
     "sentence2": "Coroner confirms Whitney Houston found in bathtub",
-    "score": 4.5,
-    "label": false
+    "label": false,
+    "score": 4.5
   },
   "mteb/stsbenchmark-sts-1189": {
     "sentence1": "'Arrest warrant' for Maldives ex-president",
     "sentence2": "Maldives court issues arrest warrant for former president",
-    "score": 4.5,
-    "label": false
+    "label": false,
+    "score": 4.5
   },
   "mteb/stsbenchmark-sts-164": {
     "sentence1": "The man is eating.",
     "sentence2": "A man is eating food.",
-    "score": 4.6,
-    "label": true
+    "label": true,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-168": {
     "sentence1": "A person is slicing onions.",
     "sentence2": "Someone is slicing an onion.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-260": {
     "sentence1": "Two dogs and one cat sitting on couch.",
     "sentence2": "Two dogs and a cat resting on a couch.",
-    "score": 4.6,
-    "label": true
+    "label": true,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-327": {
     "sentence1": "Three goats are being rounded up by a dog.",
     "sentence2": "Three goats are chased by a dog.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-331": {
     "sentence1": "A blue bird standing on a lawn.",
     "sentence2": "Blue bird standing on green grass.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-371": {
     "sentence1": "The train sits at the train station.",
     "sentence2": "A train parked at a train station.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-418": {
     "sentence1": "The two dogs are playing in the yard.",
     "sentence2": "Two dogs are playing on the grass.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-420": {
     "sentence1": "four children are playing on a trampoline.",
     "sentence2": "Four kids are jumping on a trampoline.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-422": {
     "sentence1": "A black dog running into the water.",
     "sentence2": "A black dog running through water.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-429": {
     "sentence1": "A man and a dog on rocks on a beach.",
     "sentence2": "A man and dog on a rocky seashore.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-437": {
     "sentence1": "Two brown dogs runs through the water.",
     "sentence2": "Two brown dogs running through water.",
-    "score": 4.6,
-    "label": true
+    "label": true,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-439": {
     "sentence1": "A man climbing a rock-face.",
     "sentence2": "A man is climbing a rock wall.",
-    "score": 4.6,
-    "label": true
+    "label": true,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-480": {
     "sentence1": "Two black dogs are playing on the grass.",
     "sentence2": "Two black dogs are playing in a grassy plain.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-482": {
     "sentence1": "A man in a black suit is surfing along a crashing wave.",
     "sentence2": "A surfer wearing a black wet suit is riding a a white wave in the ocean.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-505": {
     "sentence1": "A young person  deep in thought.",
     "sentence2": "A young man deep in thought.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-922": {
     "sentence1": "One witness told Anatolian he saw the plane on fire while it was still in the air.",
     "sentence2": "One witness told the Anatolian news agency he saw the plane on fire in mid-air.",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-932": {
     "sentence1": "There are a total of 659 women enrolled at the academy, the report said.",
     "sentence2": "There were 659 women enrolled at the academy at the time of the survey.",
-    "score": 4.6,
-    "label": true
+    "label": true,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-981": {
     "sentence1": "\"The discovery that the MAP bug is present in the vast majority of Crohn's sufferers means it is almost certainly causing the intestinal inflammation,\" it said in a statement.",
     "sentence2": "The researchers say that the fact the MAP bug is present in the vast majority of Crohns sufferers means it is almost certainly causing the intestinal inflammation.",
-    "score": 4.6,
-    "label": true
+    "label": true,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1063": {
     "sentence1": "On health care, the NDP says there will be no privatization and no health-care premiums.",
     "sentence2": "The New Democrats also renewed their commitment to no health-care privatization and no premiums.",
-    "score": 4.6,
-    "label": true
+    "label": true,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1171": {
     "sentence1": "Denver shooting: Police to detonate devices in suspect's home",
     "sentence2": "Police to detonate devices in Colorado shooting suspect's home",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1227": {
     "sentence1": "Nelson Mandela in Hospital for Tests",
     "sentence2": "South Africa: Mandela in hospital for tests",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1255": {
     "sentence1": "New Zealand set to legalise gay marriage",
     "sentence2": "New Zealand votes to legalise same-sex marriage",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1257": {
     "sentence1": "Nobel Prize winning author Doris Lessing dies",
     "sentence2": "Nobel laureate Doris Lessing dies at 94",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1299": {
     "sentence1": "Georgian PM's ally to become president - exit poll",
     "sentence2": "Ally of Georgia's billionaire PM to be president -exit polls",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1330": {
     "sentence1": "Two French journalists killed after Mali kidnapping",
     "sentence2": "Two French journalists abducted, killed in Northern Mali",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1341": {
     "sentence1": "Floods in central Europe continue to create havoc",
     "sentence2": "Europe floods continue to create havoc",
-    "score": 4.6,
-    "label": false
+    "label": false,
+    "score": 4.6
   },
   "mteb/stsbenchmark-sts-1070": {
     "sentence1": "\"I expect Japan to keep conducting intervention, but the volume is likely to fall sharply,\" said Junya Tanase, forex strategist at JP Morgan Chase.",
     "sentence2": "Junya Tanase, forex strategist at JP Morgan Chase, said \"I expect Japan to keep conducting intervention, but the volume is likely to fall sharply.\"",
-    "score": 4.733,
-    "label": true
+    "label": true,
+    "score": 4.733
   },
   "mteb/stsbenchmark-sts-71": {
     "sentence1": "A man is playing the guitar and singing.",
     "sentence2": "A man sings with a guitar.",
-    "score": 4.75,
-    "label": true
+    "label": true,
+    "score": 4.75
   },
   "mteb/stsbenchmark-sts-95": {
     "sentence1": "The lady peeled the potatoe.",
     "sentence2": "A woman is peeling a potato.",
-    "score": 4.75,
-    "label": false
+    "label": false,
+    "score": 4.75
   },
   "mteb/stsbenchmark-sts-904": {
     "sentence1": "Moffitt said the results need to be replicated in another study before testing of individuals for presence of the long or short versions of the gene will be pursued.",
     "sentence2": "Professor Moffitt said the results needed to be replicated before pursuing testing of individuals for the presence of the long or short versions of the gene.",
-    "score": 4.75,
-    "label": false
+    "label": false,
+    "score": 4.75
   },
   "mteb/stsbenchmark-sts-915": {
     "sentence1": "Wal-Mart, Kohl's Corp., Family Dollar Stores Inc., and Big Lots Inc. were among the merchants posting May sales that fell below Wall Street's modest expectations.",
     "sentence2": "Wal- Mart, Kohl's Corp., Family Dollar Stores Inc., and Big Lots Inc. posted May sales that fell below Wall Street's modest expectations.",
-    "score": 4.75,
-    "label": true
+    "label": true,
+    "score": 4.75
   },
   "mteb/stsbenchmark-sts-1118": {
     "sentence1": "\"The economy, nonetheless, has yet to exhibit sustainable growth.",
     "sentence2": "But the economy hasn't shown signs of sustainable growth.",
-    "score": 4.75,
-    "label": true
+    "label": true,
+    "score": 4.75
   },
   "mteb/stsbenchmark-sts-31": {
     "sentence1": "A young woman is putting stickers all over her face.",
     "sentence2": "A woman is applying stickers to her face.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-135": {
     "sentence1": "A boy is playing a key-board.",
     "sentence2": "A little boy is playing a keyboard.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-290": {
     "sentence1": "Blue and red plane in mid-air flight.",
     "sentence2": "a blue and red airplane while in flight.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-303": {
     "sentence1": "A group of horses grazing in a field.",
     "sentence2": "Group of horses grazing in grassy field.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-342": {
     "sentence1": "Group of people sitting around a restaurant dining table.",
     "sentence2": "A group of people sitting at a restaurant table.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-386": {
     "sentence1": "Three people sit at a picnic table outside of a building painted like a union jack.",
     "sentence2": "Three people sit at an outdoor table in front of a building painted like the Union Jack.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-390": {
     "sentence1": "A bird flies across the water.",
     "sentence2": "A bird flies above the water.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-397": {
     "sentence1": "The dog is running through a field.",
     "sentence2": "A dog runs through a field.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-413": {
     "sentence1": "One white boy and one black boy stand with arms around each other.",
     "sentence2": "Two young boys, one white and one black, are standing with their arms around each other.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-454": {
     "sentence1": "The surfer does a flip off of a wave.",
     "sentence2": "A surfer does a flip on a wave.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-468": {
     "sentence1": "A blonde haired toddler swinging on a tire swing.",
     "sentence2": "A blonde haired child is swinging on a tire swing.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-473": {
     "sentence1": "One boy is pushing another boy on a swing.",
     "sentence2": "A boy is pushing another boy on the swings.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-587": {
     "sentence1": "A man is laughing with a woman",
     "sentence2": "A man and a woman laughing.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-940": {
     "sentence1": "Contrary to what PeopleSoft management would have you believe, Oracle intends to fully support PeopleSoft customers and products for many years to come.\"",
     "sentence2": "Ellison said that contrary to the contentions of PeopleSoft management, Oracle intends to \"fully support PeopleSoft customers and products\" for many years to come.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-977": {
     "sentence1": "Special police detained Khodorkovsky early on Saturday in the Siberian city of Novosibirsk, where his plane had made a refuelling stop.",
     "sentence2": "Police detained Khodorkovsky early on Saturday when his jet made a refueling stop in the Siberian city of Novosibirsk.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1031": {
     "sentence1": "It will take time to oust die-hard remnants of Saddam Hussein's deposed regime in Iraq, Defense Secretary Donald H. Rumsfeld said Tuesday.",
     "sentence2": "Defense Secretary Donald H. Rumsfeld said Tuesday it will take time to locate die-hard remnants of Saddam Hussein's deposed regime in Iraq.",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1111": {
     "sentence1": "The research firm earlier had forecast an increase of 4.9 percent.",
     "sentence2": "The firm had predicted earlier this year a 4.9 percent increase.",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1132": {
     "sentence1": "Gazans fire 2 rockets into Israel; no injuries",
     "sentence2": "2 Gaza rockets hit Israel; no injuries",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1154": {
     "sentence1": "England captain Andrew Strauss retires from professional cricket",
     "sentence2": "England captain Strauss retires from cricket",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1186": {
     "sentence1": "Afghan Parliament Votes to Oust Key Ministers",
     "sentence2": "Afghan parliament votes to remove key ministers",
-    "score": 4.8,
-    "label": true
+    "label": true,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1279": {
     "sentence1": "Canada approves oil pipeline to the Pacific Coast",
     "sentence2": "Canadian government approves controversial oil pipeline to Pacific",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1316": {
     "sentence1": "Ukraine to implement unilateral ceasefire",
     "sentence2": "Ukraine offers unilateral ceasefire",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1322": {
     "sentence1": "Croatia begins countdown to historic EU entry",
     "sentence2": "Croatia countdowns to joining EU",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1325": {
     "sentence1": "Rogers, Videotron extend reach with network-sharing deal",
     "sentence2": "Rogers, Videotron reach network-sharing, spectrum deal",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1336": {
     "sentence1": "Polar bear DNA 'may help fight obesity'",
     "sentence2": "Polar bear study may boost fight against obesity",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1337": {
     "sentence1": "'Fast &amp; Furious' star Paul Walker dies in car crash",
     "sentence2": "Paul Walker dead: Fast and Furious star, 40, killed in car crash",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-1346": {
     "sentence1": "Tokyo to host 2020 Games",
     "sentence2": "Tokyo wins race to host 2020 Olympic Games",
-    "score": 4.8,
-    "label": false
+    "label": false,
+    "score": 4.8
   },
   "mteb/stsbenchmark-sts-2": {
     "sentence1": "One woman is measuring another woman's ankle.",
     "sentence2": "A woman measures another woman's ankle.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-11": {
     "sentence1": "A man is cutting an onion.",
     "sentence2": "A man cuts an onion.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-38": {
     "sentence1": "A woman is dancing in the rain.",
     "sentence2": "A woman dances in the rain out side.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-60": {
     "sentence1": "The man is kissing and hugging the woman.",
     "sentence2": "A man is hugging and kissing a woman.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-87": {
     "sentence1": "A man is doing trick with play cards.",
     "sentence2": "A man is performing a card trick.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-125": {
     "sentence1": "A woman and man are dancing in the rain.",
     "sentence2": "A man and woman are dancing in rain.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-128": {
     "sentence1": "Two men are fistfighting in a ring.",
     "sentence2": "Two men fistfight in a ring.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-133": {
     "sentence1": "A woman is stabbing a potato with a fork.",
     "sentence2": "A woman is puncturing a potato with a fork.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-136": {
     "sentence1": "A woman plays the flute.",
     "sentence2": "A woman is playing the flute.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-139": {
     "sentence1": "A group of people are sweeping water out of a house.",
     "sentence2": "People are sweeping water out of a house.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-140": {
     "sentence1": "A man plays a guitar.",
     "sentence2": "A man is playing a guitar.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-158": {
     "sentence1": "A man is playing a musical keyboard.",
     "sentence2": "A man is playing a keyboard piano.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-160": {
     "sentence1": "A man plays a trumpet.",
     "sentence2": "A man is playing the trumpet.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-269": {
     "sentence1": "Two green and white trains sitting on the tracks.",
     "sentence2": "Two green and white trains are sitting on the train track.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-275": {
     "sentence1": "A man in a top hat rides a white horse.",
     "sentence2": "A man with a top hat riding a white horse.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-330": {
     "sentence1": "Train in a station.",
     "sentence2": "a train in a station.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-341": {
     "sentence1": "A green car parked at a saloon.",
     "sentence2": "A green car parked outside the saloon.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-364": {
     "sentence1": "A Philips flat-screen TV is shown with its two remote controls.",
     "sentence2": "A Phillips flat screen TV with two remote controls.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-411": {
     "sentence1": "Two boys playing a game of flag football.",
     "sentence2": "Two boys are playing flag football.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-427": {
     "sentence1": "a dog jumps into the water.",
     "sentence2": "A dog is jumping into the water.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-431": {
     "sentence1": "Two dogs are running in the field.",
     "sentence2": "Two dogs running in a field.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-489": {
     "sentence1": "A man running on a track.",
     "sentence2": "a man running track",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-497": {
     "sentence1": "A man steers a blue boat past brightly colored houses.",
     "sentence2": "a man driving a blue boat passes by some colorful houses.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-499": {
     "sentence1": "A deer jumps a fence.",
     "sentence2": "A deer is jumping over a fence.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-545": {
     "sentence1": "Some guy sitting on a couch watching television.",
     "sentence2": "A guy is sitting on the couch watching TV",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-558": {
     "sentence1": "There is a cook preparing food.",
     "sentence2": "A cook is making food.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-566": {
     "sentence1": "People gathered in a room.",
     "sentence2": "People gathered together in a room.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-576": {
     "sentence1": "people getting their dirty clothes cleaned",
     "sentence2": "People are getting their clothes cleaned.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-610": {
     "sentence1": "the people are running a marathon",
     "sentence2": "People are running a marathon",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-623": {
     "sentence1": "A brown dog is jumping.",
     "sentence2": "A brown dog is jumping",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-631": {
     "sentence1": "You do not need to worry.",
     "sentence2": "You don't have to worry.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-636": {
     "sentence1": "You can do it, too.",
     "sentence2": "Yes, you can do it.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-645": {
     "sentence1": "The answer to both questions is: Yes.",
     "sentence2": "The answer to both of your questions is yes.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-656": {
     "sentence1": "You guys are making this all WAAAAAY too complicated.",
     "sentence2": "You are making this too complicated.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-664": {
     "sentence1": "It's not a good idea.",
     "sentence2": "It is not a good idea.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-668": {
     "sentence1": "Take a look at these:",
     "sentence2": "Take a look at this: ",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-671": {
     "sentence1": "This is not a good idea.",
     "sentence2": "But it is not a good idea.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-673": {
     "sentence1": "I was in a similar situation.",
     "sentence2": "I had a similar situation.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-674": {
     "sentence1": "I've had this same problem.",
     "sentence2": "I had this same problem.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-692": {
     "sentence1": "You answered your own question.",
     "sentence2": "You have answered your own question.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-710": {
     "sentence1": "I don't see why there should be any problem with this whatsoever.",
     "sentence2": "I don't see why that should be a problem.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-719": {
     "sentence1": "It makes absolutely NO difference.",
     "sentence2": "No, it makes no difference.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-720": {
     "sentence1": "I think it's fine to ask this question.",
     "sentence2": "I think it is okay to ask the question.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-724": {
     "sentence1": "There's not a lot you can do about that.",
     "sentence2": "I'm afraid there's not really a lot you can do.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-727": {
     "sentence1": "You answered your own question.",
     "sentence2": "You've answered your own question already.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-737": {
     "sentence1": "Can you do this?",
     "sentence2": "Can you do it?",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-740": {
     "sentence1": "How do you do that?",
     "sentence2": "How to do that?",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-745": {
     "sentence1": "It's also a matter of taste.",
     "sentence2": "It's definitely just a matter of preference.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-755": {
     "sentence1": "I don't see why there should be any problem with this whatsoever.",
     "sentence2": "I don't see why this could be a problem.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-756": {
     "sentence1": "There's not a lot you can do about that.",
     "sentence2": "I really do not think there is much you can do about that.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-757": {
     "sentence1": "You got it right.",
     "sentence2": "Yes you got it.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-765": {
     "sentence1": "There are two things to consider:",
     "sentence2": "A couple things to consider:",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-773": {
     "sentence1": "Can you do this?",
     "sentence2": "So, CAN you do this?",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-775": {
     "sentence1": "There are a few things you can do: ",
     "sentence2": "There are a couple things you can try.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-782": {
     "sentence1": "You got it right.",
     "sentence2": "You've got it right.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-783": {
     "sentence1": "You answered your own question.",
     "sentence2": "You pretty much answered your own question.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-788": {
     "sentence1": "You are on the right path.",
     "sentence2": "You're on the right path.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-805": {
     "sentence1": "What are your goals?",
     "sentence2": "What are you goals?",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-808": {
     "sentence1": "A few more point to think about:",
     "sentence2": "A few things to think about:",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-810": {
     "sentence1": "I'm afraid we are out of luck in this one.",
     "sentence2": "I think this is one of those things where you are just out of luck.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-818": {
     "sentence1": "It's also a matter of taste.",
     "sentence2": "It's mostly a matter of taste.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-823": {
     "sentence1": "I had the same problem as you.",
     "sentence2": "I have just had the same problem.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-829": {
     "sentence1": "I'm thinking it's a bad idea. ",
     "sentence2": "I think it's a bad idea.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-836": {
     "sentence1": "It's not a good idea.",
     "sentence2": "Not a good idea.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-839": {
     "sentence1": "I had the same problem as you.",
     "sentence2": "I have exactly the same problem.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-844": {
     "sentence1": "There are two things to consider:",
     "sentence2": "I think there are two important things to consider:",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-845": {
     "sentence1": "It's pretty much up to you.",
     "sentence2": "It is up to you.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-852": {
     "sentence1": "There are three options:",
     "sentence2": "There are only three options:",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-853": {
     "sentence1": "So think it in this way.",
     "sentence2": "Think of it this way.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-854": {
     "sentence1": "Maybe this could work for you.",
     "sentence2": "Maybe this can work for you.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-861": {
     "sentence1": "This is not a good idea.",
     "sentence2": "Not a good idea.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-862": {
     "sentence1": "I realized there is already an accepted answer but I figure I would add my 2 cents.",
     "sentence2": "I know this is an old question but I feel I should add my 2 cents.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-870": {
     "sentence1": "You may have to experiment and find what you like.",
     "sentence2": "You have to find out what works for you.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-875": {
     "sentence1": "I agree with the other comments.",
     "sentence2": "I agree with the previous comments.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-877": {
     "sentence1": "It rather depends on which country you're in.",
     "sentence2": "That depends on which country you are in.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-878": {
     "sentence1": "This is a terrible idea.",
     "sentence2": "This is a bad idea.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1012": {
     "sentence1": "The device plays Internet radio streams and comes with a 30-day trial of RealNetworks' Rhapsody music service.",
     "sentence2": "The product also streams Internet radio and comes with a 30-day free trial for RealNetworks' Rhapsody digital music subscription service.",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1018": {
     "sentence1": "The Bush administration blames Hussein loyalists and foreign Muslim militants who have entered Iraq to fight U.S. troops for the wave of bombings and guerrilla attacks.",
     "sentence2": "The Bush administration blames the wave of bombings and guerrilla attacks on Saddam loyalists and foreign Muslim militants who have entered Iraq to fight U.S. troops.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1039": {
     "sentence1": "In that case, the court held that Cincinnati had violated the First Amendment in banning only the advertising pamphlets in the interest of aesthetics.",
     "sentence2": "In that case, the court held that the city of Cincinnati had violated the First Amendment in banning, in the interest of aesthetics, only the advertising pamphlets.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1091": {
     "sentence1": "Deirdre Hisler, Government Canyon's manager, said the state has long had its eye on this piece of property and is eager to complete the deal to obtain it.",
     "sentence2": "Deirdre Hisler, Government Canyon's manager, said the state long has coveted this piece of property, and is eager to complete the deal.",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1152": {
     "sentence1": "Gu Kailai murder trial ends in China",
     "sentence2": "Gu Kailai's Murder Trial Ends in China",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1206": {
     "sentence1": "2 French Journalists Killed in Mali",
     "sentence2": "Two French journalists killed in Mali",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1214": {
     "sentence1": "Queen Beatrix of The Netherlands to abdicate for son",
     "sentence2": "Queen Beatrix of the Netherlands abdicates in favour of son",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1290": {
     "sentence1": "CIA chief visits Israel for Syria talks",
     "sentence2": "CIA chief in Israel to discuss situation in Syria",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1311": {
     "sentence1": "Guatemalan court finds former dictator guilty of genocide",
     "sentence2": "Guatemala's former leader found guilty of genocide",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1317": {
     "sentence1": "Stones add second Hyde Park concert",
     "sentence2": "Rolling Stones add second Hyde Park date",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1320": {
     "sentence1": "Car bomb at Swedish consulate in Libya's Benghazi, no casualties",
     "sentence2": "Car Bomb Hits Swedish Consulate in Benghazi, None Hurt",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1324": {
-    "sentence1": "On War Criminals and Heroes: The Whitewashing of Ariel Sharon \u0154\u00c4",
+    "sentence1": "On War Criminals and Heroes: The Whitewashing of Ariel Sharon ŔÄ",
     "sentence2": "On war criminals and heroes: The whitewashing of Ariel Sharon",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1326": {
     "sentence1": "Prominent AIDS researchers killed in Malaysian plane crash",
     "sentence2": "Top AIDS Researcher Killed in Malaysia Plane Crash",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1329": {
     "sentence1": "Protests continue in tense Ukraine capital",
     "sentence2": "Protests Continue In Ukraine's Capital",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1348": {
     "sentence1": "British teenager killed in fall from Magaluf hotel",
     "sentence2": "British teenager killed in Magaluf hotel fall",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1350": {
     "sentence1": "Russian opposition leader under house arrest",
     "sentence2": "Russian Opposition Leader Placed Under House Arrest",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1351": {
     "sentence1": "Senate confirms Janet Yellen as chair of US Federal Reserve",
     "sentence2": "Senate confirms Janet Yellen as next Federal Reserve Chair",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1352": {
     "sentence1": "Israel confirms strike on Syria targeted weapons",
     "sentence2": "Israel officials: Strike on Syria targeted weapons",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1353": {
     "sentence1": "Jurors find Jodi Arias eligible for death penalty",
     "sentence2": "Jodi Arias eligible for death penalty, jury says",
-    "score": 5.0,
-    "label": true
+    "label": true,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1357": {
     "sentence1": "Mt Gox reveals 200,000 'forgotten' bitcoin haul",
     "sentence2": "Mt Gox finds 200,000 'forgotten' bitcoins",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   },
   "mteb/stsbenchmark-sts-1364": {
     "sentence1": "AbbVie Sours on $55B Shire Deal After Tax Changes",
     "sentence2": "AbbVie cools on $55bn Shire deal after US tax changes",
-    "score": 5.0,
-    "label": false
+    "label": false,
+    "score": 5.0
   }
 }

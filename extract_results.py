@@ -1,4 +1,4 @@
-import json, os
+import json, os, sys
 from typing import Optional
 
 import pandas as pd
@@ -9,7 +9,6 @@ from benchmarking import dataset_key_to_base_fname, get_bench_path
 logger = mylog.get_logger()
 
 
-# min
 
 def calc(bench_id: str, paths: dict[str, list[str]], method_names_to_prefixes: dict[str, str], expected_prediction: Optional[bool] = False, dataset_to_method_stats= None, is_clf=False):
     bench_path = get_bench_path(bench_id)
@@ -56,23 +55,9 @@ def calc(bench_id: str, paths: dict[str, list[str]], method_names_to_prefixes: d
                                 raise Exception(
                                     f"Unexpected prediction value {possible_prediction_value} for method {method_name}!")
 
-        # Calculate average error rates
-    error_rates = {}
 
-    for dataset_key, method_stat_dict in dataset_to_method_stats.items():
-        # logger.info(f"Errors for {dataset_key}..")
-        for method_name, stats in method_stat_dict.items():
-            wrong = stats['wrong']
-            total = stats['total']
-            error_rate = ((wrong / total) * 100)
-            error_rates[method_name] = error_rate
-            # logger.info(f"Method: {method_name} Error rate: {error_rate:.2f}%")
+    data = {}
 
-    # Create a dictionary to hold data for DataFrame
-    data = {"Method": []}
-    datasets = list(dataset_to_method_stats.keys())
-    for dataset in datasets:
-        data[dataset] = []
 
     # Populate the data dictionary
     for dataset_key, method_stat_dict in dataset_to_method_stats.items():
@@ -80,25 +65,21 @@ def calc(bench_id: str, paths: dict[str, list[str]], method_names_to_prefixes: d
             wrong = stats["wrong"]
             total = stats["total"]
             error_rate = (wrong / total) * 100
-            if method_name not in data["Method"]:
-                data["Method"].append(method_name)
-            data[dataset_key].append(f"{error_rate:.2f}%")
 
-    # Ensure all methods have entries for each dataset
-    max_methods = len(data["Method"])
-    for dataset in datasets:
-        while len(data[dataset]) < max_methods:
-            data[dataset].append("N/A")
 
-    # Create and display the DataFrame
+
+            if dataset_key not in data:
+                data[dataset_key] = {}
+            if method_name not in data[dataset_key]:
+                data[dataset_key][method_name] = {}
+
+            data[dataset_key][method_name] = f"{error_rate:.2f}%"
+
     df = pd.DataFrame(data)
-    df.set_index("Method", inplace=True)
-
     logger.info("\n" + df.to_string())
 
 
-
-    return error_rates
+    return data
 
 
 if __name__ == '__main__':
@@ -121,10 +102,11 @@ if __name__ == '__main__':
     "SICK": ["sickr_sts"]
     }
     max_dataset_group_keys = {
+        "TRUE": ["simple_amr"],
         "SIMP": [
             "onestop_all"
-        ],
-        "TRUE": ["simple_amr"]
+        ]
+
     }
 
     clf_dataset_group_keys = {
@@ -135,10 +117,6 @@ if __name__ == '__main__':
         "MRPC": ["ms_mrpc"]
     }
 
-    # methods = {
-    #     "llama_3_8b_ins_q4_k_m":"llama_3_8b_ins_q4_k_m",
-    #     "llama_3_3_70b_ins_q8": "llama_3_3_70b_ins_q8"
-    # }
     methods = {
         "XLM-RoBERTa-EN-ORIG": "XLM-RoBERTa-EN-ORIG",
 
@@ -149,9 +127,34 @@ if __name__ == '__main__':
         "LLama3 ICL_4 P2": "LLama3 ICL_4 (Sem Equiv)",
         "LLama3 ICL_4 P3": "LLama3 ICL_4 (Ex. Same Content)",
     }
-    # bench_id = "initial_alt"
-    bench_id = "paper"
+
+    if len(sys.argv) == 1:
+        print("Hi")
+    elif len(sys.argv) == 2:
+        print(f"Hi {sys.argv[1]}")
+    else:
+        print("Invalid usage")
+
+    if len(sys.argv) == 1:
+        bench_id = "paper"
+    elif len(sys.argv) == 2:
+        bench_id = sys.argv[1]
+    else:
+        print("Please only specify the bench identifier.")
+        exit(1)
+
     min = calc(bench_id, min_dataset_group_keys, methods, expected_prediction=False)
-    # logger.info("MAX:")
     max = calc(bench_id, max_dataset_group_keys, methods, expected_prediction=True)
     clf = calc(bench_id, clf_dataset_group_keys, methods, expected_prediction=None, is_clf=True)
+
+    results = {
+        'CLF': clf,
+        'MIN': min,
+        'MAX': max
+    }
+
+    bench_path = get_bench_path(bench_id)
+    result_path = os.path.join(bench_path, "results.json")
+    with open(result_path, 'w') as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
+    print(f"Results for {bench_id} written to {result_path}")

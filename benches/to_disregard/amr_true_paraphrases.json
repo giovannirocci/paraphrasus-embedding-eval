@@ -1,0 +1,670 @@
+{
+  "simple_amr/0": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy desires to be believed by the girl."
+  },
+  "simple_amr/1": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy has a desire to be believed by the girl."
+  },
+  "simple_amr/2": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy’s desire is for the girl to believe him."
+  },
+  "simple_amr/3": {
+    "sentence1": "The boy desires the girl to believe him.",
+    "sentence2": "The boy is desirous of the girl believing him."
+  },
+  "simple_amr/4": {
+    "sentence1": "The boy desires to be believed by the girl.",
+    "sentence2": "The boy has a desire to be believed by the girl."
+  },
+  "simple_amr/5": {
+    "sentence1": "The boy desires to be believed by the girl.",
+    "sentence2": "The boy’s desire is for the girl to believe him."
+  },
+  "simple_amr/6": {
+    "sentence1": "The boy desires to be believed by the girl.",
+    "sentence2": "The boy is desirous of the girl believing him."
+  },
+  "simple_amr/7": {
+    "sentence1": "The boy has a desire to be believed by the girl.",
+    "sentence2": "The boy’s desire is for the girl to believe him."
+  },
+  "simple_amr/8": {
+    "sentence1": "The boy has a desire to be believed by the girl.",
+    "sentence2": "The boy is desirous of the girl believing him."
+  },
+  "simple_amr/9": {
+    "sentence1": "The boy’s desire is for the girl to believe him.",
+    "sentence2": "The boy is desirous of the girl believing him."
+  },
+  "simple_amr/10": {
+    "sentence1": "The girl made adjustments to the machine.",
+    "sentence2": "The girl adjusted the machine."
+  },
+  "simple_amr/11": {
+    "sentence1": "The girl made adjustments to the machine.",
+    "sentence2": "The machine was adjusted by the girl."
+  },
+  "simple_amr/12": {
+    "sentence1": "The girl adjusted the machine.",
+    "sentence2": "The machine was adjusted by the girl."
+  },
+  "simple_amr/13": {
+    "sentence1": "The killing happened yesterday.",
+    "sentence2": "The killing took place yesterday."
+  },
+  "simple_amr/14": {
+    "sentence1": "the boy and the girl",
+    "sentence2": "both the boy and the girl"
+  },
+  "simple_amr/15": {
+    "sentence1": "his boat",
+    "sentence2": "his own boat"
+  },
+  "simple_amr/16": {
+    "sentence1": "The boy must not go.",
+    "sentence2": "It is obligatory that the boy not go."
+  },
+  "simple_amr/17": {
+    "sentence1": "The boy may not go.",
+    "sentence2": "The boy is not permitted to go."
+  },
+  "simple_amr/18": {
+    "sentence1": "The boy may not go.",
+    "sentence2": "It is not permissible for the boy to go."
+  },
+  "simple_amr/19": {
+    "sentence1": "The boy may not go.",
+    "sentence2": "The boy does not have permission to go."
+  },
+  "simple_amr/20": {
+    "sentence1": "It is obligatory that the boy not go.",
+    "sentence2": "The boy is not permitted to go."
+  },
+  "simple_amr/21": {
+    "sentence1": "It is obligatory that the boy not go.",
+    "sentence2": "It is not permissible for the boy to go."
+  },
+  "simple_amr/22": {
+    "sentence1": "It is obligatory that the boy not go.",
+    "sentence2": "The boy does not have permission to go."
+  },
+  "simple_amr/23": {
+    "sentence1": "The boy is not permitted to go.",
+    "sentence2": "It is not permissible for the boy to go."
+  },
+  "simple_amr/24": {
+    "sentence1": "The boy is not permitted to go.",
+    "sentence2": "The boy does not have permission to go."
+  },
+  "simple_amr/25": {
+    "sentence1": "It is not permissible for the boy to go.",
+    "sentence2": "The boy does not have permission to go."
+  },
+  "simple_amr/26": {
+    "sentence1": "the white marble",
+    "sentence2": "the marble that is white"
+  },
+  "simple_amr/27": {
+    "sentence1": "The boy sees that the marble is white.",
+    "sentence2": "The boy sees the whiteness of the marble."
+  },
+  "simple_amr/28": {
+    "sentence1": "The boy sees the white marble.",
+    "sentence2": "The boy sees the marble that is white."
+  },
+  "simple_amr/29": {
+    "sentence1": "The boy saw the girl who wanted him.",
+    "sentence2": "The girl who wanted the boy was seen by him."
+  },
+  "simple_amr/30": {
+    "sentence1": "The boy saw the girl who wanted him.",
+    "sentence2": "The boy saw the girl who he was wanted by."
+  },
+  "simple_amr/31": {
+    "sentence1": "The girl who wanted the boy was seen by him.",
+    "sentence2": "The boy saw the girl who he was wanted by."
+  },
+  "simple_amr/32": {
+    "sentence1": "The girl who was seen by the boy wants him.",
+    "sentence2": "The boy is wanted by the girl he saw."
+  },
+  "simple_amr/33": {
+    "sentence1": "He described the mission as a failure.",
+    "sentence2": "As he described it, the mission was a failure."
+  },
+  "simple_amr/34": {
+    "sentence1": "He described the mission as a failure.",
+    "sentence2": "His description of the mission: failure."
+  },
+  "simple_amr/35": {
+    "sentence1": "As he described it, the mission was a failure.",
+    "sentence2": "His description of the mission: failure."
+  },
+  "simple_amr/36": {
+    "sentence1": "The boy can go.",
+    "sentence2": "It is possible that the boy goes."
+  },
+  "simple_amr/37": {
+    "sentence1": "The boy must go.",
+    "sentence2": "The boy is obligated to go."
+  },
+  "simple_amr/38": {
+    "sentence1": "The boy must go.",
+    "sentence2": "It is obligatory that the boy go."
+  },
+  "simple_amr/39": {
+    "sentence1": "It is obligatory that the boy go.",
+    "sentence2": "The boy is obligated to go."
+  },
+  "simple_amr/40": {
+    "sentence1": "The boy may go.",
+    "sentence2": "The boy is permitted to go."
+  },
+  "simple_amr/41": {
+    "sentence1": "The boy may go.",
+    "sentence2": "It is permissible that the boy go."
+  },
+  "simple_amr/42": {
+    "sentence1": "The boy is permitted to go.",
+    "sentence2": "It is permissible that the boy go."
+  },
+  "simple_amr/43": {
+    "sentence1": "It may rain.",
+    "sentence2": "It might rain."
+  },
+  "simple_amr/44": {
+    "sentence1": "It may rain.",
+    "sentence2": "Rain is possible."
+  },
+  "simple_amr/45": {
+    "sentence1": "It may rain.",
+    "sentence2": "It’s possible that it will rain."
+  },
+  "simple_amr/46": {
+    "sentence1": "It might rain.",
+    "sentence2": "Rain is possible."
+  },
+  "simple_amr/47": {
+    "sentence1": "It might rain.",
+    "sentence2": "It’s possible that it will rain."
+  },
+  "simple_amr/48": {
+    "sentence1": "Rain is possible.",
+    "sentence2": "It’s possible that it will rain."
+  },
+  "simple_amr/49": {
+    "sentence1": "The boy should go.",
+    "sentence2": "It is recommended that the boy go."
+  },
+  "simple_amr/50": {
+    "sentence1": "The boy is likely to go.",
+    "sentence2": "It is likely that the boy will go."
+  },
+  "simple_amr/51": {
+    "sentence1": "The boy would rather go.",
+    "sentence2": "The boy prefers to go."
+  },
+  "simple_amr/52": {
+    "sentence1": "The boy can’t go.",
+    "sentence2": "It’s not possible for the boy to go."
+  },
+  "simple_amr/53": {
+    "sentence1": "It is possible for the boy not to go.",
+    "sentence2": "It is possible for the boy to not go."
+  },
+  "simple_amr/54": {
+    "sentence1": "The boy doesn’t have to go.",
+    "sentence2": "It’s not necessary for the boy to go."
+  },
+  "simple_amr/55": {
+    "sentence1": "The boy must not go.",
+    "sentence2": "It’s obligatory that the boy not go."
+  },
+  "simple_amr/56": {
+    "sentence1": "The boy thinks his team won’t win.",
+    "sentence2": "The boy doesn’t think his team will win."
+  },
+  "simple_amr/57": {
+    "sentence1": "It’s not true that the boy thinks his team will win.",
+    "sentence2": "The boy doesn’t think his team will win."
+  },
+  "simple_amr/58": {
+    "sentence1": "I don’t have any money.",
+    "sentence2": "I have no money."
+  },
+  "simple_amr/59": {
+    "sentence1": "the dress is inappropriate",
+    "sentence2": "the dress is not appropriate"
+  },
+  "simple_amr/60": {
+    "sentence1": "the inappropriate dress",
+    "sentence2": "the dress that is not appropriate"
+  },
+  "simple_amr/61": {
+    "sentence1": "I know who you saw.",
+    "sentence2": "I know the person you saw."
+  },
+  "simple_amr/62": {
+    "sentence1": "The boy doesn’t know whether the girl came.",
+    "sentence2": "The boy doesn’t know if the girl came."
+  },
+  "simple_amr/63": {
+    "sentence1": "The boy doesn’t know that the girl came.",
+    "sentence2": "The boy doesn’t know the girl came."
+  },
+  "simple_amr/64": {
+    "sentence1": "Go.",
+    "sentence2": "Go!"
+  },
+  "simple_amr/65": {
+    "sentence1": "Let’s go.",
+    "sentence2": "Let’s go!"
+  },
+  "simple_amr/66": {
+    "sentence1": "Yes!!!",
+    "sentence2": "Yes!!"
+  },
+  "simple_amr/67": {
+    "sentence1": "The boy destroyed the room.",
+    "sentence2": "The destruction of the room by the boy"
+  },
+  "simple_amr/68": {
+    "sentence1": "The destruction of the room by the boy",
+    "sentence2": "The boy’s destruction of the room"
+  },
+  "simple_amr/69": {
+    "sentence1": "the proposal",
+    "sentence2": "the thing proposed"
+  },
+  "simple_amr/70": {
+    "sentence1": "the thing proposed",
+    "sentence2": "what got proposed"
+  },
+  "simple_amr/71": {
+    "sentence1": "the boy’s opinion",
+    "sentence2": "the opinion of the boy"
+  },
+  "simple_amr/72": {
+    "sentence1": "the boy’s opinion",
+    "sentence2": "that which was opined by the boy"
+  },
+  "simple_amr/73": {
+    "sentence1": "the boy’s opinion",
+    "sentence2": "what the boy opined"
+  },
+  "simple_amr/74": {
+    "sentence1": "the opinion of the boy",
+    "sentence2": "that which was opined by the boy"
+  },
+  "simple_amr/75": {
+    "sentence1": "the opinion of the boy",
+    "sentence2": "what the boy opined"
+  },
+  "simple_amr/76": {
+    "sentence1": "that which was opined by the boy",
+    "sentence2": "what the boy opined"
+  },
+  "simple_amr/77": {
+    "sentence1": "chip maker",
+    "sentence2": "maker of chips"
+  },
+  "simple_amr/78": {
+    "sentence1": "the boy is a hard worker",
+    "sentence2": "the boy works hard"
+  },
+  "simple_amr/79": {
+    "sentence1": "the man is attractive",
+    "sentence2": "the man is attracts"
+  },
+  "simple_amr/80": {
+    "sentence1": "the man is attractive to women",
+    "sentence2": "the man attracts women"
+  },
+  "simple_amr/81": {
+    "sentence1": "The soldier became aware of the battle.",
+    "sentence2": "The soldier realized there was a battle."
+  },
+  "simple_amr/82": {
+    "sentence1": "The boy is responsible for the work.",
+    "sentence2": "The boy is responsible for doing the work."
+  },
+  "simple_amr/83": {
+    "sentence1": "The boy is responsible for the work.",
+    "sentence2": "The boy has the responsibility for the work."
+  },
+  "simple_amr/84": {
+    "sentence1": "The boy is responsible for doing the work.",
+    "sentence2": "The boy has the responsibility for the work."
+  },
+  "simple_amr/85": {
+    "sentence1": "The girl was saddened by the disaster.",
+    "sentence2": "The disaster saddened the girl."
+  },
+  "simple_amr/86": {
+    "sentence1": "Girls are easy to please.",
+    "sentence2": "It is easy to please girls."
+  },
+  "simple_amr/87": {
+    "sentence1": "Girls are easy to please.",
+    "sentence2": "Pleasing girls is easy."
+  },
+  "simple_amr/88": {
+    "sentence1": "It is easy to please girls.",
+    "sentence2": "Pleasing girls is easy."
+  },
+  "simple_amr/89": {
+    "sentence1": "an edible sandwich",
+    "sentence2": "a sandwich that can be eaten"
+  },
+  "simple_amr/90": {
+    "sentence1": "an edible sandwich",
+    "sentence2": "a sandwich that it is possible to eat"
+  },
+  "simple_amr/91": {
+    "sentence1": "a sandwich that can be eaten",
+    "sentence2": "a sandwich that it is possible to eat"
+  },
+  "simple_amr/92": {
+    "sentence1": "I observed that the army moved quickly.",
+    "sentence2": "I observed the quick movement of the army"
+  },
+  "simple_amr/93": {
+    "sentence1": "I observed that the army moved quickly.",
+    "sentence2": "I observed the army moving quickly."
+  },
+  "simple_amr/94": {
+    "sentence1": "I observed the army moving quickly.",
+    "sentence2": "I observed the quick movement of the army"
+  },
+  "simple_amr/95": {
+    "sentence1": "The game continued although it rained.",
+    "sentence2": "The game continued despite the rain."
+  },
+  "simple_amr/96": {
+    "sentence1": "The boy will sing if he is given money.",
+    "sentence2": "If the boy is given money, he will sing."
+  },
+  "simple_amr/97": {
+    "sentence1": "The boy will sing if he is given money.",
+    "sentence2": "The boy will sing in case of a money donation."
+  },
+  "simple_amr/98": {
+    "sentence1": "If the boy is given money, he will sing.",
+    "sentence2": "The boy will sing in case of a money donation."
+  },
+  "simple_amr/99": {
+    "sentence1": "The boy will sing unless he is given money.",
+    "sentence2": "Unless the boy is given money, he will sing."
+  },
+  "simple_amr/100": {
+    "sentence1": "The torpedo struck, causing the ship to be damaged.",
+    "sentence2": "The torpedo struck, causing damage to the ship."
+  },
+  "simple_amr/101": {
+    "sentence1": "The torpedo struck, causing the ship to be damaged.",
+    "sentence2": "The torpedo struck, damaging the ship."
+  },
+  "simple_amr/102": {
+    "sentence1": "The torpedo struck, causing damage to the ship.",
+    "sentence2": "The torpedo struck, damaging the ship."
+  },
+  "simple_amr/103": {
+    "sentence1": "The boy provided chocolate to the girl.",
+    "sentence2": "The boy provided the girl with chocolate."
+  },
+  "simple_amr/104": {
+    "sentence1": "They built the bridge in Maryland in December.",
+    "sentence2": "The bridge was built by them in Maryland in December."
+  },
+  "simple_amr/105": {
+    "sentence1": "the engine of the car",
+    "sentence2": "the car’s engine"
+  },
+  "simple_amr/106": {
+    "sentence1": "the south of France",
+    "sentence2": "southern France"
+  },
+  "simple_amr/107": {
+    "sentence1": "The singing boy from the college",
+    "sentence2": "There is a boy from the college who sang."
+  },
+  "simple_amr/108": {
+    "sentence1": "The girl adjusted the machine.",
+    "sentence2": "The girl made an adjustment to the machine."
+  },
+  "simple_amr/109": {
+    "sentence1": "The boy bathed.",
+    "sentence2": "The boy took a bath."
+  },
+  "simple_amr/110": {
+    "sentence1": "The boy looked up the answer.",
+    "sentence2": "The boy looked the answer up."
+  },
+  "simple_amr/111": {
+    "sentence1": "According to government sources, the killing happened yesterday.",
+    "sentence2": "Government sources said that the killing happened yesterday."
+  },
+  "simple_amr/112": {
+    "sentence1": "the big, heavy ball",
+    "sentence2": "the big and heavy ball"
+  },
+  "simple_amr/113": {
+    "sentence1": "The boy arrived and left on Tuesday.",
+    "sentence2": "On Tuesday, the boy arrived and left."
+  },
+  "simple_amr/114": {
+    "sentence1": "The boys all left.",
+    "sentence2": "All the boys left."
+  },
+  "simple_amr/115": {
+    "sentence1": "All the boys left.",
+    "sentence2": "Each of the boys left."
+  },
+  "simple_amr/116": {
+    "sentence1": "Each of the boys left.",
+    "sentence2": "The boys all left."
+  },
+  "simple_amr/117": {
+    "sentence1": "No boy left.",
+    "sentence2": "None of the boys left."
+  },
+  "simple_amr/118": {
+    "sentence1": "The girl believes that the boy works in a not-hard manner.",
+    "sentence2": "The girl believes that the boy doesn’t work hard."
+  },
+  "simple_amr/119": {
+    "sentence1": "The girl believes that the boy works in a not-hard manner.",
+    "sentence2": "The girl doesn’t believe that the boy works hard."
+  },
+  "simple_amr/120": {
+    "sentence1": "The girl believes that the boy doesn’t work hard.",
+    "sentence2": "The girl doesn’t believe that the boy works hard."
+  },
+  "simple_amr/121": {
+    "sentence1": "He is not tall enough to ride the rollercoaster.",
+    "sentence2": "He's too small to ride the rollercoaster."
+  },
+  "simple_amr/122": {
+    "sentence1": "Behavioral problems.",
+    "sentence2": "Behavior problems."
+  },
+  "simple_amr/123": {
+    "sentence1": "Behavioral problems.",
+    "sentence2": "Problems with behavior."
+  },
+  "simple_amr/124": {
+    "sentence1": "Behavioral problems.",
+    "sentence2": "Problems behaving."
+  },
+  "simple_amr/125": {
+    "sentence1": "Behavior problems.",
+    "sentence2": "Problems with behavior."
+  },
+  "simple_amr/126": {
+    "sentence1": "Behavior problems.",
+    "sentence2": "Problems behaving."
+  },
+  "simple_amr/127": {
+    "sentence1": "the second planet",
+    "sentence2": "planet number 2"
+  },
+  "simple_amr/128": {
+    "sentence1": "the orc-slaying Mollie Brown",
+    "sentence2": "Mollie Brown, who slays orcs"
+  },
+  "simple_amr/129": {
+    "sentence1": "Marina del Rey",
+    "sentence2": "the city of Marina del Rey"
+  },
+  "simple_amr/130": {
+    "sentence1": "advertising rates",
+    "sentence2": "ad rates"
+  },
+  "simple_amr/131": {
+    "sentence1": "the poet William Shakespeare",
+    "sentence2": "William Shakespeare, the poet"
+  },
+  "simple_amr/132": {
+    "sentence1": "the spaceship Shenzhou",
+    "sentence2": "the Shenzhou spacecraft"
+  },
+  "simple_amr/133": {
+    "sentence1": "Mr. Wu",
+    "sentence2": "Mister Wu"
+  },
+  "simple_amr/134": {
+    "sentence1": "forty thousand boys",
+    "sentence2": "40,000 boys"
+  },
+  "simple_amr/135": {
+    "sentence1": "one and half billion atoms",
+    "sentence2": "1.5 billion atoms"
+  },
+  "simple_amr/136": {
+    "sentence1": "one and half billion atoms",
+    "sentence2": "a billion and half atoms"
+  },
+  "simple_amr/137": {
+    "sentence1": "one and half billion atoms",
+    "sentence2": "1,500,000,000 atoms"
+  },
+  "simple_amr/138": {
+    "sentence1": "1.5 billion atoms",
+    "sentence2": "a billion and half atoms"
+  },
+  "simple_amr/139": {
+    "sentence1": "1.5 billion atoms",
+    "sentence2": "1,500,000,000 atoms"
+  },
+  "simple_amr/140": {
+    "sentence1": "a billion and half atoms",
+    "sentence2": "1,500,000,000 atoms"
+  },
+  "simple_amr/141": {
+    "sentence1": "more than four thousand boys",
+    "sentence2": "more than 4000 boys"
+  },
+  "simple_amr/142": {
+    "sentence1": "between 4000 and 5000 boys",
+    "sentence2": "between four and five thousand boys"
+  },
+  "simple_amr/143": {
+    "sentence1": "ten miles",
+    "sentence2": "10 miles"
+  },
+  "simple_amr/144": {
+    "sentence1": "10 miles",
+    "sentence2": "10-mile"
+  },
+  "simple_amr/145": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crash occurred 50 miles east of Moscow."
+  },
+  "simple_amr/146": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crashed 50 miles east of Moscow."
+  },
+  "simple_amr/147": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crashed fifty miles east of Moscow."
+  },
+  "simple_amr/148": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "The plane crashed fifty miles east of the capital of Russia."
+  },
+  "simple_amr/149": {
+    "sentence1": "The plane crashed 50 miles east of Moscow.",
+    "sentence2": "Fifty miles east of the Russian capital, the airplane crashed."
+  },
+  "simple_amr/150": {
+    "sentence1": "C$20",
+    "sentence2": "20 Canadian dollars"
+  },
+  "simple_amr/151": {
+    "sentence1": "February 29, 2012",
+    "sentence2": "29.Feb.12"
+  },
+  "simple_amr/152": {
+    "sentence1": "February 29, 2012",
+    "sentence2": "2/29/2012"
+  },
+  "simple_amr/153": {
+    "sentence1": "29.Feb.12",
+    "sentence2": "2/29/2012"
+  },
+  "simple_amr/154": {
+    "sentence1": "2012",
+    "sentence2": "the year 2012"
+  },
+  "simple_amr/155": {
+    "sentence1": "2012",
+    "sentence2": "the year two years after 2010"
+  },
+  "simple_amr/156": {
+    "sentence1": "16:30",
+    "sentence2": "half past four"
+  },
+  "simple_amr/157": {
+    "sentence1": "16:30",
+    "sentence2": "4:30 in the afternoon"
+  },
+  "simple_amr/158": {
+    "sentence1": "16:30",
+    "sentence2": "4:30 PM"
+  },
+  "simple_amr/159": {
+    "sentence1": "4:30 PM",
+    "sentence2": "4:30 in the afternoon"
+  },
+  "simple_amr/160": {
+    "sentence1": "4:30 PM",
+    "sentence2": "half past four"
+  },
+  "simple_amr/161": {
+    "sentence1": "4:30 in the afternoon",
+    "sentence2": "half past four"
+  },
+  "simple_amr/162": {
+    "sentence1": "4th quarter, 2011",
+    "sentence2": "2011Q4"
+  },
+  "simple_amr/163": {
+    "sentence1": "25%",
+    "sentence2": "twenty-five percent"
+  },
+  "simple_amr/164": {
+    "sentence1": "25%",
+    "sentence2": "25 percent"
+  },
+  "simple_amr/165": {
+    "sentence1": "twenty-five percent",
+    "sentence2": "25 percent"
+  },
+  "simple_amr/166": {
+    "sentence1": "twenty-five percent",
+    "sentence2": "25.00%"
+  }
+}

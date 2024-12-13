@@ -9,26 +9,32 @@ from progress_bar import print_progress_bar
 logger = mylog.get_logger()
 
 
-def human_readable_time(seconds: float) -> str:
-    """Convert a time duration in seconds into a human-readable format."""
-    if seconds < 0.001:
-        # Less than a millisecond
-        return f"{seconds * 1_000_000:.1f}µs"
-    elif seconds < 1:
-        # Less than a second, show in milliseconds
-        return f"{seconds * 1_000:.1f}ms"
-    elif seconds < 60:
-        return f"{seconds:.2f}sec"
-    else:
-        minutes = int(seconds // 60)
-        secs = seconds % 60
-        return f"{minutes}min {secs:.1f}sec"
-
 
 SOURCE_DATASET_DIRECTORY = 'datasets_no_results'
 
 
 def copy_directory_contents(src: str, dst: str, item_list: Optional[List[str]] = None):
+    """
+        Copies contents from the source directory to the destination directory.
+
+        If `item_list` is specified, only the files listed in `item_list` will be copied.
+        If a file already exists in the destination directory, it will *not* be overwritten.
+
+        Parameters
+        ----------
+        src : str
+            Path to the source directory.
+        dst : str
+            Path to the destination directory.
+        item_list : list of str, optional
+            if specified, only these files from the src will be copied. Otherwise, all files are copied.
+
+        Notes
+        -----
+        - This function is idempotent: if the same files are copied multiple times, only new files
+          will be added to the destination directory.
+        - Only files are copied; directories within the source directory are ignored.
+    """
     # Ensure the destination directory exists
     os.makedirs(dst, exist_ok=True)
 
@@ -92,6 +98,9 @@ def get_bench_path(bench_id: str) -> str:
     return bench_directory
 
 
+# each dataset has an identifier (referred to as 'key')
+# this maps that, to the base filename of the dataset, without the extension.
+# the datasets exist both in json and in tsv (original code), hence the need for this.
 dataset_key_to_base_fname = {
     'stsbenchmark': 'stsbenchmark-test-sts',
     'ms_mrpc': 'ms-mrpc',
@@ -108,6 +117,43 @@ dataset_key_to_base_fname = {
 }
 
 def method_check(name, method):
+    """
+        Makes sure that a prediction method works as expected, giving it multiple retries if errors occur.
+
+        This function ensures the given `method`:
+        - given a list of string tuples: 1. doesn't crash 2. returns a list of booleans, and 3. the number of booleans given equal the number of tuples given to it.
+
+        Parameters
+        ----------
+        name : str
+            The name of the method being checked, used for descriptive error messages.
+        method : Callable[[List[Tuple[str, str]]], List[bool]]
+            The prediction method to validate. It should accept a list of string tuples as input and return a list of booleans.
+
+        Input Samples
+        -------------
+        The method is tested using the following input samples:
+        - [("sample1", "sample2"), ("sample3", "sample4")]
+
+        The function will retry up to 10 times if validation fails due to an exception or incorrect output.
+
+        Raises
+        ------
+        Exception
+            If the method fails validation after all retries, an exception is raised with a descriptive error message detailing the issue.
+
+        Examples
+        --------
+        >>> def example_method(samples):
+        ...     return [True, False]
+        >>> method_check("Example Method", example_method)  # Passes without errors
+
+        >>> def invalid_method(samples):
+        ...     return ["yes", "no"]
+        >>> method_check("Invalid Method", invalid_method)
+        Exception: Invalid Method function should return a list of booleans! Returned predictions contain non-boolean values: ['yes', 'no'].
+
+        """
     retries_left = 10
     err = f"{name} function should return a list of booleans! "
     samples = [
@@ -134,6 +180,9 @@ def method_check(name, method):
                         retries_left -= 1
                     else:
                         raise Exception(err)
+                else:
+                    # all is good, let's quit
+                    return
             else:
                 # Error: the list contains non-boolean values
                 err += (
@@ -160,6 +209,54 @@ def bench(
           ,dataset_keys: Optional[list[str]] = None
           , bench_id: str = None, batch_size: int = 64,
           purge_results: bool = False):
+    """
+        The main benchmarking process.
+
+        This function:
+        - Validates the prediction methods using `method_check`, (see above).
+        - Runs predictions on all (or the specified subset of) the datasets in paraphrasus.
+        - Logs progress and handles errors during predictions, retrying as needed for each batch.
+        - Saves results for each method and dataset in the benchmark's dedicated directory (identified by `bench_id`).
+
+        Parameters
+        ----------
+        methods : dict of str -> Callable[[List[Tuple[str, str]]], List[bool]]
+            A dictionary mapping method names to their corresponding prediction functions.
+            Each prediction function should accept a list of sentence tuples and return a list of booleans.
+
+        dataset_keys : list of str, optional
+            Keys identifying which datasets to benchmark. By default, all datasets are processed.
+
+        bench_id : str, optional
+            Identifier for this benchmarking session. If None, a new identifier is generated.
+            This function is idempotent, error-reselient and entirely resumable.
+            Given the same bench_id, interrupting and running this function will continue where it left off.
+            Note: if execution is interrupted during writing of the results, in such a way that the json formatting becomes invalid,
+            the next time it tries to resume, it will overwrite the said json file. Which means progress for that specific dataset will be reset.
+
+        batch_size : int, default=64
+            Number of samples to process in each batch. This is how many samples are given to each prediction method.
+
+        purge_results : bool, default=False
+            If True, removes existing predictions from the dataset before running the benchmark.
+
+        Raises
+        ------
+        Exception
+            If a prediction method fails validation repeatedly, or dataset reading/writing encounters an error.
+
+        Notes
+        -----
+        - This function creates a unique directory for storing benchmark results (if not already there).
+
+        Example Workflow
+        ----------------
+        >>> def example_method(batch):
+        ...     return [True, False] * (len(batch) // 2)
+        >>> methods = {"Example": example_method}
+        >>> bench(methods, dataset_keys=["key1", "key2"])
+
+        """
 
     method_keys = list(methods.keys())
     # FIRST! are the given methods correct?
@@ -172,8 +269,10 @@ def bench(
                 records: Dict[str, Dict[str, Any]] = json.load(f)
             return records
         except Exception as e:
+            # why can this fail? if writing to this file was interrupted, resulting in non-valid JSON formatting.
+            # In such case, we have to delete the problematic json, and copy over a fresh one (that doesn't contain any predictions).
             logger.error(f"An error occurred while reading the file: {e}. Will delete it and replace it.")
-            # Attempt to delete the file
+            # attempt to delete the file
             try:
                 os.remove(fpath)
                 print(f"File {fpath} deleted successfully. Replacing with a fresh one.")
@@ -188,7 +287,7 @@ def bench(
             json.dump(records, f, indent=2)
 
     # create a new directory for the results of this bench.
-    # then, copy the specified (json) datasets,
+    # then, copy the all (or only specified) datasets,
     # where the predictions will be written
 
     # by default copy all datasets
@@ -337,7 +436,6 @@ def bench(
 
                 #### TIMEKEEPING ####
 
-            ### running predictions ###
 
 
 def predict_method1(pairs):
@@ -380,27 +478,29 @@ def predict_method_crashing_chance(pairs):
     return [True for _ in pairs]
 
 
-#     the value of this dict, is the predict function for a method,
-#     given a batch and some positive and negative icl examples.
-# inputs are:
-# List[Tuple[str, str]]: the given batch (two sentences for classification)
-#
-# expected output:
-# List[int] list of classifications
-# out[0] means the sentences in in[0] (first element of the given batch) aren't paraphrases
 
 
-methods: Dict[
-    str,
-    Callable[[List[Tuple[str, str]]], List[bool]]
-] = {
-    # "m1": predict_method1,
-    "wrongtype_multiple": predict_method_wrongtype,
 
-}
 
-# First version. Assumes
+
 if __name__ == '__main__':
+    # example usage
+    #
+    #     the value of this dict, is the predict function for a method,
+    #     given a batch and some positive and negative icl examples.
+    # inputs are:
+    # List[Tuple[str, str]]: the given batch (two sentences for classification)
+    #
+    # expected output:
+    # List[int] list of classifications
+    # out[0] means the sentences in in[0] (first element of the given batch) aren't paraphrases
+    methods: Dict[
+        str,
+        Callable[[List[Tuple[str, str]]], List[bool]]
+    ] = {
+        "m1": predict_method1,
+        "m2": predict_method2
+    }
     bench(methods, dataset_keys=None, bench_id="initial"
           , purge_results=True
           )

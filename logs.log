@@ -1,0 +1,38 @@
+2024-12-13 03:32:11,568 | INFO | Wrong answers: I'd
+2024-12-13 03:32:11,615 | INFO | Wrong answers: I'd, I'm
+2024-12-13 03:32:11,662 | INFO | Wrong answers: I'd, I'm, I'm
+2024-12-13 03:32:11,707 | INFO | Wrong answers: I'd, I'm, I'm, I'd
+2024-12-13 03:32:11,754 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd
+2024-12-13 03:32:11,801 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm
+2024-12-13 03:32:11,848 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm
+2024-12-13 03:32:11,895 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd
+2024-12-13 03:32:11,941 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd
+2024-12-13 03:32:11,987 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd
+2024-12-13 03:32:11,987 | INFO | not copying 'stsbenchmark-test-sts.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,987 | INFO | not copying 'fb-anli-pre-hyp.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,987 | INFO | not copying 'stannlp-snli-pre-hyp.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'ms-mrpc.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'fb-anli-hyp-pre.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'sickr-sts.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'onestop_parallel_all_pairs.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'stannlp-snli-hyp-pre.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'amr_true_paraphrases.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'fb-xnli-pre-hyp.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'paws-x-test.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | not copying 'fb-xnli-hyp-pre.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
+2024-12-13 03:32:11,988 | INFO | 
+
+[1;34mPredicting for stsbenchmark...[0m
+2024-12-13 03:32:11,989 | ERROR | An error occurred while reading the file: Expecting value: line 3032 column 33 (char 113571). Will delete it and replace it.
+2024-12-13 03:32:11,990 | INFO | Copied 1 datasets to /Users/andrew_yos/paraphrasus/benches/to_disregard.
+2024-12-13 03:32:11,992 | INFO | 1379 predictions to be made using llama_3_3_70b_ins_q8...
+2024-12-13 03:55:29,235 | INFO | 1379 predictions to be made using llama_3_8b_ins_q4_k_m...
+2024-12-13 03:55:39,560 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer
+2024-12-13 03:57:54,698 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer, The correct
+2024-12-13 03:57:54,743 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer, The correct, The correct
+2024-12-13 03:57:54,790 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer, The correct, The correct, The answer
+2024-12-13 03:57:54,791 | ERROR | Unable to get predictions for method llama_3_8b_ins_q4_k_m: method was given 1 predictions but 0 were returned.
+2024-12-13 03:58:30,526 | INFO | 
+
+[1;34mPredicting for ms_mrpc...[0m
+2024-12-13 03:58:30,528 | INFO | 1725 predictions to be made using llama_3_3_70b_ins_q8...
