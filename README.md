@@ -33,8 +33,9 @@ which will save the error rates at: benches/mybench/results.json
 - [Reproducing the Experiments](#reproducing-the-experiments)
 - [Further Experimentation](#further-experimentation)
 - [BibTeX Reference](#bibtex-reference)
-- [Datasets and License](#datasets-and-license)
+- [Datasets and Licenses](#datasets-and-licenses)
 - [Further Support](#further-support)
+- [About Impresso](#about-impresso)
 
 ## Overview
 
@@ -229,8 +230,9 @@ If you use this repository or the reproduced results in your work, please cite t
   primaryClass = {cs.CL},
   url          = {https://arxiv.org/abs/2409.12060}, 
 }
+```
 
-## Datasets and License
+## Datasets and Licenses
 
 This repository inherits its license from the original release, and all datasets used are publicly available from the following links (among many others):
 
