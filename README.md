@@ -1,4 +1,5 @@
 # Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models](https://arxiv.org/pdf/2409.12060)
+![License: AGPLV3+](https://img.shields.io/badge/License-AGPLV3+-brightgreen.svg)
 
 This repository contains the code, datasets, and scripts to reproduce the results and extend from the paper "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" presented at COLING2025.
 
@@ -239,6 +240,10 @@ Within this work, we introduce a dataset (and an annotation on an existing one) 
 2. **STS Benchmark (Scores 4-5) (STS-H) with Paraphrase Label** 
    Link: [STS Hard](https://huggingface.co/datasets/impresso-project/sts-h-paraphrase-detection)
 
+## Further Support
+
+In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need further support reproducing/recreating/extending the results, please reach out to andrianos.michail@cl.uzh.ch
+
 ## About Impresso
 
 ### Impresso project
@@ -258,8 +263,3 @@ This program is provided as open source under the [GNU Affero General Public Lic
 <p align="center">
   <img src="https://github.com/impresso/impresso.github.io/blob/master/assets/images/3x1--Yellow-Impresso-Black-on-White--transparent.png?raw=true" width="350" alt="Impresso Project Logo"/>
 </p>
-
-
-## Further Support
-
-In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need further support reproducing/recreating/extending the results, please reach out to andrianos.michail@cl.uzh.ch
