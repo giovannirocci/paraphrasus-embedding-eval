@@ -29,7 +29,7 @@ which will save the error rates at: benches/mybench/results.json
 
 ## Table of Contents
 - [Overview](#overview)
-- [Directory Structure](#directory-structure)
+- [Repository Organization](#repository-organization)
 - [Reproducing the Experiments](#reproducing-the-experiments)
 - [Further Experimentation](#further-experimentation)
 - [BibTeX Reference](#bibtex-reference)
@@ -219,17 +219,16 @@ You can run your own experiments using any prediction methods of your choosing
 
 If you use this repository or the reproduced results in your work, please cite the original paper:
 
-\`\`\`bibtex
+```bibtex
 @misc{michail2024paraphrasuscomprehensivebenchmark,
-      title={PARAPHRASUS : A Comprehensive Benchmark for Evaluating Paraphrase Detection Models}, 
-      author={Andrianos Michail and Simon Clematide and Juri Opitz},
-      year={2024},
-      eprint={2409.12060},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2409.12060}, 
+  title        = {PARAPHRASUS : A Comprehensive Benchmark for Evaluating Paraphrase Detection Models}, 
+  author       = {Andrianos Michail and Simon Clematide and Juri Opitz},
+  year         = {2024},
+  eprint       = {2409.12060},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2409.12060}, 
 }
-\`\`\`
 
 ## Datasets and License
 
