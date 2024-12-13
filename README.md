@@ -234,7 +234,7 @@ This repository inherits its license from the original release, and all datasets
 
 Within this work, we introduce a dataset (and an annotation on an existing one) which are also available within our repository under the same license as the source dataset
 
-1. **AMR True Paraphrases** Source: (https://github.com/amrisi/amr-guidelines) Dataset: [AMR-True-Paraphrases](https://huggingface.co/datasets/impresso-project/amr_true_paraphrases)
+1. **AMR True Paraphrases** Source: (https://github.com/amrisi/amr-guidelines) Dataset: [AMR-True-Paraphrases](https://huggingface.co/datasets/impresso-project/amr-true-paraphrases)
 
 2. **STS Benchmark (Scores 4-5) (STS-H) with Paraphrase Label** 
    Link: [STS Hard](https://huggingface.co/datasets/impresso-project/sts-h-paraphrase-detection)
