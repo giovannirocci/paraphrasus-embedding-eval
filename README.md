@@ -1,6 +1,6 @@
-# Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models]
+# Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models](https://arxiv.org/pdf/2409.12060)
 
-This repository contains the code, datasets, and scripts to reproduce the experiments and results from the preprint "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" . 
+This repository contains the code, datasets, and scripts to reproduce the results and extend from the paper "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" presented at COLING2025.
 
 Any set of prediction methods can be used to run a benchmark on any of the specified datasets.
 
@@ -55,11 +55,11 @@ The repository is organized as follows:
 ├── models
 │   └── Empty models file used in the experiments.
 ├── benchmarking.py
-│   └── the main benchmarking code, for running predictions on the datasets using specified methods.
+│   └── Main benchmarking code, for running predictions on the datasets using specified methods.
 ├── extract_results.py
 │   └── Script for extracting result of a benchmark.
 ├── sample_llm.py
-│   └── Sample script to run benchmarks using LM Studio, with the LLMs used in the paper.
+│   └── Sample script to run benchmarks using LM Studio, with the three prompt templates used in the paper.
 ├── logger.py
 │   └── Utility for managing logging: all events are logged both to stdout and to a local logs.log file.
 ```
@@ -234,12 +234,12 @@ This repository inherits its license from the original release, and all datasets
 
 Within this work, we introduce a dataset (and an annotation on an existing one) which are also available within our repository under the same license as the source dataset
 
-1. **AMR Paraphrases** Link: (https://github.com/amrisi/amr-guidelines)
+1. **AMR True Paraphrases** Source: (https://github.com/amrisi/amr-guidelines) Dataset: [AMR-True-Paraphrases](https://huggingface.co/datasets/impresso-project/amr_true_paraphrases)
 
-2. **STS Benchmark (STS-H) with Human Annotation - Consensus (Column)** 
-   Link: [STS Benchmark](https://ixa2.si.ehu.eus/stswiki/index.php/STSbenchmark)
+2. **STS Benchmark (Scores 4-5) (STS-H) with Paraphrase Label** 
+   Link: [STS Hard](https://huggingface.co/datasets/impresso-project/sts-h-paraphrase-detection)
 
 
 ## Further Support
 
-In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need support reproducing/recreating/extending the results, please reach out to andrianos.michail@uzh.ch
+In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need further support reproducing/recreating/extending the results, please reach out to andrianos.michail@cl.uzh.ch
