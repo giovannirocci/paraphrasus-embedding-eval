@@ -112,6 +112,15 @@ At benches/paper the file results.json is generated:
             "LLama3 ICL_4 P1": "33.22%",
             "LLama3 ICL_4 P2": "45.16%",
             "LLama3 ICL_4 P3": "46.72%"
+        },
+        "total": {
+            "XLM-RoBERTa-EN-ORIG": "34.24%",
+            "LLama3 zero-shot P1": "41.49%",
+            "LLama3 zero-shot P2": "41.39%",
+            "LLama3 zero-shot P3": "39.10%",
+            "LLama3 ICL_4 P1": "38.95%",
+            "LLama3 ICL_4 P2": "40.33%",
+            "LLama3 ICL_4 P3": "39.66%"
         }
     },
     "MIN": {
@@ -159,6 +168,15 @@ At benches/paper the file results.json is generated:
             "LLama3 ICL_4 P1": "0.26%",
             "LLama3 ICL_4 P2": "0.00%",
             "LLama3 ICL_4 P3": "0.00%"
+        },
+        "total": {
+            "XLM-RoBERTa-EN-ORIG": "29.98%",
+            "LLama3 zero-shot P1": "9.28%",
+            "LLama3 zero-shot P2": "1.22%",
+            "LLama3 zero-shot P3": "1.57%",
+            "LLama3 ICL_4 P1": "2.11%",
+            "LLama3 ICL_4 P2": "1.00%",
+            "LLama3 ICL_4 P3": "0.78%"
         }
     },
     "MAX": {
@@ -179,6 +197,15 @@ At benches/paper the file results.json is generated:
             "LLama3 ICL_4 P1": "33.33%",
             "LLama3 ICL_4 P2": "42.33%",
             "LLama3 ICL_4 P3": "45.50%"
+        },
+        "total": {
+            "XLM-RoBERTa-EN-ORIG": "18.31%",
+            "LLama3 zero-shot P1": "11.82%",
+            "LLama3 zero-shot P2": "41.03%",
+            "LLama3 zero-shot P3": "36.41%",
+            "LLama3 ICL_4 P1": "31.63%",
+            "LLama3 ICL_4 P2": "41.22%",
+            "LLama3 ICL_4 P3": "48.20%"
         }
     }
 }

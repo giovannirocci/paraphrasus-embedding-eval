@@ -152,6 +152,27 @@ if __name__ == '__main__':
         'MIN': min,
         'MAX': max
     }
+    # collect totals for each method on each kind (kind is min, max, clf)
+    kind_totals_by_method = {}
+    for kind, dict in results.items():
+        kind_totals_by_method[kind] = {}
+        for dataset, methods_dict in dict.items():
+            for method_name, rate in methods_dict.items():
+                if method_name not in kind_totals_by_method[kind]:
+                    kind_totals_by_method[kind][method_name] = []
+                rate = float(rate.replace("%", ""))
+                kind_totals_by_method[kind][method_name].append(rate)
+
+    # calculate average of each method
+    for kind, totals_dict in kind_totals_by_method.items():
+        for method_name, totals in totals_dict.items():
+            if 'total' not in results[kind]:
+                results[kind]['total'] = {}
+            sum = 0
+            for i in totals:
+                sum += i
+            avg = sum / len(totals)
+            results[kind]['total'][method_name] = f"{avg:.2f}%"
 
     bench_path = get_bench_path(bench_id)
     result_path = os.path.join(bench_path, "results.json")
