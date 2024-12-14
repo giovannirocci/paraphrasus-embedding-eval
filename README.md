@@ -276,7 +276,7 @@ Within this work, we introduce a dataset (and an annotation on an existing one) 
    Link: [STS Hard](https://huggingface.co/datasets/impresso-project/sts-h-paraphrase-detection)
 
 ## Further Support
-
+This repository's benchmarking codebase was voluntary developed ad-hoc by Andreas Loizides.
 In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need further support reproducing/recreating/extending the results, please reach out to andrianos.michail@cl.uzh.ch.
 
 ## About Impresso
