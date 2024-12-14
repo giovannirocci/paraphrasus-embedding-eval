@@ -1,11 +1,14 @@
-# Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models](https://arxiv.org/pdf/2409.12060)
+# Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models](https://arxiv.org/abs/2409.12060)
 ![License: AGPLV3+](https://img.shields.io/badge/License-AGPLV3+-brightgreen.svg)
 
-This repository contains the code, datasets, and scripts to reproduce the results and extend from the paper "PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models" presented at COLING2025.
+This repository contains the code and datasets for benchmarking a paraphrase detector, as described in our COLING 2025 paper *PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models*. It also has the scripts to reproduce the results that are displayed in the paper.
 
-Any set of prediction methods can be used to run a benchmark on any of the specified datasets.
+## Quick start
 
-For example, to run all datasets using some example prediction methods, predict_method1 and predict_method2:
+To evaluate a model on the full PARAPHRASUS benchmark, you simply need to wrap it into a binary prediction method that accepts a list with pairs of texts, and returns a list with boolean True/False predictions.
+
+For example, here are two dummy prediction methods, `predict_method1` and `predict_method2`. Then:
+
 ```python
 from benchmarking import bench
 
@@ -21,13 +24,17 @@ methods = {
 
 bench(methods, bench_id="mybench")
 ```
-Then, to calculate the average error rate for each method, for each predicted dataset:
+
+Finally, to calculate the average error rate for each method, for each predicted dataset:
+
 ```bash
 python3 extract_results.py mybench
 ```
+
 which will save the error rates at: benches/mybench/results.json
 
 ## Table of Contents
+
 - [Overview](#overview)
 - [Repository Organization](#repository-organization)
 - [Reproducing the Experiments](#reproducing-the-experiments)
@@ -76,7 +83,7 @@ Then, to extract the results (average error rates):
 ```bash
 python3 extract_results.py reproduce
 ```
-Note: You can replace '*reproduce*' with any name
+Note: You can replace '*reproduce*' with any name.
 
 The predictions of the methods mentioned in the paper are given as a benchmark with the identifier 'paper'.
 That means, the results (error rates) can be extracted like so:
@@ -214,11 +221,11 @@ At benches/paper the file results.json is generated:
 
 ## Further Experimentation
 
-You can run your own experiments using any prediction methods of your choosing
+You can run your own experiments using any prediction methods of your choosing.
 
 ## BibTeX Reference
 
-If you use this repository or the reproduced results in your work, please cite the original paper:
+If you would like to cite this project, or the associated paper, here's a bibtex:
 
 ```bibtex
 @misc{michail2024paraphrasuscomprehensivebenchmark,
@@ -263,14 +270,14 @@ This repository inherits its license from the original release, and all datasets
 
 Within this work, we introduce a dataset (and an annotation on an existing one) which are also available within our repository under the same license as the source dataset
 
-1. **AMR True Paraphrases** Source: (https://github.com/amrisi/amr-guidelines) Dataset: [AMR-True-Paraphrases](https://huggingface.co/datasets/impresso-project/amr-true-paraphrases)
+1. **AMR True Paraphrases** Source: (https://github.com/amrisi/amr-guidelines/blob/master/amr.md) Dataset: [AMR-True-Paraphrases](https://huggingface.co/datasets/impresso-project/amr-true-paraphrases).
 
 2. **STS Benchmark (Scores 4-5) (STS-H) with Paraphrase Label** 
    Link: [STS Hard](https://huggingface.co/datasets/impresso-project/sts-h-paraphrase-detection)
 
 ## Further Support
 
-In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need further support reproducing/recreating/extending the results, please reach out to andrianos.michail@cl.uzh.ch
+In the future, we will work towards adding more datasets (also multilingual) and to make the benchmark more compute efficient. If you are interested in contributing or need further support reproducing/recreating/extending the results, please reach out to andrianos.michail@cl.uzh.ch.
 
 ## About Impresso
 
