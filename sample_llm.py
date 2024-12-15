@@ -36,7 +36,7 @@ def predict_llama3_p3(batch):
     return predict_paraphrases_in_batches_lmstudio(model, batch, question)
 
 def predict_llama3_iclk4_p1(batch):
-    all_samples = pd.read_csv("original_reproduction_code/datasets/icl_samples_paws_x.tsv", sep="\t")
+    all_samples = pd.read_csv("icl_samples/icl_samples_paws_x.tsv", sep="\t")
     icl_positive_samples = all_samples[all_samples["label"] == 1]
     icl_negative_samples = all_samples[all_samples["label"] == 0]
 
@@ -47,7 +47,7 @@ def predict_llama3_iclk4_p1(batch):
 
 
 def predict_llama3_iclk4_p2(batch):
-    all_samples = pd.read_csv("original_reproduction_code/datasets/icl_samples_paws_x.tsv", sep="\t")
+    all_samples = pd.read_csv("icl_samples/icl_samples_paws_x.tsv", sep="\t")
     icl_positive_samples = all_samples[all_samples["label"] == 1]
     icl_negative_samples = all_samples[all_samples["label"] == 0]
 
@@ -58,7 +58,7 @@ def predict_llama3_iclk4_p2(batch):
                                                    icl_k=4)
 
 def predict_llama3_iclk4_p3(batch):
-    all_samples = pd.read_csv("original_reproduction_code/datasets/icl_samples_paws_x.tsv", sep="\t")
+    all_samples = pd.read_csv("icl_samples/icl_samples_paws_x.tsv", sep="\t")
     icl_positive_samples = all_samples[all_samples["label"] == 1]
     icl_negative_samples = all_samples[all_samples["label"] == 0]
 
