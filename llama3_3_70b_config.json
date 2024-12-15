@@ -1,5 +1,5 @@
 {
-  "bench_id": "llama_3_3_70b",
+  "bench_id": "llama3_3_70b",
   "methods": [
     {
       "name": "llama_3_8b_ins_q4_k_m",

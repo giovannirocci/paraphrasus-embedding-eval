@@ -1,4 +1,4 @@
-from lm_studio_samples.samples import predict_lm_studio, local_client
+from lm_studio_templates.templates import predict_lm_studio, local_client
 
 def predict_llama3_p1(batch):
     model = "meta-llama-3-8b-instruct"

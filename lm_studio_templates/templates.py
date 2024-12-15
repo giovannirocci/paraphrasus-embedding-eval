@@ -6,7 +6,7 @@ import sys
 
 logger = mylog.get_logger()
 
-
+PRINT_WRONG_ANS = False
 
 local_client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 remote_client = OpenAI(base_url="http://192.168.1.176:1234/v1", api_key="lm-studio")
@@ -103,7 +103,8 @@ def predict_paraphrases_in_batches_lmstudio(
             paraphrase_predictions.append(False)
         else:
             wrongs.append(answer)
-            logger.info(f"Wrong answers: {", ".join(wrongs)}")
+            if PRINT_WRONG_ANS:
+                logger.info(f"Wrong answers: {", ".join(wrongs)}")
             return []
     return paraphrase_predictions
 

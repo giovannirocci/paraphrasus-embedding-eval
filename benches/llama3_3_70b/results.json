@@ -1,64 +1,64 @@
 {
     "Classify!": {
         "PAWSX": {
-            "LLama3 8b Q4 K M": "44.96%",
-            "LLama3.3 70b Q8": "23.07%"
+            "llama_3_8b_ins_q4_k_m": "44.96%",
+            "llama_3_3_70b_ins_q8": "23.07%"
         },
         "STS-H": {
-            "LLama3 8b Q4 K M": "55.62%",
-            "LLama3.3 70b Q8": "48.22%"
+            "llama_3_8b_ins_q4_k_m": "55.62%",
+            "llama_3_3_70b_ins_q8": "48.22%"
         },
         "MRPC": {
-            "LLama3 8b Q4 K M": "24.12%",
-            "LLama3.3 70b Q8": "22.67%"
+            "llama_3_8b_ins_q4_k_m": "24.12%",
+            "llama_3_3_70b_ins_q8": "22.67%"
         },
         "total": {
-            "LLama3 8b Q4 K M": "41.57%",
-            "LLama3.3 70b Q8": "31.32%"
+            "llama_3_8b_ins_q4_k_m": "41.57%",
+            "llama_3_3_70b_ins_q8": "31.32%"
         }
     },
     "Minimize!": {
         "SNLI": {
-            "LLama3 8b Q4 K M": "7.35%",
-            "LLama3.3 70b Q8": "6.10%"
+            "llama_3_8b_ins_q4_k_m": "7.35%",
+            "llama_3_3_70b_ins_q8": "6.10%"
         },
         "ANLI": {
-            "LLama3 8b Q4 K M": "13.22%",
-            "LLama3.3 70b Q8": "3.13%"
+            "llama_3_8b_ins_q4_k_m": "13.22%",
+            "llama_3_3_70b_ins_q8": "3.13%"
         },
         "XNLI": {
-            "LLama3 8b Q4 K M": "12.34%",
-            "LLama3.3 70b Q8": "4.53%"
+            "llama_3_8b_ins_q4_k_m": "12.34%",
+            "llama_3_3_70b_ins_q8": "4.53%"
         },
         "STS": {
-            "LLama3 8b Q4 K M": "12.61%",
-            "LLama3.3 70b Q8": "4.39%"
+            "llama_3_8b_ins_q4_k_m": "12.61%",
+            "llama_3_3_70b_ins_q8": "4.39%"
         },
         "SICK": {
-            "LLama3 8b Q4 K M": "1.13%",
-            "LLama3.3 70b Q8": "0.13%"
+            "llama_3_8b_ins_q4_k_m": "1.13%",
+            "llama_3_3_70b_ins_q8": "0.13%"
         },
         "total": {
-            "LLama3 8b Q4 K M": "9.33%",
-            "LLama3.3 70b Q8": "3.66%"
+            "llama_3_8b_ins_q4_k_m": "9.33%",
+            "llama_3_3_70b_ins_q8": "3.66%"
         }
     },
     "Maximize!": {
         "TRUE": {
-            "LLama3 8b Q4 K M": "13.77%",
-            "LLama3.3 70b Q8": "6.59%"
+            "llama_3_8b_ins_q4_k_m": "13.77%",
+            "llama_3_3_70b_ins_q8": "6.59%"
         },
         "SIMP": {
-            "LLama3 8b Q4 K M": "15.17%",
-            "LLama3.3 70b Q8": "18.50%"
+            "llama_3_8b_ins_q4_k_m": "15.17%",
+            "llama_3_3_70b_ins_q8": "18.50%"
         },
         "total": {
-            "LLama3 8b Q4 K M": "14.47%",
-            "LLama3.3 70b Q8": "12.54%"
+            "llama_3_8b_ins_q4_k_m": "14.47%",
+            "llama_3_3_70b_ins_q8": "12.54%"
         }
     },
     "Total": {
-        "LLama3 8b Q4 K M": "21.79%",
-        "LLama3.3 70b Q8": "15.84%"
+        "llama_3_8b_ins_q4_k_m": "21.79%",
+        "llama_3_3_70b_ins_q8": "15.84%"
     }
 }
