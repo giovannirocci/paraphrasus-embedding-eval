@@ -1,5 +1,6 @@
-import json, os, sys
+import json, os, sys, importlib
 from typing import Optional
+
 
 import pandas as pd
 from collections import defaultdict
@@ -82,6 +83,15 @@ def calc(bench_id: str, paths: dict[str, list[str]], method_names_to_prefixes: d
     return data
 
 
+
+
+# Load configuration file
+def load_config(config_path):
+    with open(config_path, "r") as config_file:
+        return json.load(config_file)
+
+
+
 if __name__ == '__main__':
     min_dataset_group_keys = {
         "SNLI": [
@@ -117,36 +127,30 @@ if __name__ == '__main__':
         "MRPC": ["ms_mrpc"]
     }
 
-    methods1 = {
-        "XLM-RoBERTa-EN-ORIG": "XLM-RoBERTa-EN-ORIG",
-
-        "LLama3 zero-shot P1": "LLama3 zero-shot (Paraph)",
-        "LLama3 zero-shot P2": "LLama3 zero-shot (Sem Equiv)",
-        "LLama3 zero-shot P3": "LLama3 zero-shot (Ex. Same Content)",
-        "LLama3 ICL_4 P1": "LLama3 ICL_4 (Paraph)",
-        "LLama3 ICL_4 P2": "LLama3 ICL_4 (Sem Equiv)",
-        "LLama3 ICL_4 P3": "LLama3 ICL_4 (Ex. Same Content)",
-    }
-
-    methods = {
-        "LLama3 8b Q4 K M": "llama_3_8b_ins_q4_k_m",
-        "LLama3.3 70b Q8": "llama_3_3_70b_ins_q8"
-
-    }
-
 
 
     if len(sys.argv) == 1:
-        bench_id = "paper"
+        config_path = "paper_config.json"
     elif len(sys.argv) == 2:
-        bench_id = sys.argv[1]
+        config_path = sys.argv[1]
     else:
-        print("Please only specify the bench identifier.")
+        print("Please specify a config path!")
         exit(1)
 
-    min = calc(bench_id, min_dataset_group_keys, methods1, expected_prediction=False)
-    max = calc(bench_id, max_dataset_group_keys, methods1, expected_prediction=True)
-    clf = calc(bench_id, clf_dataset_group_keys, methods1, expected_prediction=None, is_clf=True)
+    config = load_config(config_path)
+    bench_id = config["bench_id"]
+    if "prefixes" in config:
+        prefixes = config["prefixes"]
+    else:
+        m = config["methods"]
+        prefixes = {}
+        for method in m:
+            n = method["name"]
+            prefixes[n] = n
+
+    min = calc(bench_id, min_dataset_group_keys, method_names_to_prefixes=prefixes, expected_prediction=False)
+    max = calc(bench_id, max_dataset_group_keys, method_names_to_prefixes=prefixes, expected_prediction=True)
+    clf = calc(bench_id, clf_dataset_group_keys, method_names_to_prefixes=prefixes, expected_prediction=None, is_clf=True)
 
     results = {
         'Classify!': clf,

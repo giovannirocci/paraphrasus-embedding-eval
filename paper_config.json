@@ -1,0 +1,47 @@
+{
+  "bench_id": "paper",
+  "methods": [
+    {
+      "name": "llama3_p1",
+      "module": "lm_studio_samples.samples",
+      "function": "predict_llama3_p1"
+    },
+    {
+      "name": "llama3_p2",
+      "module": "lm_studio_samples.samples",
+      "function": "predict_llama3_p2"
+    },
+    {
+      "name": "llama3_p3",
+      "module": "lm_studio_samples.samples",
+      "function": "predict_llama3_p3"
+    },
+    {
+      "name": "llama3_icl_k4_p1",
+      "module": "lm_studio_samples.samples",
+      "function": "predict_llama3_iclk4_p1"
+    },
+    {
+      "name": "llama3_icl_k4_p2",
+      "module": "lm_studio_samples.samples",
+      "function": "predict_llama3_iclk4_p2"
+    },
+    {
+      "name": "llama3_icl_k4_p3",
+      "module": "lm_studio_samples.samples",
+      "function": "predict_llama3_iclk4_p3"
+    }
+  ],
+  "prefixes":{
+        "XLM-RoBERTa-EN-ORIG": "XLM-RoBERTa-EN-ORIG",
+
+        "LLama3 zero-shot P1": "LLama3 zero-shot (Paraph)",
+        "LLama3 zero-shot P2": "LLama3 zero-shot (Sem Equiv)",
+        "LLama3 zero-shot P3": "LLama3 zero-shot (Ex. Same Content)",
+        "LLama3 ICL_4 P1": "LLama3 ICL_4 (Paraph)",
+        "LLama3 ICL_4 P2": "LLama3 ICL_4 (Sem Equiv)",
+        "LLama3 ICL_4 P3": "LLama3 ICL_4 (Ex. Same Content)"
+    }
+}
+
+

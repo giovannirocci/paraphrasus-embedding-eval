@@ -1,0 +1,17 @@
+{
+  "bench_id": "llama_3_3_70b",
+  "methods": [
+    {
+      "name": "llama_3_8b_ins_q4_k_m",
+      "module": "lm_studio_templates.templates",
+      "function": "predict_llama3_p1"
+    },
+    {
+      "name": "llama_3_3_70b_ins_q8",
+      "module": "lm_studio_templates.l70b_methods",
+      "function": "predict_llama3_3_70b_ins_8bit"
+    }
+
+  ]
+}
+
