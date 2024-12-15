@@ -110,13 +110,8 @@ The repository is organized as follows:
 
 Predictions using the LLMs in the paper can be run locally (provided LM Studio is running and serving the model meta-llama-3-8b-instruct (Meta-Llama-3-8B-Instruct-Q4_K_M.gguf)) like so:
 ```bash
-python3 sample_llm.py reproduce
+python3 benchmarking.py paper.json
 ```
-Then, to extract the results (average error rates):
-```bash
-python3 extract_results.py reproduce
-```
-Note: You can replace '*reproduce*' with any name.
 
 The predictions of the methods mentioned in the paper are given as a benchmark with the identifier 'paper'.
 That means, the results (error rates) can be extracted like so:
