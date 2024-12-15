@@ -167,13 +167,18 @@ if __name__ == '__main__':
                 rate = float(rate.replace("%", ""))
                 kind_totals_by_method[kind][method_name].append(rate)
 
+
+    avg_by_method_by_kind = {}
+
+    # a[m][k]
+    # k: C,M,M,avg
+
+
     # calculate average of each method by kind (kind is min, max, clf)
     # and grand total for each method
     grand_totals_by_method = {}
     for kind, totals_dict in kind_totals_by_method.items():
         for method_name, totals in totals_dict.items():
-            if 'total' not in results[kind]:
-                results[kind]['total'] = {}
             sum=0
             for i in totals:
                 sum += i
@@ -181,15 +186,25 @@ if __name__ == '__main__':
             if method_name not in grand_totals_by_method:
                 grand_totals_by_method[method_name] = []
             grand_totals_by_method[method_name].append(avg)
-            results[kind]['total'][method_name] = f"{avg:.2f}%"
 
-    results["Total"] = {}
-    for method_name in grand_totals_by_method:
-        sum = 0
-        for i in grand_totals_by_method[method_name]:
-            sum += i
-        avg = sum/len(grand_totals_by_method[method_name])
-        results["Total"][method_name] = f"{avg:.2f}%"
+            if method_name not in avg_by_method_by_kind:
+                avg_by_method_by_kind[method_name] = {}
+            avg_by_method_by_kind[method_name][kind] = f"{avg:.2f}%"
+
+    b1 = {}
+    for method_name, totals_dict in avg_by_method_by_kind.items():
+        b1[method_name] = 0
+        for kind, avg in totals_dict.items():
+            b1[method_name] += float(avg.replace("%", ""))
+        b1[method_name] = b1[method_name] / 3
+
+    for method_name, a in b1.items():
+        avg_by_method_by_kind[method_name]["Overall Average"] = f"{a:.2f}%"
+
+            # results[kind]['total'][method_name] =
+
+    results["Averages"] = avg_by_method_by_kind
+
 
     bench_path = get_bench_path(bench_id)
     result_path = os.path.join(bench_path, "results.json")

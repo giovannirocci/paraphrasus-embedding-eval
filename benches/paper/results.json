@@ -26,15 +26,6 @@
             "LLama3 ICL_4 P1": "33.22%",
             "LLama3 ICL_4 P2": "45.16%",
             "LLama3 ICL_4 P3": "46.72%"
-        },
-        "total": {
-            "XLM-RoBERTa-EN-ORIG": "34.24%",
-            "LLama3 zero-shot P1": "41.49%",
-            "LLama3 zero-shot P2": "41.39%",
-            "LLama3 zero-shot P3": "39.10%",
-            "LLama3 ICL_4 P1": "38.95%",
-            "LLama3 ICL_4 P2": "40.33%",
-            "LLama3 ICL_4 P3": "39.66%"
         }
     },
     "Minimize!": {
@@ -82,15 +73,6 @@
             "LLama3 ICL_4 P1": "0.26%",
             "LLama3 ICL_4 P2": "0.00%",
             "LLama3 ICL_4 P3": "0.00%"
-        },
-        "total": {
-            "XLM-RoBERTa-EN-ORIG": "29.98%",
-            "LLama3 zero-shot P1": "9.28%",
-            "LLama3 zero-shot P2": "1.22%",
-            "LLama3 zero-shot P3": "1.57%",
-            "LLama3 ICL_4 P1": "2.11%",
-            "LLama3 ICL_4 P2": "1.00%",
-            "LLama3 ICL_4 P3": "0.78%"
         }
     },
     "Maximize!": {
@@ -111,24 +93,50 @@
             "LLama3 ICL_4 P1": "33.33%",
             "LLama3 ICL_4 P2": "42.33%",
             "LLama3 ICL_4 P3": "45.50%"
-        },
-        "total": {
-            "XLM-RoBERTa-EN-ORIG": "18.31%",
-            "LLama3 zero-shot P1": "11.82%",
-            "LLama3 zero-shot P2": "41.03%",
-            "LLama3 zero-shot P3": "36.41%",
-            "LLama3 ICL_4 P1": "31.63%",
-            "LLama3 ICL_4 P2": "41.22%",
-            "LLama3 ICL_4 P3": "48.20%"
         }
     },
-    "Total": {
-        "XLM-RoBERTa-EN-ORIG": "27.51%",
-        "LLama3 zero-shot P1": "20.87%",
-        "LLama3 zero-shot P2": "27.88%",
-        "LLama3 zero-shot P3": "25.69%",
-        "LLama3 ICL_4 P1": "24.23%",
-        "LLama3 ICL_4 P2": "27.52%",
-        "LLama3 ICL_4 P3": "29.55%"
+    "Averages": {
+        "XLM-RoBERTa-EN-ORIG": {
+            "Classify!": "34.24%",
+            "Minimize!": "29.98%",
+            "Maximize!": "18.31%",
+            "Overall Average": "27.51%"
+        },
+        "LLama3 zero-shot P1": {
+            "Classify!": "41.49%",
+            "Minimize!": "9.28%",
+            "Maximize!": "11.82%",
+            "Overall Average": "20.86%"
+        },
+        "LLama3 zero-shot P2": {
+            "Classify!": "41.39%",
+            "Minimize!": "1.22%",
+            "Maximize!": "41.03%",
+            "Overall Average": "27.88%"
+        },
+        "LLama3 zero-shot P3": {
+            "Classify!": "39.10%",
+            "Minimize!": "1.57%",
+            "Maximize!": "36.41%",
+            "Overall Average": "25.69%"
+        },
+        "LLama3 ICL_4 P1": {
+            "Classify!": "38.95%",
+            "Minimize!": "2.11%",
+            "Maximize!": "31.63%",
+            "Overall Average": "24.23%"
+        },
+        "LLama3 ICL_4 P2": {
+            "Classify!": "40.33%",
+            "Minimize!": "1.00%",
+            "Maximize!": "41.22%",
+            "Overall Average": "27.52%"
+        },
+        "LLama3 ICL_4 P3": {
+            "Classify!": "39.66%",
+            "Minimize!": "0.78%",
+            "Maximize!": "48.20%",
+            "Overall Average": "29.55%"
+        }
     }
 }

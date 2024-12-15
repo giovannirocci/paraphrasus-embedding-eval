@@ -1,0 +1,11 @@
+{
+  "bench_id": "paper_ablation_a",
+  "prefixes":{
+        "XLM-R-EN Original": "XLM-RoBERTa-EN-ORIG",
+    "XLM-R-EN 25% Easy Negatives": "XLM-RoBERTa-EN-EASYNEG-25",
+    "XLM-R-EN 50% Easy Negatives": "XLM-RoBERTa-EN-EASYNEG-50",
+    "XLM-R-EN 75% Easy Negatives": "XLM-RoBERTa-EN-EASYNEG-75"
+    }
+}
+
+

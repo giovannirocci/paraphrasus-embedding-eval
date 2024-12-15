@@ -1,0 +1,94 @@
+{
+    "Classify!": {
+        "PAWSX": {
+            "XLM-R-EN Original": "15.23%",
+            "XLM-R-EN 25% Easy Negatives": "15.08%",
+            "XLM-R-EN 50% Easy Negatives": "15.85%",
+            "XLM-R-EN 75% Easy Negatives": "17.98%"
+        },
+        "STS-H": {
+            "XLM-R-EN Original": "54.07%",
+            "XLM-R-EN 25% Easy Negatives": "54.80%",
+            "XLM-R-EN 50% Easy Negatives": "58.51%",
+            "XLM-R-EN 75% Easy Negatives": "63.08%"
+        },
+        "MRPC": {
+            "XLM-R-EN Original": "33.41%",
+            "XLM-R-EN 25% Easy Negatives": "32.06%",
+            "XLM-R-EN 50% Easy Negatives": "30.83%",
+            "XLM-R-EN 75% Easy Negatives": "33.19%"
+        }
+    },
+    "Minimize!": {
+        "SNLI": {
+            "XLM-R-EN Original": "32.39%",
+            "XLM-R-EN 25% Easy Negatives": "32.76%",
+            "XLM-R-EN 50% Easy Negatives": "43.61%",
+            "XLM-R-EN 75% Easy Negatives": "75.83%"
+        },
+        "ANLI": {
+            "XLM-R-EN Original": "7.24%",
+            "XLM-R-EN 25% Easy Negatives": "5.94%",
+            "XLM-R-EN 50% Easy Negatives": "7.69%",
+            "XLM-R-EN 75% Easy Negatives": "38.00%"
+        },
+        "XNLI": {
+            "XLM-R-EN Original": "26.69%",
+            "XLM-R-EN 25% Easy Negatives": "20.75%",
+            "XLM-R-EN 50% Easy Negatives": "29.82%",
+            "XLM-R-EN 75% Easy Negatives": "67.45%"
+        },
+        "STS": {
+            "XLM-R-EN Original": "46.57%",
+            "XLM-R-EN 25% Easy Negatives": "42.59%",
+            "XLM-R-EN 50% Easy Negatives": "58.91%",
+            "XLM-R-EN 75% Easy Negatives": "85.33%"
+        },
+        "SICK": {
+            "XLM-R-EN Original": "37.01%",
+            "XLM-R-EN 25% Easy Negatives": "32.71%",
+            "XLM-R-EN 50% Easy Negatives": "50.73%",
+            "XLM-R-EN 75% Easy Negatives": "78.87%"
+        }
+    },
+    "Maximize!": {
+        "TRUE": {
+            "XLM-R-EN Original": "31.36%",
+            "XLM-R-EN 25% Easy Negatives": "32.00%",
+            "XLM-R-EN 50% Easy Negatives": "14.50%",
+            "XLM-R-EN 75% Easy Negatives": "5.26%"
+        },
+        "SIMP": {
+            "XLM-R-EN Original": "5.27%",
+            "XLM-R-EN 25% Easy Negatives": "4.00%",
+            "XLM-R-EN 50% Easy Negatives": "2.26%",
+            "XLM-R-EN 75% Easy Negatives": "1.07%"
+        }
+    },
+    "Averages": {
+        "XLM-R-EN Original": {
+            "Classify!": "34.24%",
+            "Minimize!": "29.98%",
+            "Maximize!": "18.31%",
+            "Average": "27.51%"
+        },
+        "XLM-R-EN 25% Easy Negatives": {
+            "Classify!": "33.98%",
+            "Minimize!": "26.95%",
+            "Maximize!": "18.00%",
+            "Average": "26.31%"
+        },
+        "XLM-R-EN 50% Easy Negatives": {
+            "Classify!": "35.06%",
+            "Minimize!": "38.15%",
+            "Maximize!": "8.38%",
+            "Average": "27.20%"
+        },
+        "XLM-R-EN 75% Easy Negatives": {
+            "Classify!": "38.08%",
+            "Minimize!": "69.10%",
+            "Maximize!": "3.17%",
+            "Average": "36.78%"
+        }
+    }
+}
