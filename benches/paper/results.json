@@ -1,5 +1,5 @@
 {
-    "CLF": {
+    "Classify!": {
         "PAWSX": {
             "XLM-RoBERTa-EN-ORIG": "15.23%",
             "LLama3 zero-shot P1": "44.67%",
@@ -37,7 +37,7 @@
             "LLama3 ICL_4 P3": "39.66%"
         }
     },
-    "MIN": {
+    "Minimize!": {
         "SNLI": {
             "XLM-RoBERTa-EN-ORIG": "32.39%",
             "LLama3 zero-shot P1": "7.29%",
@@ -93,7 +93,7 @@
             "LLama3 ICL_4 P3": "0.78%"
         }
     },
-    "MAX": {
+    "Maximize!": {
         "TRUE": {
             "XLM-RoBERTa-EN-ORIG": "31.36%",
             "LLama3 zero-shot P1": "8.98%",
@@ -121,5 +121,14 @@
             "LLama3 ICL_4 P2": "41.22%",
             "LLama3 ICL_4 P3": "48.20%"
         }
+    },
+    "Total": {
+        "XLM-RoBERTa-EN-ORIG": "27.51%",
+        "LLama3 zero-shot P1": "20.87%",
+        "LLama3 zero-shot P2": "27.88%",
+        "LLama3 zero-shot P3": "25.69%",
+        "LLama3 ICL_4 P1": "24.23%",
+        "LLama3 ICL_4 P2": "27.52%",
+        "LLama3 ICL_4 P3": "29.55%"
     }
 }

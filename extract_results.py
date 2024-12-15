@@ -117,7 +117,7 @@ if __name__ == '__main__':
         "MRPC": ["ms_mrpc"]
     }
 
-    methods = {
+    methods1 = {
         "XLM-RoBERTa-EN-ORIG": "XLM-RoBERTa-EN-ORIG",
 
         "LLama3 zero-shot P1": "LLama3 zero-shot (Paraph)",
@@ -128,12 +128,13 @@ if __name__ == '__main__':
         "LLama3 ICL_4 P3": "LLama3 ICL_4 (Ex. Same Content)",
     }
 
-    if len(sys.argv) == 1:
-        print("Hi")
-    elif len(sys.argv) == 2:
-        print(f"Hi {sys.argv[1]}")
-    else:
-        print("Invalid usage")
+    methods = {
+        "LLama3 8b Q4 K M": "llama_3_8b_ins_q4_k_m",
+        "LLama3.3 70b Q8": "llama_3_3_70b_ins_q8"
+
+    }
+
+
 
     if len(sys.argv) == 1:
         bench_id = "paper"
@@ -143,16 +144,15 @@ if __name__ == '__main__':
         print("Please only specify the bench identifier.")
         exit(1)
 
-    min = calc(bench_id, min_dataset_group_keys, methods, expected_prediction=False)
-    max = calc(bench_id, max_dataset_group_keys, methods, expected_prediction=True)
-    clf = calc(bench_id, clf_dataset_group_keys, methods, expected_prediction=None, is_clf=True)
+    min = calc(bench_id, min_dataset_group_keys, methods1, expected_prediction=False)
+    max = calc(bench_id, max_dataset_group_keys, methods1, expected_prediction=True)
+    clf = calc(bench_id, clf_dataset_group_keys, methods1, expected_prediction=None, is_clf=True)
 
     results = {
-        'CLF': clf,
-        'MIN': min,
-        'MAX': max
+        'Classify!': clf,
+        'Minimize!': min,
+        'Maximize!': max
     }
-    # collect totals for each method on each kind (kind is min, max, clf)
     kind_totals_by_method = {}
     for kind, dict in results.items():
         kind_totals_by_method[kind] = {}
@@ -163,16 +163,29 @@ if __name__ == '__main__':
                 rate = float(rate.replace("%", ""))
                 kind_totals_by_method[kind][method_name].append(rate)
 
-    # calculate average of each method
+    # calculate average of each method by kind (kind is min, max, clf)
+    # and grand total for each method
+    grand_totals_by_method = {}
     for kind, totals_dict in kind_totals_by_method.items():
         for method_name, totals in totals_dict.items():
             if 'total' not in results[kind]:
                 results[kind]['total'] = {}
-            sum = 0
+            sum=0
             for i in totals:
                 sum += i
-            avg = sum / len(totals)
+            avg = sum/len(totals)
+            if method_name not in grand_totals_by_method:
+                grand_totals_by_method[method_name] = []
+            grand_totals_by_method[method_name].append(avg)
             results[kind]['total'][method_name] = f"{avg:.2f}%"
+
+    results["Total"] = {}
+    for method_name in grand_totals_by_method:
+        sum = 0
+        for i in grand_totals_by_method[method_name]:
+            sum += i
+        avg = sum/len(grand_totals_by_method[method_name])
+        results["Total"][method_name] = f"{avg:.2f}%"
 
     bench_path = get_bench_path(bench_id)
     result_path = os.path.join(bench_path, "results.json")

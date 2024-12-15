@@ -1,38 +1,27 @@
-2024-12-13 03:32:11,568 | INFO | Wrong answers: I'd
-2024-12-13 03:32:11,615 | INFO | Wrong answers: I'd, I'm
-2024-12-13 03:32:11,662 | INFO | Wrong answers: I'd, I'm, I'm
-2024-12-13 03:32:11,707 | INFO | Wrong answers: I'd, I'm, I'm, I'd
-2024-12-13 03:32:11,754 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd
-2024-12-13 03:32:11,801 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm
-2024-12-13 03:32:11,848 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm
-2024-12-13 03:32:11,895 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd
-2024-12-13 03:32:11,941 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd
-2024-12-13 03:32:11,987 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd
-2024-12-13 03:32:11,987 | INFO | not copying 'stsbenchmark-test-sts.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,987 | INFO | not copying 'fb-anli-pre-hyp.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,987 | INFO | not copying 'stannlp-snli-pre-hyp.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'ms-mrpc.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'fb-anli-hyp-pre.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'sickr-sts.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'onestop_parallel_all_pairs.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'stannlp-snli-hyp-pre.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'amr_true_paraphrases.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'fb-xnli-pre-hyp.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'paws-x-test.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | not copying 'fb-xnli-hyp-pre.json' because it already exists in '/Users/andrew_yos/paraphrasus/benches/to_disregard'.
-2024-12-13 03:32:11,988 | INFO | 
-
-[1;34mPredicting for stsbenchmark...[0m
-2024-12-13 03:32:11,989 | ERROR | An error occurred while reading the file: Expecting value: line 3032 column 33 (char 113571). Will delete it and replace it.
-2024-12-13 03:32:11,990 | INFO | Copied 1 datasets to /Users/andrew_yos/paraphrasus/benches/to_disregard.
-2024-12-13 03:32:11,992 | INFO | 1379 predictions to be made using llama_3_3_70b_ins_q8...
-2024-12-13 03:55:29,235 | INFO | 1379 predictions to be made using llama_3_8b_ins_q4_k_m...
-2024-12-13 03:55:39,560 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer
-2024-12-13 03:57:54,698 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer, The correct
-2024-12-13 03:57:54,743 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer, The correct, The correct
-2024-12-13 03:57:54,790 | INFO | Wrong answers: I'd, I'm, I'm, I'd, I'd, I'm, I'm, I'd, I'd, I'd, The answer, The correct, The correct, The answer
-2024-12-13 03:57:54,791 | ERROR | Unable to get predictions for method llama_3_8b_ins_q4_k_m: method was given 1 predictions but 0 were returned.
-2024-12-13 03:58:30,526 | INFO | 
-
-[1;34mPredicting for ms_mrpc...[0m
-2024-12-13 03:58:30,528 | INFO | 1725 predictions to be made using llama_3_3_70b_ins_q8...
+2024-12-15 19:17:53,234 | INFO | 
+                       SNLI    ANLI    XNLI     STS    SICK
+XLM-RoBERTa-EN-ORIG  32.39%   7.24%  26.69%  46.57%  37.01%
+LLama3 zero-shot P1   7.29%  13.03%  12.33%  12.89%   0.87%
+LLama3 zero-shot P2   1.00%   1.19%   1.36%   2.41%   0.13%
+LLama3 zero-shot P3   1.25%   1.69%   1.32%   3.54%   0.04%
+LLama3 ICL_4 P1       1.95%   2.01%   2.79%   3.54%   0.26%
+LLama3 ICL_4 P2       0.84%   0.75%   0.30%   3.12%   0.00%
+LLama3 ICL_4 P3       0.50%   0.75%   0.25%   2.41%   0.00%
+2024-12-15 19:17:53,248 | INFO | 
+                       TRUE    SIMP
+XLM-RoBERTa-EN-ORIG  31.36%   5.27%
+LLama3 zero-shot P1   8.98%  14.67%
+LLama3 zero-shot P2  34.73%  47.33%
+LLama3 zero-shot P3  35.33%  37.50%
+LLama3 ICL_4 P1      29.94%  33.33%
+LLama3 ICL_4 P2      40.12%  42.33%
+LLama3 ICL_4 P3      50.90%  45.50%
+2024-12-15 19:17:53,677 | INFO | 
+                      PAWSX   STS-H    MRPC
+XLM-RoBERTa-EN-ORIG  15.23%  54.07%  33.41%
+LLama3 zero-shot P1  44.67%  56.21%  23.59%
+LLama3 zero-shot P2  40.73%  37.57%  45.86%
+LLama3 zero-shot P3  38.06%  41.72%  37.51%
+LLama3 ICL_4 P1      38.95%  44.67%  33.22%
+LLama3 ICL_4 P2      34.12%  41.72%  45.16%
+LLama3 ICL_4 P3      33.21%  39.05%  46.72%
