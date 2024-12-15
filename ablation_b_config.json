@@ -1,5 +1,5 @@
 {
-  "bench_id": "paper_ablation_a",
+  "bench_id": "paper_ablation_b",
   "prefixes":{
         "XLM-R-EN Original": "XLM-RoBERTa-EN-ORIG",
     "XLM-R-EN 25% Easy Negatives": "XLM-RoBERTa-EN-EASYNEG-25",

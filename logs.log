@@ -1,0 +1,18 @@
+2024-12-16 00:54:35,127 | INFO | 
+                               SNLI    ANLI    XNLI     STS    SICK
+XLM-R-EN Original            32.39%   7.24%  26.69%  46.57%  37.01%
+XLM-R-EN 25% Easy Negatives  32.76%   5.94%  20.75%  42.59%  32.71%
+XLM-R-EN 50% Easy Negatives  43.61%   7.69%  29.82%  58.91%  50.73%
+XLM-R-EN 75% Easy Negatives  75.83%  38.00%  67.45%  85.33%  78.87%
+2024-12-16 00:54:35,139 | INFO | 
+                               TRUE   SIMP
+XLM-R-EN Original            31.36%  5.27%
+XLM-R-EN 25% Easy Negatives  32.00%  4.00%
+XLM-R-EN 50% Easy Negatives  14.50%  2.26%
+XLM-R-EN 75% Easy Negatives   5.26%  1.07%
+2024-12-16 00:54:35,515 | INFO | 
+                              PAWSX   STS-H    MRPC
+XLM-R-EN Original            15.23%  54.07%  33.41%
+XLM-R-EN 25% Easy Negatives  15.08%  54.80%  32.06%
+XLM-R-EN 50% Easy Negatives  15.85%  58.51%  30.83%
+XLM-R-EN 75% Easy Negatives  17.98%  63.08%  33.19%

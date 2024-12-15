@@ -17,12 +17,6 @@
             "XLM-R-EN 25% Easy Negatives": "32.06%",
             "XLM-R-EN 50% Easy Negatives": "30.83%",
             "XLM-R-EN 75% Easy Negatives": "33.19%"
-        },
-        "total": {
-            "XLM-R-EN Original": "34.24%",
-            "XLM-R-EN 25% Easy Negatives": "33.98%",
-            "XLM-R-EN 50% Easy Negatives": "35.06%",
-            "XLM-R-EN 75% Easy Negatives": "38.08%"
         }
     },
     "Minimize!": {
@@ -55,12 +49,6 @@
             "XLM-R-EN 25% Easy Negatives": "32.71%",
             "XLM-R-EN 50% Easy Negatives": "50.73%",
             "XLM-R-EN 75% Easy Negatives": "78.87%"
-        },
-        "total": {
-            "XLM-R-EN Original": "29.98%",
-            "XLM-R-EN 25% Easy Negatives": "26.95%",
-            "XLM-R-EN 50% Easy Negatives": "38.15%",
-            "XLM-R-EN 75% Easy Negatives": "69.10%"
         }
     },
     "Maximize!": {
@@ -75,18 +63,32 @@
             "XLM-R-EN 25% Easy Negatives": "4.00%",
             "XLM-R-EN 50% Easy Negatives": "2.26%",
             "XLM-R-EN 75% Easy Negatives": "1.07%"
-        },
-        "total": {
-            "XLM-R-EN Original": "18.31%",
-            "XLM-R-EN 25% Easy Negatives": "18.00%",
-            "XLM-R-EN 50% Easy Negatives": "8.38%",
-            "XLM-R-EN 75% Easy Negatives": "3.17%"
         }
     },
     "Averages": {
-        "XLM-R-EN Original": "27.51%",
-        "XLM-R-EN 25% Easy Negatives": "26.31%",
-        "XLM-R-EN 50% Easy Negatives": "27.20%",
-        "XLM-R-EN 75% Easy Negatives": "36.78%"
+        "XLM-R-EN Original": {
+            "Classify!": "34.24%",
+            "Minimize!": "29.98%",
+            "Maximize!": "18.31%",
+            "Overall Average": "27.51%"
+        },
+        "XLM-R-EN 25% Easy Negatives": {
+            "Classify!": "33.98%",
+            "Minimize!": "26.95%",
+            "Maximize!": "18.00%",
+            "Overall Average": "26.31%"
+        },
+        "XLM-R-EN 50% Easy Negatives": {
+            "Classify!": "35.06%",
+            "Minimize!": "38.15%",
+            "Maximize!": "8.38%",
+            "Overall Average": "27.20%"
+        },
+        "XLM-R-EN 75% Easy Negatives": {
+            "Classify!": "38.08%",
+            "Minimize!": "69.10%",
+            "Maximize!": "3.17%",
+            "Overall Average": "36.78%"
+        }
     }
 }
