@@ -25,10 +25,34 @@ methods = {
 bench(methods, bench_id="mybench")
 ```
 
-Finally, to calculate the average error rate for each method, for each predicted dataset:
-
+## Configuration
+Running by configuration is also supported. 
+Assuming the dummy prediction functions above are located at the file my_funcs.py, a configuration file should look like this:
+```json
+{
+  "bench_id": "mybench",
+  "methods": [
+    {
+      "name": "m1",
+      "module": "my_funcs",
+      "function": "predict_method1"
+    },
+    {
+      "name": "m2",
+      "module": "my_funcs",
+      "function": "predict_method2"
+    }
+  ]
+}
+```
+Then, assuming the above configuration is the local file my_config.json, one can run the benchmark like so:
 ```bash
-python3 extract_results.py mybench
+python3 benchmarking.py my_config.json
+```
+
+Finally, the results can be extracted by running:
+```bash
+python3 extract_results.py my_config.json
 ```
 
 which will save the error rates at: benches/mybench/results.json
@@ -67,10 +91,19 @@ The repository is organized as follows:
 │   └── Main benchmarking code, for running predictions on the datasets using specified methods.
 ├── extract_results.py
 │   └── Script for extracting result of a benchmark.
-├── sample_llm.py
-│   └── Sample script to run benchmarks using LM Studio, with the three prompt templates used in the paper.
+├── lm_studio_templates
+|   └──templates.py
+|      └──Sample functions for making prediction functions using LM Studio
+|   └──paper_methods.py
+|      └──methods used in the paper to run benchmarks using LM Studio
+|   └──l70b_methods.py
+|      └──methods to run the benchmark using Llama3.3 70b Q8 and 8b Q4
 ├── logger.py
 │   └── Utility for managing logging: all events are logged both to stdout and to a local logs.log file.
+├── paper_config.json
+│   └── Benchmark configuration for the methods used in the paper.
+├── llama3_3_70b_config.json
+│   └── Benchmark configuration for running the benchmark using Llama3.3 70b Q8 and 8b Q4
 ```
 
 ## Reproducing the Experiments
@@ -93,7 +126,7 @@ python3 extract_results.py paper
 At benches/paper the file results.json is generated:
 ```json
 {
-    "CLF": {
+    "Classify!": {
         "PAWSX": {
             "XLM-RoBERTa-EN-ORIG": "15.23%",
             "LLama3 zero-shot P1": "44.67%",
@@ -131,7 +164,7 @@ At benches/paper the file results.json is generated:
             "LLama3 ICL_4 P3": "39.66%"
         }
     },
-    "MIN": {
+    "Minimize!": {
         "SNLI": {
             "XLM-RoBERTa-EN-ORIG": "32.39%",
             "LLama3 zero-shot P1": "7.29%",
@@ -187,7 +220,7 @@ At benches/paper the file results.json is generated:
             "LLama3 ICL_4 P3": "0.78%"
         }
     },
-    "MAX": {
+    "Maximize!": {
         "TRUE": {
             "XLM-RoBERTa-EN-ORIG": "31.36%",
             "LLama3 zero-shot P1": "8.98%",
@@ -215,6 +248,15 @@ At benches/paper the file results.json is generated:
             "LLama3 ICL_4 P2": "41.22%",
             "LLama3 ICL_4 P3": "48.20%"
         }
+    },
+    "Total": {
+        "XLM-RoBERTa-EN-ORIG": "27.51%",
+        "LLama3 zero-shot P1": "20.87%",
+        "LLama3 zero-shot P2": "27.88%",
+        "LLama3 zero-shot P3": "25.69%",
+        "LLama3 ICL_4 P1": "24.23%",
+        "LLama3 ICL_4 P2": "27.52%",
+        "LLama3 ICL_4 P3": "29.55%"
     }
 }
 ```
