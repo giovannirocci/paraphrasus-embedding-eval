@@ -2,9 +2,10 @@
   "bench_id": "paper_ablation_b",
   "prefixes":{
         "XLM-R-EN Original": "XLM-RoBERTa-EN-ORIG",
-    "XLM-R-EN LLama P1": "XLM-RoBERTa-EN-PARAPH",
-    "XLM-R-EN LLama P2": "XLM-RoBERTa-EN-SEMEQUIV",
-    "XLM-R-EN LLama P3": "XLM-RoBERTa-EN-SAMECONTENT"
+    "XLM-R-EN Llama P1": "XLM-RoBERTa-EN-PARAPH",
+    "XLM-R-EN Llama P2": "XLM-RoBERTa-EN-SEMEQUIV",
+    "XLM-R-EN Llama P3": "XLM-RoBERTa-EN-SAMECONTENT",
+    "XLM-R-EN Llama P1^P2^P3" : "XLM-R-EN-ALLTHREE"
     }
 }
 

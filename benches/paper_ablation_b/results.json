@@ -1,94 +1,94 @@
 {
     "Classify!": {
         "PAWSX": {
-            "XLM-R-EN Original": "15.23%",
-            "XLM-R-EN LLama P1": "45.00%",
-            "XLM-R-EN LLama P2": "34.06%",
-            "XLM-R-EN LLama P3": "30.03%"
+            "XLM-R-EN Original": "15.2%",
+            "XLM-R-EN LLama P1": "45.0%",
+            "XLM-R-EN LLama P2": "34.1%",
+            "XLM-R-EN LLama P3": "30.0%"
         },
         "STS-H": {
-            "XLM-R-EN Original": "54.07%",
-            "XLM-R-EN LLama P1": "63.25%",
-            "XLM-R-EN LLama P2": "58.84%",
-            "XLM-R-EN LLama P3": "56.40%"
+            "XLM-R-EN Original": "54.1%",
+            "XLM-R-EN LLama P1": "63.2%",
+            "XLM-R-EN LLama P2": "58.8%",
+            "XLM-R-EN LLama P3": "56.4%"
         },
         "MRPC": {
-            "XLM-R-EN Original": "33.41%",
-            "XLM-R-EN LLama P1": "33.39%",
-            "XLM-R-EN LLama P2": "32.65%",
-            "XLM-R-EN LLama P3": "32.83%"
+            "XLM-R-EN Original": "33.4%",
+            "XLM-R-EN LLama P1": "33.4%",
+            "XLM-R-EN LLama P2": "32.7%",
+            "XLM-R-EN LLama P3": "32.8%"
         }
     },
     "Minimize!": {
         "SNLI": {
-            "XLM-R-EN Original": "32.39%",
-            "XLM-R-EN LLama P1": "77.86%",
-            "XLM-R-EN LLama P2": "60.29%",
-            "XLM-R-EN LLama P3": "47.55%"
+            "XLM-R-EN Original": "32.4%",
+            "XLM-R-EN LLama P1": "77.9%",
+            "XLM-R-EN LLama P2": "60.3%",
+            "XLM-R-EN LLama P3": "47.5%"
         },
         "ANLI": {
-            "XLM-R-EN Original": "7.24%",
-            "XLM-R-EN LLama P1": "93.13%",
-            "XLM-R-EN LLama P2": "63.69%",
-            "XLM-R-EN LLama P3": "58.72%"
+            "XLM-R-EN Original": "7.2%",
+            "XLM-R-EN LLama P1": "93.1%",
+            "XLM-R-EN LLama P2": "63.7%",
+            "XLM-R-EN LLama P3": "58.7%"
         },
         "XNLI": {
-            "XLM-R-EN Original": "26.69%",
-            "XLM-R-EN LLama P1": "89.88%",
-            "XLM-R-EN LLama P2": "70.82%",
-            "XLM-R-EN LLama P3": "62.59%"
+            "XLM-R-EN Original": "26.7%",
+            "XLM-R-EN LLama P1": "89.9%",
+            "XLM-R-EN LLama P2": "70.8%",
+            "XLM-R-EN LLama P3": "62.6%"
         },
         "STS": {
-            "XLM-R-EN Original": "46.57%",
-            "XLM-R-EN LLama P1": "70.38%",
-            "XLM-R-EN LLama P2": "66.37%",
-            "XLM-R-EN LLama P3": "52.64%"
+            "XLM-R-EN Original": "46.6%",
+            "XLM-R-EN LLama P1": "70.4%",
+            "XLM-R-EN LLama P2": "66.4%",
+            "XLM-R-EN LLama P3": "52.6%"
         },
         "SICK": {
-            "XLM-R-EN Original": "37.01%",
-            "XLM-R-EN LLama P1": "63.75%",
-            "XLM-R-EN LLama P2": "50.61%",
-            "XLM-R-EN LLama P3": "34.50%"
+            "XLM-R-EN Original": "37.0%",
+            "XLM-R-EN LLama P1": "63.7%",
+            "XLM-R-EN LLama P2": "50.6%",
+            "XLM-R-EN LLama P3": "34.5%"
         }
     },
     "Maximize!": {
         "TRUE": {
-            "XLM-R-EN Original": "31.36%",
-            "XLM-R-EN LLama P1": "23.15%",
-            "XLM-R-EN LLama P2": "21.29%",
-            "XLM-R-EN LLama P3": "28.97%"
+            "XLM-R-EN Original": "31.4%",
+            "XLM-R-EN LLama P1": "23.2%",
+            "XLM-R-EN LLama P2": "21.3%",
+            "XLM-R-EN LLama P3": "29.0%"
         },
         "SIMP": {
-            "XLM-R-EN Original": "5.27%",
-            "XLM-R-EN LLama P1": "2.85%",
-            "XLM-R-EN LLama P2": "6.89%",
-            "XLM-R-EN LLama P3": "8.54%"
+            "XLM-R-EN Original": "5.3%",
+            "XLM-R-EN LLama P1": "2.9%",
+            "XLM-R-EN LLama P2": "6.9%",
+            "XLM-R-EN LLama P3": "8.5%"
         }
     },
     "Averages": {
         "XLM-R-EN Original": {
-            "Classify!": "34.24%",
-            "Minimize!": "29.98%",
-            "Maximize!": "18.31%",
-            "Overall Average": "27.51%"
+            "Classify!": "34.2%",
+            "Minimize!": "30.0%",
+            "Maximize!": "18.3%",
+            "Overall Average": "27.5%"
         },
         "XLM-R-EN LLama P1": {
-            "Classify!": "47.21%",
-            "Minimize!": "79.00%",
-            "Maximize!": "13.00%",
-            "Overall Average": "46.40%"
+            "Classify!": "47.2%",
+            "Minimize!": "79.0%",
+            "Maximize!": "13.0%",
+            "Overall Average": "46.4%"
         },
         "XLM-R-EN LLama P2": {
-            "Classify!": "41.85%",
-            "Minimize!": "62.36%",
-            "Maximize!": "14.09%",
-            "Overall Average": "39.43%"
+            "Classify!": "41.9%",
+            "Minimize!": "62.4%",
+            "Maximize!": "14.1%",
+            "Overall Average": "39.5%"
         },
         "XLM-R-EN LLama P3": {
-            "Classify!": "39.75%",
-            "Minimize!": "51.20%",
-            "Maximize!": "18.75%",
-            "Overall Average": "36.57%"
+            "Classify!": "39.7%",
+            "Minimize!": "51.2%",
+            "Maximize!": "18.8%",
+            "Overall Average": "36.6%"
         }
     }
 }

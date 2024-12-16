@@ -9,7 +9,7 @@ from benchmarking import dataset_key_to_base_fname, get_bench_path
 
 logger = mylog.get_logger()
 
-
+PRINT_LATEX = False
 
 def calc(bench_id: str, paths: dict[str, list[str]], method_names_to_prefixes: dict[str, str], expected_prediction: Optional[bool] = False, dataset_to_method_stats= None, is_clf=False):
     bench_path = get_bench_path(bench_id)
@@ -74,10 +74,10 @@ def calc(bench_id: str, paths: dict[str, list[str]], method_names_to_prefixes: d
             if method_name not in data[dataset_key]:
                 data[dataset_key][method_name] = {}
 
-            data[dataset_key][method_name] = f"{error_rate:.2f}%"
+            data[dataset_key][method_name] = f"{error_rate:.1f}%"
 
-    df = pd.DataFrame(data)
-    logger.info("\n" + df.to_string())
+    # df = pd.DataFrame(data)
+    # logger.info("\n" + df.to_string())
 
 
     return data
@@ -93,6 +93,15 @@ def load_config(config_path):
 
 
 if __name__ == '__main__':
+    clf_dataset_group_keys = {
+        "PAWSX": [
+            "pawsx_test"
+        ],
+        "STS-H": ["stsbenchmark"],
+        "MRPC": ["ms_mrpc"]
+    }
+
+
     min_dataset_group_keys = {
         "SNLI": [
             "stanfordnlp_snli_pre_hyp",
@@ -119,13 +128,7 @@ if __name__ == '__main__':
 
     }
 
-    clf_dataset_group_keys = {
-        "PAWSX": [
-            "pawsx_test"
-        ],
-        "STS-H": ["stsbenchmark"],
-        "MRPC": ["ms_mrpc"]
-    }
+
 
 
 
@@ -170,8 +173,6 @@ if __name__ == '__main__':
 
     avg_by_method_by_kind = {}
 
-    # a[m][k]
-    # k: C,M,M,avg
 
 
     # calculate average of each method by kind (kind is min, max, clf)
@@ -189,7 +190,7 @@ if __name__ == '__main__':
 
             if method_name not in avg_by_method_by_kind:
                 avg_by_method_by_kind[method_name] = {}
-            avg_by_method_by_kind[method_name][kind] = f"{avg:.2f}%"
+            avg_by_method_by_kind[method_name][kind] = f"{avg:.1f}%"
 
     b1 = {}
     for method_name, totals_dict in avg_by_method_by_kind.items():
@@ -199,11 +200,48 @@ if __name__ == '__main__':
         b1[method_name] = b1[method_name] / 3
 
     for method_name, a in b1.items():
-        avg_by_method_by_kind[method_name]["Overall Average"] = f"{a:.2f}%"
+        avg_by_method_by_kind[method_name]["Overall Average"] = f"{a:.1f}%"
 
-            # results[kind]['total'][method_name] =
+
 
     results["Averages"] = avg_by_method_by_kind
+
+    final_keys_ordering = [
+        "Classify!",
+        "Minimize!",
+        "Maximize!",
+        "Overall Average"
+    ]
+
+
+    for method_name in avg_by_method_by_kind.keys():
+        s = method_name
+        s+="\n"
+        for method in clf_dataset_group_keys.keys():
+            # print(method)
+            rate = results["Classify!"][method][method_name]
+            rate = rate.replace("%", "")
+            s+=f"& {rate} "
+        for method in min_dataset_group_keys.keys():
+            # print(method)
+            rate = results["Minimize!"][method][method_name]
+            rate = rate.replace("%", "")
+            s += f"& {rate} "
+        for method in max_dataset_group_keys.keys():
+            # print(method)
+            rate = results["Maximize!"][method][method_name]
+            rate = rate.replace("%", "")
+            s += f"& {rate} "
+        for method in final_keys_ordering:
+            # print(method)
+            rate = avg_by_method_by_kind[method_name][method]
+            rate = rate.replace("%", "")
+            s += f"& {rate} "
+
+        if PRINT_LATEX:
+            print(s+"\n")
+
+
 
 
     bench_path = get_bench_path(bench_id)
