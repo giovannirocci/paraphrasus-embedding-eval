@@ -1,4 +1,4 @@
-# Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models](https://arxiv.org/abs/2409.12060)
+# Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models](https://aclanthology.org/2025.coling-main.585/)
 ![License: AGPLV3+](https://img.shields.io/badge/License-AGPLV3+-brightgreen.svg)
 
 This repository contains the code and datasets for benchmarking a paraphrase detector, as described in our COLING 2025 paper *PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models*. It also has the scripts that allow reproduction and extension of the results that are displayed in the paper.
@@ -273,14 +273,24 @@ You can run your own experiments using any prediction methods of your choosing.
 If you would like to cite this project, or the associated paper, here's a bibtex:
 
 ```bibtex
-@misc{michail2024paraphrasuscomprehensivebenchmark,
-  title        = {PARAPHRASUS : A Comprehensive Benchmark for Evaluating Paraphrase Detection Models}, 
-  author       = {Andrianos Michail and Simon Clematide and Juri Opitz},
-  year         = {2024},
-  eprint       = {2409.12060},
-  archivePrefix= {arXiv},
-  primaryClass = {cs.CL},
-  url          = {https://arxiv.org/abs/2409.12060}, 
+@inproceedings{michail-etal-2025-paraphrasus,
+    title = "{PARAPHRASUS}: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models",
+    author = "Michail, Andrianos  and
+      Clematide, Simon  and
+      Opitz, Juri",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.585/",
+    pages = "8749--8762"
 }
 ```
 
