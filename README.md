@@ -1,5 +1,5 @@
 # Benchmarking library and reproduction code for [PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models](https://aclanthology.org/2025.coling-main.585/)
-![License: AGPLV3+](https://img.shields.io/badge/License-AGPLV3+-brightgreen.svg)
+<img height="48" alt="COLING2025 Abu Dhabi" src="https://github.com/user-attachments/assets/d84f99e0-ac15-443c-b9ef-a196b64e1da7"/> ![License: AGPLV3+](https://img.shields.io/badge/License-AGPLV3+-brightgreen.svg)
 
 This repository contains the code and datasets for benchmarking a paraphrase detector, as described in our COLING 2025 paper *PARAPHRASUS: A Comprehensive Benchmark for Evaluating Paraphrase Detection Models*. It also has the scripts that allow reproduction and extension of the results that are displayed in the paper.
 
