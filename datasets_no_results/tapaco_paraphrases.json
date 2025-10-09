@@ -1,0 +1,3874 @@
+{
+  "tapaco/0_0_1": {
+    "sentence1": "Gitmeye karar verdiğini bilmiyordum.",
+    "sentence2": "Ayrılmaya karar verip vermediklerini bilmiyorum."
+  },
+  "tapaco/0_0_2": {
+    "sentence1": "Gitmeye karar verdiğini bilmiyordum.",
+    "sentence2": "J'ignore si elles ont décidé de s'en aller."
+  },
+  "tapaco/0_0_3": {
+    "sentence1": "Gitmeye karar verdiğini bilmiyordum.",
+    "sentence2": "Je ne sais pas s'ils ont décidé de partir."
+  },
+  "tapaco/0_0_4": {
+    "sentence1": "Gitmeye karar verdiğini bilmiyordum.",
+    "sentence2": "Я не знал, что он решил уехать."
+  },
+  "tapaco/0_1_2": {
+    "sentence1": "Ayrılmaya karar verip vermediklerini bilmiyorum.",
+    "sentence2": "J'ignore si elles ont décidé de s'en aller."
+  },
+  "tapaco/0_1_3": {
+    "sentence1": "Ayrılmaya karar verip vermediklerini bilmiyorum.",
+    "sentence2": "Je ne sais pas s'ils ont décidé de partir."
+  },
+  "tapaco/0_1_4": {
+    "sentence1": "Ayrılmaya karar verip vermediklerini bilmiyorum.",
+    "sentence2": "Я не знал, что он решил уехать."
+  },
+  "tapaco/0_2_3": {
+    "sentence1": "J'ignore si elles ont décidé de s'en aller.",
+    "sentence2": "Je ne sais pas s'ils ont décidé de partir."
+  },
+  "tapaco/0_2_4": {
+    "sentence1": "J'ignore si elles ont décidé de s'en aller.",
+    "sentence2": "Я не знал, что он решил уехать."
+  },
+  "tapaco/0_3_4": {
+    "sentence1": "Je ne sais pas s'ils ont décidé de partir.",
+    "sentence2": "Я не знал, что он решил уехать."
+  },
+  "tapaco/1_0_1": {
+    "sentence1": "Du hast ihn dort.",
+    "sentence2": "Sie haben ihn dort."
+  },
+  "tapaco/1_0_2": {
+    "sentence1": "Du hast ihn dort.",
+    "sentence2": "Ihr habt ihn dort."
+  },
+  "tapaco/1_1_2": {
+    "sentence1": "Sie haben ihn dort.",
+    "sentence2": "Ihr habt ihn dort."
+  },
+  "tapaco/2_0_1": {
+    "sentence1": "Qui c'è gente molto malata!",
+    "sentence2": "La gente qui è molto malata!"
+  },
+  "tapaco/2_0_2": {
+    "sentence1": "Qui c'è gente molto malata!",
+    "sentence2": "Le persone qui sono molto malate!"
+  },
+  "tapaco/2_1_2": {
+    "sentence1": "La gente qui è molto malata!",
+    "sentence2": "Le persone qui sono molto malate!"
+  },
+  "tapaco/3_0_1": {
+    "sentence1": "Test nasıldı? \"Çok zor olmadığını düşündüm.\"",
+    "sentence2": "איך היתה הבחינה? \"לא כל כך קשה כפי שציפיתי שתהיה.\""
+  },
+  "tapaco/3_0_2": {
+    "sentence1": "Test nasıldı? \"Çok zor olmadığını düşündüm.\"",
+    "sentence2": "Test nasıldı? \"Olacağını düşündüğüm kadar zor değildi.\""
+  },
+  "tapaco/3_0_3": {
+    "sentence1": "Test nasıldı? \"Çok zor olmadığını düşündüm.\"",
+    "sentence2": "איך היה המבחן? \"חשבתי שהוא לא היה כל כך קשה.\""
+  },
+  "tapaco/3_0_4": {
+    "sentence1": "Test nasıldı? \"Çok zor olmadığını düşündüm.\"",
+    "sentence2": "How was the test? \"I thought it wasn't too hard.\""
+  },
+  "tapaco/3_1_2": {
+    "sentence1": "איך היתה הבחינה? \"לא כל כך קשה כפי שציפיתי שתהיה.\"",
+    "sentence2": "Test nasıldı? \"Olacağını düşündüğüm kadar zor değildi.\""
+  },
+  "tapaco/3_1_3": {
+    "sentence1": "איך היתה הבחינה? \"לא כל כך קשה כפי שציפיתי שתהיה.\"",
+    "sentence2": "איך היה המבחן? \"חשבתי שהוא לא היה כל כך קשה.\""
+  },
+  "tapaco/3_1_4": {
+    "sentence1": "איך היתה הבחינה? \"לא כל כך קשה כפי שציפיתי שתהיה.\"",
+    "sentence2": "How was the test? \"I thought it wasn't too hard.\""
+  },
+  "tapaco/3_2_3": {
+    "sentence1": "Test nasıldı? \"Olacağını düşündüğüm kadar zor değildi.\"",
+    "sentence2": "איך היה המבחן? \"חשבתי שהוא לא היה כל כך קשה.\""
+  },
+  "tapaco/3_2_4": {
+    "sentence1": "Test nasıldı? \"Olacağını düşündüğüm kadar zor değildi.\"",
+    "sentence2": "How was the test? \"I thought it wasn't too hard.\""
+  },
+  "tapaco/3_3_4": {
+    "sentence1": "איך היה המבחן? \"חשבתי שהוא לא היה כל כך קשה.\"",
+    "sentence2": "How was the test? \"I thought it wasn't too hard.\""
+  },
+  "tapaco/4_0_1": {
+    "sentence1": "Љуботиен си, зарем не?",
+    "sentence2": "Vous êtes curieuses, hein ?"
+  },
+  "tapaco/4_0_2": {
+    "sentence1": "Љуботиен си, зарем не?",
+    "sentence2": "Siete curiose, vero?"
+  },
+  "tapaco/4_0_3": {
+    "sentence1": "Љуботиен си, зарем не?",
+    "sentence2": "Те копка, нели?"
+  },
+  "tapaco/4_0_4": {
+    "sentence1": "Љуботиен си, зарем не?",
+    "sentence2": "Tu es curieuse, non ?"
+  },
+  "tapaco/4_1_2": {
+    "sentence1": "Vous êtes curieuses, hein ?",
+    "sentence2": "Siete curiose, vero?"
+  },
+  "tapaco/4_1_3": {
+    "sentence1": "Vous êtes curieuses, hein ?",
+    "sentence2": "Те копка, нели?"
+  },
+  "tapaco/4_1_4": {
+    "sentence1": "Vous êtes curieuses, hein ?",
+    "sentence2": "Tu es curieuse, non ?"
+  },
+  "tapaco/4_2_3": {
+    "sentence1": "Siete curiose, vero?",
+    "sentence2": "Те копка, нели?"
+  },
+  "tapaco/4_2_4": {
+    "sentence1": "Siete curiose, vero?",
+    "sentence2": "Tu es curieuse, non ?"
+  },
+  "tapaco/4_3_4": {
+    "sentence1": "Те копка, нели?",
+    "sentence2": "Tu es curieuse, non ?"
+  },
+  "tapaco/5_0_1": {
+    "sentence1": "Comment se déroule le projet ?",
+    "sentence2": "Kiel disvolviĝas la projekto?"
+  },
+  "tapaco/5_0_2": {
+    "sentence1": "Comment se déroule le projet ?",
+    "sentence2": "Comment va le projet ?"
+  },
+  "tapaco/5_0_3": {
+    "sentence1": "Comment se déroule le projet ?",
+    "sentence2": "Как продвигается проект?"
+  },
+  "tapaco/5_0_4": {
+    "sentence1": "Comment se déroule le projet ?",
+    "sentence2": "Miten projekti etenee?"
+  },
+  "tapaco/5_1_2": {
+    "sentence1": "Kiel disvolviĝas la projekto?",
+    "sentence2": "Comment va le projet ?"
+  },
+  "tapaco/5_1_3": {
+    "sentence1": "Kiel disvolviĝas la projekto?",
+    "sentence2": "Как продвигается проект?"
+  },
+  "tapaco/5_1_4": {
+    "sentence1": "Kiel disvolviĝas la projekto?",
+    "sentence2": "Miten projekti etenee?"
+  },
+  "tapaco/5_2_3": {
+    "sentence1": "Comment va le projet ?",
+    "sentence2": "Как продвигается проект?"
+  },
+  "tapaco/5_2_4": {
+    "sentence1": "Comment va le projet ?",
+    "sentence2": "Miten projekti etenee?"
+  },
+  "tapaco/5_3_4": {
+    "sentence1": "Как продвигается проект?",
+    "sentence2": "Miten projekti etenee?"
+  },
+  "tapaco/6_0_1": {
+    "sentence1": "Aṭas i iru Tom.",
+    "sentence2": "Tom was crying a lot."
+  },
+  "tapaco/6_0_2": {
+    "sentence1": "Aṭas i iru Tom.",
+    "sentence2": "Tom cried a lot."
+  },
+  "tapaco/6_0_3": {
+    "sentence1": "Aṭas i iru Tom.",
+    "sentence2": "Tom çok ağladı."
+  },
+  "tapaco/6_0_4": {
+    "sentence1": "Aṭas i iru Tom.",
+    "sentence2": "Iru aṭas Tom."
+  },
+  "tapaco/6_1_2": {
+    "sentence1": "Tom was crying a lot.",
+    "sentence2": "Tom cried a lot."
+  },
+  "tapaco/6_1_3": {
+    "sentence1": "Tom was crying a lot.",
+    "sentence2": "Tom çok ağladı."
+  },
+  "tapaco/6_1_4": {
+    "sentence1": "Tom was crying a lot.",
+    "sentence2": "Iru aṭas Tom."
+  },
+  "tapaco/6_2_3": {
+    "sentence1": "Tom cried a lot.",
+    "sentence2": "Tom çok ağladı."
+  },
+  "tapaco/6_2_4": {
+    "sentence1": "Tom cried a lot.",
+    "sentence2": "Iru aṭas Tom."
+  },
+  "tapaco/6_3_4": {
+    "sentence1": "Tom çok ağladı.",
+    "sentence2": "Iru aṭas Tom."
+  },
+  "tapaco/7_0_1": {
+    "sentence1": "Tom verkoopt zijn schaap.",
+    "sentence2": "Tom verkoopt zijn schapen."
+  },
+  "tapaco/7_0_2": {
+    "sentence1": "Tom verkoopt zijn schaap.",
+    "sentence2": "Том продаёт свою овцу."
+  },
+  "tapaco/7_0_3": {
+    "sentence1": "Tom verkoopt zijn schaap.",
+    "sentence2": "Том продаёт своих овец."
+  },
+  "tapaco/7_1_2": {
+    "sentence1": "Tom verkoopt zijn schapen.",
+    "sentence2": "Том продаёт свою овцу."
+  },
+  "tapaco/7_1_3": {
+    "sentence1": "Tom verkoopt zijn schapen.",
+    "sentence2": "Том продаёт своих овец."
+  },
+  "tapaco/7_2_3": {
+    "sentence1": "Том продаёт свою овцу.",
+    "sentence2": "Том продаёт своих овец."
+  },
+  "tapaco/8_0_1": {
+    "sentence1": "Non mi risponda.",
+    "sentence2": "No me repliques."
+  },
+  "tapaco/8_0_2": {
+    "sentence1": "Non mi risponda.",
+    "sentence2": "Ne respondu min!"
+  },
+  "tapaco/8_0_3": {
+    "sentence1": "Non mi risponda.",
+    "sentence2": "No me respondas."
+  },
+  "tapaco/8_0_4": {
+    "sentence1": "Non mi risponda.",
+    "sentence2": "Non rispondetemi."
+  },
+  "tapaco/8_1_2": {
+    "sentence1": "No me repliques.",
+    "sentence2": "Ne respondu min!"
+  },
+  "tapaco/8_1_3": {
+    "sentence1": "No me repliques.",
+    "sentence2": "No me respondas."
+  },
+  "tapaco/8_1_4": {
+    "sentence1": "No me repliques.",
+    "sentence2": "Non rispondetemi."
+  },
+  "tapaco/8_2_3": {
+    "sentence1": "Ne respondu min!",
+    "sentence2": "No me respondas."
+  },
+  "tapaco/8_2_4": {
+    "sentence1": "Ne respondu min!",
+    "sentence2": "Non rispondetemi."
+  },
+  "tapaco/8_3_4": {
+    "sentence1": "No me respondas.",
+    "sentence2": "Non rispondetemi."
+  },
+  "tapaco/9_0_1": {
+    "sentence1": "Vení que te reviso el pulso.",
+    "sentence2": "Ven, qué te tomo el pulso."
+  },
+  "tapaco/9_0_2": {
+    "sentence1": "Vení que te reviso el pulso.",
+    "sentence2": "Входите. Дайте мне проверить Ваш пульс."
+  },
+  "tapaco/9_0_3": {
+    "sentence1": "Vení que te reviso el pulso.",
+    "sentence2": "Входите. Давайте, я проверю ваш пульс."
+  },
+  "tapaco/9_0_4": {
+    "sentence1": "Vení que te reviso el pulso.",
+    "sentence2": "Заходи, я проверю твой пульс."
+  },
+  "tapaco/9_1_2": {
+    "sentence1": "Ven, qué te tomo el pulso.",
+    "sentence2": "Входите. Дайте мне проверить Ваш пульс."
+  },
+  "tapaco/9_1_3": {
+    "sentence1": "Ven, qué te tomo el pulso.",
+    "sentence2": "Входите. Давайте, я проверю ваш пульс."
+  },
+  "tapaco/9_1_4": {
+    "sentence1": "Ven, qué te tomo el pulso.",
+    "sentence2": "Заходи, я проверю твой пульс."
+  },
+  "tapaco/9_2_3": {
+    "sentence1": "Входите. Дайте мне проверить Ваш пульс.",
+    "sentence2": "Входите. Давайте, я проверю ваш пульс."
+  },
+  "tapaco/9_2_4": {
+    "sentence1": "Входите. Дайте мне проверить Ваш пульс.",
+    "sentence2": "Заходи, я проверю твой пульс."
+  },
+  "tapaco/9_3_4": {
+    "sentence1": "Входите. Давайте, я проверю ваш пульс.",
+    "sentence2": "Заходи, я проверю твой пульс."
+  },
+  "tapaco/10_0_1": {
+    "sentence1": "Tom'u bir doktora götürmem gerekiyor.",
+    "sentence2": "Tom'u bir doktora götürmeliyim."
+  },
+  "tapaco/10_0_2": {
+    "sentence1": "Tom'u bir doktora götürmem gerekiyor.",
+    "sentence2": "Мені потрібно відвести Тома до лікаря."
+  },
+  "tapaco/10_0_3": {
+    "sentence1": "Tom'u bir doktora götürmem gerekiyor.",
+    "sentence2": "Мені потрібно відвезти Тома до лікаря."
+  },
+  "tapaco/10_1_2": {
+    "sentence1": "Tom'u bir doktora götürmeliyim.",
+    "sentence2": "Мені потрібно відвести Тома до лікаря."
+  },
+  "tapaco/10_1_3": {
+    "sentence1": "Tom'u bir doktora götürmeliyim.",
+    "sentence2": "Мені потрібно відвезти Тома до лікаря."
+  },
+  "tapaco/10_2_3": {
+    "sentence1": "Мені потрібно відвести Тома до лікаря.",
+    "sentence2": "Мені потрібно відвезти Тома до лікаря."
+  },
+  "tapaco/11_0_1": {
+    "sentence1": "Pourquoi ne nous l'as-tu pas dit ?",
+    "sentence2": "Pourquoi ne nous l'avez-vous pas dit ?"
+  },
+  "tapaco/11_0_2": {
+    "sentence1": "Pourquoi ne nous l'as-tu pas dit ?",
+    "sentence2": "Почему ты нам этого не сказал?"
+  },
+  "tapaco/11_0_3": {
+    "sentence1": "Pourquoi ne nous l'as-tu pas dit ?",
+    "sentence2": "Почему вы нам этого не сказали?"
+  },
+  "tapaco/11_1_2": {
+    "sentence1": "Pourquoi ne nous l'avez-vous pas dit ?",
+    "sentence2": "Почему ты нам этого не сказал?"
+  },
+  "tapaco/11_1_3": {
+    "sentence1": "Pourquoi ne nous l'avez-vous pas dit ?",
+    "sentence2": "Почему вы нам этого не сказали?"
+  },
+  "tapaco/11_2_3": {
+    "sentence1": "Почему ты нам этого не сказал?",
+    "sentence2": "Почему вы нам этого не сказали?"
+  },
+  "tapaco/12_0_1": {
+    "sentence1": "Egész éjjel szeretkeztek.",
+    "sentence2": "Szeretkeztek egész éjszaka."
+  },
+  "tapaco/12_0_2": {
+    "sentence1": "Egész éjjel szeretkeztek.",
+    "sentence2": "Водили су љубав целе ноћи."
+  },
+  "tapaco/12_0_3": {
+    "sentence1": "Egész éjjel szeretkeztek.",
+    "sentence2": "Vodili su ljubav cele noći."
+  },
+  "tapaco/12_1_2": {
+    "sentence1": "Szeretkeztek egész éjszaka.",
+    "sentence2": "Водили су љубав целе ноћи."
+  },
+  "tapaco/12_1_3": {
+    "sentence1": "Szeretkeztek egész éjszaka.",
+    "sentence2": "Vodili su ljubav cele noći."
+  },
+  "tapaco/12_2_3": {
+    "sentence1": "Водили су љубав целе ноћи.",
+    "sentence2": "Vodili su ljubav cele noći."
+  },
+  "tapaco/13_0_1": {
+    "sentence1": "Metu viajn ĉapelon kaj surtuton en la halon.",
+    "sentence2": "Lasu vian ĉapelon kaj mantelon en la koridoro."
+  },
+  "tapaco/13_0_2": {
+    "sentence1": "Metu viajn ĉapelon kaj surtuton en la halon.",
+    "sentence2": "השאר את הכובע ואת המעיל שלך במסדרון."
+  },
+  "tapaco/13_0_3": {
+    "sentence1": "Metu viajn ĉapelon kaj surtuton en la halon.",
+    "sentence2": "השאירו את הכובע ואת המעיל שלכם במסדרון."
+  },
+  "tapaco/13_1_2": {
+    "sentence1": "Lasu vian ĉapelon kaj mantelon en la koridoro.",
+    "sentence2": "השאר את הכובע ואת המעיל שלך במסדרון."
+  },
+  "tapaco/13_1_3": {
+    "sentence1": "Lasu vian ĉapelon kaj mantelon en la koridoro.",
+    "sentence2": "השאירו את הכובע ואת המעיל שלכם במסדרון."
+  },
+  "tapaco/13_2_3": {
+    "sentence1": "השאר את הכובע ואת המעיל שלך במסדרון.",
+    "sentence2": "השאירו את הכובע ואת המעיל שלכם במסדרון."
+  },
+  "tapaco/14_0_1": {
+    "sentence1": "Почему вы не дадите нам самим решить?",
+    "sentence2": "Perché non fate decidere noi stessi?"
+  },
+  "tapaco/14_0_2": {
+    "sentence1": "Почему вы не дадите нам самим решить?",
+    "sentence2": "Почему бы тебе не дать нам самим решить?"
+  },
+  "tapaco/14_0_3": {
+    "sentence1": "Почему вы не дадите нам самим решить?",
+    "sentence2": "Почему ты не дашь нам самим решить?"
+  },
+  "tapaco/14_0_4": {
+    "sentence1": "Почему вы не дадите нам самим решить?",
+    "sentence2": "Perché non fai decidere noi stessi?"
+  },
+  "tapaco/14_1_2": {
+    "sentence1": "Perché non fate decidere noi stessi?",
+    "sentence2": "Почему бы тебе не дать нам самим решить?"
+  },
+  "tapaco/14_1_3": {
+    "sentence1": "Perché non fate decidere noi stessi?",
+    "sentence2": "Почему ты не дашь нам самим решить?"
+  },
+  "tapaco/14_1_4": {
+    "sentence1": "Perché non fate decidere noi stessi?",
+    "sentence2": "Perché non fai decidere noi stessi?"
+  },
+  "tapaco/14_2_3": {
+    "sentence1": "Почему бы тебе не дать нам самим решить?",
+    "sentence2": "Почему ты не дашь нам самим решить?"
+  },
+  "tapaco/14_2_4": {
+    "sentence1": "Почему бы тебе не дать нам самим решить?",
+    "sentence2": "Perché non fai decidere noi stessi?"
+  },
+  "tapaco/14_3_4": {
+    "sentence1": "Почему ты не дашь нам самим решить?",
+    "sentence2": "Perché non fai decidere noi stessi?"
+  },
+  "tapaco/15_0_1": {
+    "sentence1": "Не забудь взять с собою фотоаппарат.",
+    "sentence2": "Μη ξεχάσεις να πάρεις μαζί σου φωτογραφική μηχανή."
+  },
+  "tapaco/15_0_2": {
+    "sentence1": "Не забудь взять с собою фотоаппарат.",
+    "sentence2": "Не забудь взять фотоаппарат."
+  },
+  "tapaco/15_0_3": {
+    "sentence1": "Не забудь взять с собою фотоаппарат.",
+    "sentence2": "No te olvides de llevar una cámara."
+  },
+  "tapaco/15_0_4": {
+    "sentence1": "Не забудь взять с собою фотоаппарат.",
+    "sentence2": "Ne forgesu kunpreni filmilon."
+  },
+  "tapaco/15_1_2": {
+    "sentence1": "Μη ξεχάσεις να πάρεις μαζί σου φωτογραφική μηχανή.",
+    "sentence2": "Не забудь взять фотоаппарат."
+  },
+  "tapaco/15_1_3": {
+    "sentence1": "Μη ξεχάσεις να πάρεις μαζί σου φωτογραφική μηχανή.",
+    "sentence2": "No te olvides de llevar una cámara."
+  },
+  "tapaco/15_1_4": {
+    "sentence1": "Μη ξεχάσεις να πάρεις μαζί σου φωτογραφική μηχανή.",
+    "sentence2": "Ne forgesu kunpreni filmilon."
+  },
+  "tapaco/15_2_3": {
+    "sentence1": "Не забудь взять фотоаппарат.",
+    "sentence2": "No te olvides de llevar una cámara."
+  },
+  "tapaco/15_2_4": {
+    "sentence1": "Не забудь взять фотоаппарат.",
+    "sentence2": "Ne forgesu kunpreni filmilon."
+  },
+  "tapaco/15_3_4": {
+    "sentence1": "No te olvides de llevar una cámara.",
+    "sentence2": "Ne forgesu kunpreni filmilon."
+  },
+  "tapaco/16_0_1": {
+    "sentence1": "Marie tella tessemsaway tijejjigin.",
+    "sentence2": "Marie tessemsawi tijejjigin-nni."
+  },
+  "tapaco/16_0_2": {
+    "sentence1": "Marie tella tessemsaway tijejjigin.",
+    "sentence2": "Marie arrangeait les fleurs."
+  },
+  "tapaco/16_0_3": {
+    "sentence1": "Marie tella tessemsaway tijejjigin.",
+    "sentence2": "Marie a arrangé les fleurs."
+  },
+  "tapaco/16_1_2": {
+    "sentence1": "Marie tessemsawi tijejjigin-nni.",
+    "sentence2": "Marie arrangeait les fleurs."
+  },
+  "tapaco/16_1_3": {
+    "sentence1": "Marie tessemsawi tijejjigin-nni.",
+    "sentence2": "Marie a arrangé les fleurs."
+  },
+  "tapaco/16_2_3": {
+    "sentence1": "Marie arrangeait les fleurs.",
+    "sentence2": "Marie a arrangé les fleurs."
+  },
+  "tapaco/17_0_1": {
+    "sentence1": "Tomo aranĝas matĉojn de bokso inter kanguruoj en Aŭstralio.",
+    "sentence2": "Tomo okazigas bokso-matĉojn inter kanguruoj en Aŭstralio."
+  },
+  "tapaco/17_0_2": {
+    "sentence1": "Tomo aranĝas matĉojn de bokso inter kanguruoj en Aŭstralio.",
+    "sentence2": "Tomo aranĝas boksajn maĉojn inter kanguruoj en Aŭstralio."
+  },
+  "tapaco/17_1_2": {
+    "sentence1": "Tomo okazigas bokso-matĉojn inter kanguruoj en Aŭstralio.",
+    "sentence2": "Tomo aranĝas boksajn maĉojn inter kanguruoj en Aŭstralio."
+  },
+  "tapaco/18_0_1": {
+    "sentence1": "毎朝地下鉄があまり込まなければいいのになあ。",
+    "sentence2": "Espereble la metroo ne estas ĉiumatene tiel plena."
+  },
+  "tapaco/18_0_2": {
+    "sentence1": "毎朝地下鉄があまり込まなければいいのになあ。",
+    "sentence2": "Mi ŝatus, se la metroo ne estus tiom homplena ĉiumatene."
+  },
+  "tapaco/18_0_3": {
+    "sentence1": "毎朝地下鉄があまり込まなければいいのになあ。",
+    "sentence2": "Vorrei che la metropolitana non fosse così affollata ogni mattina."
+  },
+  "tapaco/18_0_4": {
+    "sentence1": "毎朝地下鉄があまり込まなければいいのになあ。",
+    "sentence2": "Speriamo che la metropolitana non sia così piena ogni mattina."
+  },
+  "tapaco/18_1_2": {
+    "sentence1": "Espereble la metroo ne estas ĉiumatene tiel plena.",
+    "sentence2": "Mi ŝatus, se la metroo ne estus tiom homplena ĉiumatene."
+  },
+  "tapaco/18_1_3": {
+    "sentence1": "Espereble la metroo ne estas ĉiumatene tiel plena.",
+    "sentence2": "Vorrei che la metropolitana non fosse così affollata ogni mattina."
+  },
+  "tapaco/18_1_4": {
+    "sentence1": "Espereble la metroo ne estas ĉiumatene tiel plena.",
+    "sentence2": "Speriamo che la metropolitana non sia così piena ogni mattina."
+  },
+  "tapaco/18_2_3": {
+    "sentence1": "Mi ŝatus, se la metroo ne estus tiom homplena ĉiumatene.",
+    "sentence2": "Vorrei che la metropolitana non fosse così affollata ogni mattina."
+  },
+  "tapaco/18_2_4": {
+    "sentence1": "Mi ŝatus, se la metroo ne estus tiom homplena ĉiumatene.",
+    "sentence2": "Speriamo che la metropolitana non sia così piena ogni mattina."
+  },
+  "tapaco/18_3_4": {
+    "sentence1": "Vorrei che la metropolitana non fosse così affollata ogni mattina.",
+    "sentence2": "Speriamo che la metropolitana non sia così piena ogni mattina."
+  },
+  "tapaco/19_0_1": {
+    "sentence1": "¡Aquí está el maestro!",
+    "sentence2": "¡Aquí está el campeón!"
+  },
+  "tapaco/19_0_2": {
+    "sentence1": "¡Aquí está el maestro!",
+    "sentence2": "Вот чемпион!"
+  },
+  "tapaco/19_0_3": {
+    "sentence1": "¡Aquí está el maestro!",
+    "sentence2": "Jen la ĉampiono!"
+  },
+  "tapaco/19_0_4": {
+    "sentence1": "¡Aquí está el maestro!",
+    "sentence2": "Jen la majstro!"
+  },
+  "tapaco/19_1_2": {
+    "sentence1": "¡Aquí está el campeón!",
+    "sentence2": "Вот чемпион!"
+  },
+  "tapaco/19_1_3": {
+    "sentence1": "¡Aquí está el campeón!",
+    "sentence2": "Jen la ĉampiono!"
+  },
+  "tapaco/19_1_4": {
+    "sentence1": "¡Aquí está el campeón!",
+    "sentence2": "Jen la majstro!"
+  },
+  "tapaco/19_2_3": {
+    "sentence1": "Вот чемпион!",
+    "sentence2": "Jen la ĉampiono!"
+  },
+  "tapaco/19_2_4": {
+    "sentence1": "Вот чемпион!",
+    "sentence2": "Jen la majstro!"
+  },
+  "tapaco/19_3_4": {
+    "sentence1": "Jen la ĉampiono!",
+    "sentence2": "Jen la majstro!"
+  },
+  "tapaco/20_0_1": {
+    "sentence1": "Seg 2006 ay yezdeɣ deg Ankara.",
+    "sentence2": "Seg walfin u setta ay yezdeɣ deg Ankara."
+  },
+  "tapaco/20_0_2": {
+    "sentence1": "Seg 2006 ay yezdeɣ deg Ankara.",
+    "sentence2": "Seg sin n yigiman ed sḍis ay yezdeɣ deg Ankara."
+  },
+  "tapaco/20_1_2": {
+    "sentence1": "Seg walfin u setta ay yezdeɣ deg Ankara.",
+    "sentence2": "Seg sin n yigiman ed sḍis ay yezdeɣ deg Ankara."
+  },
+  "tapaco/21_0_1": {
+    "sentence1": "La nuboj ŝvebantaj enĉiele estas mirindaj.",
+    "sentence2": "Belega estas nuboj ŝvebantaj enĉiele."
+  },
+  "tapaco/21_0_2": {
+    "sentence1": "La nuboj ŝvebantaj enĉiele estas mirindaj.",
+    "sentence2": "יפים הם העננים המשייטים בשמים."
+  },
+  "tapaco/21_0_3": {
+    "sentence1": "La nuboj ŝvebantaj enĉiele estas mirindaj.",
+    "sentence2": "העננים המשייטים בשמים הם יפים."
+  },
+  "tapaco/21_1_2": {
+    "sentence1": "Belega estas nuboj ŝvebantaj enĉiele.",
+    "sentence2": "יפים הם העננים המשייטים בשמים."
+  },
+  "tapaco/21_1_3": {
+    "sentence1": "Belega estas nuboj ŝvebantaj enĉiele.",
+    "sentence2": "העננים המשייטים בשמים הם יפים."
+  },
+  "tapaco/21_2_3": {
+    "sentence1": "יפים הם העננים המשייטים בשמים.",
+    "sentence2": "העננים המשייטים בשמים הם יפים."
+  },
+  "tapaco/22_0_1": {
+    "sentence1": "A futó lélegzet után kapkodott.",
+    "sentence2": "Løberen var stakåndet."
+  },
+  "tapaco/22_0_2": {
+    "sentence1": "A futó lélegzet után kapkodott.",
+    "sentence2": "A futó levegő után kapkodott."
+  },
+  "tapaco/22_0_3": {
+    "sentence1": "A futó lélegzet után kapkodott.",
+    "sentence2": "Løberen hev efter vejret."
+  },
+  "tapaco/22_0_4": {
+    "sentence1": "A futó lélegzet után kapkodott.",
+    "sentence2": "La kuristo anhelis."
+  },
+  "tapaco/22_1_2": {
+    "sentence1": "Løberen var stakåndet.",
+    "sentence2": "A futó levegő után kapkodott."
+  },
+  "tapaco/22_1_3": {
+    "sentence1": "Løberen var stakåndet.",
+    "sentence2": "Løberen hev efter vejret."
+  },
+  "tapaco/22_1_4": {
+    "sentence1": "Løberen var stakåndet.",
+    "sentence2": "La kuristo anhelis."
+  },
+  "tapaco/22_2_3": {
+    "sentence1": "A futó levegő után kapkodott.",
+    "sentence2": "Løberen hev efter vejret."
+  },
+  "tapaco/22_2_4": {
+    "sentence1": "A futó levegő után kapkodott.",
+    "sentence2": "La kuristo anhelis."
+  },
+  "tapaco/22_3_4": {
+    "sentence1": "Løberen hev efter vejret.",
+    "sentence2": "La kuristo anhelis."
+  },
+  "tapaco/23_0_1": {
+    "sentence1": "היו\"ר קרא את הישיבה לסדר.",
+    "sentence2": "The chairman opened the meeting."
+  },
+  "tapaco/23_0_2": {
+    "sentence1": "היו\"ר קרא את הישיבה לסדר.",
+    "sentence2": "Председатель открыл собрание."
+  },
+  "tapaco/23_0_3": {
+    "sentence1": "היו\"ר קרא את הישיבה לסדר.",
+    "sentence2": "Başkan emir vermek için toplantıyı aradı."
+  },
+  "tapaco/23_0_4": {
+    "sentence1": "היו\"ר קרא את הישיבה לסדר.",
+    "sentence2": "Başkan toplantıyı açtı."
+  },
+  "tapaco/23_1_2": {
+    "sentence1": "The chairman opened the meeting.",
+    "sentence2": "Председатель открыл собрание."
+  },
+  "tapaco/23_1_3": {
+    "sentence1": "The chairman opened the meeting.",
+    "sentence2": "Başkan emir vermek için toplantıyı aradı."
+  },
+  "tapaco/23_1_4": {
+    "sentence1": "The chairman opened the meeting.",
+    "sentence2": "Başkan toplantıyı açtı."
+  },
+  "tapaco/23_2_3": {
+    "sentence1": "Председатель открыл собрание.",
+    "sentence2": "Başkan emir vermek için toplantıyı aradı."
+  },
+  "tapaco/23_2_4": {
+    "sentence1": "Председатель открыл собрание.",
+    "sentence2": "Başkan toplantıyı açtı."
+  },
+  "tapaco/23_3_4": {
+    "sentence1": "Başkan emir vermek için toplantıyı aradı.",
+    "sentence2": "Başkan toplantıyı açtı."
+  },
+  "tapaco/24_0_1": {
+    "sentence1": "Tom karısını seviyor.",
+    "sentence2": "Tom karısını sever."
+  },
+  "tapaco/24_0_2": {
+    "sentence1": "Tom karısını seviyor.",
+    "sentence2": "Том кохає дружину."
+  },
+  "tapaco/24_0_3": {
+    "sentence1": "Tom karısını seviyor.",
+    "sentence2": "Том кохає свою дружину."
+  },
+  "tapaco/24_1_2": {
+    "sentence1": "Tom karısını sever.",
+    "sentence2": "Том кохає дружину."
+  },
+  "tapaco/24_1_3": {
+    "sentence1": "Tom karısını sever.",
+    "sentence2": "Том кохає свою дружину."
+  },
+  "tapaco/24_2_3": {
+    "sentence1": "Том кохає дружину.",
+    "sentence2": "Том кохає свою дружину."
+  },
+  "tapaco/25_0_1": {
+    "sentence1": "जरा एक मिनिट इथे येतोस का?",
+    "sentence2": "जरा एक मिनिट इथे येऊ शकतोस का?"
+  },
+  "tapaco/25_0_2": {
+    "sentence1": "जरा एक मिनिट इथे येतोस का?",
+    "sentence2": "Вы можете подойти сюда на минутку?"
+  },
+  "tapaco/25_0_3": {
+    "sentence1": "जरा एक मिनिट इथे येतोस का?",
+    "sentence2": "Можешь подойти на минутку?"
+  },
+  "tapaco/25_1_2": {
+    "sentence1": "जरा एक मिनिट इथे येऊ शकतोस का?",
+    "sentence2": "Вы можете подойти сюда на минутку?"
+  },
+  "tapaco/25_1_3": {
+    "sentence1": "जरा एक मिनिट इथे येऊ शकतोस का?",
+    "sentence2": "Можешь подойти на минутку?"
+  },
+  "tapaco/25_2_3": {
+    "sentence1": "Вы можете подойти сюда на минутку?",
+    "sentence2": "Можешь подойти на минутку?"
+  },
+  "tapaco/26_0_1": {
+    "sentence1": "¿Pueden las computadoras traducir obras literarias?",
+    "sentence2": "Ĉu komputiloj kapablas traduki beletraĵojn?"
+  },
+  "tapaco/26_0_2": {
+    "sentence1": "¿Pueden las computadoras traducir obras literarias?",
+    "sentence2": "¿Los ordenadores pueden traducir obras literarias?"
+  },
+  "tapaco/26_0_3": {
+    "sentence1": "¿Pueden las computadoras traducir obras literarias?",
+    "sentence2": "¿Pueden los ordenadores traducir obras literarias?"
+  },
+  "tapaco/26_0_4": {
+    "sentence1": "¿Pueden las computadoras traducir obras literarias?",
+    "sentence2": "Est-ce que les ordinateurs peuvent traduire les œuvres littéraires ?"
+  },
+  "tapaco/26_1_2": {
+    "sentence1": "Ĉu komputiloj kapablas traduki beletraĵojn?",
+    "sentence2": "¿Los ordenadores pueden traducir obras literarias?"
+  },
+  "tapaco/26_1_3": {
+    "sentence1": "Ĉu komputiloj kapablas traduki beletraĵojn?",
+    "sentence2": "¿Pueden los ordenadores traducir obras literarias?"
+  },
+  "tapaco/26_1_4": {
+    "sentence1": "Ĉu komputiloj kapablas traduki beletraĵojn?",
+    "sentence2": "Est-ce que les ordinateurs peuvent traduire les œuvres littéraires ?"
+  },
+  "tapaco/26_2_3": {
+    "sentence1": "¿Los ordenadores pueden traducir obras literarias?",
+    "sentence2": "¿Pueden los ordenadores traducir obras literarias?"
+  },
+  "tapaco/26_2_4": {
+    "sentence1": "¿Los ordenadores pueden traducir obras literarias?",
+    "sentence2": "Est-ce que les ordinateurs peuvent traduire les œuvres littéraires ?"
+  },
+  "tapaco/26_3_4": {
+    "sentence1": "¿Pueden los ordenadores traducir obras literarias?",
+    "sentence2": "Est-ce que les ordinateurs peuvent traduire les œuvres littéraires ?"
+  },
+  "tapaco/27_0_1": {
+    "sentence1": "Sie ging dort hin, um zu schwimmen.",
+    "sentence2": "Ŝi tien iris por naĝi."
+  },
+  "tapaco/27_0_2": {
+    "sentence1": "Sie ging dort hin, um zu schwimmen.",
+    "sentence2": "Elle s'y est rendue pour nager."
+  },
+  "tapaco/27_0_3": {
+    "sentence1": "Sie ging dort hin, um zu schwimmen.",
+    "sentence2": "Ŝi iris tien por naĝi."
+  },
+  "tapaco/27_0_4": {
+    "sentence1": "Sie ging dort hin, um zu schwimmen.",
+    "sentence2": "Sie ging dort zum Schwimmen hin."
+  },
+  "tapaco/27_1_2": {
+    "sentence1": "Ŝi tien iris por naĝi.",
+    "sentence2": "Elle s'y est rendue pour nager."
+  },
+  "tapaco/27_1_3": {
+    "sentence1": "Ŝi tien iris por naĝi.",
+    "sentence2": "Ŝi iris tien por naĝi."
+  },
+  "tapaco/27_1_4": {
+    "sentence1": "Ŝi tien iris por naĝi.",
+    "sentence2": "Sie ging dort zum Schwimmen hin."
+  },
+  "tapaco/27_2_3": {
+    "sentence1": "Elle s'y est rendue pour nager.",
+    "sentence2": "Ŝi iris tien por naĝi."
+  },
+  "tapaco/27_2_4": {
+    "sentence1": "Elle s'y est rendue pour nager.",
+    "sentence2": "Sie ging dort zum Schwimmen hin."
+  },
+  "tapaco/27_3_4": {
+    "sentence1": "Ŝi iris tien por naĝi.",
+    "sentence2": "Sie ging dort zum Schwimmen hin."
+  },
+  "tapaco/28_0_1": {
+    "sentence1": "Isn't it exciting?",
+    "sentence2": "Isn't this exciting?"
+  },
+  "tapaco/28_0_2": {
+    "sentence1": "Isn't it exciting?",
+    "sentence2": "Зарем не е возбудливо?"
+  },
+  "tapaco/28_0_3": {
+    "sentence1": "Isn't it exciting?",
+    "sentence2": "Не ли е тоа возбудливо?"
+  },
+  "tapaco/28_1_2": {
+    "sentence1": "Isn't this exciting?",
+    "sentence2": "Зарем не е возбудливо?"
+  },
+  "tapaco/28_1_3": {
+    "sentence1": "Isn't this exciting?",
+    "sentence2": "Не ли е тоа возбудливо?"
+  },
+  "tapaco/28_2_3": {
+    "sentence1": "Зарем не е возбудливо?",
+    "sentence2": "Не ли е тоа возбудливо?"
+  },
+  "tapaco/29_0_1": {
+    "sentence1": "A vihar után nyugalmas volt az idő.",
+    "sentence2": "Vihar után szélcsend van."
+  },
+  "tapaco/29_0_2": {
+    "sentence1": "A vihar után nyugalmas volt az idő.",
+    "sentence2": "Було затишшя після бурі."
+  },
+  "tapaco/29_0_3": {
+    "sentence1": "A vihar után nyugalmas volt az idő.",
+    "sentence2": "Після бурі прийшло затишшя."
+  },
+  "tapaco/29_1_2": {
+    "sentence1": "Vihar után szélcsend van.",
+    "sentence2": "Було затишшя після бурі."
+  },
+  "tapaco/29_1_3": {
+    "sentence1": "Vihar után szélcsend van.",
+    "sentence2": "Після бурі прийшло затишшя."
+  },
+  "tapaco/29_2_3": {
+    "sentence1": "Було затишшя після бурі.",
+    "sentence2": "Після бурі прийшло затишшя."
+  },
+  "tapaco/30_0_1": {
+    "sentence1": "Ce magazine est à destination des adolescents.",
+    "sentence2": "Данный журнал предназначен для тинейджеров."
+  },
+  "tapaco/30_0_2": {
+    "sentence1": "Ce magazine est à destination des adolescents.",
+    "sentence2": "Dergi gençlere yöneliktir."
+  },
+  "tapaco/30_0_3": {
+    "sentence1": "Ce magazine est à destination des adolescents.",
+    "sentence2": "Tiu magazino koncernas adoleskantojn."
+  },
+  "tapaco/30_0_4": {
+    "sentence1": "Ce magazine est à destination des adolescents.",
+    "sentence2": "Tiu ĉi magazino estas por junuloj."
+  },
+  "tapaco/30_1_2": {
+    "sentence1": "Данный журнал предназначен для тинейджеров.",
+    "sentence2": "Dergi gençlere yöneliktir."
+  },
+  "tapaco/30_1_3": {
+    "sentence1": "Данный журнал предназначен для тинейджеров.",
+    "sentence2": "Tiu magazino koncernas adoleskantojn."
+  },
+  "tapaco/30_1_4": {
+    "sentence1": "Данный журнал предназначен для тинейджеров.",
+    "sentence2": "Tiu ĉi magazino estas por junuloj."
+  },
+  "tapaco/30_2_3": {
+    "sentence1": "Dergi gençlere yöneliktir.",
+    "sentence2": "Tiu magazino koncernas adoleskantojn."
+  },
+  "tapaco/30_2_4": {
+    "sentence1": "Dergi gençlere yöneliktir.",
+    "sentence2": "Tiu ĉi magazino estas por junuloj."
+  },
+  "tapaco/30_3_4": {
+    "sentence1": "Tiu magazino koncernas adoleskantojn.",
+    "sentence2": "Tiu ĉi magazino estas por junuloj."
+  },
+  "tapaco/31_0_1": {
+    "sentence1": "La scienco produktis atombombon.",
+    "sentence2": "La scienco produktis la atombombon."
+  },
+  "tapaco/31_0_2": {
+    "sentence1": "La scienco produktis atombombon.",
+    "sentence2": "La scienco eltrovis atoman bombon."
+  },
+  "tapaco/31_1_2": {
+    "sentence1": "La scienco produktis la atombombon.",
+    "sentence2": "La scienco eltrovis atoman bombon."
+  },
+  "tapaco/32_0_1": {
+    "sentence1": "Я завжди був чесний.",
+    "sentence2": "Я завжди була чесна."
+  },
+  "tapaco/32_0_2": {
+    "sentence1": "Я завжди був чесний.",
+    "sentence2": "Я завжди був справедливий."
+  },
+  "tapaco/32_0_3": {
+    "sentence1": "Я завжди був чесний.",
+    "sentence2": "Я завжди була справедлива."
+  },
+  "tapaco/32_1_2": {
+    "sentence1": "Я завжди була чесна.",
+    "sentence2": "Я завжди був справедливий."
+  },
+  "tapaco/32_1_3": {
+    "sentence1": "Я завжди була чесна.",
+    "sentence2": "Я завжди була справедлива."
+  },
+  "tapaco/32_2_3": {
+    "sentence1": "Я завжди був справедливий.",
+    "sentence2": "Я завжди була справедлива."
+  },
+  "tapaco/33_0_1": {
+    "sentence1": "Tom her zaman işinden şikâyet ediyor.",
+    "sentence2": "Tom führt ständig Klage über seine Frau."
+  },
+  "tapaco/33_0_2": {
+    "sentence1": "Tom her zaman işinden şikâyet ediyor.",
+    "sentence2": "Том всё время жалуется на жену."
+  },
+  "tapaco/33_0_3": {
+    "sentence1": "Tom her zaman işinden şikâyet ediyor.",
+    "sentence2": "Tom always complains about his job."
+  },
+  "tapaco/33_0_4": {
+    "sentence1": "Tom her zaman işinden şikâyet ediyor.",
+    "sentence2": "Tom stöhnt immer über seine Arbeit."
+  },
+  "tapaco/33_1_2": {
+    "sentence1": "Tom führt ständig Klage über seine Frau.",
+    "sentence2": "Том всё время жалуется на жену."
+  },
+  "tapaco/33_1_3": {
+    "sentence1": "Tom führt ständig Klage über seine Frau.",
+    "sentence2": "Tom always complains about his job."
+  },
+  "tapaco/33_1_4": {
+    "sentence1": "Tom führt ständig Klage über seine Frau.",
+    "sentence2": "Tom stöhnt immer über seine Arbeit."
+  },
+  "tapaco/33_2_3": {
+    "sentence1": "Том всё время жалуется на жену.",
+    "sentence2": "Tom always complains about his job."
+  },
+  "tapaco/33_2_4": {
+    "sentence1": "Том всё время жалуется на жену.",
+    "sentence2": "Tom stöhnt immer über seine Arbeit."
+  },
+  "tapaco/33_3_4": {
+    "sentence1": "Tom always complains about his job.",
+    "sentence2": "Tom stöhnt immer über seine Arbeit."
+  },
+  "tapaco/34_0_1": {
+    "sentence1": "Via ĉagreno estas mia ĉagreno.",
+    "sentence2": "Via doloro estas mia doloro."
+  },
+  "tapaco/34_0_2": {
+    "sentence1": "Via ĉagreno estas mia ĉagreno.",
+    "sentence2": "A te fájdalmad az én fájdalmam."
+  },
+  "tapaco/34_0_3": {
+    "sentence1": "Via ĉagreno estas mia ĉagreno.",
+    "sentence2": "A te bánatod az én bánatom."
+  },
+  "tapaco/34_1_2": {
+    "sentence1": "Via doloro estas mia doloro.",
+    "sentence2": "A te fájdalmad az én fájdalmam."
+  },
+  "tapaco/34_1_3": {
+    "sentence1": "Via doloro estas mia doloro.",
+    "sentence2": "A te bánatod az én bánatom."
+  },
+  "tapaco/34_2_3": {
+    "sentence1": "A te fájdalmad az én fájdalmam.",
+    "sentence2": "A te bánatod az én bánatom."
+  },
+  "tapaco/35_0_1": {
+    "sentence1": "Ben oğlumla gururluyum.",
+    "sentence2": "Mi fieras pri mia filo."
+  },
+  "tapaco/35_0_2": {
+    "sentence1": "Ben oğlumla gururluyum.",
+    "sentence2": "Я гордился нашим сыном."
+  },
+  "tapaco/35_0_3": {
+    "sentence1": "Ben oğlumla gururluyum.",
+    "sentence2": "Oğlumla gurur duyuyorum."
+  },
+  "tapaco/35_0_4": {
+    "sentence1": "Ben oğlumla gururluyum.",
+    "sentence2": "私は我が息子を誇りに思った。"
+  },
+  "tapaco/35_1_2": {
+    "sentence1": "Mi fieras pri mia filo.",
+    "sentence2": "Я гордился нашим сыном."
+  },
+  "tapaco/35_1_3": {
+    "sentence1": "Mi fieras pri mia filo.",
+    "sentence2": "Oğlumla gurur duyuyorum."
+  },
+  "tapaco/35_1_4": {
+    "sentence1": "Mi fieras pri mia filo.",
+    "sentence2": "私は我が息子を誇りに思った。"
+  },
+  "tapaco/35_2_3": {
+    "sentence1": "Я гордился нашим сыном.",
+    "sentence2": "Oğlumla gurur duyuyorum."
+  },
+  "tapaco/35_2_4": {
+    "sentence1": "Я гордился нашим сыном.",
+    "sentence2": "私は我が息子を誇りに思った。"
+  },
+  "tapaco/35_3_4": {
+    "sentence1": "Oğlumla gurur duyuyorum.",
+    "sentence2": "私は我が息子を誇りに思った。"
+  },
+  "tapaco/36_0_1": {
+    "sentence1": "Ofisime geri gitmem gerekiyor.",
+    "sentence2": "Ofisime geri gitmeliyim."
+  },
+  "tapaco/36_0_2": {
+    "sentence1": "Ofisime geri gitmem gerekiyor.",
+    "sentence2": "I need to get back to my office."
+  },
+  "tapaco/36_0_3": {
+    "sentence1": "Ofisime geri gitmem gerekiyor.",
+    "sentence2": "Мне нужно вернуться в свой офис."
+  },
+  "tapaco/36_0_4": {
+    "sentence1": "Ofisime geri gitmem gerekiyor.",
+    "sentence2": "Мне надо вернуться в офис."
+  },
+  "tapaco/36_1_2": {
+    "sentence1": "Ofisime geri gitmeliyim.",
+    "sentence2": "I need to get back to my office."
+  },
+  "tapaco/36_1_3": {
+    "sentence1": "Ofisime geri gitmeliyim.",
+    "sentence2": "Мне нужно вернуться в свой офис."
+  },
+  "tapaco/36_1_4": {
+    "sentence1": "Ofisime geri gitmeliyim.",
+    "sentence2": "Мне надо вернуться в офис."
+  },
+  "tapaco/36_2_3": {
+    "sentence1": "I need to get back to my office.",
+    "sentence2": "Мне нужно вернуться в свой офис."
+  },
+  "tapaco/36_2_4": {
+    "sentence1": "I need to get back to my office.",
+    "sentence2": "Мне надо вернуться в офис."
+  },
+  "tapaco/36_3_4": {
+    "sentence1": "Мне нужно вернуться в свой офис.",
+    "sentence2": "Мне надо вернуться в офис."
+  },
+  "tapaco/37_0_1": {
+    "sentence1": "Lei la chiamerà presto.",
+    "sentence2": "Lei vi chiamerà presto."
+  },
+  "tapaco/37_0_2": {
+    "sentence1": "Lei la chiamerà presto.",
+    "sentence2": "La chiamerà presto."
+  },
+  "tapaco/37_0_3": {
+    "sentence1": "Lei la chiamerà presto.",
+    "sentence2": "Lei ti chiamerà presto."
+  },
+  "tapaco/37_0_4": {
+    "sentence1": "Lei la chiamerà presto.",
+    "sentence2": "Ti chiamerà presto."
+  },
+  "tapaco/37_1_2": {
+    "sentence1": "Lei vi chiamerà presto.",
+    "sentence2": "La chiamerà presto."
+  },
+  "tapaco/37_1_3": {
+    "sentence1": "Lei vi chiamerà presto.",
+    "sentence2": "Lei ti chiamerà presto."
+  },
+  "tapaco/37_1_4": {
+    "sentence1": "Lei vi chiamerà presto.",
+    "sentence2": "Ti chiamerà presto."
+  },
+  "tapaco/37_2_3": {
+    "sentence1": "La chiamerà presto.",
+    "sentence2": "Lei ti chiamerà presto."
+  },
+  "tapaco/37_2_4": {
+    "sentence1": "La chiamerà presto.",
+    "sentence2": "Ti chiamerà presto."
+  },
+  "tapaco/37_3_4": {
+    "sentence1": "Lei ti chiamerà presto.",
+    "sentence2": "Ti chiamerà presto."
+  },
+  "tapaco/38_0_1": {
+    "sentence1": "Tykkää voileivistä.",
+    "sentence2": "Pidän kerrosvoileivistä."
+  },
+  "tapaco/38_0_2": {
+    "sentence1": "Tykkää voileivistä.",
+    "sentence2": "Eu gosto de sanduíches."
+  },
+  "tapaco/38_0_3": {
+    "sentence1": "Tykkää voileivistä.",
+    "sentence2": "Gosto de sanduíches."
+  },
+  "tapaco/38_1_2": {
+    "sentence1": "Pidän kerrosvoileivistä.",
+    "sentence2": "Eu gosto de sanduíches."
+  },
+  "tapaco/38_1_3": {
+    "sentence1": "Pidän kerrosvoileivistä.",
+    "sentence2": "Gosto de sanduíches."
+  },
+  "tapaco/38_2_3": {
+    "sentence1": "Eu gosto de sanduíches.",
+    "sentence2": "Gosto de sanduíches."
+  },
+  "tapaco/39_0_1": {
+    "sentence1": "Dick tocó el piano y Lucy cantó.",
+    "sentence2": "Dick toca el piano y Lucy canta."
+  },
+  "tapaco/39_0_2": {
+    "sentence1": "Dick tocó el piano y Lucy cantó.",
+    "sentence2": "Dick tocou piano e Lucy cantou."
+  },
+  "tapaco/39_0_3": {
+    "sentence1": "Dick tocó el piano y Lucy cantó.",
+    "sentence2": "Dick toca piano e Lucy canta."
+  },
+  "tapaco/39_1_2": {
+    "sentence1": "Dick toca el piano y Lucy canta.",
+    "sentence2": "Dick tocou piano e Lucy cantou."
+  },
+  "tapaco/39_1_3": {
+    "sentence1": "Dick toca el piano y Lucy canta.",
+    "sentence2": "Dick toca piano e Lucy canta."
+  },
+  "tapaco/39_2_3": {
+    "sentence1": "Dick tocou piano e Lucy cantou.",
+    "sentence2": "Dick toca piano e Lucy canta."
+  },
+  "tapaco/40_0_1": {
+    "sentence1": "Tom ora è sposato.",
+    "sentence2": "Tom è sposato ora."
+  },
+  "tapaco/40_0_2": {
+    "sentence1": "Tom ora è sposato.",
+    "sentence2": "Tom è sposato adesso."
+  },
+  "tapaco/40_0_3": {
+    "sentence1": "Tom ora è sposato.",
+    "sentence2": "Tom is now married."
+  },
+  "tapaco/40_0_4": {
+    "sentence1": "Tom ora è sposato.",
+    "sentence2": "Tom is married now."
+  },
+  "tapaco/40_1_2": {
+    "sentence1": "Tom è sposato ora.",
+    "sentence2": "Tom è sposato adesso."
+  },
+  "tapaco/40_1_3": {
+    "sentence1": "Tom è sposato ora.",
+    "sentence2": "Tom is now married."
+  },
+  "tapaco/40_1_4": {
+    "sentence1": "Tom è sposato ora.",
+    "sentence2": "Tom is married now."
+  },
+  "tapaco/40_2_3": {
+    "sentence1": "Tom è sposato adesso.",
+    "sentence2": "Tom is now married."
+  },
+  "tapaco/40_2_4": {
+    "sentence1": "Tom è sposato adesso.",
+    "sentence2": "Tom is married now."
+  },
+  "tapaco/40_3_4": {
+    "sentence1": "Tom is now married.",
+    "sentence2": "Tom is married now."
+  },
+  "tapaco/41_0_1": {
+    "sentence1": "She doesn't show her true feelings.",
+    "sentence2": "Sie zeigt ihre wahren Gefühle nicht."
+  },
+  "tapaco/41_0_2": {
+    "sentence1": "She doesn't show her true feelings.",
+    "sentence2": "He doesn't show his true feelings."
+  },
+  "tapaco/41_0_3": {
+    "sentence1": "She doesn't show her true feelings.",
+    "sentence2": "Er zeigt seine wahren Gefühle nicht."
+  },
+  "tapaco/41_0_4": {
+    "sentence1": "She doesn't show her true feelings.",
+    "sentence2": "Ŝi ne esprimas siajn verajn sentojn."
+  },
+  "tapaco/41_1_2": {
+    "sentence1": "Sie zeigt ihre wahren Gefühle nicht.",
+    "sentence2": "He doesn't show his true feelings."
+  },
+  "tapaco/41_1_3": {
+    "sentence1": "Sie zeigt ihre wahren Gefühle nicht.",
+    "sentence2": "Er zeigt seine wahren Gefühle nicht."
+  },
+  "tapaco/41_1_4": {
+    "sentence1": "Sie zeigt ihre wahren Gefühle nicht.",
+    "sentence2": "Ŝi ne esprimas siajn verajn sentojn."
+  },
+  "tapaco/41_2_3": {
+    "sentence1": "He doesn't show his true feelings.",
+    "sentence2": "Er zeigt seine wahren Gefühle nicht."
+  },
+  "tapaco/41_2_4": {
+    "sentence1": "He doesn't show his true feelings.",
+    "sentence2": "Ŝi ne esprimas siajn verajn sentojn."
+  },
+  "tapaco/41_3_4": {
+    "sentence1": "Er zeigt seine wahren Gefühle nicht.",
+    "sentence2": "Ŝi ne esprimas siajn verajn sentojn."
+  },
+  "tapaco/42_0_1": {
+    "sentence1": "Я думаю, его мнение важно.",
+    "sentence2": "Onun fikrinin çok önemli olduğunu düşünüyorum."
+  },
+  "tapaco/42_0_2": {
+    "sentence1": "Я думаю, его мнение важно.",
+    "sentence2": "Mi kredas, ke lia opinio tre gravas."
+  },
+  "tapaco/42_0_3": {
+    "sentence1": "Я думаю, его мнение важно.",
+    "sentence2": "Credo che la sua opinione abbia molta importanza."
+  },
+  "tapaco/42_0_4": {
+    "sentence1": "Я думаю, его мнение важно.",
+    "sentence2": "Onun görüşünün önemli olduğunu düşünüyorum."
+  },
+  "tapaco/42_1_2": {
+    "sentence1": "Onun fikrinin çok önemli olduğunu düşünüyorum.",
+    "sentence2": "Mi kredas, ke lia opinio tre gravas."
+  },
+  "tapaco/42_1_3": {
+    "sentence1": "Onun fikrinin çok önemli olduğunu düşünüyorum.",
+    "sentence2": "Credo che la sua opinione abbia molta importanza."
+  },
+  "tapaco/42_1_4": {
+    "sentence1": "Onun fikrinin çok önemli olduğunu düşünüyorum.",
+    "sentence2": "Onun görüşünün önemli olduğunu düşünüyorum."
+  },
+  "tapaco/42_2_3": {
+    "sentence1": "Mi kredas, ke lia opinio tre gravas.",
+    "sentence2": "Credo che la sua opinione abbia molta importanza."
+  },
+  "tapaco/42_2_4": {
+    "sentence1": "Mi kredas, ke lia opinio tre gravas.",
+    "sentence2": "Onun görüşünün önemli olduğunu düşünüyorum."
+  },
+  "tapaco/42_3_4": {
+    "sentence1": "Credo che la sua opinione abbia molta importanza.",
+    "sentence2": "Onun görüşünün önemli olduğunu düşünüyorum."
+  },
+  "tapaco/43_0_1": {
+    "sentence1": "Grandfamuloj ne ĉiam estas saĝaj.",
+    "sentence2": "Imdanen yettwassnen mačči dima d imasnagen."
+  },
+  "tapaco/43_0_2": {
+    "sentence1": "Grandfamuloj ne ĉiam estas saĝaj.",
+    "sentence2": "Le persone importanti non sempre sono sagge."
+  },
+  "tapaco/43_0_3": {
+    "sentence1": "Grandfamuloj ne ĉiam estas saĝaj.",
+    "sentence2": "偉人が必ずしも賢いとは限らない。"
+  },
+  "tapaco/43_0_4": {
+    "sentence1": "Grandfamuloj ne ĉiam estas saĝaj.",
+    "sentence2": "Le grandi persone non sono sempre sagge."
+  },
+  "tapaco/43_1_2": {
+    "sentence1": "Imdanen yettwassnen mačči dima d imasnagen.",
+    "sentence2": "Le persone importanti non sempre sono sagge."
+  },
+  "tapaco/43_1_3": {
+    "sentence1": "Imdanen yettwassnen mačči dima d imasnagen.",
+    "sentence2": "偉人が必ずしも賢いとは限らない。"
+  },
+  "tapaco/43_1_4": {
+    "sentence1": "Imdanen yettwassnen mačči dima d imasnagen.",
+    "sentence2": "Le grandi persone non sono sempre sagge."
+  },
+  "tapaco/43_2_3": {
+    "sentence1": "Le persone importanti non sempre sono sagge.",
+    "sentence2": "偉人が必ずしも賢いとは限らない。"
+  },
+  "tapaco/43_2_4": {
+    "sentence1": "Le persone importanti non sempre sono sagge.",
+    "sentence2": "Le grandi persone non sono sempre sagge."
+  },
+  "tapaco/43_3_4": {
+    "sentence1": "偉人が必ずしも賢いとは限らない。",
+    "sentence2": "Le grandi persone non sono sempre sagge."
+  },
+  "tapaco/44_0_1": {
+    "sentence1": "Tom si chiedeva quando avete comprato la vostra racchetta da tennis.",
+    "sentence2": "Tom si chiedeva quando hai comprato la tua racchetta da tennis."
+  },
+  "tapaco/44_0_2": {
+    "sentence1": "Tom si chiedeva quando avete comprato la vostra racchetta da tennis.",
+    "sentence2": "Tom si chiedeva quando ha comprato la sua racchetta da tennis."
+  },
+  "tapaco/44_1_2": {
+    "sentence1": "Tom si chiedeva quando hai comprato la tua racchetta da tennis.",
+    "sentence2": "Tom si chiedeva quando ha comprato la sua racchetta da tennis."
+  },
+  "tapaco/45_0_1": {
+    "sentence1": "Dateci un secondo.",
+    "sentence2": "Дайте нам секунду."
+  },
+  "tapaco/45_0_2": {
+    "sentence1": "Dateci un secondo.",
+    "sentence2": "Дай нам секунду."
+  },
+  "tapaco/45_0_3": {
+    "sentence1": "Dateci un secondo.",
+    "sentence2": "Ci dia un secondo."
+  },
+  "tapaco/45_0_4": {
+    "sentence1": "Dateci un secondo.",
+    "sentence2": "Donnez-nous une seconde."
+  },
+  "tapaco/45_1_2": {
+    "sentence1": "Дайте нам секунду.",
+    "sentence2": "Дай нам секунду."
+  },
+  "tapaco/45_1_3": {
+    "sentence1": "Дайте нам секунду.",
+    "sentence2": "Ci dia un secondo."
+  },
+  "tapaco/45_1_4": {
+    "sentence1": "Дайте нам секунду.",
+    "sentence2": "Donnez-nous une seconde."
+  },
+  "tapaco/45_2_3": {
+    "sentence1": "Дай нам секунду.",
+    "sentence2": "Ci dia un secondo."
+  },
+  "tapaco/45_2_4": {
+    "sentence1": "Дай нам секунду.",
+    "sentence2": "Donnez-nous une seconde."
+  },
+  "tapaco/45_3_4": {
+    "sentence1": "Ci dia un secondo.",
+    "sentence2": "Donnez-nous une seconde."
+  },
+  "tapaco/46_0_1": {
+    "sentence1": "Што дрнда Том?",
+    "sentence2": "Што дрдори Том?"
+  },
+  "tapaco/46_0_2": {
+    "sentence1": "Што дрнда Том?",
+    "sentence2": "Што ѕвонца Том?"
+  },
+  "tapaco/46_1_2": {
+    "sentence1": "Што дрдори Том?",
+    "sentence2": "Што ѕвонца Том?"
+  },
+  "tapaco/47_0_1": {
+    "sentence1": "Esforce-se como puder, você não aprenderá Inglês em dois ou três meses.",
+    "sentence2": "No matter how hard you try, you can't learn English in two or three months."
+  },
+  "tapaco/47_0_2": {
+    "sentence1": "Esforce-se como puder, você não aprenderá Inglês em dois ou três meses.",
+    "sentence2": "Qualquer que seja seus esforços, você não poderá aprender Inglês em dois ou três meses."
+  },
+  "tapaco/47_0_3": {
+    "sentence1": "Esforce-se como puder, você não aprenderá Inglês em dois ou três meses.",
+    "sentence2": "Как бы ты ни старался, ты не сможешь выучить английский за два или три месяца."
+  },
+  "tapaco/47_0_4": {
+    "sentence1": "Esforce-se como puder, você não aprenderá Inglês em dois ou três meses.",
+    "sentence2": "Как ни старайся, а за пару месяцев английским не овладеть."
+  },
+  "tapaco/47_1_2": {
+    "sentence1": "No matter how hard you try, you can't learn English in two or three months.",
+    "sentence2": "Qualquer que seja seus esforços, você não poderá aprender Inglês em dois ou três meses."
+  },
+  "tapaco/47_1_3": {
+    "sentence1": "No matter how hard you try, you can't learn English in two or three months.",
+    "sentence2": "Как бы ты ни старался, ты не сможешь выучить английский за два или три месяца."
+  },
+  "tapaco/47_1_4": {
+    "sentence1": "No matter how hard you try, you can't learn English in two or three months.",
+    "sentence2": "Как ни старайся, а за пару месяцев английским не овладеть."
+  },
+  "tapaco/47_2_3": {
+    "sentence1": "Qualquer que seja seus esforços, você não poderá aprender Inglês em dois ou três meses.",
+    "sentence2": "Как бы ты ни старался, ты не сможешь выучить английский за два или три месяца."
+  },
+  "tapaco/47_2_4": {
+    "sentence1": "Qualquer que seja seus esforços, você não poderá aprender Inglês em dois ou três meses.",
+    "sentence2": "Как ни старайся, а за пару месяцев английским не овладеть."
+  },
+  "tapaco/47_3_4": {
+    "sentence1": "Как бы ты ни старался, ты не сможешь выучить английский за два или три месяца.",
+    "sentence2": "Как ни старайся, а за пару месяцев английским не овладеть."
+  },
+  "tapaco/48_0_1": {
+    "sentence1": "¿Pensás que le va a gustar mi regalo?",
+    "sentence2": "Думаешь, ему понравится мой подарок?"
+  },
+  "tapaco/48_0_2": {
+    "sentence1": "¿Pensás que le va a gustar mi regalo?",
+    "sentence2": "¿Crees que a él le guste mi obsequio?"
+  },
+  "tapaco/48_0_3": {
+    "sentence1": "¿Pensás que le va a gustar mi regalo?",
+    "sentence2": "Ĉu vi opinias, ke mia donaco plaĉos al ŝi?"
+  },
+  "tapaco/48_0_4": {
+    "sentence1": "¿Pensás que le va a gustar mi regalo?",
+    "sentence2": "Думаешь, ей понравится мой подарок?"
+  },
+  "tapaco/48_1_2": {
+    "sentence1": "Думаешь, ему понравится мой подарок?",
+    "sentence2": "¿Crees que a él le guste mi obsequio?"
+  },
+  "tapaco/48_1_3": {
+    "sentence1": "Думаешь, ему понравится мой подарок?",
+    "sentence2": "Ĉu vi opinias, ke mia donaco plaĉos al ŝi?"
+  },
+  "tapaco/48_1_4": {
+    "sentence1": "Думаешь, ему понравится мой подарок?",
+    "sentence2": "Думаешь, ей понравится мой подарок?"
+  },
+  "tapaco/48_2_3": {
+    "sentence1": "¿Crees que a él le guste mi obsequio?",
+    "sentence2": "Ĉu vi opinias, ke mia donaco plaĉos al ŝi?"
+  },
+  "tapaco/48_2_4": {
+    "sentence1": "¿Crees que a él le guste mi obsequio?",
+    "sentence2": "Думаешь, ей понравится мой подарок?"
+  },
+  "tapaco/48_3_4": {
+    "sentence1": "Ĉu vi opinias, ke mia donaco plaĉos al ŝi?",
+    "sentence2": "Думаешь, ей понравится мой подарок?"
+  },
+  "tapaco/49_0_1": {
+    "sentence1": "Ez a legérdekesebb könyv.",
+    "sentence2": "Ez a könyv nagyon érdekes."
+  },
+  "tapaco/49_0_2": {
+    "sentence1": "Ez a legérdekesebb könyv.",
+    "sentence2": "Bu kitap en enteresanı."
+  },
+  "tapaco/49_0_3": {
+    "sentence1": "Ez a legérdekesebb könyv.",
+    "sentence2": "Bu kitap en ilgincidir."
+  },
+  "tapaco/49_1_2": {
+    "sentence1": "Ez a könyv nagyon érdekes.",
+    "sentence2": "Bu kitap en enteresanı."
+  },
+  "tapaco/49_1_3": {
+    "sentence1": "Ez a könyv nagyon érdekes.",
+    "sentence2": "Bu kitap en ilgincidir."
+  },
+  "tapaco/49_2_3": {
+    "sentence1": "Bu kitap en enteresanı.",
+    "sentence2": "Bu kitap en ilgincidir."
+  },
+  "tapaco/50_0_1": {
+    "sentence1": "У неї нескінченні ресурси.",
+    "sentence2": "Он имеет неограниченные ресурсы."
+  },
+  "tapaco/50_0_2": {
+    "sentence1": "У неї нескінченні ресурси.",
+    "sentence2": "У неё бесконечные ресурсы."
+  },
+  "tapaco/50_0_3": {
+    "sentence1": "У неї нескінченні ресурси.",
+    "sentence2": "O sonsuz kaynaklara sahiptir."
+  },
+  "tapaco/50_0_4": {
+    "sentence1": "У неї нескінченні ресурси.",
+    "sentence2": "יש לה משאבים בלתי נדלים."
+  },
+  "tapaco/50_1_2": {
+    "sentence1": "Он имеет неограниченные ресурсы.",
+    "sentence2": "У неё бесконечные ресурсы."
+  },
+  "tapaco/50_1_3": {
+    "sentence1": "Он имеет неограниченные ресурсы.",
+    "sentence2": "O sonsuz kaynaklara sahiptir."
+  },
+  "tapaco/50_1_4": {
+    "sentence1": "Он имеет неограниченные ресурсы.",
+    "sentence2": "יש לה משאבים בלתי נדלים."
+  },
+  "tapaco/50_2_3": {
+    "sentence1": "У неё бесконечные ресурсы.",
+    "sentence2": "O sonsuz kaynaklara sahiptir."
+  },
+  "tapaco/50_2_4": {
+    "sentence1": "У неё бесконечные ресурсы.",
+    "sentence2": "יש לה משאבים בלתי נדלים."
+  },
+  "tapaco/50_3_4": {
+    "sentence1": "O sonsuz kaynaklara sahiptir.",
+    "sentence2": "יש לה משאבים בלתי נדלים."
+  },
+  "tapaco/51_0_1": {
+    "sentence1": "Meine Mutter hat vergessen, zum Salat Salz hinzuzufügen.",
+    "sentence2": "Minha mãe esqueceu-se de pôr sal na salada."
+  },
+  "tapaco/51_0_2": {
+    "sentence1": "Meine Mutter hat vergessen, zum Salat Salz hinzuzufügen.",
+    "sentence2": "Mia patrino forgesis aldoni salon al la salato."
+  },
+  "tapaco/51_0_3": {
+    "sentence1": "Meine Mutter hat vergessen, zum Salat Salz hinzuzufügen.",
+    "sentence2": "Minha mãe esqueceu de salgar a salada."
+  },
+  "tapaco/51_0_4": {
+    "sentence1": "Meine Mutter hat vergessen, zum Salat Salz hinzuzufügen.",
+    "sentence2": "Mi madre olvidó echar sal en la ensalada."
+  },
+  "tapaco/51_1_2": {
+    "sentence1": "Minha mãe esqueceu-se de pôr sal na salada.",
+    "sentence2": "Mia patrino forgesis aldoni salon al la salato."
+  },
+  "tapaco/51_1_3": {
+    "sentence1": "Minha mãe esqueceu-se de pôr sal na salada.",
+    "sentence2": "Minha mãe esqueceu de salgar a salada."
+  },
+  "tapaco/51_1_4": {
+    "sentence1": "Minha mãe esqueceu-se de pôr sal na salada.",
+    "sentence2": "Mi madre olvidó echar sal en la ensalada."
+  },
+  "tapaco/51_2_3": {
+    "sentence1": "Mia patrino forgesis aldoni salon al la salato.",
+    "sentence2": "Minha mãe esqueceu de salgar a salada."
+  },
+  "tapaco/51_2_4": {
+    "sentence1": "Mia patrino forgesis aldoni salon al la salato.",
+    "sentence2": "Mi madre olvidó echar sal en la ensalada."
+  },
+  "tapaco/51_3_4": {
+    "sentence1": "Minha mãe esqueceu de salgar a salada.",
+    "sentence2": "Mi madre olvidó echar sal en la ensalada."
+  },
+  "tapaco/52_0_1": {
+    "sentence1": "Acho que vale a pena visitar Boston.",
+    "sentence2": "Acho que Boston vale a pena ser visitada."
+  },
+  "tapaco/52_0_2": {
+    "sentence1": "Acho que vale a pena visitar Boston.",
+    "sentence2": "Я думаю, Бостон стоит посетить."
+  },
+  "tapaco/52_0_3": {
+    "sentence1": "Acho que vale a pena visitar Boston.",
+    "sentence2": "Я думаю, Бостон стоит того, чтобы его посетить."
+  },
+  "tapaco/52_1_2": {
+    "sentence1": "Acho que Boston vale a pena ser visitada.",
+    "sentence2": "Я думаю, Бостон стоит посетить."
+  },
+  "tapaco/52_1_3": {
+    "sentence1": "Acho que Boston vale a pena ser visitada.",
+    "sentence2": "Я думаю, Бостон стоит того, чтобы его посетить."
+  },
+  "tapaco/52_2_3": {
+    "sentence1": "Я думаю, Бостон стоит посетить.",
+    "sentence2": "Я думаю, Бостон стоит того, чтобы его посетить."
+  },
+  "tapaco/53_0_1": {
+    "sentence1": "כדור פילח את חזהו.",
+    "sentence2": "כדור חדר לחזה שלו."
+  },
+  "tapaco/53_0_2": {
+    "sentence1": "כדור פילח את חזהו.",
+    "sentence2": "קליע חדר דרך החזה שלו."
+  },
+  "tapaco/53_0_3": {
+    "sentence1": "כדור פילח את חזהו.",
+    "sentence2": "Пуля пронзила ему грудь."
+  },
+  "tapaco/53_0_4": {
+    "sentence1": "כדור פילח את חזהו.",
+    "sentence2": "Пуля пронзила его грудь."
+  },
+  "tapaco/53_1_2": {
+    "sentence1": "כדור חדר לחזה שלו.",
+    "sentence2": "קליע חדר דרך החזה שלו."
+  },
+  "tapaco/53_1_3": {
+    "sentence1": "כדור חדר לחזה שלו.",
+    "sentence2": "Пуля пронзила ему грудь."
+  },
+  "tapaco/53_1_4": {
+    "sentence1": "כדור חדר לחזה שלו.",
+    "sentence2": "Пуля пронзила его грудь."
+  },
+  "tapaco/53_2_3": {
+    "sentence1": "קליע חדר דרך החזה שלו.",
+    "sentence2": "Пуля пронзила ему грудь."
+  },
+  "tapaco/53_2_4": {
+    "sentence1": "קליע חדר דרך החזה שלו.",
+    "sentence2": "Пуля пронзила его грудь."
+  },
+  "tapaco/53_3_4": {
+    "sentence1": "Пуля пронзила ему грудь.",
+    "sentence2": "Пуля пронзила его грудь."
+  },
+  "tapaco/54_0_1": {
+    "sentence1": "Kial vi ne respondas?",
+    "sentence2": "Почему ты не будешь отвечать?"
+  },
+  "tapaco/54_0_2": {
+    "sentence1": "Kial vi ne respondas?",
+    "sentence2": "Perché non stai rispondendo?"
+  },
+  "tapaco/54_0_3": {
+    "sentence1": "Kial vi ne respondas?",
+    "sentence2": "Maɣef ur d-tettarrad?"
+  },
+  "tapaco/54_0_4": {
+    "sentence1": "Kial vi ne respondas?",
+    "sentence2": "Warum wirst du nicht antworten?"
+  },
+  "tapaco/54_1_2": {
+    "sentence1": "Почему ты не будешь отвечать?",
+    "sentence2": "Perché non stai rispondendo?"
+  },
+  "tapaco/54_1_3": {
+    "sentence1": "Почему ты не будешь отвечать?",
+    "sentence2": "Maɣef ur d-tettarrad?"
+  },
+  "tapaco/54_1_4": {
+    "sentence1": "Почему ты не будешь отвечать?",
+    "sentence2": "Warum wirst du nicht antworten?"
+  },
+  "tapaco/54_2_3": {
+    "sentence1": "Perché non stai rispondendo?",
+    "sentence2": "Maɣef ur d-tettarrad?"
+  },
+  "tapaco/54_2_4": {
+    "sentence1": "Perché non stai rispondendo?",
+    "sentence2": "Warum wirst du nicht antworten?"
+  },
+  "tapaco/54_3_4": {
+    "sentence1": "Maɣef ur d-tettarrad?",
+    "sentence2": "Warum wirst du nicht antworten?"
+  },
+  "tapaco/55_0_1": {
+    "sentence1": "Tom'un bana yardım etmesi gerekmiyordu.",
+    "sentence2": "Tom didn't have to help me."
+  },
+  "tapaco/55_0_2": {
+    "sentence1": "Tom'un bana yardım etmesi gerekmiyordu.",
+    "sentence2": "Tom didn't need to help me."
+  },
+  "tapaco/55_0_3": {
+    "sentence1": "Tom'un bana yardım etmesi gerekmiyordu.",
+    "sentence2": "Tom non doveva aiutarmi."
+  },
+  "tapaco/55_0_4": {
+    "sentence1": "Tom'un bana yardım etmesi gerekmiyordu.",
+    "sentence2": "Tom non mi doveva aiutare."
+  },
+  "tapaco/55_1_2": {
+    "sentence1": "Tom didn't have to help me.",
+    "sentence2": "Tom didn't need to help me."
+  },
+  "tapaco/55_1_3": {
+    "sentence1": "Tom didn't have to help me.",
+    "sentence2": "Tom non doveva aiutarmi."
+  },
+  "tapaco/55_1_4": {
+    "sentence1": "Tom didn't have to help me.",
+    "sentence2": "Tom non mi doveva aiutare."
+  },
+  "tapaco/55_2_3": {
+    "sentence1": "Tom didn't need to help me.",
+    "sentence2": "Tom non doveva aiutarmi."
+  },
+  "tapaco/55_2_4": {
+    "sentence1": "Tom didn't need to help me.",
+    "sentence2": "Tom non mi doveva aiutare."
+  },
+  "tapaco/55_3_4": {
+    "sentence1": "Tom non doveva aiutarmi.",
+    "sentence2": "Tom non mi doveva aiutare."
+  },
+  "tapaco/56_0_1": {
+    "sentence1": "Marie ha sussurrato.",
+    "sentence2": "Marie ha bisbigliato."
+  },
+  "tapaco/56_0_2": {
+    "sentence1": "Marie ha sussurrato.",
+    "sentence2": "Marija šnabždėjo."
+  },
+  "tapaco/56_0_3": {
+    "sentence1": "Marie ha sussurrato.",
+    "sentence2": "Marija kuždomis kalbėjo."
+  },
+  "tapaco/56_1_2": {
+    "sentence1": "Marie ha bisbigliato.",
+    "sentence2": "Marija šnabždėjo."
+  },
+  "tapaco/56_1_3": {
+    "sentence1": "Marie ha bisbigliato.",
+    "sentence2": "Marija kuždomis kalbėjo."
+  },
+  "tapaco/56_2_3": {
+    "sentence1": "Marija šnabždėjo.",
+    "sentence2": "Marija kuždomis kalbėjo."
+  },
+  "tapaco/57_0_1": {
+    "sentence1": "Ili translokiĝis en Germanion.",
+    "sentence2": "Ili transloĝiĝis en Germanion."
+  },
+  "tapaco/57_0_2": {
+    "sentence1": "Ili translokiĝis en Germanion.",
+    "sentence2": "Guǧǧen ɣer Lalman."
+  },
+  "tapaco/57_0_3": {
+    "sentence1": "Ili translokiĝis en Germanion.",
+    "sentence2": "Si sono trasferite in Germania."
+  },
+  "tapaco/57_0_4": {
+    "sentence1": "Ili translokiĝis en Germanion.",
+    "sentence2": "Si sono trasferiti in Germania."
+  },
+  "tapaco/57_1_2": {
+    "sentence1": "Ili transloĝiĝis en Germanion.",
+    "sentence2": "Guǧǧen ɣer Lalman."
+  },
+  "tapaco/57_1_3": {
+    "sentence1": "Ili transloĝiĝis en Germanion.",
+    "sentence2": "Si sono trasferite in Germania."
+  },
+  "tapaco/57_1_4": {
+    "sentence1": "Ili transloĝiĝis en Germanion.",
+    "sentence2": "Si sono trasferiti in Germania."
+  },
+  "tapaco/57_2_3": {
+    "sentence1": "Guǧǧen ɣer Lalman.",
+    "sentence2": "Si sono trasferite in Germania."
+  },
+  "tapaco/57_2_4": {
+    "sentence1": "Guǧǧen ɣer Lalman.",
+    "sentence2": "Si sono trasferiti in Germania."
+  },
+  "tapaco/57_3_4": {
+    "sentence1": "Si sono trasferite in Germania.",
+    "sentence2": "Si sono trasferiti in Germania."
+  },
+  "tapaco/58_0_1": {
+    "sentence1": "De repente, un hombre se paró en frente de ellos.",
+    "sentence2": "Subite iu alpaŝis antaŭ ilin."
+  },
+  "tapaco/58_0_2": {
+    "sentence1": "De repente, un hombre se paró en frente de ellos.",
+    "sentence2": "Tout à coup, un homme s'arrêta devant eux."
+  },
+  "tapaco/58_0_3": {
+    "sentence1": "De repente, un hombre se paró en frente de ellos.",
+    "sentence2": "Repentinamente, un hombre se puso frente a ellos."
+  },
+  "tapaco/58_0_4": {
+    "sentence1": "De repente, un hombre se paró en frente de ellos.",
+    "sentence2": "Subite viro haltis antaŭ ili."
+  },
+  "tapaco/58_1_2": {
+    "sentence1": "Subite iu alpaŝis antaŭ ilin.",
+    "sentence2": "Tout à coup, un homme s'arrêta devant eux."
+  },
+  "tapaco/58_1_3": {
+    "sentence1": "Subite iu alpaŝis antaŭ ilin.",
+    "sentence2": "Repentinamente, un hombre se puso frente a ellos."
+  },
+  "tapaco/58_1_4": {
+    "sentence1": "Subite iu alpaŝis antaŭ ilin.",
+    "sentence2": "Subite viro haltis antaŭ ili."
+  },
+  "tapaco/58_2_3": {
+    "sentence1": "Tout à coup, un homme s'arrêta devant eux.",
+    "sentence2": "Repentinamente, un hombre se puso frente a ellos."
+  },
+  "tapaco/58_2_4": {
+    "sentence1": "Tout à coup, un homme s'arrêta devant eux.",
+    "sentence2": "Subite viro haltis antaŭ ili."
+  },
+  "tapaco/58_3_4": {
+    "sentence1": "Repentinamente, un hombre se puso frente a ellos.",
+    "sentence2": "Subite viro haltis antaŭ ili."
+  },
+  "tapaco/59_0_1": {
+    "sentence1": "Твои старания тщетны.",
+    "sentence2": "Твои усилия напрасны."
+  },
+  "tapaco/59_0_2": {
+    "sentence1": "Твои старания тщетны.",
+    "sentence2": "Ваші зусилля марні."
+  },
+  "tapaco/59_0_3": {
+    "sentence1": "Твои старания тщетны.",
+    "sentence2": "Твої зусилля марні."
+  },
+  "tapaco/59_0_4": {
+    "sentence1": "Твои старания тщетны.",
+    "sentence2": "Deine Bemühungen sind vergeblich."
+  },
+  "tapaco/59_1_2": {
+    "sentence1": "Твои усилия напрасны.",
+    "sentence2": "Ваші зусилля марні."
+  },
+  "tapaco/59_1_3": {
+    "sentence1": "Твои усилия напрасны.",
+    "sentence2": "Твої зусилля марні."
+  },
+  "tapaco/59_1_4": {
+    "sentence1": "Твои усилия напрасны.",
+    "sentence2": "Deine Bemühungen sind vergeblich."
+  },
+  "tapaco/59_2_3": {
+    "sentence1": "Ваші зусилля марні.",
+    "sentence2": "Твої зусилля марні."
+  },
+  "tapaco/59_2_4": {
+    "sentence1": "Ваші зусилля марні.",
+    "sentence2": "Deine Bemühungen sind vergeblich."
+  },
+  "tapaco/59_3_4": {
+    "sentence1": "Твої зусилля марні.",
+    "sentence2": "Deine Bemühungen sind vergeblich."
+  },
+  "tapaco/60_0_1": {
+    "sentence1": "Мы не можем оставить его здесь.",
+    "sentence2": "Мы не можем бросить его здесь."
+  },
+  "tapaco/60_0_2": {
+    "sentence1": "Мы не можем оставить его здесь.",
+    "sentence2": "Мы не можем его тут бросить."
+  },
+  "tapaco/60_1_2": {
+    "sentence1": "Мы не можем бросить его здесь.",
+    "sentence2": "Мы не можем его тут бросить."
+  },
+  "tapaco/61_0_1": {
+    "sentence1": "Je ne vis pas avec Tom.",
+    "sentence2": "Je n'habite pas avec Tom."
+  },
+  "tapaco/61_0_2": {
+    "sentence1": "Je ne vis pas avec Tom.",
+    "sentence2": "Eu não vivo com o Tom."
+  },
+  "tapaco/61_0_3": {
+    "sentence1": "Je ne vis pas avec Tom.",
+    "sentence2": "Eu não moro com o Tom."
+  },
+  "tapaco/61_1_2": {
+    "sentence1": "Je n'habite pas avec Tom.",
+    "sentence2": "Eu não vivo com o Tom."
+  },
+  "tapaco/61_1_3": {
+    "sentence1": "Je n'habite pas avec Tom.",
+    "sentence2": "Eu não moro com o Tom."
+  },
+  "tapaco/61_2_3": {
+    "sentence1": "Eu não vivo com o Tom.",
+    "sentence2": "Eu não moro com o Tom."
+  },
+  "tapaco/62_0_1": {
+    "sentence1": "How do you calculate the radius from the circumference?",
+    "sentence2": "Wie berechnet man den Radius, wenn man den Umfang kennt?"
+  },
+  "tapaco/62_0_2": {
+    "sentence1": "How do you calculate the radius from the circumference?",
+    "sentence2": "How is the radius calculated, when the circumference is known?"
+  },
+  "tapaco/62_0_3": {
+    "sentence1": "How do you calculate the radius from the circumference?",
+    "sentence2": "Как вычислить радиус окружности?"
+  },
+  "tapaco/62_0_4": {
+    "sentence1": "How do you calculate the radius from the circumference?",
+    "sentence2": "Wie berechnet man den Radius mit Hilfe des Umfangs?"
+  },
+  "tapaco/62_1_2": {
+    "sentence1": "Wie berechnet man den Radius, wenn man den Umfang kennt?",
+    "sentence2": "How is the radius calculated, when the circumference is known?"
+  },
+  "tapaco/62_1_3": {
+    "sentence1": "Wie berechnet man den Radius, wenn man den Umfang kennt?",
+    "sentence2": "Как вычислить радиус окружности?"
+  },
+  "tapaco/62_1_4": {
+    "sentence1": "Wie berechnet man den Radius, wenn man den Umfang kennt?",
+    "sentence2": "Wie berechnet man den Radius mit Hilfe des Umfangs?"
+  },
+  "tapaco/62_2_3": {
+    "sentence1": "How is the radius calculated, when the circumference is known?",
+    "sentence2": "Как вычислить радиус окружности?"
+  },
+  "tapaco/62_2_4": {
+    "sentence1": "How is the radius calculated, when the circumference is known?",
+    "sentence2": "Wie berechnet man den Radius mit Hilfe des Umfangs?"
+  },
+  "tapaco/62_3_4": {
+    "sentence1": "Как вычислить радиус окружности?",
+    "sentence2": "Wie berechnet man den Radius mit Hilfe des Umfangs?"
+  },
+  "tapaco/63_0_1": {
+    "sentence1": "Ĉu vi bonvolas ekflamigi la fajron?",
+    "sentence2": "Ĉu vi bonvolas ekbruligi la fajron?"
+  },
+  "tapaco/63_0_2": {
+    "sentence1": "Ĉu vi bonvolas ekflamigi la fajron?",
+    "sentence2": "¿Quiere prender el fuego?"
+  },
+  "tapaco/63_0_3": {
+    "sentence1": "Ĉu vi bonvolas ekflamigi la fajron?",
+    "sentence2": "¿Te importaría encender el fuego?"
+  },
+  "tapaco/63_1_2": {
+    "sentence1": "Ĉu vi bonvolas ekbruligi la fajron?",
+    "sentence2": "¿Quiere prender el fuego?"
+  },
+  "tapaco/63_1_3": {
+    "sentence1": "Ĉu vi bonvolas ekbruligi la fajron?",
+    "sentence2": "¿Te importaría encender el fuego?"
+  },
+  "tapaco/63_2_3": {
+    "sentence1": "¿Quiere prender el fuego?",
+    "sentence2": "¿Te importaría encender el fuego?"
+  },
+  "tapaco/64_0_1": {
+    "sentence1": "Ты должен всё съесть!",
+    "sentence2": "Sie müssen alles aufessen!"
+  },
+  "tapaco/64_0_2": {
+    "sentence1": "Ты должен всё съесть!",
+    "sentence2": "Devi mangiare tutto!"
+  },
+  "tapaco/64_0_3": {
+    "sentence1": "Ты должен всё съесть!",
+    "sentence2": "Yessefk ad teččem kullec!"
+  },
+  "tapaco/64_0_4": {
+    "sentence1": "Ты должен всё съесть!",
+    "sentence2": "Tenéis que coméroslo todo."
+  },
+  "tapaco/64_1_2": {
+    "sentence1": "Sie müssen alles aufessen!",
+    "sentence2": "Devi mangiare tutto!"
+  },
+  "tapaco/64_1_3": {
+    "sentence1": "Sie müssen alles aufessen!",
+    "sentence2": "Yessefk ad teččem kullec!"
+  },
+  "tapaco/64_1_4": {
+    "sentence1": "Sie müssen alles aufessen!",
+    "sentence2": "Tenéis que coméroslo todo."
+  },
+  "tapaco/64_2_3": {
+    "sentence1": "Devi mangiare tutto!",
+    "sentence2": "Yessefk ad teččem kullec!"
+  },
+  "tapaco/64_2_4": {
+    "sentence1": "Devi mangiare tutto!",
+    "sentence2": "Tenéis que coméroslo todo."
+  },
+  "tapaco/64_3_4": {
+    "sentence1": "Yessefk ad teččem kullec!",
+    "sentence2": "Tenéis que coméroslo todo."
+  },
+  "tapaco/65_0_1": {
+    "sentence1": "Tḥemmlemt tini?",
+    "sentence2": "Tḥemmlem tini?"
+  },
+  "tapaco/65_0_2": {
+    "sentence1": "Tḥemmlemt tini?",
+    "sentence2": "Pidätkö sinä taateleista?"
+  },
+  "tapaco/65_0_3": {
+    "sentence1": "Tḥemmlemt tini?",
+    "sentence2": "Tramt tini?"
+  },
+  "tapaco/65_0_4": {
+    "sentence1": "Tḥemmlemt tini?",
+    "sentence2": "Trid tini?"
+  },
+  "tapaco/65_1_2": {
+    "sentence1": "Tḥemmlem tini?",
+    "sentence2": "Pidätkö sinä taateleista?"
+  },
+  "tapaco/65_1_3": {
+    "sentence1": "Tḥemmlem tini?",
+    "sentence2": "Tramt tini?"
+  },
+  "tapaco/65_1_4": {
+    "sentence1": "Tḥemmlem tini?",
+    "sentence2": "Trid tini?"
+  },
+  "tapaco/65_2_3": {
+    "sentence1": "Pidätkö sinä taateleista?",
+    "sentence2": "Tramt tini?"
+  },
+  "tapaco/65_2_4": {
+    "sentence1": "Pidätkö sinä taateleista?",
+    "sentence2": "Trid tini?"
+  },
+  "tapaco/65_3_4": {
+    "sentence1": "Tramt tini?",
+    "sentence2": "Trid tini?"
+  },
+  "tapaco/66_0_1": {
+    "sentence1": "Tom è arrivato a Boston con Mary.",
+    "sentence2": "Том поехал с Мэри в Бостон."
+  },
+  "tapaco/66_0_2": {
+    "sentence1": "Tom è arrivato a Boston con Mary.",
+    "sentence2": "Tom è andato con Mary a Boston."
+  },
+  "tapaco/66_0_3": {
+    "sentence1": "Tom è arrivato a Boston con Mary.",
+    "sentence2": "Том поехал в Бостон с Мэри."
+  },
+  "tapaco/66_0_4": {
+    "sentence1": "Tom è arrivato a Boston con Mary.",
+    "sentence2": "Tom went with Mary to Boston."
+  },
+  "tapaco/66_1_2": {
+    "sentence1": "Том поехал с Мэри в Бостон.",
+    "sentence2": "Tom è andato con Mary a Boston."
+  },
+  "tapaco/66_1_3": {
+    "sentence1": "Том поехал с Мэри в Бостон.",
+    "sentence2": "Том поехал в Бостон с Мэри."
+  },
+  "tapaco/66_1_4": {
+    "sentence1": "Том поехал с Мэри в Бостон.",
+    "sentence2": "Tom went with Mary to Boston."
+  },
+  "tapaco/66_2_3": {
+    "sentence1": "Tom è andato con Mary a Boston.",
+    "sentence2": "Том поехал в Бостон с Мэри."
+  },
+  "tapaco/66_2_4": {
+    "sentence1": "Tom è andato con Mary a Boston.",
+    "sentence2": "Tom went with Mary to Boston."
+  },
+  "tapaco/66_3_4": {
+    "sentence1": "Том поехал в Бостон с Мэри.",
+    "sentence2": "Tom went with Mary to Boston."
+  },
+  "tapaco/67_0_1": {
+    "sentence1": "Esta velocidad es una locura.",
+    "sentence2": "Esta velocidad es demencial."
+  },
+  "tapaco/67_0_2": {
+    "sentence1": "Esta velocidad es una locura.",
+    "sentence2": "Questa velocità è folle."
+  },
+  "tapaco/67_0_3": {
+    "sentence1": "Esta velocidad es una locura.",
+    "sentence2": "Questa è una folle velocità."
+  },
+  "tapaco/67_1_2": {
+    "sentence1": "Esta velocidad es demencial.",
+    "sentence2": "Questa velocità è folle."
+  },
+  "tapaco/67_1_3": {
+    "sentence1": "Esta velocidad es demencial.",
+    "sentence2": "Questa è una folle velocità."
+  },
+  "tapaco/67_2_3": {
+    "sentence1": "Questa velocità è folle.",
+    "sentence2": "Questa è una folle velocità."
+  },
+  "tapaco/68_0_1": {
+    "sentence1": "Czy mogę tu postawić samochód?",
+    "sentence2": "Czy można tu parkować?"
+  },
+  "tapaco/68_0_2": {
+    "sentence1": "Czy mogę tu postawić samochód?",
+    "sentence2": "Kan jag parkera min bil här?"
+  },
+  "tapaco/68_0_3": {
+    "sentence1": "Czy mogę tu postawić samochód?",
+    "sentence2": "Darf ich hier mein Auto abstellen?"
+  },
+  "tapaco/68_0_4": {
+    "sentence1": "Czy mogę tu postawić samochód?",
+    "sentence2": "Zemreɣ ad ḥebseɣ takeṛṛust-inu da?"
+  },
+  "tapaco/68_1_2": {
+    "sentence1": "Czy można tu parkować?",
+    "sentence2": "Kan jag parkera min bil här?"
+  },
+  "tapaco/68_1_3": {
+    "sentence1": "Czy można tu parkować?",
+    "sentence2": "Darf ich hier mein Auto abstellen?"
+  },
+  "tapaco/68_1_4": {
+    "sentence1": "Czy można tu parkować?",
+    "sentence2": "Zemreɣ ad ḥebseɣ takeṛṛust-inu da?"
+  },
+  "tapaco/68_2_3": {
+    "sentence1": "Kan jag parkera min bil här?",
+    "sentence2": "Darf ich hier mein Auto abstellen?"
+  },
+  "tapaco/68_2_4": {
+    "sentence1": "Kan jag parkera min bil här?",
+    "sentence2": "Zemreɣ ad ḥebseɣ takeṛṛust-inu da?"
+  },
+  "tapaco/68_3_4": {
+    "sentence1": "Darf ich hier mein Auto abstellen?",
+    "sentence2": "Zemreɣ ad ḥebseɣ takeṛṛust-inu da?"
+  },
+  "tapaco/69_0_1": {
+    "sentence1": "If I were invisible I wouldn't have to dress myself.",
+    "sentence2": "If I were invisible, I wouldn't have to wear anything."
+  },
+  "tapaco/69_0_2": {
+    "sentence1": "If I were invisible I wouldn't have to dress myself.",
+    "sentence2": "Görünmez olsam, giyinmek zorunda olmam."
+  },
+  "tapaco/69_0_3": {
+    "sentence1": "If I were invisible I wouldn't have to dress myself.",
+    "sentence2": "Görünmez olsaydım, herhangi bir şey giymek zorunda kalmazdım."
+  },
+  "tapaco/69_1_2": {
+    "sentence1": "If I were invisible, I wouldn't have to wear anything.",
+    "sentence2": "Görünmez olsam, giyinmek zorunda olmam."
+  },
+  "tapaco/69_1_3": {
+    "sentence1": "If I were invisible, I wouldn't have to wear anything.",
+    "sentence2": "Görünmez olsaydım, herhangi bir şey giymek zorunda kalmazdım."
+  },
+  "tapaco/69_2_3": {
+    "sentence1": "Görünmez olsam, giyinmek zorunda olmam.",
+    "sentence2": "Görünmez olsaydım, herhangi bir şey giymek zorunda kalmazdım."
+  },
+  "tapaco/70_0_1": {
+    "sentence1": "Faça-o desse jeito.",
+    "sentence2": "עשה זאת כך."
+  },
+  "tapaco/70_0_2": {
+    "sentence1": "Faça-o desse jeito.",
+    "sentence2": "असं कर."
+  },
+  "tapaco/70_0_3": {
+    "sentence1": "Faça-o desse jeito.",
+    "sentence2": "Зроби це так."
+  },
+  "tapaco/70_0_4": {
+    "sentence1": "Faça-o desse jeito.",
+    "sentence2": "Hacelo así."
+  },
+  "tapaco/70_1_2": {
+    "sentence1": "עשה זאת כך.",
+    "sentence2": "असं कर."
+  },
+  "tapaco/70_1_3": {
+    "sentence1": "עשה זאת כך.",
+    "sentence2": "Зроби це так."
+  },
+  "tapaco/70_1_4": {
+    "sentence1": "עשה זאת כך.",
+    "sentence2": "Hacelo así."
+  },
+  "tapaco/70_2_3": {
+    "sentence1": "असं कर.",
+    "sentence2": "Зроби це так."
+  },
+  "tapaco/70_2_4": {
+    "sentence1": "असं कर.",
+    "sentence2": "Hacelo así."
+  },
+  "tapaco/70_3_4": {
+    "sentence1": "Зроби це так.",
+    "sentence2": "Hacelo así."
+  },
+  "tapaco/71_0_1": {
+    "sentence1": "কেউই কথা বলছে না।",
+    "sentence2": "কেউ কথা বলছে না।"
+  },
+  "tapaco/71_0_2": {
+    "sentence1": "কেউই কথা বলছে না।",
+    "sentence2": "No one is speaking."
+  },
+  "tapaco/71_0_3": {
+    "sentence1": "কেউই কথা বলছে না।",
+    "sentence2": "Non parla nessuno."
+  },
+  "tapaco/71_0_4": {
+    "sentence1": "কেউই কথা বলছে না।",
+    "sentence2": "Никто не говорит."
+  },
+  "tapaco/71_1_2": {
+    "sentence1": "কেউ কথা বলছে না।",
+    "sentence2": "No one is speaking."
+  },
+  "tapaco/71_1_3": {
+    "sentence1": "কেউ কথা বলছে না।",
+    "sentence2": "Non parla nessuno."
+  },
+  "tapaco/71_1_4": {
+    "sentence1": "কেউ কথা বলছে না।",
+    "sentence2": "Никто не говорит."
+  },
+  "tapaco/71_2_3": {
+    "sentence1": "No one is speaking.",
+    "sentence2": "Non parla nessuno."
+  },
+  "tapaco/71_2_4": {
+    "sentence1": "No one is speaking.",
+    "sentence2": "Никто не говорит."
+  },
+  "tapaco/71_3_4": {
+    "sentence1": "Non parla nessuno.",
+    "sentence2": "Никто не говорит."
+  },
+  "tapaco/72_0_1": {
+    "sentence1": "Rüzgar güçleniyor gibi görünüyor.",
+    "sentence2": "I think the wind's picking up."
+  },
+  "tapaco/72_0_2": {
+    "sentence1": "Rüzgar güçleniyor gibi görünüyor.",
+    "sentence2": "Sanırım rüzgar ilerliyor."
+  },
+  "tapaco/72_0_3": {
+    "sentence1": "Rüzgar güçleniyor gibi görünüyor.",
+    "sentence2": "It looks like the wind's getting stronger."
+  },
+  "tapaco/72_0_4": {
+    "sentence1": "Rüzgar güçleniyor gibi görünüyor.",
+    "sentence2": "Der Wind scheint zuzunehmen."
+  },
+  "tapaco/72_1_2": {
+    "sentence1": "I think the wind's picking up.",
+    "sentence2": "Sanırım rüzgar ilerliyor."
+  },
+  "tapaco/72_1_3": {
+    "sentence1": "I think the wind's picking up.",
+    "sentence2": "It looks like the wind's getting stronger."
+  },
+  "tapaco/72_1_4": {
+    "sentence1": "I think the wind's picking up.",
+    "sentence2": "Der Wind scheint zuzunehmen."
+  },
+  "tapaco/72_2_3": {
+    "sentence1": "Sanırım rüzgar ilerliyor.",
+    "sentence2": "It looks like the wind's getting stronger."
+  },
+  "tapaco/72_2_4": {
+    "sentence1": "Sanırım rüzgar ilerliyor.",
+    "sentence2": "Der Wind scheint zuzunehmen."
+  },
+  "tapaco/72_3_4": {
+    "sentence1": "It looks like the wind's getting stronger.",
+    "sentence2": "Der Wind scheint zuzunehmen."
+  },
+  "tapaco/73_0_1": {
+    "sentence1": "Parkerigu la poemon ĝis la venonta semajno.",
+    "sentence2": "Opettele tämä runo ulkoa ensi viikkoon mennessä."
+  },
+  "tapaco/73_0_2": {
+    "sentence1": "Parkerigu la poemon ĝis la venonta semajno.",
+    "sentence2": "Jövő hétig magoljátok be a verset."
+  },
+  "tapaco/73_0_3": {
+    "sentence1": "Parkerigu la poemon ĝis la venonta semajno.",
+    "sentence2": "来週までにその詩を暗記しなさい。"
+  },
+  "tapaco/73_0_4": {
+    "sentence1": "Parkerigu la poemon ĝis la venonta semajno.",
+    "sentence2": "Apprends ce poème pour la semaine prochaine."
+  },
+  "tapaco/73_1_2": {
+    "sentence1": "Opettele tämä runo ulkoa ensi viikkoon mennessä.",
+    "sentence2": "Jövő hétig magoljátok be a verset."
+  },
+  "tapaco/73_1_3": {
+    "sentence1": "Opettele tämä runo ulkoa ensi viikkoon mennessä.",
+    "sentence2": "来週までにその詩を暗記しなさい。"
+  },
+  "tapaco/73_1_4": {
+    "sentence1": "Opettele tämä runo ulkoa ensi viikkoon mennessä.",
+    "sentence2": "Apprends ce poème pour la semaine prochaine."
+  },
+  "tapaco/73_2_3": {
+    "sentence1": "Jövő hétig magoljátok be a verset.",
+    "sentence2": "来週までにその詩を暗記しなさい。"
+  },
+  "tapaco/73_2_4": {
+    "sentence1": "Jövő hétig magoljátok be a verset.",
+    "sentence2": "Apprends ce poème pour la semaine prochaine."
+  },
+  "tapaco/73_3_4": {
+    "sentence1": "来週までにその詩を暗記しなさい。",
+    "sentence2": "Apprends ce poème pour la semaine prochaine."
+  },
+  "tapaco/74_0_1": {
+    "sentence1": "Вообще-то, ты не прав.",
+    "sentence2": "Вообще-то, вы не правы."
+  },
+  "tapaco/74_0_2": {
+    "sentence1": "Вообще-то, ты не прав.",
+    "sentence2": "Вообще-то, ты ошибаешься."
+  },
+  "tapaco/74_1_2": {
+    "sentence1": "Вообще-то, вы не правы.",
+    "sentence2": "Вообще-то, ты ошибаешься."
+  },
+  "tapaco/75_0_1": {
+    "sentence1": "Vi ne havis tempon, por fini vian raporton.",
+    "sentence2": "Du hattest keine Zeit, um deinen Bericht fertigzustellen."
+  },
+  "tapaco/75_0_2": {
+    "sentence1": "Vi ne havis tempon, por fini vian raporton.",
+    "sentence2": "Ur kem-id-iṣaḥ wakud akken ad tfaked aṛabul-nnem."
+  },
+  "tapaco/75_0_3": {
+    "sentence1": "Vi ne havis tempon, por fini vian raporton.",
+    "sentence2": "Ŝi ne havis la tempon fini sian raporton."
+  },
+  "tapaco/75_0_4": {
+    "sentence1": "Vi ne havis tempon, por fini vian raporton.",
+    "sentence2": "Ur ken-id-iṣaḥ wakud akken ad tfakem aṛabul-nwen."
+  },
+  "tapaco/75_1_2": {
+    "sentence1": "Du hattest keine Zeit, um deinen Bericht fertigzustellen.",
+    "sentence2": "Ur kem-id-iṣaḥ wakud akken ad tfaked aṛabul-nnem."
+  },
+  "tapaco/75_1_3": {
+    "sentence1": "Du hattest keine Zeit, um deinen Bericht fertigzustellen.",
+    "sentence2": "Ŝi ne havis la tempon fini sian raporton."
+  },
+  "tapaco/75_1_4": {
+    "sentence1": "Du hattest keine Zeit, um deinen Bericht fertigzustellen.",
+    "sentence2": "Ur ken-id-iṣaḥ wakud akken ad tfakem aṛabul-nwen."
+  },
+  "tapaco/75_2_3": {
+    "sentence1": "Ur kem-id-iṣaḥ wakud akken ad tfaked aṛabul-nnem.",
+    "sentence2": "Ŝi ne havis la tempon fini sian raporton."
+  },
+  "tapaco/75_2_4": {
+    "sentence1": "Ur kem-id-iṣaḥ wakud akken ad tfaked aṛabul-nnem.",
+    "sentence2": "Ur ken-id-iṣaḥ wakud akken ad tfakem aṛabul-nwen."
+  },
+  "tapaco/75_3_4": {
+    "sentence1": "Ŝi ne havis la tempon fini sian raporton.",
+    "sentence2": "Ur ken-id-iṣaḥ wakud akken ad tfakem aṛabul-nwen."
+  },
+  "tapaco/76_0_1": {
+    "sentence1": "Unsere Zweifel sind Verräter. Sie halten uns davon ab, einen Versuch zu wagen, und damit machen sie uns oft zum Verlierer, wo wir gewinnen können.",
+    "sentence2": "Duboj estas perfiduloj; bonaĵon atingeblan ili ofte rabas de ni, kiam ni timas a provon."
+  },
+  "tapaco/76_0_2": {
+    "sentence1": "Unsere Zweifel sind Verräter. Sie halten uns davon ab, einen Versuch zu wagen, und damit machen sie uns oft zum Verlierer, wo wir gewinnen können.",
+    "sentence2": "Unsere Zweifel sind Verräter. Wir verlieren durch sie oft Gutes, das wir gewinnen könnten, wenn sie uns nicht Angst machten, den Versuch zu wagen."
+  },
+  "tapaco/76_0_3": {
+    "sentence1": "Unsere Zweifel sind Verräter. Sie halten uns davon ab, einen Versuch zu wagen, und damit machen sie uns oft zum Verlierer, wo wir gewinnen können.",
+    "sentence2": "Niaj duboj estas perfiduloj kaj faras, ke ni timante provon perdas la bonon ofte ja gajneblan."
+  },
+  "tapaco/76_0_4": {
+    "sentence1": "Unsere Zweifel sind Verräter. Sie halten uns davon ab, einen Versuch zu wagen, und damit machen sie uns oft zum Verlierer, wo wir gewinnen können.",
+    "sentence2": "Niaj duboj estas perfiduloj igantaj nin perdi provotime la bonon, kiun ni ofte povus gajni."
+  },
+  "tapaco/76_1_2": {
+    "sentence1": "Duboj estas perfiduloj; bonaĵon atingeblan ili ofte rabas de ni, kiam ni timas a provon.",
+    "sentence2": "Unsere Zweifel sind Verräter. Wir verlieren durch sie oft Gutes, das wir gewinnen könnten, wenn sie uns nicht Angst machten, den Versuch zu wagen."
+  },
+  "tapaco/76_1_3": {
+    "sentence1": "Duboj estas perfiduloj; bonaĵon atingeblan ili ofte rabas de ni, kiam ni timas a provon.",
+    "sentence2": "Niaj duboj estas perfiduloj kaj faras, ke ni timante provon perdas la bonon ofte ja gajneblan."
+  },
+  "tapaco/76_1_4": {
+    "sentence1": "Duboj estas perfiduloj; bonaĵon atingeblan ili ofte rabas de ni, kiam ni timas a provon.",
+    "sentence2": "Niaj duboj estas perfiduloj igantaj nin perdi provotime la bonon, kiun ni ofte povus gajni."
+  },
+  "tapaco/76_2_3": {
+    "sentence1": "Unsere Zweifel sind Verräter. Wir verlieren durch sie oft Gutes, das wir gewinnen könnten, wenn sie uns nicht Angst machten, den Versuch zu wagen.",
+    "sentence2": "Niaj duboj estas perfiduloj kaj faras, ke ni timante provon perdas la bonon ofte ja gajneblan."
+  },
+  "tapaco/76_2_4": {
+    "sentence1": "Unsere Zweifel sind Verräter. Wir verlieren durch sie oft Gutes, das wir gewinnen könnten, wenn sie uns nicht Angst machten, den Versuch zu wagen.",
+    "sentence2": "Niaj duboj estas perfiduloj igantaj nin perdi provotime la bonon, kiun ni ofte povus gajni."
+  },
+  "tapaco/76_3_4": {
+    "sentence1": "Niaj duboj estas perfiduloj kaj faras, ke ni timante provon perdas la bonon ofte ja gajneblan.",
+    "sentence2": "Niaj duboj estas perfiduloj igantaj nin perdi provotime la bonon, kiun ni ofte povus gajni."
+  },
+  "tapaco/77_0_1": {
+    "sentence1": "Даже не упоминай больше об этом.",
+    "sentence2": "Nämn aldrig hans namn igen."
+  },
+  "tapaco/77_0_2": {
+    "sentence1": "Даже не упоминай больше об этом.",
+    "sentence2": "Никогда больше не упоминай его имя."
+  },
+  "tapaco/77_0_3": {
+    "sentence1": "Даже не упоминай больше об этом.",
+    "sentence2": "Больше никогда не упоминай его имени."
+  },
+  "tapaco/77_0_4": {
+    "sentence1": "Даже не упоминай больше об этом.",
+    "sentence2": "Больше никогда не упоминайте его имени."
+  },
+  "tapaco/77_1_2": {
+    "sentence1": "Nämn aldrig hans namn igen.",
+    "sentence2": "Никогда больше не упоминай его имя."
+  },
+  "tapaco/77_1_3": {
+    "sentence1": "Nämn aldrig hans namn igen.",
+    "sentence2": "Больше никогда не упоминай его имени."
+  },
+  "tapaco/77_1_4": {
+    "sentence1": "Nämn aldrig hans namn igen.",
+    "sentence2": "Больше никогда не упоминайте его имени."
+  },
+  "tapaco/77_2_3": {
+    "sentence1": "Никогда больше не упоминай его имя.",
+    "sentence2": "Больше никогда не упоминай его имени."
+  },
+  "tapaco/77_2_4": {
+    "sentence1": "Никогда больше не упоминай его имя.",
+    "sentence2": "Больше никогда не упоминайте его имени."
+  },
+  "tapaco/77_3_4": {
+    "sentence1": "Больше никогда не упоминай его имени.",
+    "sentence2": "Больше никогда не упоминайте его имени."
+  },
+  "tapaco/78_0_1": {
+    "sentence1": "Dove li avete fusi?",
+    "sentence2": "Anda ay ten-tessefsimt?"
+  },
+  "tapaco/78_0_2": {
+    "sentence1": "Dove li avete fusi?",
+    "sentence2": "Anda ay tent-tessefsimt?"
+  },
+  "tapaco/78_0_3": {
+    "sentence1": "Dove li avete fusi?",
+    "sentence2": "Anda ay ten-tessefsiḍ?"
+  },
+  "tapaco/78_0_4": {
+    "sentence1": "Dove li avete fusi?",
+    "sentence2": "Anda ay tent-tessefsiḍ?"
+  },
+  "tapaco/78_1_2": {
+    "sentence1": "Anda ay ten-tessefsimt?",
+    "sentence2": "Anda ay tent-tessefsimt?"
+  },
+  "tapaco/78_1_3": {
+    "sentence1": "Anda ay ten-tessefsimt?",
+    "sentence2": "Anda ay ten-tessefsiḍ?"
+  },
+  "tapaco/78_1_4": {
+    "sentence1": "Anda ay ten-tessefsimt?",
+    "sentence2": "Anda ay tent-tessefsiḍ?"
+  },
+  "tapaco/78_2_3": {
+    "sentence1": "Anda ay tent-tessefsimt?",
+    "sentence2": "Anda ay ten-tessefsiḍ?"
+  },
+  "tapaco/78_2_4": {
+    "sentence1": "Anda ay tent-tessefsimt?",
+    "sentence2": "Anda ay tent-tessefsiḍ?"
+  },
+  "tapaco/78_3_4": {
+    "sentence1": "Anda ay ten-tessefsiḍ?",
+    "sentence2": "Anda ay tent-tessefsiḍ?"
+  },
+  "tapaco/79_0_1": {
+    "sentence1": "Bis zum Ende dieses Jahrzehnts soll eine Gasleitung gebaut werden, die Erdgas aus den Lagerstätten in Aserbaidschan liefern wird.",
+    "sentence2": "Bis zum Ende dieses Jahrzehnts soll eine Erdgasleitung gebaut werden, die den blauen Brennstoff aus den Lagerstätten Aserbaidschans liefern wird."
+  },
+  "tapaco/79_0_2": {
+    "sentence1": "Bis zum Ende dieses Jahrzehnts soll eine Gasleitung gebaut werden, die Erdgas aus den Lagerstätten in Aserbaidschan liefern wird.",
+    "sentence2": "Ĝis la fino de tiu ĉi jardeko laŭplane oni konstruu gasodukton, kiu liveros tergason el la trovejoj en Azerbajĝano."
+  },
+  "tapaco/79_0_3": {
+    "sentence1": "Bis zum Ende dieses Jahrzehnts soll eine Gasleitung gebaut werden, die Erdgas aus den Lagerstätten in Aserbaidschan liefern wird.",
+    "sentence2": "Ĝis la fino de la nuna jardeko laŭplane oni konstruu gasodukton, kiu liveros la bluan brulaĵon el la kuŝejoj de Azerbajĝano."
+  },
+  "tapaco/79_1_2": {
+    "sentence1": "Bis zum Ende dieses Jahrzehnts soll eine Erdgasleitung gebaut werden, die den blauen Brennstoff aus den Lagerstätten Aserbaidschans liefern wird.",
+    "sentence2": "Ĝis la fino de tiu ĉi jardeko laŭplane oni konstruu gasodukton, kiu liveros tergason el la trovejoj en Azerbajĝano."
+  },
+  "tapaco/79_1_3": {
+    "sentence1": "Bis zum Ende dieses Jahrzehnts soll eine Erdgasleitung gebaut werden, die den blauen Brennstoff aus den Lagerstätten Aserbaidschans liefern wird.",
+    "sentence2": "Ĝis la fino de la nuna jardeko laŭplane oni konstruu gasodukton, kiu liveros la bluan brulaĵon el la kuŝejoj de Azerbajĝano."
+  },
+  "tapaco/79_2_3": {
+    "sentence1": "Ĝis la fino de tiu ĉi jardeko laŭplane oni konstruu gasodukton, kiu liveros tergason el la trovejoj en Azerbajĝano.",
+    "sentence2": "Ĝis la fino de la nuna jardeko laŭplane oni konstruu gasodukton, kiu liveros la bluan brulaĵon el la kuŝejoj de Azerbajĝano."
+  },
+  "tapaco/80_0_1": {
+    "sentence1": "Baba yesṛuḥuy tisura-nnes ma ulac tikkelt i dduṛt.",
+    "sentence2": "Baba yesṛuḥuy tisura-nnes, ma ulac, tikkelt i yimalas."
+  },
+  "tapaco/80_0_2": {
+    "sentence1": "Baba yesṛuḥuy tisura-nnes ma ulac tikkelt i dduṛt.",
+    "sentence2": "אבא שלי מאבד מפתחות לפחות פעם בשבוע."
+  },
+  "tapaco/80_0_3": {
+    "sentence1": "Baba yesṛuḥuy tisura-nnes ma ulac tikkelt i dduṛt.",
+    "sentence2": "אבי מאבד מפתחות לפחות אחת לשבוע."
+  },
+  "tapaco/80_1_2": {
+    "sentence1": "Baba yesṛuḥuy tisura-nnes, ma ulac, tikkelt i yimalas.",
+    "sentence2": "אבא שלי מאבד מפתחות לפחות פעם בשבוע."
+  },
+  "tapaco/80_1_3": {
+    "sentence1": "Baba yesṛuḥuy tisura-nnes, ma ulac, tikkelt i yimalas.",
+    "sentence2": "אבי מאבד מפתחות לפחות אחת לשבוע."
+  },
+  "tapaco/80_2_3": {
+    "sentence1": "אבא שלי מאבד מפתחות לפחות פעם בשבוע.",
+    "sentence2": "אבי מאבד מפתחות לפחות אחת לשבוע."
+  },
+  "tapaco/81_0_1": {
+    "sentence1": "Non abbiamo niente di cui discutere.",
+    "sentence2": "Non abbiamo nulla di cui discutere."
+  },
+  "tapaco/81_0_2": {
+    "sentence1": "Non abbiamo niente di cui discutere.",
+    "sentence2": "Нам не о чем спорить."
+  },
+  "tapaco/81_0_3": {
+    "sentence1": "Non abbiamo niente di cui discutere.",
+    "sentence2": "Нам нечего обсуждать."
+  },
+  "tapaco/81_1_2": {
+    "sentence1": "Non abbiamo nulla di cui discutere.",
+    "sentence2": "Нам не о чем спорить."
+  },
+  "tapaco/81_1_3": {
+    "sentence1": "Non abbiamo nulla di cui discutere.",
+    "sentence2": "Нам нечего обсуждать."
+  },
+  "tapaco/81_2_3": {
+    "sentence1": "Нам не о чем спорить.",
+    "sentence2": "Нам нечего обсуждать."
+  },
+  "tapaco/82_0_1": {
+    "sentence1": "У Тома есть друг в Бостоне.",
+    "sentence2": "Tom havas amikon en Bostono."
+  },
+  "tapaco/82_0_2": {
+    "sentence1": "У Тома есть друг в Бостоне.",
+    "sentence2": "У Тома подруга в Бостоне."
+  },
+  "tapaco/82_0_3": {
+    "sentence1": "У Тома есть друг в Бостоне.",
+    "sentence2": "Tom a une amie à Boston."
+  },
+  "tapaco/82_0_4": {
+    "sentence1": "У Тома есть друг в Бостоне.",
+    "sentence2": "Tom a un ami à Boston."
+  },
+  "tapaco/82_1_2": {
+    "sentence1": "Tom havas amikon en Bostono.",
+    "sentence2": "У Тома подруга в Бостоне."
+  },
+  "tapaco/82_1_3": {
+    "sentence1": "Tom havas amikon en Bostono.",
+    "sentence2": "Tom a une amie à Boston."
+  },
+  "tapaco/82_1_4": {
+    "sentence1": "Tom havas amikon en Bostono.",
+    "sentence2": "Tom a un ami à Boston."
+  },
+  "tapaco/82_2_3": {
+    "sentence1": "У Тома подруга в Бостоне.",
+    "sentence2": "Tom a une amie à Boston."
+  },
+  "tapaco/82_2_4": {
+    "sentence1": "У Тома подруга в Бостоне.",
+    "sentence2": "Tom a un ami à Boston."
+  },
+  "tapaco/82_3_4": {
+    "sentence1": "Tom a une amie à Boston.",
+    "sentence2": "Tom a un ami à Boston."
+  },
+  "tapaco/83_0_1": {
+    "sentence1": "Você me acusa injustamente.",
+    "sentence2": "Iniuste me accusas."
+  },
+  "tapaco/83_0_2": {
+    "sentence1": "Você me acusa injustamente.",
+    "sentence2": "Beni haksız yere suçluyorsun."
+  },
+  "tapaco/83_0_3": {
+    "sentence1": "Você me acusa injustamente.",
+    "sentence2": "Beni insafsızca suçluyorsun."
+  },
+  "tapaco/83_0_4": {
+    "sentence1": "Você me acusa injustamente.",
+    "sentence2": "Você está me acusando injustamente."
+  },
+  "tapaco/83_1_2": {
+    "sentence1": "Iniuste me accusas.",
+    "sentence2": "Beni haksız yere suçluyorsun."
+  },
+  "tapaco/83_1_3": {
+    "sentence1": "Iniuste me accusas.",
+    "sentence2": "Beni insafsızca suçluyorsun."
+  },
+  "tapaco/83_1_4": {
+    "sentence1": "Iniuste me accusas.",
+    "sentence2": "Você está me acusando injustamente."
+  },
+  "tapaco/83_2_3": {
+    "sentence1": "Beni haksız yere suçluyorsun.",
+    "sentence2": "Beni insafsızca suçluyorsun."
+  },
+  "tapaco/83_2_4": {
+    "sentence1": "Beni haksız yere suçluyorsun.",
+    "sentence2": "Você está me acusando injustamente."
+  },
+  "tapaco/83_3_4": {
+    "sentence1": "Beni insafsızca suçluyorsun.",
+    "sentence2": "Você está me acusando injustamente."
+  },
+  "tapaco/84_0_1": {
+    "sentence1": "Sono venuto per portargli un regalo.",
+    "sentence2": "Sono venuto per portarle un regalo."
+  },
+  "tapaco/84_0_2": {
+    "sentence1": "Sono venuto per portargli un regalo.",
+    "sentence2": "Дојдов да му донесам подарок."
+  },
+  "tapaco/84_0_3": {
+    "sentence1": "Sono venuto per portargli un regalo.",
+    "sentence2": "Дојдов да ѝ донесам подарок."
+  },
+  "tapaco/84_1_2": {
+    "sentence1": "Sono venuto per portarle un regalo.",
+    "sentence2": "Дојдов да му донесам подарок."
+  },
+  "tapaco/84_1_3": {
+    "sentence1": "Sono venuto per portarle un regalo.",
+    "sentence2": "Дојдов да ѝ донесам подарок."
+  },
+  "tapaco/84_2_3": {
+    "sentence1": "Дојдов да му донесам подарок.",
+    "sentence2": "Дојдов да ѝ донесам подарок."
+  },
+  "tapaco/85_0_1": {
+    "sentence1": "Ur ken-id-ssakayeɣ.",
+    "sentence2": "Ur kent-id-ssakayeɣ."
+  },
+  "tapaco/85_0_2": {
+    "sentence1": "Ur ken-id-ssakayeɣ.",
+    "sentence2": "Я тебя не бужу."
+  },
+  "tapaco/85_0_3": {
+    "sentence1": "Ur ken-id-ssakayeɣ.",
+    "sentence2": "Ich wecke Sie nicht."
+  },
+  "tapaco/85_0_4": {
+    "sentence1": "Ur ken-id-ssakayeɣ.",
+    "sentence2": "Ich wecke euch nicht."
+  },
+  "tapaco/85_1_2": {
+    "sentence1": "Ur kent-id-ssakayeɣ.",
+    "sentence2": "Я тебя не бужу."
+  },
+  "tapaco/85_1_3": {
+    "sentence1": "Ur kent-id-ssakayeɣ.",
+    "sentence2": "Ich wecke Sie nicht."
+  },
+  "tapaco/85_1_4": {
+    "sentence1": "Ur kent-id-ssakayeɣ.",
+    "sentence2": "Ich wecke euch nicht."
+  },
+  "tapaco/85_2_3": {
+    "sentence1": "Я тебя не бужу.",
+    "sentence2": "Ich wecke Sie nicht."
+  },
+  "tapaco/85_2_4": {
+    "sentence1": "Я тебя не бужу.",
+    "sentence2": "Ich wecke euch nicht."
+  },
+  "tapaco/85_3_4": {
+    "sentence1": "Ich wecke Sie nicht.",
+    "sentence2": "Ich wecke euch nicht."
+  },
+  "tapaco/86_0_1": {
+    "sentence1": "Jis kasdien mane baudžia.",
+    "sentence2": "Mi punisce tutti i giorni."
+  },
+  "tapaco/86_0_2": {
+    "sentence1": "Jis kasdien mane baudžia.",
+    "sentence2": "Yettweddib-iyi yal ass."
+  },
+  "tapaco/86_0_3": {
+    "sentence1": "Jis kasdien mane baudžia.",
+    "sentence2": "Jis kiekvieną dieną mane baudžia."
+  },
+  "tapaco/86_0_4": {
+    "sentence1": "Jis kasdien mane baudžia.",
+    "sentence2": "Yettɛaqab-iyi yal ass."
+  },
+  "tapaco/86_1_2": {
+    "sentence1": "Mi punisce tutti i giorni.",
+    "sentence2": "Yettweddib-iyi yal ass."
+  },
+  "tapaco/86_1_3": {
+    "sentence1": "Mi punisce tutti i giorni.",
+    "sentence2": "Jis kiekvieną dieną mane baudžia."
+  },
+  "tapaco/86_1_4": {
+    "sentence1": "Mi punisce tutti i giorni.",
+    "sentence2": "Yettɛaqab-iyi yal ass."
+  },
+  "tapaco/86_2_3": {
+    "sentence1": "Yettweddib-iyi yal ass.",
+    "sentence2": "Jis kiekvieną dieną mane baudžia."
+  },
+  "tapaco/86_2_4": {
+    "sentence1": "Yettweddib-iyi yal ass.",
+    "sentence2": "Yettɛaqab-iyi yal ass."
+  },
+  "tapaco/86_3_4": {
+    "sentence1": "Jis kiekvieną dieną mane baudžia.",
+    "sentence2": "Yettɛaqab-iyi yal ass."
+  },
+  "tapaco/87_0_1": {
+    "sentence1": "Солнце скрылось за горой.",
+    "sentence2": "La suno malaperis malantaŭ la monto."
+  },
+  "tapaco/87_0_2": {
+    "sentence1": "Солнце скрылось за горой.",
+    "sentence2": "La suno kaŝiĝis malantaŭ la monto."
+  },
+  "tapaco/87_0_3": {
+    "sentence1": "Солнце скрылось за горой.",
+    "sentence2": "The sun was hidden by the mountain."
+  },
+  "tapaco/87_0_4": {
+    "sentence1": "Солнце скрылось за горой.",
+    "sentence2": "Die Sonne ist hinter einem Berg untergegangen."
+  },
+  "tapaco/87_1_2": {
+    "sentence1": "La suno malaperis malantaŭ la monto.",
+    "sentence2": "La suno kaŝiĝis malantaŭ la monto."
+  },
+  "tapaco/87_1_3": {
+    "sentence1": "La suno malaperis malantaŭ la monto.",
+    "sentence2": "The sun was hidden by the mountain."
+  },
+  "tapaco/87_1_4": {
+    "sentence1": "La suno malaperis malantaŭ la monto.",
+    "sentence2": "Die Sonne ist hinter einem Berg untergegangen."
+  },
+  "tapaco/87_2_3": {
+    "sentence1": "La suno kaŝiĝis malantaŭ la monto.",
+    "sentence2": "The sun was hidden by the mountain."
+  },
+  "tapaco/87_2_4": {
+    "sentence1": "La suno kaŝiĝis malantaŭ la monto.",
+    "sentence2": "Die Sonne ist hinter einem Berg untergegangen."
+  },
+  "tapaco/87_3_4": {
+    "sentence1": "The sun was hidden by the mountain.",
+    "sentence2": "Die Sonne ist hinter einem Berg untergegangen."
+  },
+  "tapaco/88_0_1": {
+    "sentence1": "Sɣiɣ-as-d tasnasɣalt i Tom.",
+    "sentence2": "Sɣiɣ-as-d i Tom tasnasɣalt."
+  },
+  "tapaco/88_0_2": {
+    "sentence1": "Sɣiɣ-as-d tasnasɣalt i Tom.",
+    "sentence2": "I bought a bicycle for Tom."
+  },
+  "tapaco/88_0_3": {
+    "sentence1": "Sɣiɣ-as-d tasnasɣalt i Tom.",
+    "sentence2": "I bought Tom a bicycle."
+  },
+  "tapaco/88_1_2": {
+    "sentence1": "Sɣiɣ-as-d i Tom tasnasɣalt.",
+    "sentence2": "I bought a bicycle for Tom."
+  },
+  "tapaco/88_1_3": {
+    "sentence1": "Sɣiɣ-as-d i Tom tasnasɣalt.",
+    "sentence2": "I bought Tom a bicycle."
+  },
+  "tapaco/88_2_3": {
+    "sentence1": "I bought a bicycle for Tom.",
+    "sentence2": "I bought Tom a bicycle."
+  },
+  "tapaco/89_0_1": {
+    "sentence1": "Je ne vous accepte pas.",
+    "sentence2": "Ich akzeptiere Sie nicht."
+  },
+  "tapaco/89_0_2": {
+    "sentence1": "Je ne vous accepte pas.",
+    "sentence2": "Ur ken-ttmagareɣ."
+  },
+  "tapaco/89_0_3": {
+    "sentence1": "Je ne vous accepte pas.",
+    "sentence2": "Non vi accoglierò."
+  },
+  "tapaco/89_0_4": {
+    "sentence1": "Je ne vous accepte pas.",
+    "sentence2": "Ich akzeptiere euch nicht."
+  },
+  "tapaco/89_1_2": {
+    "sentence1": "Ich akzeptiere Sie nicht.",
+    "sentence2": "Ur ken-ttmagareɣ."
+  },
+  "tapaco/89_1_3": {
+    "sentence1": "Ich akzeptiere Sie nicht.",
+    "sentence2": "Non vi accoglierò."
+  },
+  "tapaco/89_1_4": {
+    "sentence1": "Ich akzeptiere Sie nicht.",
+    "sentence2": "Ich akzeptiere euch nicht."
+  },
+  "tapaco/89_2_3": {
+    "sentence1": "Ur ken-ttmagareɣ.",
+    "sentence2": "Non vi accoglierò."
+  },
+  "tapaco/89_2_4": {
+    "sentence1": "Ur ken-ttmagareɣ.",
+    "sentence2": "Ich akzeptiere euch nicht."
+  },
+  "tapaco/89_3_4": {
+    "sentence1": "Non vi accoglierò.",
+    "sentence2": "Ich akzeptiere euch nicht."
+  },
+  "tapaco/90_0_1": {
+    "sentence1": "तू अगदी माझ्या बहिणीसारखा दिसतोस.",
+    "sentence2": "Vi tute aspektas kiel mia fratino."
+  },
+  "tapaco/90_0_2": {
+    "sentence1": "तू अगदी माझ्या बहिणीसारखा दिसतोस.",
+    "sentence2": "你很像我姐姐。"
+  },
+  "tapaco/90_0_3": {
+    "sentence1": "तू अगदी माझ्या बहिणीसारखा दिसतोस.",
+    "sentence2": "तुम्ही अगदी माझ्या बहिणीसारखे दिसता."
+  },
+  "tapaco/90_0_4": {
+    "sentence1": "तू अगदी माझ्या बहिणीसारखा दिसतोस.",
+    "sentence2": "你很像我妹妹。"
+  },
+  "tapaco/90_1_2": {
+    "sentence1": "Vi tute aspektas kiel mia fratino.",
+    "sentence2": "你很像我姐姐。"
+  },
+  "tapaco/90_1_3": {
+    "sentence1": "Vi tute aspektas kiel mia fratino.",
+    "sentence2": "तुम्ही अगदी माझ्या बहिणीसारखे दिसता."
+  },
+  "tapaco/90_1_4": {
+    "sentence1": "Vi tute aspektas kiel mia fratino.",
+    "sentence2": "你很像我妹妹。"
+  },
+  "tapaco/90_2_3": {
+    "sentence1": "你很像我姐姐。",
+    "sentence2": "तुम्ही अगदी माझ्या बहिणीसारखे दिसता."
+  },
+  "tapaco/90_2_4": {
+    "sentence1": "你很像我姐姐。",
+    "sentence2": "你很像我妹妹。"
+  },
+  "tapaco/90_3_4": {
+    "sentence1": "तुम्ही अगदी माझ्या बहिणीसारखे दिसता.",
+    "sentence2": "你很像我妹妹。"
+  },
+  "tapaco/91_0_1": {
+    "sentence1": "Зроби це завтра.",
+    "sentence2": "עשה זאת מחר."
+  },
+  "tapaco/91_0_2": {
+    "sentence1": "Зроби це завтра.",
+    "sentence2": "Fais-le demain !"
+  },
+  "tapaco/91_0_3": {
+    "sentence1": "Зроби це завтра.",
+    "sentence2": "Onu yarın yap."
+  },
+  "tapaco/91_0_4": {
+    "sentence1": "Зроби це завтра.",
+    "sentence2": "Do it tomorrow."
+  },
+  "tapaco/91_1_2": {
+    "sentence1": "עשה זאת מחר.",
+    "sentence2": "Fais-le demain !"
+  },
+  "tapaco/91_1_3": {
+    "sentence1": "עשה זאת מחר.",
+    "sentence2": "Onu yarın yap."
+  },
+  "tapaco/91_1_4": {
+    "sentence1": "עשה זאת מחר.",
+    "sentence2": "Do it tomorrow."
+  },
+  "tapaco/91_2_3": {
+    "sentence1": "Fais-le demain !",
+    "sentence2": "Onu yarın yap."
+  },
+  "tapaco/91_2_4": {
+    "sentence1": "Fais-le demain !",
+    "sentence2": "Do it tomorrow."
+  },
+  "tapaco/91_3_4": {
+    "sentence1": "Onu yarın yap.",
+    "sentence2": "Do it tomorrow."
+  },
+  "tapaco/92_0_1": {
+    "sentence1": "遺失物取扱所はどこですか。",
+    "sentence2": "遺失物係はどこですか。"
+  },
+  "tapaco/92_0_2": {
+    "sentence1": "遺失物取扱所はどこですか。",
+    "sentence2": "Где находится бюро находок?"
+  },
+  "tapaco/92_0_3": {
+    "sentence1": "遺失物取扱所はどこですか。",
+    "sentence2": "Где бюро находок?"
+  },
+  "tapaco/92_1_2": {
+    "sentence1": "遺失物係はどこですか。",
+    "sentence2": "Где находится бюро находок?"
+  },
+  "tapaco/92_1_3": {
+    "sentence1": "遺失物係はどこですか。",
+    "sentence2": "Где бюро находок?"
+  },
+  "tapaco/92_2_3": {
+    "sentence1": "Где находится бюро находок?",
+    "sentence2": "Где бюро находок?"
+  },
+  "tapaco/93_0_1": {
+    "sentence1": "Vi estas unu el tiuj kompatinduloj!",
+    "sentence2": "Vi estas tia fiulo."
+  },
+  "tapaco/93_0_2": {
+    "sentence1": "Vi estas unu el tiuj kompatinduloj!",
+    "sentence2": "Ти такий мудак."
+  },
+  "tapaco/93_0_3": {
+    "sentence1": "Vi estas unu el tiuj kompatinduloj!",
+    "sentence2": "Ти такой покидьок."
+  },
+  "tapaco/93_1_2": {
+    "sentence1": "Vi estas tia fiulo.",
+    "sentence2": "Ти такий мудак."
+  },
+  "tapaco/93_1_3": {
+    "sentence1": "Vi estas tia fiulo.",
+    "sentence2": "Ти такой покидьок."
+  },
+  "tapaco/93_2_3": {
+    "sentence1": "Ти такий мудак.",
+    "sentence2": "Ти такой покидьок."
+  },
+  "tapaco/94_0_1": {
+    "sentence1": "Ur ttettu ara tanfult-nnem.",
+    "sentence2": "Non dimenticatevi il biglietto."
+  },
+  "tapaco/94_0_2": {
+    "sentence1": "Ur ttettu ara tanfult-nnem.",
+    "sentence2": "Biletini unutma."
+  },
+  "tapaco/94_0_3": {
+    "sentence1": "Ur ttettu ara tanfult-nnem.",
+    "sentence2": "No se olvide del billete."
+  },
+  "tapaco/94_0_4": {
+    "sentence1": "Ur ttettu ara tanfult-nnem.",
+    "sentence2": "No olvides el boleto."
+  },
+  "tapaco/94_1_2": {
+    "sentence1": "Non dimenticatevi il biglietto.",
+    "sentence2": "Biletini unutma."
+  },
+  "tapaco/94_1_3": {
+    "sentence1": "Non dimenticatevi il biglietto.",
+    "sentence2": "No se olvide del billete."
+  },
+  "tapaco/94_1_4": {
+    "sentence1": "Non dimenticatevi il biglietto.",
+    "sentence2": "No olvides el boleto."
+  },
+  "tapaco/94_2_3": {
+    "sentence1": "Biletini unutma.",
+    "sentence2": "No se olvide del billete."
+  },
+  "tapaco/94_2_4": {
+    "sentence1": "Biletini unutma.",
+    "sentence2": "No olvides el boleto."
+  },
+  "tapaco/94_3_4": {
+    "sentence1": "No se olvide del billete.",
+    "sentence2": "No olvides el boleto."
+  },
+  "tapaco/95_0_1": {
+    "sentence1": "Mi ne flataĉas ilin.",
+    "sentence2": "Ur asen-sqizzibeɣ."
+  },
+  "tapaco/95_0_2": {
+    "sentence1": "Mi ne flataĉas ilin.",
+    "sentence2": "Nem fogom a talpukat nyalni."
+  },
+  "tapaco/95_0_3": {
+    "sentence1": "Mi ne flataĉas ilin.",
+    "sentence2": "Nem nyalok nekik."
+  },
+  "tapaco/95_0_4": {
+    "sentence1": "Mi ne flataĉas ilin.",
+    "sentence2": "Ur asent-sqizzibeɣ."
+  },
+  "tapaco/95_1_2": {
+    "sentence1": "Ur asen-sqizzibeɣ.",
+    "sentence2": "Nem fogom a talpukat nyalni."
+  },
+  "tapaco/95_1_3": {
+    "sentence1": "Ur asen-sqizzibeɣ.",
+    "sentence2": "Nem nyalok nekik."
+  },
+  "tapaco/95_1_4": {
+    "sentence1": "Ur asen-sqizzibeɣ.",
+    "sentence2": "Ur asent-sqizzibeɣ."
+  },
+  "tapaco/95_2_3": {
+    "sentence1": "Nem fogom a talpukat nyalni.",
+    "sentence2": "Nem nyalok nekik."
+  },
+  "tapaco/95_2_4": {
+    "sentence1": "Nem fogom a talpukat nyalni.",
+    "sentence2": "Ur asent-sqizzibeɣ."
+  },
+  "tapaco/95_3_4": {
+    "sentence1": "Nem nyalok nekik.",
+    "sentence2": "Ur asent-sqizzibeɣ."
+  },
+  "tapaco/96_0_1": {
+    "sentence1": "Tom unterzeichnete den Vertrag.",
+    "sentence2": "Tom sözleşmeyi imzaladı."
+  },
+  "tapaco/96_0_2": {
+    "sentence1": "Tom unterzeichnete den Vertrag.",
+    "sentence2": "Tom sözleşme imzaladı."
+  },
+  "tapaco/96_0_3": {
+    "sentence1": "Tom unterzeichnete den Vertrag.",
+    "sentence2": "Tom firmò il contratto."
+  },
+  "tapaco/96_0_4": {
+    "sentence1": "Tom unterzeichnete den Vertrag.",
+    "sentence2": "Tom kontratı imzaladı."
+  },
+  "tapaco/96_1_2": {
+    "sentence1": "Tom sözleşmeyi imzaladı.",
+    "sentence2": "Tom sözleşme imzaladı."
+  },
+  "tapaco/96_1_3": {
+    "sentence1": "Tom sözleşmeyi imzaladı.",
+    "sentence2": "Tom firmò il contratto."
+  },
+  "tapaco/96_1_4": {
+    "sentence1": "Tom sözleşmeyi imzaladı.",
+    "sentence2": "Tom kontratı imzaladı."
+  },
+  "tapaco/96_2_3": {
+    "sentence1": "Tom sözleşme imzaladı.",
+    "sentence2": "Tom firmò il contratto."
+  },
+  "tapaco/96_2_4": {
+    "sentence1": "Tom sözleşme imzaladı.",
+    "sentence2": "Tom kontratı imzaladı."
+  },
+  "tapaco/96_3_4": {
+    "sentence1": "Tom firmò il contratto.",
+    "sentence2": "Tom kontratı imzaladı."
+  },
+  "tapaco/97_0_1": {
+    "sentence1": "Nigraj festroboj aspektigas ŝin bone.",
+    "sentence2": "Ŝi tre plaĉas en nigra festorobo."
+  },
+  "tapaco/97_0_2": {
+    "sentence1": "Nigraj festroboj aspektigas ŝin bone.",
+    "sentence2": "Zwarte feestjurken staan haar erg goed."
+  },
+  "tapaco/97_0_3": {
+    "sentence1": "Nigraj festroboj aspektigas ŝin bone.",
+    "sentence2": "Ze is heel bevallig in een zwart avondkleed."
+  },
+  "tapaco/97_1_2": {
+    "sentence1": "Ŝi tre plaĉas en nigra festorobo.",
+    "sentence2": "Zwarte feestjurken staan haar erg goed."
+  },
+  "tapaco/97_1_3": {
+    "sentence1": "Ŝi tre plaĉas en nigra festorobo.",
+    "sentence2": "Ze is heel bevallig in een zwart avondkleed."
+  },
+  "tapaco/97_2_3": {
+    "sentence1": "Zwarte feestjurken staan haar erg goed.",
+    "sentence2": "Ze is heel bevallig in een zwart avondkleed."
+  },
+  "tapaco/98_0_1": {
+    "sentence1": "Мне не нравятся его песни.",
+    "sentence2": "Мне не нравятся её песни."
+  },
+  "tapaco/98_0_2": {
+    "sentence1": "Мне не нравятся его песни.",
+    "sentence2": "Мне не нравятся Ваши песни."
+  },
+  "tapaco/98_1_2": {
+    "sentence1": "Мне не нравятся её песни.",
+    "sentence2": "Мне не нравятся Ваши песни."
+  },
+  "tapaco/99_0_1": {
+    "sentence1": "Tranĉu la kapsikojn en striojn de du coloj.",
+    "sentence2": "Tranĉu la kapsikofrukton en kvincentimetrajn tranĉetojn."
+  },
+  "tapaco/99_0_2": {
+    "sentence1": "Tranĉu la kapsikojn en striojn de du coloj.",
+    "sentence2": "Rebana los pimientos en tiras de dos pulgadas."
+  },
+  "tapaco/99_0_3": {
+    "sentence1": "Tranĉu la kapsikojn en striojn de du coloj.",
+    "sentence2": "Corte los pimientos en láminas de cinco centímetros."
+  },
+  "tapaco/99_1_2": {
+    "sentence1": "Tranĉu la kapsikofrukton en kvincentimetrajn tranĉetojn.",
+    "sentence2": "Rebana los pimientos en tiras de dos pulgadas."
+  },
+  "tapaco/99_1_3": {
+    "sentence1": "Tranĉu la kapsikofrukton en kvincentimetrajn tranĉetojn.",
+    "sentence2": "Corte los pimientos en láminas de cinco centímetros."
+  },
+  "tapaco/99_2_3": {
+    "sentence1": "Rebana los pimientos en tiras de dos pulgadas.",
+    "sentence2": "Corte los pimientos en láminas de cinco centímetros."
+  },
+  "tapaco/100_0_1": {
+    "sentence1": "Die Dorfbewohner sahen ihn als sehr freigebig an.",
+    "sentence2": "Die Dorfbewohner hielten ihn für sehr großzügig."
+  },
+  "tapaco/100_0_2": {
+    "sentence1": "Die Dorfbewohner sahen ihn als sehr freigebig an.",
+    "sentence2": "The villagers thought that he was very generous."
+  },
+  "tapaco/100_0_3": {
+    "sentence1": "Die Dorfbewohner sahen ihn als sehr freigebig an.",
+    "sentence2": "La vilaĝanoj konsideris lin tre malavara."
+  },
+  "tapaco/100_0_4": {
+    "sentence1": "Die Dorfbewohner sahen ihn als sehr freigebig an.",
+    "sentence2": "The villagers thought him very generous."
+  },
+  "tapaco/100_1_2": {
+    "sentence1": "Die Dorfbewohner hielten ihn für sehr großzügig.",
+    "sentence2": "The villagers thought that he was very generous."
+  },
+  "tapaco/100_1_3": {
+    "sentence1": "Die Dorfbewohner hielten ihn für sehr großzügig.",
+    "sentence2": "La vilaĝanoj konsideris lin tre malavara."
+  },
+  "tapaco/100_1_4": {
+    "sentence1": "Die Dorfbewohner hielten ihn für sehr großzügig.",
+    "sentence2": "The villagers thought him very generous."
+  },
+  "tapaco/100_2_3": {
+    "sentence1": "The villagers thought that he was very generous.",
+    "sentence2": "La vilaĝanoj konsideris lin tre malavara."
+  },
+  "tapaco/100_2_4": {
+    "sentence1": "The villagers thought that he was very generous.",
+    "sentence2": "The villagers thought him very generous."
+  },
+  "tapaco/100_3_4": {
+    "sentence1": "La vilaĝanoj konsideris lin tre malavara.",
+    "sentence2": "The villagers thought him very generous."
+  },
+  "tapaco/101_0_1": {
+    "sentence1": "You're bored.",
+    "sentence2": "You are bored."
+  },
+  "tapaco/101_0_2": {
+    "sentence1": "You're bored.",
+    "sentence2": "Jullie vervelen je."
+  },
+  "tapaco/101_0_3": {
+    "sentence1": "You're bored.",
+    "sentence2": "Siziñ ýüregiñiz gysýar."
+  },
+  "tapaco/101_0_4": {
+    "sentence1": "You're bored.",
+    "sentence2": "Jij verveelt je."
+  },
+  "tapaco/101_1_2": {
+    "sentence1": "You are bored.",
+    "sentence2": "Jullie vervelen je."
+  },
+  "tapaco/101_1_3": {
+    "sentence1": "You are bored.",
+    "sentence2": "Siziñ ýüregiñiz gysýar."
+  },
+  "tapaco/101_1_4": {
+    "sentence1": "You are bored.",
+    "sentence2": "Jij verveelt je."
+  },
+  "tapaco/101_2_3": {
+    "sentence1": "Jullie vervelen je.",
+    "sentence2": "Siziñ ýüregiñiz gysýar."
+  },
+  "tapaco/101_2_4": {
+    "sentence1": "Jullie vervelen je.",
+    "sentence2": "Jij verveelt je."
+  },
+  "tapaco/101_3_4": {
+    "sentence1": "Siziñ ýüregiñiz gysýar.",
+    "sentence2": "Jij verveelt je."
+  },
+  "tapaco/102_0_1": {
+    "sentence1": "彼女の誕生日パーティーに招かれました。",
+    "sentence2": "彼女の誕生日にパーティーに招かれました。"
+  },
+  "tapaco/102_0_2": {
+    "sentence1": "彼女の誕生日パーティーに招かれました。",
+    "sentence2": "彼女の誕生パーティーに招かれました。"
+  },
+  "tapaco/102_0_3": {
+    "sentence1": "彼女の誕生日パーティーに招かれました。",
+    "sentence2": "私は彼女の誕生日に招待された。"
+  },
+  "tapaco/102_1_2": {
+    "sentence1": "彼女の誕生日にパーティーに招かれました。",
+    "sentence2": "彼女の誕生パーティーに招かれました。"
+  },
+  "tapaco/102_1_3": {
+    "sentence1": "彼女の誕生日にパーティーに招かれました。",
+    "sentence2": "私は彼女の誕生日に招待された。"
+  },
+  "tapaco/102_2_3": {
+    "sentence1": "彼女の誕生パーティーに招かれました。",
+    "sentence2": "私は彼女の誕生日に招待された。"
+  },
+  "tapaco/103_0_1": {
+    "sentence1": "Я купив бутерброд.",
+    "sentence2": "Jag köpte en dubbelmacka."
+  },
+  "tapaco/103_0_2": {
+    "sentence1": "Я купив бутерброд.",
+    "sentence2": "Ho comprato un sandwich."
+  },
+  "tapaco/103_0_3": {
+    "sentence1": "Я купив бутерброд.",
+    "sentence2": "Ich kaufte einen Sandwich."
+  },
+  "tapaco/103_0_4": {
+    "sentence1": "Я купив бутерброд.",
+    "sentence2": "Ich habe ein belegtes Brot gekauft."
+  },
+  "tapaco/103_1_2": {
+    "sentence1": "Jag köpte en dubbelmacka.",
+    "sentence2": "Ho comprato un sandwich."
+  },
+  "tapaco/103_1_3": {
+    "sentence1": "Jag köpte en dubbelmacka.",
+    "sentence2": "Ich kaufte einen Sandwich."
+  },
+  "tapaco/103_1_4": {
+    "sentence1": "Jag köpte en dubbelmacka.",
+    "sentence2": "Ich habe ein belegtes Brot gekauft."
+  },
+  "tapaco/103_2_3": {
+    "sentence1": "Ho comprato un sandwich.",
+    "sentence2": "Ich kaufte einen Sandwich."
+  },
+  "tapaco/103_2_4": {
+    "sentence1": "Ho comprato un sandwich.",
+    "sentence2": "Ich habe ein belegtes Brot gekauft."
+  },
+  "tapaco/103_3_4": {
+    "sentence1": "Ich kaufte einen Sandwich.",
+    "sentence2": "Ich habe ein belegtes Brot gekauft."
+  },
+  "tapaco/104_0_1": {
+    "sentence1": "Ти хто? Що ти тут робиш?",
+    "sentence2": "Qui es-tu ? Que fais-tu ici ?"
+  },
+  "tapaco/104_0_2": {
+    "sentence1": "Ти хто? Що ти тут робиш?",
+    "sentence2": "Chi siete? Cosa state facendo qui?"
+  },
+  "tapaco/104_0_3": {
+    "sentence1": "Ти хто? Що ти тут робиш?",
+    "sentence2": "Ви хто? Що ви тут робите?"
+  },
+  "tapaco/104_0_4": {
+    "sentence1": "Ти хто? Що ти тут робиш?",
+    "sentence2": "Chi sei? Cosa stai facendo qui?"
+  },
+  "tapaco/104_1_2": {
+    "sentence1": "Qui es-tu ? Que fais-tu ici ?",
+    "sentence2": "Chi siete? Cosa state facendo qui?"
+  },
+  "tapaco/104_1_3": {
+    "sentence1": "Qui es-tu ? Que fais-tu ici ?",
+    "sentence2": "Ви хто? Що ви тут робите?"
+  },
+  "tapaco/104_1_4": {
+    "sentence1": "Qui es-tu ? Que fais-tu ici ?",
+    "sentence2": "Chi sei? Cosa stai facendo qui?"
+  },
+  "tapaco/104_2_3": {
+    "sentence1": "Chi siete? Cosa state facendo qui?",
+    "sentence2": "Ви хто? Що ви тут робите?"
+  },
+  "tapaco/104_2_4": {
+    "sentence1": "Chi siete? Cosa state facendo qui?",
+    "sentence2": "Chi sei? Cosa stai facendo qui?"
+  },
+  "tapaco/104_3_4": {
+    "sentence1": "Ви хто? Що ви тут робите?",
+    "sentence2": "Chi sei? Cosa stai facendo qui?"
+  },
+  "tapaco/105_0_1": {
+    "sentence1": "Tom ŝajne disponas neniun memfidon.",
+    "sentence2": "Tomo ŝajnas havi neniun memfidon."
+  },
+  "tapaco/105_0_2": {
+    "sentence1": "Tom ŝajne disponas neniun memfidon.",
+    "sentence2": "Tomo ŝajnas esti neniel memfida."
+  },
+  "tapaco/105_0_3": {
+    "sentence1": "Tom ŝajne disponas neniun memfidon.",
+    "sentence2": "Том не уверен в себе."
+  },
+  "tapaco/105_0_4": {
+    "sentence1": "Tom ŝajne disponas neniun memfidon.",
+    "sentence2": "Том, похоже, совершенно в себе не уверен."
+  },
+  "tapaco/105_1_2": {
+    "sentence1": "Tomo ŝajnas havi neniun memfidon.",
+    "sentence2": "Tomo ŝajnas esti neniel memfida."
+  },
+  "tapaco/105_1_3": {
+    "sentence1": "Tomo ŝajnas havi neniun memfidon.",
+    "sentence2": "Том не уверен в себе."
+  },
+  "tapaco/105_1_4": {
+    "sentence1": "Tomo ŝajnas havi neniun memfidon.",
+    "sentence2": "Том, похоже, совершенно в себе не уверен."
+  },
+  "tapaco/105_2_3": {
+    "sentence1": "Tomo ŝajnas esti neniel memfida.",
+    "sentence2": "Том не уверен в себе."
+  },
+  "tapaco/105_2_4": {
+    "sentence1": "Tomo ŝajnas esti neniel memfida.",
+    "sentence2": "Том, похоже, совершенно в себе не уверен."
+  },
+  "tapaco/105_3_4": {
+    "sentence1": "Том не уверен в себе.",
+    "sentence2": "Том, похоже, совершенно в себе не уверен."
+  },
+  "tapaco/106_0_1": {
+    "sentence1": "Tom said you were really good at tennis.",
+    "sentence2": "Tom tells me that he is really good at tennis."
+  },
+  "tapaco/106_0_2": {
+    "sentence1": "Tom said you were really good at tennis.",
+    "sentence2": "Tom senin teniste gerçekten iyi olduğunu söyledi."
+  },
+  "tapaco/106_0_3": {
+    "sentence1": "Tom said you were really good at tennis.",
+    "sentence2": "Tom bana senin teniste gerçekten iyi olduğunu söylüyor."
+  },
+  "tapaco/106_1_2": {
+    "sentence1": "Tom tells me that he is really good at tennis.",
+    "sentence2": "Tom senin teniste gerçekten iyi olduğunu söyledi."
+  },
+  "tapaco/106_1_3": {
+    "sentence1": "Tom tells me that he is really good at tennis.",
+    "sentence2": "Tom bana senin teniste gerçekten iyi olduğunu söylüyor."
+  },
+  "tapaco/106_2_3": {
+    "sentence1": "Tom senin teniste gerçekten iyi olduğunu söyledi.",
+    "sentence2": "Tom bana senin teniste gerçekten iyi olduğunu söylüyor."
+  },
+  "tapaco/107_0_1": {
+    "sentence1": "I'm keen on Mary passing the examination.",
+    "sentence2": "I hope that Mary passes the examination."
+  },
+  "tapaco/107_0_2": {
+    "sentence1": "I'm keen on Mary passing the examination.",
+    "sentence2": "メアリーが試験に合格することを私は切望しています。"
+  },
+  "tapaco/107_0_3": {
+    "sentence1": "I'm keen on Mary passing the examination.",
+    "sentence2": "メアリーが試験に合格しますように。"
+  },
+  "tapaco/107_1_2": {
+    "sentence1": "I hope that Mary passes the examination.",
+    "sentence2": "メアリーが試験に合格することを私は切望しています。"
+  },
+  "tapaco/107_1_3": {
+    "sentence1": "I hope that Mary passes the examination.",
+    "sentence2": "メアリーが試験に合格しますように。"
+  },
+  "tapaco/107_2_3": {
+    "sentence1": "メアリーが試験に合格することを私は切望しています。",
+    "sentence2": "メアリーが試験に合格しますように。"
+  },
+  "tapaco/108_0_1": {
+    "sentence1": "すみません、ココ、座っても良い？",
+    "sentence2": "Простите, можно я здесь сяду?"
+  },
+  "tapaco/108_0_2": {
+    "sentence1": "すみません、ココ、座っても良い？",
+    "sentence2": "Извините, вы не возражаете, если я присяду здесь?"
+  },
+  "tapaco/108_0_3": {
+    "sentence1": "すみません、ココ、座っても良い？",
+    "sentence2": "Pardonon, ĉu mi raĵtas eksidi ĉi tie?"
+  },
+  "tapaco/108_0_4": {
+    "sentence1": "すみません、ココ、座っても良い？",
+    "sentence2": "Pardonu min, ĉu vi ne kontraŭas, se mi eksidu ĉi tie?"
+  },
+  "tapaco/108_1_2": {
+    "sentence1": "Простите, можно я здесь сяду?",
+    "sentence2": "Извините, вы не возражаете, если я присяду здесь?"
+  },
+  "tapaco/108_1_3": {
+    "sentence1": "Простите, можно я здесь сяду?",
+    "sentence2": "Pardonon, ĉu mi raĵtas eksidi ĉi tie?"
+  },
+  "tapaco/108_1_4": {
+    "sentence1": "Простите, можно я здесь сяду?",
+    "sentence2": "Pardonu min, ĉu vi ne kontraŭas, se mi eksidu ĉi tie?"
+  },
+  "tapaco/108_2_3": {
+    "sentence1": "Извините, вы не возражаете, если я присяду здесь?",
+    "sentence2": "Pardonon, ĉu mi raĵtas eksidi ĉi tie?"
+  },
+  "tapaco/108_2_4": {
+    "sentence1": "Извините, вы не возражаете, если я присяду здесь?",
+    "sentence2": "Pardonu min, ĉu vi ne kontraŭas, se mi eksidu ĉi tie?"
+  },
+  "tapaco/108_3_4": {
+    "sentence1": "Pardonon, ĉu mi raĵtas eksidi ĉi tie?",
+    "sentence2": "Pardonu min, ĉu vi ne kontraŭas, se mi eksidu ĉi tie?"
+  },
+  "tapaco/109_0_1": {
+    "sentence1": "Su esposa preparó una trampa para culparlo.",
+    "sentence2": "El fue culpado por su esposa."
+  },
+  "tapaco/109_0_2": {
+    "sentence1": "Su esposa preparó una trampa para culparlo.",
+    "sentence2": "Ille ha essite dupate per su sposa."
+  },
+  "tapaco/109_0_3": {
+    "sentence1": "Su esposa preparó una trampa para culparlo.",
+    "sentence2": "Ille esseva trappate per su marita."
+  },
+  "tapaco/109_1_2": {
+    "sentence1": "El fue culpado por su esposa.",
+    "sentence2": "Ille ha essite dupate per su sposa."
+  },
+  "tapaco/109_1_3": {
+    "sentence1": "El fue culpado por su esposa.",
+    "sentence2": "Ille esseva trappate per su marita."
+  },
+  "tapaco/109_2_3": {
+    "sentence1": "Ille ha essite dupate per su sposa.",
+    "sentence2": "Ille esseva trappate per su marita."
+  },
+  "tapaco/110_0_1": {
+    "sentence1": "Ttakfeɣ-d aṭas n tuttriwin.",
+    "sentence2": "Ttettreɣ aṭas."
+  },
+  "tapaco/110_0_2": {
+    "sentence1": "Ttakfeɣ-d aṭas n tuttriwin.",
+    "sentence2": "Faccio molte domande."
+  },
+  "tapaco/110_0_3": {
+    "sentence1": "Ttakfeɣ-d aṭas n tuttriwin.",
+    "sentence2": "Io faccio molte domande."
+  },
+  "tapaco/110_1_2": {
+    "sentence1": "Ttettreɣ aṭas.",
+    "sentence2": "Faccio molte domande."
+  },
+  "tapaco/110_1_3": {
+    "sentence1": "Ttettreɣ aṭas.",
+    "sentence2": "Io faccio molte domande."
+  },
+  "tapaco/110_2_3": {
+    "sentence1": "Faccio molte domande.",
+    "sentence2": "Io faccio molte domande."
+  },
+  "tapaco/111_0_1": {
+    "sentence1": "Vattene! E non toccarmi mai più!",
+    "sentence2": "Andatevene! E non toccatemi mai più!"
+  },
+  "tapaco/111_0_2": {
+    "sentence1": "Vattene! E non toccarmi mai più!",
+    "sentence2": "Se ne vada! E non mi tocchi mai più!"
+  },
+  "tapaco/111_1_2": {
+    "sentence1": "Andatevene! E non toccatemi mai più!",
+    "sentence2": "Se ne vada! E non mi tocchi mai più!"
+  },
+  "tapaco/112_0_1": {
+    "sentence1": "Será mejor que no esperes aquí.",
+    "sentence2": "Краще тобі тут не чекати."
+  },
+  "tapaco/112_0_2": {
+    "sentence1": "Será mejor que no esperes aquí.",
+    "sentence2": "Burada beklemesen iyi olur."
+  },
+  "tapaco/112_0_3": {
+    "sentence1": "Será mejor que no esperes aquí.",
+    "sentence2": "Не треба тут чекати."
+  },
+  "tapaco/112_0_4": {
+    "sentence1": "Será mejor que no esperes aquí.",
+    "sentence2": "你不應該在這裡等。"
+  },
+  "tapaco/112_1_2": {
+    "sentence1": "Краще тобі тут не чекати.",
+    "sentence2": "Burada beklemesen iyi olur."
+  },
+  "tapaco/112_1_3": {
+    "sentence1": "Краще тобі тут не чекати.",
+    "sentence2": "Не треба тут чекати."
+  },
+  "tapaco/112_1_4": {
+    "sentence1": "Краще тобі тут не чекати.",
+    "sentence2": "你不應該在這裡等。"
+  },
+  "tapaco/112_2_3": {
+    "sentence1": "Burada beklemesen iyi olur.",
+    "sentence2": "Не треба тут чекати."
+  },
+  "tapaco/112_2_4": {
+    "sentence1": "Burada beklemesen iyi olur.",
+    "sentence2": "你不應該在這裡等。"
+  },
+  "tapaco/112_3_4": {
+    "sentence1": "Не треба тут чекати.",
+    "sentence2": "你不應該在這裡等。"
+  },
+  "tapaco/113_0_1": {
+    "sentence1": "O prazo já terminou.",
+    "sentence2": "O prazo já se esgotou."
+  },
+  "tapaco/113_0_2": {
+    "sentence1": "O prazo já terminou.",
+    "sentence2": "O prazo já expirou."
+  },
+  "tapaco/113_1_2": {
+    "sentence1": "O prazo já se esgotou.",
+    "sentence2": "O prazo já expirou."
+  },
+  "tapaco/114_0_1": {
+    "sentence1": "Tatlılara karşı koyamam.",
+    "sentence2": "Ich kann Süßem nicht widerstehen."
+  },
+  "tapaco/114_0_2": {
+    "sentence1": "Tatlılara karşı koyamam.",
+    "sentence2": "Ich kann der Versuchung süßer Sachen nicht widerstehen."
+  },
+  "tapaco/114_0_3": {
+    "sentence1": "Tatlılara karşı koyamam.",
+    "sentence2": "I can't resist sweet things."
+  },
+  "tapaco/114_0_4": {
+    "sentence1": "Tatlılara karşı koyamam.",
+    "sentence2": "甘い物にはつい手が出てしまう。"
+  },
+  "tapaco/114_1_2": {
+    "sentence1": "Ich kann Süßem nicht widerstehen.",
+    "sentence2": "Ich kann der Versuchung süßer Sachen nicht widerstehen."
+  },
+  "tapaco/114_1_3": {
+    "sentence1": "Ich kann Süßem nicht widerstehen.",
+    "sentence2": "I can't resist sweet things."
+  },
+  "tapaco/114_1_4": {
+    "sentence1": "Ich kann Süßem nicht widerstehen.",
+    "sentence2": "甘い物にはつい手が出てしまう。"
+  },
+  "tapaco/114_2_3": {
+    "sentence1": "Ich kann der Versuchung süßer Sachen nicht widerstehen.",
+    "sentence2": "I can't resist sweet things."
+  },
+  "tapaco/114_2_4": {
+    "sentence1": "Ich kann der Versuchung süßer Sachen nicht widerstehen.",
+    "sentence2": "甘い物にはつい手が出てしまう。"
+  },
+  "tapaco/114_3_4": {
+    "sentence1": "I can't resist sweet things.",
+    "sentence2": "甘い物にはつい手が出てしまう。"
+  },
+  "tapaco/115_0_1": {
+    "sentence1": "Eu não quero que você saiba meu nome verdadeiro.",
+    "sentence2": "Não quero que tu saibas meu verdadeiro nome."
+  },
+  "tapaco/115_0_2": {
+    "sentence1": "Eu não quero que você saiba meu nome verdadeiro.",
+    "sentence2": "Não quero que vocês saibam meu verdadeiro nome."
+  },
+  "tapaco/115_0_3": {
+    "sentence1": "Eu não quero que você saiba meu nome verdadeiro.",
+    "sentence2": "Não quero que a senhora saiba meu verdadeiro nome."
+  },
+  "tapaco/115_0_4": {
+    "sentence1": "Eu não quero que você saiba meu nome verdadeiro.",
+    "sentence2": "Eu não quero que os senhores saibam meu nome verdadeiro."
+  },
+  "tapaco/115_1_2": {
+    "sentence1": "Não quero que tu saibas meu verdadeiro nome.",
+    "sentence2": "Não quero que vocês saibam meu verdadeiro nome."
+  },
+  "tapaco/115_1_3": {
+    "sentence1": "Não quero que tu saibas meu verdadeiro nome.",
+    "sentence2": "Não quero que a senhora saiba meu verdadeiro nome."
+  },
+  "tapaco/115_1_4": {
+    "sentence1": "Não quero que tu saibas meu verdadeiro nome.",
+    "sentence2": "Eu não quero que os senhores saibam meu nome verdadeiro."
+  },
+  "tapaco/115_2_3": {
+    "sentence1": "Não quero que vocês saibam meu verdadeiro nome.",
+    "sentence2": "Não quero que a senhora saiba meu verdadeiro nome."
+  },
+  "tapaco/115_2_4": {
+    "sentence1": "Não quero que vocês saibam meu verdadeiro nome.",
+    "sentence2": "Eu não quero que os senhores saibam meu nome verdadeiro."
+  },
+  "tapaco/115_3_4": {
+    "sentence1": "Não quero que a senhora saiba meu verdadeiro nome.",
+    "sentence2": "Eu não quero que os senhores saibam meu nome verdadeiro."
+  },
+  "tapaco/116_0_1": {
+    "sentence1": "I rescued Tom.",
+    "sentence2": "I saved Tom."
+  },
+  "tapaco/116_0_2": {
+    "sentence1": "I rescued Tom.",
+    "sentence2": "Я врятував Тома."
+  },
+  "tapaco/116_0_3": {
+    "sentence1": "I rescued Tom.",
+    "sentence2": "Я врятувала Тома."
+  },
+  "tapaco/116_1_2": {
+    "sentence1": "I saved Tom.",
+    "sentence2": "Я врятував Тома."
+  },
+  "tapaco/116_1_3": {
+    "sentence1": "I saved Tom.",
+    "sentence2": "Я врятувала Тома."
+  },
+  "tapaco/116_2_3": {
+    "sentence1": "Я врятував Тома.",
+    "sentence2": "Я врятувала Тома."
+  },
+  "tapaco/117_0_1": {
+    "sentence1": "Я помогу вам ради нашей старой дружбы.",
+    "sentence2": "Я помогу тебе по старой дружбе."
+  },
+  "tapaco/117_0_2": {
+    "sentence1": "Я помогу вам ради нашей старой дружбы.",
+    "sentence2": "我々の古き友情のためにご援助いたしましょう。"
+  },
+  "tapaco/117_0_3": {
+    "sentence1": "Я помогу вам ради нашей старой дружбы.",
+    "sentence2": "I'll help you, seeing that we're old friends."
+  },
+  "tapaco/117_0_4": {
+    "sentence1": "Я помогу вам ради нашей старой дружбы.",
+    "sentence2": "I will help you for the sake of our old friendship."
+  },
+  "tapaco/117_1_2": {
+    "sentence1": "Я помогу тебе по старой дружбе.",
+    "sentence2": "我々の古き友情のためにご援助いたしましょう。"
+  },
+  "tapaco/117_1_3": {
+    "sentence1": "Я помогу тебе по старой дружбе.",
+    "sentence2": "I'll help you, seeing that we're old friends."
+  },
+  "tapaco/117_1_4": {
+    "sentence1": "Я помогу тебе по старой дружбе.",
+    "sentence2": "I will help you for the sake of our old friendship."
+  },
+  "tapaco/117_2_3": {
+    "sentence1": "我々の古き友情のためにご援助いたしましょう。",
+    "sentence2": "I'll help you, seeing that we're old friends."
+  },
+  "tapaco/117_2_4": {
+    "sentence1": "我々の古き友情のためにご援助いたしましょう。",
+    "sentence2": "I will help you for the sake of our old friendship."
+  },
+  "tapaco/117_3_4": {
+    "sentence1": "I'll help you, seeing that we're old friends.",
+    "sentence2": "I will help you for the sake of our old friendship."
+  },
+  "tapaco/118_0_1": {
+    "sentence1": "You seemed busy.",
+    "sentence2": "You looked busy."
+  },
+  "tapaco/118_0_2": {
+    "sentence1": "You seemed busy.",
+    "sentence2": "You seemed to be busy."
+  },
+  "tapaco/118_0_3": {
+    "sentence1": "You seemed busy.",
+    "sentence2": "Wyglądałeś na zajętego."
+  },
+  "tapaco/118_0_4": {
+    "sentence1": "You seemed busy.",
+    "sentence2": "Wydawałaś się zajęta."
+  },
+  "tapaco/118_1_2": {
+    "sentence1": "You looked busy.",
+    "sentence2": "You seemed to be busy."
+  },
+  "tapaco/118_1_3": {
+    "sentence1": "You looked busy.",
+    "sentence2": "Wyglądałeś na zajętego."
+  },
+  "tapaco/118_1_4": {
+    "sentence1": "You looked busy.",
+    "sentence2": "Wydawałaś się zajęta."
+  },
+  "tapaco/118_2_3": {
+    "sentence1": "You seemed to be busy.",
+    "sentence2": "Wyglądałeś na zajętego."
+  },
+  "tapaco/118_2_4": {
+    "sentence1": "You seemed to be busy.",
+    "sentence2": "Wydawałaś się zajęta."
+  },
+  "tapaco/118_3_4": {
+    "sentence1": "Wyglądałeś na zajętego.",
+    "sentence2": "Wydawałaś się zajęta."
+  },
+  "tapaco/119_0_1": {
+    "sentence1": "Tomi levette a zokniját.",
+    "sentence2": "Tom se quitó los calcetines."
+  },
+  "tapaco/119_0_2": {
+    "sentence1": "Tomi levette a zokniját.",
+    "sentence2": "Tomi lehúzta a zokniját."
+  },
+  "tapaco/119_0_3": {
+    "sentence1": "Tomi levette a zokniját.",
+    "sentence2": "Tom removed his socks."
+  },
+  "tapaco/119_0_4": {
+    "sentence1": "Tomi levette a zokniját.",
+    "sentence2": "Tomás se quitó las medias."
+  },
+  "tapaco/119_1_2": {
+    "sentence1": "Tom se quitó los calcetines.",
+    "sentence2": "Tomi lehúzta a zokniját."
+  },
+  "tapaco/119_1_3": {
+    "sentence1": "Tom se quitó los calcetines.",
+    "sentence2": "Tom removed his socks."
+  },
+  "tapaco/119_1_4": {
+    "sentence1": "Tom se quitó los calcetines.",
+    "sentence2": "Tomás se quitó las medias."
+  },
+  "tapaco/119_2_3": {
+    "sentence1": "Tomi lehúzta a zokniját.",
+    "sentence2": "Tom removed his socks."
+  },
+  "tapaco/119_2_4": {
+    "sentence1": "Tomi lehúzta a zokniját.",
+    "sentence2": "Tomás se quitó las medias."
+  },
+  "tapaco/119_3_4": {
+    "sentence1": "Tom removed his socks.",
+    "sentence2": "Tomás se quitó las medias."
+  }
+}

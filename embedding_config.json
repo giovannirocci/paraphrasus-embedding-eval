@@ -1,0 +1,15 @@
+{
+  "bench_id": "test_embedding",
+  "datasets": {
+    "ms-mrpc": "datasets_no_results/ms-mrpc.json",
+    "paws-x": "datasets_no_results/paws-x-test.json"
+  },
+  "methods": [
+    {
+      "name": "cosine_similarity",
+      "module": "embedding_methods",
+      "function": "cosine_scores_from_pairs",
+      "dummy": true
+    }
+  ]
+}
