@@ -23,7 +23,7 @@ def compute_all_datasets(model_id: str, calibration: str, datasets_dir: str, out
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
-            scores, labels, goal = compute_scores(model, ds_path, calibration)
+            scores, labels, goal = compute_scores(model, model_id, ds_path, calibration)
             results[ds_name] = {
                 "scores": scores,
                 "labels": labels,

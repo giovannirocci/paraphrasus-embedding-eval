@@ -100,18 +100,29 @@ def load_dataset(ds_path: str):
 # Score embedding pairs
 # -------------------------------
 
-def compute_scores(model: SentenceTransformer, dataset_path: str, calibration: str | None = None):
+def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str, calibration: str | None = None):
     """
     Compute similarity scores for all pairs in the dataset using the specified model.
     If calibration is specified, use the corresponding method to compute scores.
     Args:
         model: the embedding model
+        model_name: name of the embedding model (for caching purposes)
         dataset_path: path to the dataset JSON file
         calibration: "threshold", "classifier", or None
     """
     pairs, labels, goal = load_dataset(dataset_path)
     texts1, texts2 = zip(*pairs)
-    emb1, emb2 = model.encode(texts1), model.encode(texts2)
+
+    cache_dir = os.path.join("_embedding_cache", model_name.replace("/", "_"))
+    os.makedirs(cache_dir, exist_ok=True)
+    cache_path = os.path.join(cache_dir, f"{os.path.basename(dataset_path)}.npz")
+
+    if os.path.exists(cache_path):
+        data = np.load(cache_path)
+        emb1, emb2 = data["emb1"], data["emb2"]
+    else:
+        emb1, emb2 = model.encode(texts1), model.encode(texts2)
+        np.savez(cache_path, emb1=emb1, emb2=emb2)
 
     if calibration == "threshold" or calibration is None:
         # Learn threshold through cosine similarity / use scores for AUC
