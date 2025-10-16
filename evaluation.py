@@ -1,6 +1,5 @@
 import argparse
 import numpy as np
-import torch
 from sklearn.metrics import roc_auc_score, f1_score, accuracy_score
 import json
 import os
@@ -10,7 +9,7 @@ from calibration import threshold_learning, classifier_learning
 from embedding import compute_scores, load_embedder
 
 
-def compute_all_datasets(model_id: str, calibration: str, datasets_dir: str, outdir: str):
+def compute_all_datasets(model_id: str, datasets_dir: str, outdir: str):
     """
     Compute scores for all datasets in the specified directory.
     """
@@ -23,115 +22,99 @@ def compute_all_datasets(model_id: str, calibration: str, datasets_dir: str, out
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
-            scores, labels, goal = compute_scores(model, model_id, ds_path, calibration)
-            results[ds_name] = {
-                "scores": scores,
-                "labels": labels,
-                "goal": goal
-            }
+            results[ds_name] = compute_scores(model, model_id, ds_path)
     return results
 
 
-def evaluate_loo_threshold(datasets, metric: str):
+def loo_eval(datasets, metric: str, calibration: str):
     """
-    Leave-One-Out evaluation with threshold calibration.
+    Leave-One-Out evaluation with calibration.
     """
-    results = {}
-    print("Performing Leave-One-Out evaluation with threshold calibration...")
-    for held_out in datasets:
-        train_scores = []
-        train_labels = []
-        for ds_name, data in datasets.items():
-            if ds_name != held_out:
-                train_scores.extend(data["scores"])
-                train_labels.extend(data["labels"])
-        best_thr, _ = threshold_learning(np.array(train_scores), np.array(train_labels))
+    if metric == "auc":
+        raise ValueError("AUC metric is not supported with calibration methods.")
 
+    results = {}
+    print(f"Performing Leave-One-Out evaluation with {calibration} calibration...")
+    for held_out in datasets:
+        train_labels, train_scores, train_diffs = [], [], []
+
+        for ds_name, data in datasets.items():
+            if ds_name == held_out:
+                continue
+            train_labels.extend(data["labels"])
+            train_scores.extend(data["scores"])
+            train_diffs.extend(data["diffs"])
+
+        # ---- Calibration ----
+        if calibration == "threshold":
+            best_thr, _ = threshold_learning(np.array(train_scores), np.array(train_labels))
+        elif calibration == "classifier":
+            X_train = np.asarray(train_diffs, dtype=np.float32)
+            y_train = np.asarray(train_labels)
+            clf = classifier_learning(X_train, y_train)
+        else:
+            raise ValueError(f"Unknown calibration method: {calibration}")
+
+        # ---- Evaluation on held-out ----
         print(f"Evaluating on held-out dataset: {held_out}")
         held_out_data = datasets[held_out]
-        scores = held_out_data["scores"]
-        if hasattr(scores, "detach"):  # torch.Tensor
-            scores = scores.detach().cpu().numpy()
+        held_labels = np.asarray(held_out_data["labels"])
+
+        if calibration == "classifier":
+            X_test = np.asarray(held_out_data["diffs"], dtype=np.float32)
+            preds = clf.predict(X_test)
         else:
-            scores = np.asarray(scores, dtype=np.float32)  # normal numpy array
+            scores = np.asarray(held_out_data["scores"], dtype=np.float32)
+            preds = (scores > best_thr).astype(np.int32)
 
-        preds = (scores > best_thr).astype(np.int32)
-
+        # ---- Metrics ----
         if metric == "f1":
-            f1 = f1_score(held_out_data["labels"], preds, zero_division=1)
-            results[held_out] = f1
+            results[held_out] = f1_score(held_labels, preds, zero_division=1)
         elif metric == "error":
-            acc = accuracy_score(held_out_data["labels"], preds)
-            error = 1 - acc
-            results[held_out] = error
+            acc = accuracy_score(held_labels, preds)
+            results[held_out] = 1 - acc
         else:
-            raise ValueError(f"Unknown metric {metric}")
-    return results
+            raise ValueError(f"Unknown metric {metric}.")
 
-
-def evaluate_loo_classifier(datasets, metric: str):
-    """
-    Leave-One-Out evaluation with classifier calibration.
-    """
-    results = {}
-    print("Performing Leave-One-Out evaluation with classifier calibration...")
-    for held_out in datasets:
-        train_scores = []
-        train_labels = []
-        for ds_name, data in datasets.items():
-            if ds_name != held_out:
-                train_scores.extend(data["scores"])
-                train_labels.extend(data["labels"])
-        clf = classifier_learning(np.vstack(train_scores), np.array(train_labels))
-
-        print(f"Evaluating on held-out dataset: {held_out}")
-        held_out_data = datasets[held_out]
-        preds = clf.predict(np.array(held_out_data["scores"]))
-
-        if metric == "f1":
-            f1 = f1_score(held_out_data["labels"], preds, zero_division=1)
-            results[held_out] = f1
-        elif metric == "error":
-            acc = accuracy_score(held_out_data["labels"], preds)
-            error = 1 - acc
-            results[held_out] = error
-
-        else:
-            raise ValueError(f"Unknown metric {metric}")
     return results
 
 
 def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: str):
-    datasets = compute_all_datasets(model, calibration, datasets_dir, outdir)
+    datasets = compute_all_datasets(model, datasets_dir, outdir)
 
     results = {}
     if args.full:
         for met in ["auc", "f1", "error"]:
             if met == "auc":
+                # Use similarity scores from the base datasets
                 all_labels = np.concatenate([data["labels"] for data in datasets.values()])
                 all_scores = np.concatenate([data["scores"] for data in datasets.values()])
+                print("Computing overall AUC...")
                 auc = roc_auc_score(all_labels, all_scores)
                 results[f"overall_{met}"] = auc
+
             else:
-                for cal in ["threshold", "classifier"]:
-                    if cal == "threshold":
-                        res = evaluate_loo_threshold(datasets, met)
-                    elif cal == "classifier":
-                        res = evaluate_loo_classifier(datasets, met)
-                    results[f"{cal}_{met}"] = res
+                # ---------- Threshold calibration ----------
+                print(f"\nRunning {met.upper()} eval with THRESHOLD calibration")
+                threshold_results = loo_eval(datasets, met, "threshold")
+                results[f"threshold_{met}"] = threshold_results
+
+                # ---------- Classifier calibration ----------
+                print(f"\nRunning {met.upper()} eval with CLASSIFIER calibration")
+                classifier_results = loo_eval(datasets, met, "classifier")
+                results[f"classifier_{met}"] = classifier_results
+
         results_path = os.path.join(outdir, f"{model.replace('/', '_')}_full_results.json")
     else:
-        if calibration == "threshold":
-            results = evaluate_loo_threshold(datasets, metric)
-        elif calibration == "classifier":
-            results = evaluate_loo_classifier(datasets, metric)
-        elif calibration is None:
+        if calibration is None and metric == "auc":
+            print("Computing overall AUC...")
             all_labels = np.concatenate([data["labels"] for data in datasets.values()])
             all_scores = np.concatenate([data["scores"] for data in datasets.values()])
             auc = roc_auc_score(all_labels, all_scores)
             results = {"overall_auc": auc}
         else:
-            raise ValueError(f"Unknown calibration method: {calibration}")
+            results = loo_eval(datasets, metric, calibration)
+
         results_path = os.path.join(outdir, f"{model.replace('/', '_')}_{metric}_{calibration if calibration else ''}_results.json")
 
     with open(results_path, "w") as f:
@@ -144,11 +127,11 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
 # -------------------------------
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", required=True)
-    parser.add_argument("--metric", choices=["auc", "error", "f1"])
-    parser.add_argument("--calibration", choices=["threshold", "classifier"])
-    parser.add_argument("--datasets_dir", default="datasets_no_results")
-    parser.add_argument("--outdir", default="embedding_benchmarks")
+    parser.add_argument("--model", required=True, help="Model name or path on HuggingFace Hub or Sbert models")
+    parser.add_argument("--metric", choices=["auc", "error", "f1"], help="Evaluation metric")
+    parser.add_argument("--calibration", choices=["threshold", "classifier"], help="Calibration method")
+    parser.add_argument("--datasets_dir", default="datasets_no_results", help="Directory containing datasets in JSON format")
+    parser.add_argument("--outdir", default="embedding_benchmarks", help="Output directory for results")
     parser.add_argument("--full", action="store_true", help="Evaluate on all metrics and all calibration methods")
     args = parser.parse_args()
 

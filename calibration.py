@@ -32,18 +32,17 @@ def threshold_learning(scores: np.ndarray, labels: np.ndarray):
 # Classifier
 # -------------------------------
 
-def classifier_learning(scores, labels: np.ndarray):
+def classifier_learning(X: np.ndarray, labels: np.ndarray):
     """
     Train a simple classifier on cosine similarity.
 
     Args:
-        scores : similarity scores (cosine similarities)
+        X : element-wise difference of embeddings
         labels: true binary labels
 
     Returns:
         trained model
     """
-    X = np.asarray(scores).reshape(-1, 1)
     clf = LogisticRegression()
     clf.fit(X, labels)
     print("Trained logistic regression classifier for calibration.")

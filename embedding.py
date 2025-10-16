@@ -1,7 +1,5 @@
-import argparse
 import numpy as np
 import torch
-from sklearn.metrics import roc_auc_score, f1_score, accuracy_score
 from sentence_transformers import SentenceTransformer
 import json
 import os
@@ -100,15 +98,15 @@ def load_dataset(ds_path: str):
 # Score embedding pairs
 # -------------------------------
 
-def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str, calibration: str | None = None):
+def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str):
     """
-    Compute similarity scores for all pairs in the dataset using the specified model.
-    If calibration is specified, use the corresponding method to compute scores.
+    Compute similarity scores and element-wise difference for all pairs in the dataset using the specified model.
     Args:
         model: the embedding model
         model_name: name of the embedding model (for caching purposes)
         dataset_path: path to the dataset JSON file
-        calibration: "threshold", "classifier", or None
+    Returns:
+        dict with keys: scores, diffs, labels, goal
     """
     pairs, labels, goal = load_dataset(dataset_path)
     texts1, texts2 = zip(*pairs)
@@ -124,13 +122,9 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
         emb1, emb2 = model.encode(texts1), model.encode(texts2)
         np.savez(cache_path, emb1=emb1, emb2=emb2)
 
-    if calibration == "threshold" or calibration is None:
-        # Learn threshold through cosine similarity / use scores for AUC
-        scores = compute_pairwise_similarity(model, emb1, emb2)
-        return scores, labels, goal
-    elif calibration == "classifier":
-        # Learn classifier through element-wise subtraction
-        X = np.abs(emb1 - emb2)  # element-wise absolute difference
-        return X, labels, goal
-    else:
-        raise ValueError("Calibration method must be 'threshold', 'classifier', or None.")
+    return {
+        "scores": compute_pairwise_similarity(model, emb1, emb2),
+        "diffs": np.abs(emb1 - emb2),
+        "labels": labels,
+        "goal": goal
+    }
