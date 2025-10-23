@@ -17,11 +17,10 @@ def threshold_learning(scores: np.ndarray, labels: np.ndarray):
     Returns:
         best_thr, best_f1
     """
-    scores = np.asarray(scores)
     best_thr, best_f1 = 0.0, 0.0
     for thr in np.linspace(-1, 1, 200): # 200 is number of thresholds to try
         preds = (scores > thr).astype(np.int32)
-        f1 = f1_score(labels, preds, zero_division=0)
+        f1 = f1_score(labels, preds, zero_division=1)
         if f1 > best_f1:
             best_thr, best_f1 = thr, f1
     print(f"Learned threshold = {best_thr:.3f} (F1 = {best_f1:.3f})")
