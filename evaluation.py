@@ -19,10 +19,14 @@ def compute_all_datasets(model_id: str, datasets_dir: str, outdir: str):
     results = {}
     print("Computing similarity scores...")
     for ds_file in tqdm(os.listdir(datasets_dir), total=len(os.listdir(datasets_dir))):
+        if args.paraphrasus_consistent:
+            # Only use datasets from original Paraphrasus paper
+            if "tapaco_paraphrases" in ds_file:
+                continue
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
-            results[ds_name] = compute_scores(model, model_id, ds_path)
+            results[ds_name] = compute_scores(model, model_id, ds_path, args.method)
     return results
 
 
@@ -76,6 +80,27 @@ def loo_eval(datasets, metric: str, calibration: str):
         else:
             raise ValueError(f"Unknown metric {metric}.")
 
+    # ---- Aggregate results ----
+    classify, minimize, maximize = [], [], []
+    for k, v in datasets.items():
+        if v["goal"] == "classify":
+            classify.append(results[k])
+        elif v["goal"] == "minimize":
+            minimize.append(results[k])
+        elif v["goal"] == "maximize":
+            maximize.append(results[k])
+
+    def aggregate(group):
+        if not group:
+            return None
+        return float(np.mean(group))
+
+    results["overall_classify"] = aggregate(classify)
+    results["overall_minimize"] = aggregate(minimize)
+    results["overall_maximize"] = aggregate(maximize)
+
+    results["overall_mean"] = aggregate([results["overall_classify"], results["overall_minimize"], results["overall_maximize"]])
+
     return results
 
 
@@ -104,7 +129,10 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
                 classifier_results = loo_eval(datasets, met, "classifier")
                 results[f"classifier_{met}"] = classifier_results
 
-        results_path = os.path.join(outdir, f"{model.replace('/', '_')}_full_results.json")
+        if args.paraphrasus_consistent:
+            results_path = os.path.join(outdir, f"{model.replace('/', '_')}_comparable_full_results.json")
+        else:
+            results_path = os.path.join(outdir, f"{model.replace('/', '_')}_{args.method}_full_results.json")
     else:
         if calibration is None and metric == "auc":
             print("Computing overall AUC...")
@@ -115,7 +143,9 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
         else:
             results = loo_eval(datasets, metric, calibration)
 
-        results_path = os.path.join(outdir, f"{model.replace('/', '_')}_{metric}_{calibration if calibration else ''}_results.json")
+        results_path = os.path.join(outdir,
+                                    f"{model.replace('/', '_')}_{metric}_{calibration if calibration else ''}"
+                                    f"_{args.method if calibration == 'classifier' else ''}_results.json")
 
     with open(results_path, "w") as f:
         json.dump(results, f, indent=4)
@@ -133,6 +163,9 @@ if __name__ == "__main__":
     parser.add_argument("--datasets_dir", default="datasets_no_results", help="Directory containing datasets in JSON format")
     parser.add_argument("--outdir", default="embedding_benchmarks", help="Output directory for results")
     parser.add_argument("--full", action="store_true", help="Evaluate on all metrics and all calibration methods")
+    parser.add_argument("--paraphrasus_consistent", action="store_true",
+                        help="Use only datasets from original Paraphrasus paper, to get comparable results.")
+    parser.add_argument("--method", choices=["elementwise_diff", "multiplication", "sum"], default="elementwise_diff")
     args = parser.parse_args()
 
     if args.metric in ["error", "f1"] and args.calibration is None and not args.full:
