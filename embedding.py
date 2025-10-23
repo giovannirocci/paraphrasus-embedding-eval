@@ -1,5 +1,4 @@
 import numpy as np
-import torch
 from sentence_transformers import SentenceTransformer
 import json
 import os
@@ -20,6 +19,7 @@ def compute_pairwise_similarity(model, emb1, emb2):
     try:
         return model.similarity_pairwise(emb1, emb2)
     except AttributeError:
+        import torch
         emb1_t = torch.as_tensor(emb1)
         emb2_t = torch.as_tensor(emb2)
         return torch.nn.functional.cosine_similarity(emb1_t, emb2_t, dim=1).cpu().numpy()
@@ -98,13 +98,14 @@ def load_dataset(ds_path: str):
 # Score embedding pairs
 # -------------------------------
 
-def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str):
+def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str, classifier_method: str):
     """
     Compute similarity scores and element-wise difference for all pairs in the dataset using the specified model.
     Args:
         model: the embedding model
         model_name: name of the embedding model (for caching purposes)
         dataset_path: path to the dataset JSON file
+        classifier_method: method to compute differences ("elementwise_diff", "multiplication", "sum")
     Returns:
         dict with keys: scores, diffs, labels, goal
     """
@@ -122,9 +123,18 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
         emb1, emb2 = model.encode(texts1), model.encode(texts2)
         np.savez(cache_path, emb1=emb1, emb2=emb2)
 
+    if classifier_method == "elementwise_diff":
+        diffs = np.abs(emb1 - emb2)
+    elif classifier_method == "multiplication":
+        diffs = emb1 * emb2
+    elif classifier_method == "sum":
+        diffs = emb1 + emb2
+    else:
+        raise ValueError(f"Unknown classifier method: {classifier_method}")
+
     return {
         "scores": compute_pairwise_similarity(model, emb1, emb2),
-        "diffs": np.abs(emb1 - emb2),
+        "diffs": diffs,
         "labels": labels,
         "goal": goal
     }
