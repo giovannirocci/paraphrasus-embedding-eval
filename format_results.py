@@ -13,7 +13,7 @@ def load_results(input_filepath):
     if 'comparable' in input_filepath:
         pattern = r'_comparable_(auc|error|full_results)\.json$'
         input_filepath = re.sub(pattern, '', input_filepath)
-        model_name = input_filepath.split('/')[-1] + " (Paraphrasus Consistent)"
+        model_name = input_filepath.split('/')[-1] + "*"
     else:
         pattern = r'_(elementwise_diff|multiplication|sum)_(auc|error|full_results)\.json$'
         input_filepath = re.sub(pattern, '', input_filepath)
@@ -113,7 +113,7 @@ def create_results_table(input_dir, output_filepath):
 
                 # Threshold calibration row
                 row1 = [
-                    model_name + " (Threshold Calib.)",
+                    model_name + " (Thr. Calib.)",
                     fmt(th_err.get("PAWS-X")),
                     fmt(th_err.get("MRPC")),
                     fmt(th_err.get("STS-H")),
@@ -131,7 +131,7 @@ def create_results_table(input_dir, output_filepath):
                 ]
                 # Classifier calibration row
                 row2 = [
-                    model_name + " (Classifier Calib.)",
+                    model_name + " (Class. Calib.)",
                     fmt(cl_err.get("PAWS-X")),
                     fmt(cl_err.get("MRPC")),
                     fmt(cl_err.get("STS-H")),
