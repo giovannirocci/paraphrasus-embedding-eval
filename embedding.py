@@ -11,7 +11,7 @@ import os
 def load_embedder(model_name: str):
     """Load an Embedding model"""
     print(f"Loading model: {model_name}")
-    model = SentenceTransformer(model_name, trust_remote_code=True)
+    model = SentenceTransformer(model_name, device="cuda", trust_remote_code=True)
     return model
 
 
