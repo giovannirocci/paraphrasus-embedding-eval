@@ -13,11 +13,11 @@ def load_results(input_filepath):
     if 'comparable' in input_filepath:
         pattern = r'_comparable_(auc|error|full_results)\.json$'
         input_filepath = re.sub(pattern, '', input_filepath)
-        model_name = input_filepath.split('/')[-1] + "*"
+        model_name = input_filepath.split('/')[-1].split('_')[-1] + "*"
     else:
         pattern = r'_(elementwise_diff|multiplication|sum)_(auc|error|full_results)\.json$'
         input_filepath = re.sub(pattern, '', input_filepath)
-        model_name = input_filepath.split('/')[-1]
+        model_name = input_filepath.split('/')[-1].split('_')[-1]
 
     return data, model_name
 
