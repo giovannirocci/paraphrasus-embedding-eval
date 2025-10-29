@@ -26,7 +26,7 @@ def compute_all_datasets(model_id: str, datasets_dir: str, outdir: str):
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
-            results[ds_name] = compute_scores(model, model_id, ds_path, args.method)
+            results[ds_name] = compute_scores(model, model_id, ds_path, args.method, multi_eval=True)
     return results
 
 
@@ -102,6 +102,15 @@ def loo_eval(datasets, metric: str, calibration: str):
     results["overall_mean"] = aggregate([results["overall_classify"], results["overall_minimize"], results["overall_maximize"]])
 
     return results
+
+
+def single_eval(model, model_id, dataset, metric: str, calibration: str):
+    """
+    Single dataset evaluation.
+    """
+    from sklearn.model_selection import train_test_split
+
+    data = compute_scores(model, model_id, dataset, args.method, multi_eval=False)
 
 
 def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: str):
