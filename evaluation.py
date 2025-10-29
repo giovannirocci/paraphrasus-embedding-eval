@@ -104,20 +104,61 @@ def loo_eval(datasets, metric: str, calibration: str):
     return results
 
 
-def single_eval(model, model_id, dataset, metric: str, calibration: str):
+def single_eval(model_id, ds_path, metric: str, calibration: str):
     """
     Single dataset evaluation.
     """
     from sklearn.model_selection import train_test_split
 
-    data = compute_scores(model, model_id, dataset, args.method, multi_eval=False)
+    model = load_embedder(model_id)
+
+    data = compute_scores(model, model_id, ds_path, args.method, multi_eval=False)
+    ds_name = os.path.basename(ds_path).replace(".json", "")
+
+    if metric == "auc":
+        if calibration:
+            raise Warning("AUC metric is not supported with calibration methods.")
+        auc = roc_auc_score(data["labels"], data["scores"])
+        return {f"{ds_name}_{metric}": auc}
+    else:
+        results = {}
+        y = np.asarray(data["labels"], dtype=np.int32)
+        
+        if calibration == "threshold":
+            X = np.asarray(data["scores"], dtype=np.float32)
+            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+            best_thr, _ = threshold_learning(X_train, y_train)
+            # Eval
+            preds = (X_test > best_thr).astype(np.int32)
+
+        elif calibration == "classifier":
+            X = np.asarray(data["diffs"], dtype=np.float32)
+            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+            clf = classifier_learning(X_train, y_train)
+            # Eval
+            preds = clf.predict(X_test)
+        else:
+            raise ValueError(f"Unknown calibration method: {calibration}")
+
+        if metric == "f1":
+            results[metric] = f1_score(y_test, preds, zero_division=1)
+        elif metric == "error":
+            acc = accuracy_score(y_test, preds)
+            results[metric] = 1 - acc
+        else:
+            raise ValueError(f"Unknown metric {metric}.")
+
+    return results
 
 
-def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: str):
-    datasets = compute_all_datasets(model, datasets_dir, outdir)
+def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: str, single: bool = False):
+    if not single:
+        datasets = compute_all_datasets(model, datasets_dir, outdir)
 
     results = {}
     if args.full:
+        if single:
+            raise ValueError("Full evaluation is not supported for single dataset evaluation.")
         for met in ["auc", "f1", "error"]:
             if met == "auc":
                 # Use similarity scores from the base datasets
@@ -142,6 +183,12 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
             results_path = os.path.join(outdir, f"{model.replace('/', '_')}_comparable_full_results.json")
         else:
             results_path = os.path.join(outdir, f"{model.replace('/', '_')}_{args.method}_full_results.json")
+
+    elif single:
+        print(f"Evaluating single dataset: {args.ds_path.split('/')[-1].replace('.json','')}")
+        results = single_eval(model, args.ds_path, metric, calibration)
+        return results
+    
     else:
         if calibration is None and metric == "auc":
             print("Computing overall AUC...")
@@ -175,9 +222,16 @@ if __name__ == "__main__":
     parser.add_argument("--paraphrasus_consistent", action="store_true",
                         help="Use only datasets from original Paraphrasus paper, to get comparable results.")
     parser.add_argument("--method", choices=["elementwise_diff", "multiplication", "sum"], default="elementwise_diff")
+    parser.add_argument("--single_dataset", help="Evaluate on a single dataset", action="store_true")
+    parser.add_argument("--ds_path", help="Path to the single dataset JSON file")
     args = parser.parse_args()
 
     if args.metric in ["error", "f1"] and args.calibration is None and not args.full:
         raise ValueError("Metric 'error' or 'f1' requires a calibration method ('--calibration') or '--full' flag.")
+    
+    if args.single_dataset and not args.ds_path:
+        raise ValueError("Please provide the path to the single dataset using '--ds_path'.")
+    
+    os.makedirs(args.outdir, exist_ok=True)
 
-    main(args.model, args.metric, args.calibration, args.datasets_dir, args.outdir)
+    main(args.model, args.metric, args.calibration, args.datasets_dir, args.outdir, args.single_dataset)
