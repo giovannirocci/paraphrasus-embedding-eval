@@ -3,3 +3,4 @@
 __pycache__/
 original_reproduction_code/
 _embedding_cache/
+.venv/
