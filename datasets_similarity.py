@@ -16,11 +16,18 @@ def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str):
     dataset_names = []
     dataset_embeddings = {}
 
+    skip = ["stannlp-snli-hyp-pre", "fb-anli-hyp-pre", "fb-xnli-hyp-pre"]
+
     print("Loading datasets and computing embeddings...")
     for ds_file in os.listdir(datasets_dir):
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
+
+            if ds_name in skip:
+                print(f"Skipping mirror dataset {ds_name} as its pair is already processed.")
+                continue
+
             pairs, _, _ = load_dataset(ds_path)
             sentences = [st for pair in pairs for st in pair]
 
@@ -70,5 +77,7 @@ if __name__ == "__main__":
     parser.add_argument("--out_path", type=str, default="plots/dataset_similarity_heatmap.png", help="Output path for the heatmap image")
     args = parser.parse_args()
 
-    os.makedirs(args.out_path, exist_ok=True)
+    if len(args.out_path.split("/")) > 1:
+        os.makedirs(args.out_path.split("/")[0], exist_ok=True)
+
     compute_dataset_similarity(args.model, args.datasets_dir, args.out_path)
