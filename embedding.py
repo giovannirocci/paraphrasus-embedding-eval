@@ -12,8 +12,11 @@ random.seed(42)
 def load_embedder(model_name: str):
     """Load an Embedding model"""
     print(f"Loading model: {model_name}")
-    model = SentenceTransformer(model_name, device="cuda", trust_remote_code=True)
-    return model
+    if isinstance(model_name, SentenceTransformer):
+        return model_name
+    else:
+        model = SentenceTransformer(model_name, device="cuda", trust_remote_code=True)
+        return model
 
 
 def compute_pairwise_similarity(model, emb1, emb2):
