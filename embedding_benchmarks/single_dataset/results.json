@@ -1,0 +1,134 @@
+{
+    "ms-mrpc": {
+        "Alibaba-NLP/gte-multilingual-base": {
+            "auc_none": 0.7779644808331045,
+            "f1_threshold": 0.8419047619047619,
+            "error_threshold": 0.24057971014492752,
+            "f1_classifier": 0.8416988416988417,
+            "error_classifier": 0.2376811594202899
+        },
+        "BAAI/bge-m3": {
+            "auc_none": 0.7648733117535439,
+            "f1_threshold": 0.8294573643410853,
+            "error_threshold": 0.255072463768116,
+            "f1_classifier": 0.825147347740668,
+            "error_classifier": 0.2579710144927536
+        },
+        "intfloat/multilingual-e5-large-instruct": {
+            "auc_none": 0.8009792357375792,
+            "f1_threshold": 0.8384458077709611,
+            "error_threshold": 0.22898550724637678,
+            "f1_classifier": 0.8326996197718631,
+            "error_classifier": 0.255072463768116
+        },
+        "jinaai/jina-embeddings-v3": {
+            "auc_none": 0.7506493545672026,
+            "f1_threshold": 0.8226415094339623,
+            "error_threshold": 0.2724637681159421,
+            "f1_classifier": 0.8260038240917782,
+            "error_classifier": 0.263768115942029
+        },
+        "paraphrase-multilingual-mpnet-base-v2": {
+            "auc_none": 0.7853864300733371,
+            "f1_threshold": 0.8389513108614233,
+            "error_threshold": 0.24927536231884062,
+            "f1_classifier": 0.8154158215010142,
+            "error_classifier": 0.263768115942029
+        },
+        "Qwen/Qwen3-Embedding-0.6B": {
+            "auc_none": 0.7271096858662436,
+            "f1_threshold": 0.8137432188065099,
+            "error_threshold": 0.2985507246376812,
+            "f1_classifier": 0.8138195777351248,
+            "error_classifier": 0.2811594202898551
+        }
+    },
+    "paws-x-test": {
+        "Alibaba-NLP/gte-multilingual-base": {
+            "auc_none": 0.592502171894423,
+            "f1_threshold": 0.6229182202336565,
+            "error_threshold": 0.5417857142857143,
+            "f1_classifier": 0.4524033930254477,
+            "error_classifier": 0.41500000000000004
+        },
+        "BAAI/bge-m3": {
+            "auc_none": 0.5844008742229516,
+            "f1_threshold": 0.6234153616703952,
+            "error_threshold": 0.5410714285714286,
+            "f1_classifier": 0.43713163064833005,
+            "error_classifier": 0.40928571428571425
+        },
+        "intfloat/multilingual-e5-large-instruct": {
+            "auc_none": 0.5771132494066926,
+            "f1_threshold": 0.6235703630034809,
+            "error_threshold": 0.5407142857142857,
+            "f1_classifier": 0.38809144072301965,
+            "error_classifier": 0.41107142857142853
+        },
+        "jinaai/jina-embeddings-v3": {
+            "auc_none": 0.5836968968591184,
+            "f1_threshold": 0.6229182202336565,
+            "error_threshold": 0.5417857142857143,
+            "f1_classifier": 0.44510680576254347,
+            "error_classifier": 0.3989285714285714
+        },
+        "paraphrase-multilingual-mpnet-base-v2": {
+            "auc_none": 0.5708204115282351,
+            "f1_threshold": 0.6232280527232031,
+            "error_threshold": 0.5410714285714286,
+            "f1_classifier": 0.4888691006233304,
+            "error_classifier": 0.41000000000000003
+        },
+        "Qwen/Qwen3-Embedding-0.6B": {
+            "auc_none": 0.6129270434239678,
+            "f1_threshold": 0.6232280527232031,
+            "error_threshold": 0.5410714285714286,
+            "f1_classifier": 0.49888442659527,
+            "error_classifier": 0.4010714285714285
+        }
+    },
+    "stsbenchmark-test-sts": {
+        "Alibaba-NLP/gte-multilingual-base": {
+            "auc_none": 0.7203637674772645,
+            "f1_threshold": 0.5306122448979592,
+            "error_threshold": 0.3382352941176471,
+            "f1_classifier": 0.0,
+            "error_classifier": 0.25
+        },
+        "BAAI/bge-m3": {
+            "auc_none": 0.7893113256680422,
+            "f1_threshold": 0.47619047619047616,
+            "error_threshold": 0.32352941176470584,
+            "f1_classifier": 0.3,
+            "error_classifier": 0.20588235294117652
+        },
+        "intfloat/multilingual-e5-large-instruct": {
+            "auc_none": 0.772124514242218,
+            "f1_threshold": 0.5531914893617021,
+            "error_threshold": 0.3088235294117647,
+            "f1_classifier": 0.0,
+            "error_classifier": 0.25
+        },
+        "jinaai/jina-embeddings-v3": {
+            "auc_none": 0.7583430151035616,
+            "f1_threshold": 0.5416666666666666,
+            "error_threshold": 0.32352941176470584,
+            "f1_classifier": 0.0,
+            "error_classifier": 0.25
+        },
+        "paraphrase-multilingual-mpnet-base-v2": {
+            "auc_none": 0.7388325788229638,
+            "f1_threshold": 0.4,
+            "error_threshold": 0.3529411764705882,
+            "f1_classifier": 0.4444444444444444,
+            "error_classifier": 0.22058823529411764
+        },
+        "Qwen/Qwen3-Embedding-0.6B": {
+            "auc_none": 0.7520131404991788,
+            "f1_threshold": 0.5098039215686274,
+            "error_threshold": 0.36764705882352944,
+            "f1_classifier": 0.1111111111111111,
+            "error_classifier": 0.23529411764705888
+        }
+    }
+}
