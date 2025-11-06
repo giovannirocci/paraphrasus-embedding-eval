@@ -187,7 +187,10 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
     elif single:
         print(f"Evaluating single dataset: {args.ds_path.split('/')[-1].replace('.json','')}")
         results = single_eval(model, args.ds_path, metric, calibration)
-        return results
+        ds_name = os.path.basename(args.ds_path).replace(".json", "")
+        results_path = os.path.join(outdir,
+                                    f"{model.replace('/', '_')}_{ds_name}_{metric}_{calibration if calibration else ''}"
+                                    f"_{args.method if calibration == 'classifier' else ''}_results.json")
     
     else:
         if calibration is None and metric == "auc":
