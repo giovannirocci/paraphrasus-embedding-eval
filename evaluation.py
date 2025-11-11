@@ -9,24 +9,23 @@ from calibration import threshold_learning, classifier_learning
 from embedding import compute_scores, load_embedder
 
 
-def compute_all_datasets(model_id: str, datasets_dir: str, outdir: str):
+def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, paraphrasus_consistent: bool = False):
     """
     Compute scores for all datasets in the specified directory.
     """
-    os.makedirs(outdir, exist_ok=True)
     model = load_embedder(model_id)
 
     results = {}
     print("Computing similarity scores...")
     for ds_file in tqdm(os.listdir(datasets_dir), total=len(os.listdir(datasets_dir))):
-        if args.paraphrasus_consistent:
+        if paraphrasus_consistent:
             # Only use datasets from original Paraphrasus paper
             if "tapaco_paraphrases" in ds_file:
                 continue
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
-            results[ds_name] = compute_scores(model, model_id, ds_path, args.method, multi_eval=True)
+            results[ds_name] = compute_scores(model, model_id, ds_path, clf_method, multi_eval=True)
     return results
 
 
@@ -152,8 +151,9 @@ def single_eval(model_id, ds_path, metric: str, calibration: str):
 
 
 def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: str, single: bool = False):
+    os.makedirs(outdir, exist_ok=True)
     if not single:
-        datasets = compute_all_datasets(model, datasets_dir, outdir)
+        datasets = compute_all_datasets(model, datasets_dir, args.method, args.paraphrasus_consistent)
 
     results = {}
     if args.full:

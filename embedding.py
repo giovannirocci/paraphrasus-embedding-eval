@@ -134,10 +134,10 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
         emb1, emb2 = data["emb1"], data["emb2"]
         if emb1.shape[0] != len(texts1) or emb2.shape[0] != len(texts2):
             print("Cached embeddings do not match dataset size, recomputing embeddings...")
-            emb1, emb2 = model.encode(texts1), model.encode(texts2)
+            emb1, emb2 = model.encode(texts1, show_progress_bar=True), model.encode(texts2, show_progress_bar=True)
             np.savez(cache_path, emb1=emb1, emb2=emb2)
     else:
-        emb1, emb2 = model.encode(texts1), model.encode(texts2)
+        emb1, emb2 = model.encode(texts1, show_progress_bar=True), model.encode(texts2, show_progress_bar=True)
         np.savez(cache_path, emb1=emb1, emb2=emb2)
 
     if classifier_method == "elementwise_diff":
