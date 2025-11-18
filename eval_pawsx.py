@@ -50,6 +50,7 @@ def evaluate(thr, clf, model, ds_dir):
     for ds in res:
         scores = np.asarray(res[ds]['scores'])
         y = np.asarray(res[ds]['labels'])
+        goal = res[ds]['goal']
 
         # Threshold evaluation
         y_pred_threshold = (scores > thr).astype(np.int32)
@@ -68,6 +69,29 @@ def evaluate(thr, clf, model, ds_dir):
             "error": 1 - accuracy_score(y, y_pred_classifier)
         }
 
+        results[ds]['goal'] = goal
+    return results
+
+
+def calculate_means(results):
+    classify, minimize, maximize = [], [], []
+    for ds in results:
+        goal = results[ds]['goal']
+        if goal == "classify":
+            classify.append(results[ds]['threshold_learning']['error'])
+            classify.append(results[ds]['classifier_learning']['error'])
+        elif goal == "minimize":
+            minimize.append(results[ds]['threshold_learning']['error'])
+            minimize.append(results[ds]['classifier_learning']['error'])
+        elif goal == "maximize":
+            maximize.append(results[ds]['threshold_learning']['error'])
+            maximize.append(results[ds]['classifier_learning']['error'])
+
+    results['mean_classify'] = np.mean(classify) if classify else None
+    results['mean_minimize'] = np.mean(minimize) if minimize else None
+    results['mean_maximize'] = np.mean(maximize) if maximize else None
+
+    results['overall_mean'] = np.mean([results['mean_classify'], results['mean_minimize'], results['mean_maximize']])
     return results
     
 
@@ -98,7 +122,10 @@ def main():
     classifier = classifier_learning(np.asarray(X_diffs), np.asarray(y))
 
     # Evaluate results
-    results = evaluate(threshold, classifier, args.model_name, args.ds_dir)
+    res = evaluate(threshold, classifier, args.model_name, args.ds_dir)
+
+    # Compute mean results
+    results = calculate_means(res)
 
     # Save results to JSON
     with open(args.output_path, 'w', encoding='utf-8') as f:
