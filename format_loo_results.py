@@ -13,9 +13,9 @@ def load_results(input_filepath):
     if 'comparable' in input_filepath:
         pattern = r'_comparable_(auc|error|full_results)\.json$'
         input_filepath = re.sub(pattern, '', input_filepath)
-        model_name = input_filepath.split('/')[-1].split('_')[-1] + "*"
+        model_name = input_filepath.split('/')[-1].split('_')[-1]
     else:
-        pattern = r'_(elementwise_diff|multiplication|sum)_(auc|error|full_results)\.json$'
+        pattern = r'_(elementwise_diff|multiplication|sum)(_(auc|error|full_results))?\.json$'
         input_filepath = re.sub(pattern, '', input_filepath)
         model_name = input_filepath.split('/')[-1].split('_')[-1]
 
@@ -62,20 +62,20 @@ def clean_prepare(data):
     return merged
 
 
-def create_results_table(input_dir, output_filepath):
+def create_results_table(input_dir, output_filepath, clf_only=False):
     doc = Document()
     doc.packages.append(Package('graphicx'))
     doc.packages.append(Package('booktabs'))
     doc.packages.append(Package('booktabs'))
 
-    col_spec = ('p{2.5cm}|p{0.4cm}p{0.4cm}p{0.4cm}|p{0.4cm}p{0.4cm}p{0.4cm}p{0.4cm}|p{0.4cm}p{0.4cm}p{0.4cm}||'
-                'p{0.4cm}p{0.4cm}p{0.4cm}p{0.4cm}')
+    col_spec = ('p{2.3cm}|p{0.46cm}p{0.46cm}p{0.46cm}|p{0.46cm}p{0.46cm}p{0.46cm}p{0.46cm}|p{0.46cm}p{0.46cm}p{0.46cm}||'
+                'p{0.46cm}p{0.46cm}p{0.46cm}p{0.46cm}')
 
     with doc.create(Section('Evaluation Results')):
         doc.append(NoEscape(r'\centering'))
         doc.append(NoEscape(r'\small'))
 
-        with doc.create(Tabularx(col_spec, width_argument=NoEscape(r'1.2\textwidth'))) as table:
+        with doc.create(Tabularx(col_spec, width_argument=NoEscape(r'\textwidth'))) as table:
 
             def rotate(text):
                 """Wraps text in a \rotatebox{90}{...} command."""
@@ -103,8 +103,6 @@ def create_results_table(input_dir, output_filepath):
                 return f"{x * 100:.1f}" if x is not None else "-"
 
             for filename in sorted(os.listdir(input_dir)):
-                if not filename.endswith("_full_results.json"):
-                    continue
 
                 filepath = os.path.join(input_dir, filename)
                 data, model_name = load_results(filepath)
@@ -113,7 +111,7 @@ def create_results_table(input_dir, output_filepath):
 
                 # Threshold calibration row
                 row1 = [
-                    model_name + " (Thr. Calib.)",
+                    model_name,
                     fmt(th_err.get("PAWS-X")),
                     fmt(th_err.get("MRPC")),
                     fmt(th_err.get("STS-H")),
@@ -131,7 +129,7 @@ def create_results_table(input_dir, output_filepath):
                 ]
                 # Classifier calibration row
                 row2 = [
-                    model_name + " (Class. Calib.)",
+                    model_name + "*",
                     fmt(cl_err.get("PAWS-X")),
                     fmt(cl_err.get("MRPC")),
                     fmt(cl_err.get("STS-H")),
@@ -147,9 +145,12 @@ def create_results_table(input_dir, output_filepath):
                     fmt(cl_err.get("overall_maximize")),
                     fmt(cl_err.get("overall_mean")),
                 ]
-                table.add_row(row1)
-                table.add_row(row2)
-
+                if clf_only:
+                    table.add_row(row2)
+                else:
+                    table.add_row(row1)
+                    table.add_row(row2)
+                    
         table.append(NoEscape(r'\bottomrule'))
 
     doc.generate_tex(output_filepath)
@@ -158,8 +159,9 @@ def create_results_table(input_dir, output_filepath):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate LaTeX results table from JSONs.")
-    parser.add_argument("--input_dir", type=str, default="embedding_benchmarks/full", help="Directory containing *_full_results.json files")
-    parser.add_argument("--output", type=str, default="combined_results_table", help="Output filename (without .tex)")
+    parser.add_argument("--input_dir", type=str, default="embedding_benchmarks/balanced", help="Directory containing *_full_results.json files")
+    parser.add_argument("--output", type=str, default="tables/loo_results", help="Output filename (without .tex)")
+    parser.add_argument("--clf_only", action='store_true', help="Generate only classifier calibration results")
     args = parser.parse_args()
 
-    create_results_table(args.input_dir, args.output)
+    create_results_table(args.input_dir, args.output, args.clf_only)
