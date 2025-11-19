@@ -62,7 +62,7 @@ def clean_prepare(data):
     return merged
 
 
-def create_results_table(input_dir, output_filepath, clf_only=False):
+def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
     doc = Document()
     doc.packages.append(Package('graphicx'))
     doc.packages.append(Package('booktabs'))
@@ -95,7 +95,7 @@ def create_results_table(input_dir, output_filepath, clf_only=False):
                 rotate('PAWS-X'), rotate('MRPC'), rotate('STS-H'),
                 rotate('SNLI'), rotate('ANLI'), rotate('XNLI'), rotate('SICK-STS'),
                 rotate('TRUE'), rotate('SIMP'), rotate('TAPACO'),
-                'Clfy', 'Min', 'Max', NoEscape(r'$\overline{Err}$')
+                'Clfy', 'Min', 'Max', NoEscape(r'$\overline{F1}$') if f1 else NoEscape(r'$\overline{Err}$')
             ])
             table.append(NoEscape(r'\midrule'))
 
@@ -106,45 +106,51 @@ def create_results_table(input_dir, output_filepath, clf_only=False):
 
                 filepath = os.path.join(input_dir, filename)
                 data, model_name = load_results(filepath)
-                th_err = clean_prepare(data["threshold_error"])
-                cl_err = clean_prepare(data["classifier_error"])
+
+                if f1:
+                    thr = clean_prepare(data["threshold_f1"])
+                    clf = clean_prepare(data["classifier_f1"])
+                else:
+                    thr = clean_prepare(data["threshold_error"])
+                    clf = clean_prepare(data["classifier_error"])
 
                 # Threshold calibration row
                 row1 = [
                     model_name,
-                    fmt(th_err.get("PAWS-X")),
-                    fmt(th_err.get("MRPC")),
-                    fmt(th_err.get("STS-H")),
-                    fmt(th_err.get("SNLI")),
-                    fmt(th_err.get("ANLI")),
-                    fmt(th_err.get("XNLI")),
-                    fmt(th_err.get("SICK-STS")),
-                    fmt(th_err.get("TRUE")),
-                    fmt(th_err.get("SIMP")),
-                    fmt(th_err.get("TAPACO")),
-                    fmt(th_err.get("overall_classify")),
-                    fmt(th_err.get("overall_minimize")),
-                    fmt(th_err.get("overall_maximize")),
-                    fmt(th_err.get("overall_mean")),
+                    fmt(thr.get("PAWS-X")),
+                    fmt(thr.get("MRPC")),
+                    fmt(thr.get("STS-H")),
+                    fmt(thr.get("SNLI")),
+                    fmt(thr.get("ANLI")),
+                    fmt(thr.get("XNLI")),
+                    fmt(thr.get("SICK-STS")),
+                    fmt(thr.get("TRUE")),
+                    fmt(thr.get("SIMP")),
+                    fmt(thr.get("TAPACO")),
+                    fmt(thr.get("overall_classify")),
+                    fmt(thr.get("overall_minimize")),
+                    fmt(thr.get("overall_maximize")),
+                    fmt(thr.get("overall_mean")),
                 ]
                 # Classifier calibration row
                 row2 = [
                     model_name + "*",
-                    fmt(cl_err.get("PAWS-X")),
-                    fmt(cl_err.get("MRPC")),
-                    fmt(cl_err.get("STS-H")),
-                    fmt(cl_err.get("SNLI")),
-                    fmt(cl_err.get("ANLI")),
-                    fmt(cl_err.get("XNLI")),
-                    fmt(cl_err.get("SICK-STS")),
-                    fmt(cl_err.get("TRUE")),
-                    fmt(cl_err.get("SIMP")),
-                    fmt(cl_err.get("TAPACO")),
-                    fmt(cl_err.get("overall_classify")),
-                    fmt(cl_err.get("overall_minimize")),
-                    fmt(cl_err.get("overall_maximize")),
-                    fmt(cl_err.get("overall_mean")),
+                    fmt(clf.get("PAWS-X")),
+                    fmt(clf.get("MRPC")),
+                    fmt(clf.get("STS-H")),
+                    fmt(clf.get("SNLI")),
+                    fmt(clf.get("ANLI")),
+                    fmt(clf.get("XNLI")),
+                    fmt(clf.get("SICK-STS")),
+                    fmt(clf.get("TRUE")),
+                    fmt(clf.get("SIMP")),
+                    fmt(clf.get("TAPACO")),
+                    fmt(clf.get("overall_classify")),
+                    fmt(clf.get("overall_minimize")),
+                    fmt(clf.get("overall_maximize")),
+                    fmt(clf.get("overall_mean")),
                 ]
+                
                 if clf_only:
                     table.add_row(row2)
                 else:
@@ -162,6 +168,7 @@ if __name__ == "__main__":
     parser.add_argument("--input_dir", type=str, default="embedding_benchmarks/balanced", help="Directory containing *_full_results.json files")
     parser.add_argument("--output", type=str, default="tables/loo_results", help="Output filename (without .tex)")
     parser.add_argument("--clf_only", action='store_true', help="Generate only classifier calibration results")
+    parser.add_argument("--f1", action='store_true', help="Generate F1 score table instead of error rates")
     args = parser.parse_args()
 
-    create_results_table(args.input_dir, args.output, args.clf_only)
+    create_results_table(args.input_dir, args.output, args.clf_only, args.f1)
