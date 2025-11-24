@@ -66,7 +66,6 @@ def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
     doc = Document()
     doc.packages.append(Package('graphicx'))
     doc.packages.append(Package('booktabs'))
-    doc.packages.append(Package('booktabs'))
 
     col_spec = ('p{2.3cm}|p{0.46cm}p{0.46cm}p{0.46cm}|p{0.46cm}p{0.46cm}p{0.46cm}p{0.46cm}|p{0.46cm}p{0.46cm}p{0.46cm}||'
                 'p{0.46cm}p{0.46cm}p{0.46cm}p{0.46cm}')
