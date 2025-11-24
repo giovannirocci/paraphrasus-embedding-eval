@@ -40,6 +40,7 @@ def clean_labels(df: pd.DataFrame) -> pd.DataFrame:
         "BAAI/bge-m3": "BGE-m3",
         "intfloat/multilingual-e5-large-instruct": "multilingual-E5",
         "jinaai/jina-embeddings-v3": "Jina-v3",
+        "KaLM-Embedding/KaLM-embedding-multilingual-mini-instruct-v2.5": "KaLM-mini-v2.5",
         "paraphrase-multilingual-mpnet-base-v2": "paraphrase-SBERT",
         "Qwen/Qwen3-Embedding-0.6B": "Qwen3-Emb-0.6B",
     })
