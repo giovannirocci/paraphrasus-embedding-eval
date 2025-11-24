@@ -143,8 +143,12 @@
         },
         "goal": "classify"
     },
-    "mean_classify": 0.4272642998027613,
-    "mean_minimize": 0.018714285714285715,
-    "mean_maximize": 0.5613502994011976,
-    "overall_mean": 0.33577629497274825
+    "mean_classify_threshold": 0.42041025641025637,
+    "mean_minimize_threshold": 0.031999999999999994,
+    "mean_maximize_threshold": 0.32156886227544906,
+    "mean_classify": 0.4341183431952662,
+    "mean_minimize": 0.005428571428571434,
+    "mean_maximize": 0.8011317365269461,
+    "overall_mean_threshold": 0.25799303956190184,
+    "overall_mean": 0.41355955038359465
 }
