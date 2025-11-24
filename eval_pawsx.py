@@ -74,23 +74,28 @@ def evaluate(thr, clf, model, ds_dir):
 
 
 def calculate_means(results):
+    thr_classify, thr_minimize, thr_maximize = [], [], []
     classify, minimize, maximize = [], [], []
     for ds in results:
         goal = results[ds]['goal']
         if goal == "classify":
-            classify.append(results[ds]['threshold_learning']['error'])
+            thr_classify.append(results[ds]['threshold_learning']['error'])
             classify.append(results[ds]['classifier_learning']['error'])
         elif goal == "minimize":
-            minimize.append(results[ds]['threshold_learning']['error'])
+            thr_minimize.append(results[ds]['threshold_learning']['error'])
             minimize.append(results[ds]['classifier_learning']['error'])
         elif goal == "maximize":
-            maximize.append(results[ds]['threshold_learning']['error'])
+            thr_maximize.append(results[ds]['threshold_learning']['error'])
             maximize.append(results[ds]['classifier_learning']['error'])
 
+    results['mean_classify_threshold'] = np.mean(thr_classify) if thr_classify else None
+    results['mean_minimize_threshold'] = np.mean(thr_minimize) if thr_minimize else None
+    results['mean_maximize_threshold'] = np.mean(thr_maximize) if thr_maximize else None
     results['mean_classify'] = np.mean(classify) if classify else None
     results['mean_minimize'] = np.mean(minimize) if minimize else None
     results['mean_maximize'] = np.mean(maximize) if maximize else None
-
+    
+    results['overall_mean_threshold'] = np.mean([results['mean_classify_threshold'], results['mean_minimize_threshold'], results['mean_maximize_threshold']])
     results['overall_mean'] = np.mean([results['mean_classify'], results['mean_minimize'], results['mean_maximize']])
     return results
     
