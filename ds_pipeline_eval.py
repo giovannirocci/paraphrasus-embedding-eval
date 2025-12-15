@@ -54,7 +54,7 @@ def evaluate(datasets_dir: str, models_dir: str, out_dir: str, method: str = "el
                 print(f"Processing dataset {ds_name}.")
 
                 # Compute or load embeddings
-                data = compute_scores(model, model_name, ds_path, method, multi_eval=False)
+                data = compute_scores(model, model_name, ds_path, method)
                 y = np.asarray(data["labels"], dtype=np.int32)
                 scores = np.asarray(data["scores"], dtype=np.float32)
                 X_diffs = np.asarray(data["diffs"], dtype=np.float32)

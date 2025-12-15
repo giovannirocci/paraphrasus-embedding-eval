@@ -1,9 +1,8 @@
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import json
-import os, random
-
-random.seed(42)
+import os
+import torch
 
 # -------------------------------
 # Embedding utility
@@ -12,10 +11,12 @@ random.seed(42)
 def load_embedder(model_name: str):
     """Load an Embedding model"""
     print(f"Loading model: {model_name}")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Using device: {device}")
     if isinstance(model_name, SentenceTransformer):
         return model_name
     else:
-        model = SentenceTransformer(model_name, device="cuda", trust_remote_code=True)
+        model = SentenceTransformer(model_name, device=device, trust_remote_code=True)
         return model
 
 
@@ -23,7 +24,6 @@ def compute_pairwise_similarity(model, emb1, emb2):
     try:
         return model.similarity_pairwise(emb1, emb2)
     except AttributeError:
-        import torch
         emb1_t = torch.as_tensor(emb1)
         emb2_t = torch.as_tensor(emb2)
         return torch.nn.functional.cosine_similarity(emb1_t, emb2_t, dim=1).cpu().numpy()
@@ -32,7 +32,7 @@ def compute_pairwise_similarity(model, emb1, emb2):
 # Load dataset utility
 # --------------------------------
 
-def load_dataset(ds_path: str, multi_eval: bool = False):
+def load_dataset(ds_path: str):
     """
     Load different datasets from JSON files.
     """
@@ -94,12 +94,6 @@ def load_dataset(ds_path: str, multi_eval: bool = False):
 
     y = np.asarray(y, dtype=np.int32)
 
-    if multi_eval and len(pairs) > 500:
-        idxs = random.sample(range(len(pairs)), 500)
-        pairs = [pairs[i] for i in idxs]
-        y = y[idxs]
-        print("Sampled 500 pairs (multi-eval mode).")
-
     if not len(pairs) == len(y):
         raise ValueError(f"Number of pairs ({len(pairs)}) and labels ({len(y)}) do not match in dataset: {ds_path}")
 
@@ -110,7 +104,7 @@ def load_dataset(ds_path: str, multi_eval: bool = False):
 # Score embedding pairs
 # -------------------------------
 
-def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str, classifier_method: str, multi_eval: bool = False):
+def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str, classifier_method: str):
     """
     Compute similarity scores and element-wise difference for all pairs in the dataset using the specified model.
     Args:
@@ -118,11 +112,11 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
         model_name: name of the embedding model (for caching purposes)
         dataset_path: path to the dataset JSON file
         classifier_method: method to compute differences ("elementwise_diff", "multiplication", "sum")
-        multi_eval: whether to sample a subset of pairs for evaluation
+        sample: whether to sample a subset of pairs for evaluation
     Returns:
         dict with keys: scores, diffs, labels, goal
     """
-    pairs, labels, goal = load_dataset(dataset_path, multi_eval=multi_eval)
+    pairs, labels, goal = load_dataset(dataset_path)
     texts1, texts2 = zip(*pairs)
 
     cache_dir = os.path.join("_embedding_cache", model_name.replace("/", "_"))

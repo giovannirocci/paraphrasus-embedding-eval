@@ -2,12 +2,13 @@ import argparse
 import numpy as np
 from sklearn.metrics import roc_auc_score, f1_score, accuracy_score
 import json
-import os
+import os, random
 from tqdm import tqdm
 
 from calibration import threshold_learning, classifier_learning
 from embedding import compute_scores, load_embedder
 
+random.seed(42)
 
 def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, paraphrasus_consistent: bool = False):
     """
@@ -25,13 +26,20 @@ def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, para
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
-            results[ds_name] = compute_scores(model, model_id, ds_path, clf_method, multi_eval=True)
+            results[ds_name] = compute_scores(model, model_id, ds_path, clf_method)
     return results
 
 
-def loo_eval(datasets, metric: str, calibration: str):
+def loo_eval(datasets: dict, metric: str, calibration: str):
     """
     Leave-One-Out evaluation with calibration.
+    Args:
+        datasets: dictionary containing scores, diffs, labels, goal for each dataset
+        metric: evaluation metric ("auc", "f1", "error")
+        calibration: calibration method ("threshold", "classifier")
+        
+    Returns:
+        results: dict with evaluation results
     """
     if metric == "auc":
         raise ValueError("AUC metric is not supported with calibration methods.")
@@ -44,9 +52,21 @@ def loo_eval(datasets, metric: str, calibration: str):
         for ds_name, data in datasets.items():
             if ds_name == held_out:
                 continue
-            train_labels.extend(data["labels"])
-            train_scores.extend(data["scores"])
-            train_diffs.extend(data["diffs"])
+
+            if len(data["labels"]) > 500:
+                idxs = random.sample(range(len(data["labels"])), 500)
+                labels = [data["labels"][i] for i in idxs]
+                scores = [data["scores"][i] for i in idxs]
+                diffs = [data["diffs"][i] for i in idxs]
+                print(f"Sampled 500 pairs from {ds_name} for training (avoid overfitting).")
+            else:
+                labels = data["labels"]
+                scores = data["scores"]
+                diffs = data["diffs"]
+
+            train_labels.extend(labels)
+            train_scores.extend(scores)
+            train_diffs.extend(diffs)
 
         # ---- Calibration ----
         if calibration == "threshold":
@@ -61,7 +81,7 @@ def loo_eval(datasets, metric: str, calibration: str):
         # ---- Evaluation on held-out ----
         print(f"Evaluating on held-out dataset: {held_out}")
         held_out_data = datasets[held_out]
-        held_labels = np.asarray(held_out_data["labels"])
+        y_test = np.asarray(held_out_data["labels"])
 
         if calibration == "classifier":
             X_test = np.asarray(held_out_data["diffs"], dtype=np.float32)
@@ -72,9 +92,9 @@ def loo_eval(datasets, metric: str, calibration: str):
 
         # ---- Metrics ----
         if metric == "f1":
-            results[held_out] = f1_score(held_labels, preds, zero_division=1)
+            results[held_out] = f1_score(y_test, preds, zero_division=1)
         elif metric == "error":
-            acc = accuracy_score(held_labels, preds)
+            acc = accuracy_score(y_test, preds)
             results[held_out] = 1 - acc
         else:
             raise ValueError(f"Unknown metric {metric}.")
@@ -111,7 +131,7 @@ def single_eval(model_id, ds_path, metric: str, calibration: str):
 
     model = load_embedder(model_id)
 
-    data = compute_scores(model, model_id, ds_path, args.method, multi_eval=False)
+    data = compute_scores(model, model_id, ds_path, args.method)
     ds_name = os.path.basename(ds_path).replace(".json", "")
 
     if metric == "auc":
