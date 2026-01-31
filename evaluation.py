@@ -30,13 +30,14 @@ def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, para
     return results
 
 
-def loo_eval(datasets: dict, metric: str, calibration: str):
+def loo_eval(datasets: dict, metric: str, calibration: str, held_out_dataset: str = None):
     """
     Leave-One-Out evaluation with calibration.
     Args:
         datasets: dictionary containing scores, diffs, labels, goal for each dataset
         metric: evaluation metric ("auc", "f1", "error")
         calibration: calibration method ("threshold", "classifier")
+        held_out_dataset: specific dataset to hold out (optional). If None, performs LOO on all datasets.
         
     Returns:
         results: dict with evaluation results
@@ -45,8 +46,16 @@ def loo_eval(datasets: dict, metric: str, calibration: str):
         raise ValueError("AUC metric is not supported with calibration methods.")
 
     results = {}
-    print(f"Performing Leave-One-Out evaluation with {calibration} calibration...")
-    for held_out in datasets:
+    if held_out_dataset is not None:
+        if held_out_dataset not in datasets:
+            raise ValueError(f"Specified held-out dataset '{held_out_dataset}' not found in datasets.")
+        held_out_datasets = [held_out_dataset]
+        print(f"Performing evaluation with {held_out_dataset} as held-out dataset using {calibration} calibration...")
+    else:
+        held_out_datasets = datasets.keys()
+        print(f"Performing Leave-One-Out evaluation with {calibration} calibration...")
+    
+    for held_out in held_out_datasets:
         train_labels, train_scores, train_diffs = [], [], []
 
         for ds_name, data in datasets.items():
@@ -100,25 +109,26 @@ def loo_eval(datasets: dict, metric: str, calibration: str):
             raise ValueError(f"Unknown metric {metric}.")
 
     # ---- Aggregate results ----
-    classify, minimize, maximize = [], [], []
-    for k, v in datasets.items():
-        if v["goal"] == "classify":
-            classify.append(results[k])
-        elif v["goal"] == "minimize":
-            minimize.append(results[k])
-        elif v["goal"] == "maximize":
-            maximize.append(results[k])
+    if not held_out_dataset:
+        classify, minimize, maximize = [], [], []
+        for k, v in datasets.items():
+            if v["goal"] == "classify":
+                classify.append(results[k])
+            elif v["goal"] == "minimize":
+                minimize.append(results[k])
+            elif v["goal"] == "maximize":
+                maximize.append(results[k])
 
-    def aggregate(group):
-        if not group:
-            return None
-        return float(np.mean(group))
+        def aggregate(group):
+            if not group:
+                return None
+            return float(np.mean(group))
 
-    results["overall_classify"] = aggregate(classify)
-    results["overall_minimize"] = aggregate(minimize)
-    results["overall_maximize"] = aggregate(maximize)
+        results["overall_classify"] = aggregate(classify)
+        results["overall_minimize"] = aggregate(minimize)
+        results["overall_maximize"] = aggregate(maximize)
 
-    results["overall_mean"] = aggregate([results["overall_classify"], results["overall_minimize"], results["overall_maximize"]])
+        results["overall_mean"] = aggregate([results["overall_classify"], results["overall_minimize"], results["overall_maximize"]])
 
     return results
 
@@ -191,12 +201,12 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
             else:
                 # ---------- Threshold calibration ----------
                 print(f"\nRunning {met.upper()} eval with THRESHOLD calibration")
-                threshold_results = loo_eval(datasets, met, "threshold")
+                threshold_results = loo_eval(datasets, met, "threshold", args.held_out_dataset)
                 results[f"threshold_{met}"] = threshold_results
 
                 # ---------- Classifier calibration ----------
                 print(f"\nRunning {met.upper()} eval with CLASSIFIER calibration")
-                classifier_results = loo_eval(datasets, met, "classifier")
+                classifier_results = loo_eval(datasets, met, "classifier", args.held_out_dataset)
                 results[f"classifier_{met}"] = classifier_results
 
         if args.paraphrasus_consistent:
@@ -220,7 +230,7 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
             auc = roc_auc_score(all_labels, all_scores)
             results = {"overall_auc": auc}
         else:
-            results = loo_eval(datasets, metric, calibration)
+            results = loo_eval(datasets, metric, calibration, args.held_out_dataset)
 
         results_path = os.path.join(outdir,
                                     f"{model.replace('/', '_')}_{metric}_{calibration if calibration else ''}"
@@ -247,6 +257,7 @@ if __name__ == "__main__":
     parser.add_argument("--method", choices=["elementwise_diff", "multiplication", "sum"], default="elementwise_diff")
     parser.add_argument("--single_dataset", help="Evaluate on a single dataset", action="store_true")
     parser.add_argument("--ds_path", help="Path to the single dataset JSON file")
+    parser.add_argument("--held_out_dataset", help="Specific dataset to hold out in leave-one-out evaluation (optional)")
     args = parser.parse_args()
 
     if args.metric in ["error", "f1"] and args.calibration is None and not args.full:
@@ -254,6 +265,9 @@ if __name__ == "__main__":
     
     if args.single_dataset and not args.ds_path:
         raise ValueError("Please provide the path to the single dataset using '--ds_path'.")
+    
+    if args.held_out_dataset and args.single_dataset:
+        raise ValueError("Cannot specify both --held_out_dataset and --single_dataset.")
     
     os.makedirs(args.outdir, exist_ok=True)
 
