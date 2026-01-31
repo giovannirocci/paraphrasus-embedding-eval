@@ -101,6 +101,36 @@ def load_dataset(ds_path: str):
 
 
 # -------------------------------
+# Encoding utility
+# -------------------------------
+def encode_pairs(model: SentenceTransformer, model_name:str, pairs: list[tuple[str, str]]):
+    """
+    Encode text pairs using the specified model.
+    
+    :param model: the embedding model
+    :type model: SentenceTransformer
+    :param model_name: name of the embedding model (for caching & special cases)
+    :type model_name: str
+    :param pairs: List of sentence pairs to encode
+    :type pairs: list[tuple[str, str]]
+    :return: embeddings list for both elements in the pairs
+    """
+    texts1, texts2 = zip(*pairs)
+
+    if model_name == "intfloat/multilingual-e5-large-instruct" or model_name == "Qwen/Qwen3-Embedding-0.6B":
+            emb1 = model.encode(texts1, show_progress_bar=True, prompt_name="query")
+            emb2 = model.encode(texts2, show_progress_bar=True, prompt_name="query")
+    elif model_name == "jinaai/jina-embeddings-v3":
+        task = "text-matching"
+        emb1 = model.encode(texts1, show_progress_bar=True, task=task, prompt_name=task)
+        emb2 = model.encode(texts2, show_progress_bar=True, task=task, prompt_name=task)
+    else:
+        emb1, emb2 = model.encode(texts1, show_progress_bar=True), model.encode(texts2, show_progress_bar=True)
+    
+    return emb1, emb2
+
+
+# -------------------------------
 # Score embedding pairs
 # -------------------------------
 
@@ -128,10 +158,10 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
         emb1, emb2 = data["emb1"], data["emb2"]
         if emb1.shape[0] != len(texts1) or emb2.shape[0] != len(texts2):
             print("Cached embeddings do not match dataset size, recomputing embeddings...")
-            emb1, emb2 = model.encode(texts1, show_progress_bar=True), model.encode(texts2, show_progress_bar=True)
+            emb1, emb2 = encode_pairs(model, model_name, pairs)
             np.savez(cache_path, emb1=emb1, emb2=emb2)
     else:
-        emb1, emb2 = model.encode(texts1, show_progress_bar=True), model.encode(texts2, show_progress_bar=True)
+        emb1, emb2 = encode_pairs(model, model_name, pairs)
         np.savez(cache_path, emb1=emb1, emb2=emb2)
 
     if classifier_method == "elementwise_diff":
