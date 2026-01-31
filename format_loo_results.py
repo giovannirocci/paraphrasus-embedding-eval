@@ -57,7 +57,10 @@ def clean_prepare(data):
 
     # overall scores
     for k in ["overall_classify", "overall_minimize", "overall_maximize", "overall_mean"]:
-        merged[k] = data[k]
+        if k in data:
+            merged[k] = data[k]
+        else:
+            merged[k] = None
 
     return merged
 
