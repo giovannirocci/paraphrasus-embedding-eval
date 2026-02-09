@@ -8,7 +8,7 @@ import argparse
 from embedding import load_dataset, load_embedder
 
 
-def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str):
+def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str, only_paraphrasus: bool = False):
     """
     Compute similarity between different datasets based on embedding distances.
     """
@@ -18,6 +18,9 @@ def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str):
 
     skip = ["stannlp-snli-hyp-pre", "fb-anli-hyp-pre", "fb-xnli-hyp-pre"]
 
+    if only_paraphrasus:
+        skip.append("tapaco_paraphrases")
+
     print("Loading datasets and computing embeddings...")
     for ds_file in os.listdir(datasets_dir):
         if ds_file.endswith(".json"):
@@ -25,7 +28,7 @@ def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str):
             ds_name = ds_file.replace(".json", "")
 
             if ds_name in skip:
-                print(f"Skipping mirror dataset {ds_name} as its pair is already processed.")
+                print(f"Skipping dataset {ds_name} as its pair is already processed or it is not part of the original PARAPHRASUS datasets.")
                 continue
 
             pairs, _, _ = load_dataset(ds_path)
@@ -41,7 +44,7 @@ def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str):
                 emb1, emb2 = data["emb1"], data["emb2"]
                 embeddings = np.vstack([emb1, emb2])
             else:
-                embeddings = model.encode(sentences)
+                embeddings = model.encode(sentences, show_progress_bar=True)
 
 
             dataset_names.append(ds_name)
@@ -63,7 +66,7 @@ def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str):
     # Plot heatmap
     plt.figure(figsize=(10, 8))
     sns.heatmap(matrix, xticklabels=dataset_names, yticklabels=dataset_names, annot=True, fmt=".2f", cmap="Purples", mask=mask)
-    plt.title(f"Dataset Similarity Matrix using {model_id}")
+    plt.title(f"Dataset Similarity Matrix using {model_id.split('/')[-1]}")
     plt.tight_layout()
 
     plt.savefig(out_path)
@@ -75,9 +78,10 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, required=True, help="Embedding model ID (e.g., 'sentence-transformers/all-MiniLM-L6-v2')")
     parser.add_argument("--datasets_dir", type=str, default="datasets_no_results", help="Directory containing dataset JSON files")
     parser.add_argument("--out_path", type=str, default="plots/dataset_similarity_heatmap.png", help="Output path for the heatmap image")
+    parser.add_argument("--only_paraphrasus", action="store_true", help="Only include original PARAPHRASUS datasets in the similarity computation")
     args = parser.parse_args()
 
     if len(args.out_path.split("/")) > 1:
         os.makedirs(args.out_path.split("/")[0], exist_ok=True)
 
-    compute_dataset_similarity(args.model, args.datasets_dir, args.out_path)
+    compute_dataset_similarity(args.model, args.datasets_dir, args.out_path, only_paraphrasus=args.only_paraphrasus)
