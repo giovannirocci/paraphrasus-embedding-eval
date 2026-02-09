@@ -1,0 +1,15 @@
+{
+    "overall_auc": 0.8555202546784398,
+    "threshold_f1": {
+        "tapaco_paraphrases": 0.3783935068569829
+    },
+    "classifier_f1": {
+        "tapaco_paraphrases": 0.2463680387409201
+    },
+    "threshold_error": {
+        "tapaco_paraphrases": 0.7666551605108733
+    },
+    "classifier_error": {
+        "tapaco_paraphrases": 0.8539868829823956
+    }
+}
