@@ -4,6 +4,7 @@ import numpy as np
 import argparse
 import os
 
+from format_loo_results import fmt
 
 def extract_means(res_dir: str):
     thr_f1 = []
@@ -90,14 +91,14 @@ def format_stats_to_latex(stats: dict, output_path: str):
             for calibr_name in stats:
                 table.add_row((
                     calibr_name.capitalize(),
-                    f"{stats[calibr_name]['f1_clfy']:.2f}",
-                    f"{stats[calibr_name]['f1_min']:.2f}",
-                    f"{stats[calibr_name]['f1_max']:.2f}",
-                    f"{stats[calibr_name]['f1_mean']:.2f}",
-                    f"{stats[calibr_name]['error_clfy']:.2f}",
-                    f"{stats[calibr_name]['error_min']:.2f}",
-                    f"{stats[calibr_name]['error_max']:.2f}",
-                    f"{stats[calibr_name]['error_mean']:.2f}",
+                    fmt(stats[calibr_name]['f1_clfy']),
+                    fmt(stats[calibr_name]['f1_min']),
+                    fmt(stats[calibr_name]['f1_max']),
+                    fmt(stats[calibr_name]['f1_mean']),
+                    fmt(stats[calibr_name]['error_clfy']),
+                    fmt(stats[calibr_name]['error_min']),
+                    fmt(stats[calibr_name]['error_max']),
+                    fmt(stats[calibr_name]['error_mean']),
                 ))
             table.append(NoEscape(r'\bottomrule'))
 
