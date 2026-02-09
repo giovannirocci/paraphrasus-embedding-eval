@@ -10,7 +10,7 @@ from embedding import compute_scores, load_embedder
 
 random.seed(42)
 
-def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, paraphrasus_consistent: bool = False):
+def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, paraphrasus_consistent: bool = False, prompt: str = None):
     """
     Compute scores for all datasets in the specified directory.
     """
@@ -26,7 +26,7 @@ def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, para
         if ds_file.endswith(".json"):
             ds_path = os.path.join(datasets_dir, ds_file)
             ds_name = ds_file.replace(".json", "")
-            results[ds_name] = compute_scores(model, model_id, ds_path, clf_method)
+            results[ds_name] = compute_scores(model, model_id, ds_path, clf_method, prompt=prompt)
     return results
 
 
@@ -133,7 +133,7 @@ def loo_eval(datasets: dict, metric: str, calibration: str, held_out_dataset: st
     return results
 
 
-def single_eval(model_id, ds_path, metric: str, calibration: str):
+def single_eval(model_id, ds_path, metric: str, calibration: str, prompt: str = None):
     """
     Single dataset evaluation.
     """
@@ -141,7 +141,7 @@ def single_eval(model_id, ds_path, metric: str, calibration: str):
 
     model = load_embedder(model_id)
 
-    data = compute_scores(model, model_id, ds_path, args.method)
+    data = compute_scores(model, model_id, ds_path, args.method, prompt=prompt)
     ds_name = os.path.basename(ds_path).replace(".json", "")
 
     if metric == "auc":
@@ -180,10 +180,10 @@ def single_eval(model_id, ds_path, metric: str, calibration: str):
     return results
 
 
-def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: str, single: bool = False):
+def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: str, single: bool = False, prompt: str = None):
     os.makedirs(outdir, exist_ok=True)
     if not single:
-        datasets = compute_all_datasets(model, datasets_dir, args.method, args.paraphrasus_consistent)
+        datasets = compute_all_datasets(model, datasets_dir, args.method, args.paraphrasus_consistent, prompt=prompt)
 
     results = {}
     if args.full:
@@ -216,7 +216,7 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
 
     elif single:
         print(f"Evaluating single dataset: {args.ds_path.split('/')[-1].replace('.json','')}")
-        results = single_eval(model, args.ds_path, metric, calibration)
+        results = single_eval(model, args.ds_path, metric, calibration, prompt)
         ds_name = os.path.basename(args.ds_path).replace(".json", "")
         results_path = os.path.join(outdir,
                                     f"{model.replace('/', '_')}_{ds_name}_{metric}_{calibration if calibration else ''}"
@@ -258,6 +258,7 @@ if __name__ == "__main__":
     parser.add_argument("--single_dataset", help="Evaluate on a single dataset", action="store_true")
     parser.add_argument("--ds_path", help="Path to the single dataset JSON file")
     parser.add_argument("--held_out_dataset", help="Specific dataset to hold out in leave-one-out evaluation (optional)")
+    parser.add_argument("--prompt", help="Custom prompt for models that support it", default=None)
     args = parser.parse_args()
 
     if args.metric in ["error", "f1"] and args.calibration is None and not args.full:
@@ -269,6 +270,9 @@ if __name__ == "__main__":
     if args.held_out_dataset and args.single_dataset:
         raise ValueError("Cannot specify both --held_out_dataset and --single_dataset.")
     
+    if args.prompt and args.model not in ["intfloat/multilingual-e5-large-instruct", "Qwen/Qwen3-Embedding-0.6B", "intfloat/multilingual-e5-large"]:
+        raise Warning("The specified model may not support custom prompts. Proceeding without prompt.")
+    
     os.makedirs(args.outdir, exist_ok=True)
 
-    main(args.model, args.metric, args.calibration, args.datasets_dir, args.outdir, args.single_dataset)
+    main(args.model, args.metric, args.calibration, args.datasets_dir, args.outdir, args.single_dataset, args.prompt)

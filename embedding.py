@@ -103,7 +103,11 @@ def load_dataset(ds_path: str):
 # -------------------------------
 # Encoding utility
 # -------------------------------
-def encode_pairs(model: SentenceTransformer, model_name:str, pairs: list[tuple[str, str]]):
+def prompt_instruction(sentence: str, prompt: str):
+    return f'Instruct: {prompt}\nQuery: {sentence}'
+
+
+def encode_pairs(model: SentenceTransformer, model_name:str, pairs: list[tuple[str, str]], prompt: str = None):
     """
     Encode text pairs using the specified model.
     
@@ -113,11 +117,19 @@ def encode_pairs(model: SentenceTransformer, model_name:str, pairs: list[tuple[s
     :type model_name: str
     :param pairs: List of sentence pairs to encode
     :type pairs: list[tuple[str, str]]
+    :param prompt: Optional prompt to use for encoding
+    :type prompt: str, optional
     :return: embeddings list for both elements in the pairs
     """
     texts1, texts2 = zip(*pairs)
 
-    if model_name == "intfloat/multilingual-e5-large-instruct" or model_name == "Qwen/Qwen3-Embedding-0.6B":
+    if model_name == "intfloat/multilingual-e5-large-instruct" or model_name == "Qwen/Qwen3-Embedding-0.6B" or model_name == "intfloat/multilingual-e5-large":
+        if prompt:
+            texts1 = [prompt_instruction(t, prompt) for t in texts1]
+            texts2 = [prompt_instruction(t, prompt) for t in texts2]
+            emb1 = model.encode(texts1, show_progress_bar=True)
+            emb2 = model.encode(texts2, show_progress_bar=True)
+        else:
             emb1 = model.encode(texts1, show_progress_bar=True, prompt_name="query")
             emb2 = model.encode(texts2, show_progress_bar=True, prompt_name="query")
     elif model_name == "jinaai/jina-embeddings-v3":
@@ -134,7 +146,7 @@ def encode_pairs(model: SentenceTransformer, model_name:str, pairs: list[tuple[s
 # Score embedding pairs
 # -------------------------------
 
-def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str, classifier_method: str):
+def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str, classifier_method: str, prompt: str = None):
     """
     Compute similarity scores and element-wise difference for all pairs in the dataset using the specified model.
     Args:
@@ -158,10 +170,10 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
         emb1, emb2 = data["emb1"], data["emb2"]
         if emb1.shape[0] != len(texts1) or emb2.shape[0] != len(texts2):
             print("Cached embeddings do not match dataset size, recomputing embeddings...")
-            emb1, emb2 = encode_pairs(model, model_name, pairs)
+            emb1, emb2 = encode_pairs(model, model_name, pairs, prompt=prompt)
             np.savez(cache_path, emb1=emb1, emb2=emb2)
     else:
-        emb1, emb2 = encode_pairs(model, model_name, pairs)
+        emb1, emb2 = encode_pairs(model, model_name, pairs, prompt=prompt)
         np.savez(cache_path, emb1=emb1, emb2=emb2)
 
     if classifier_method == "elementwise_diff":
