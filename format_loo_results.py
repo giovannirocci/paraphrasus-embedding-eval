@@ -19,6 +19,20 @@ def load_results(input_filepath):
         input_filepath = re.sub(pattern, '', input_filepath)
         model_name = input_filepath.split('/')[-1].split('_')[-1]
 
+    mapping = {
+        "paraphrase-multilingual-mpnet-base-v2": "Para-SBERT",
+        "multilingual-e5-large-instruct": "mE5-instr",
+        "multilingual-e5-large": "mE5",
+        "bge-m3": "BGE-m3",
+        "gte-multilingual-base": "mGTE",
+        "jina-embeddings-v3": "Jina-v3",
+        "Qwen3-Embedding-0.6B": "Qwen3-Emb",
+        "KaLM-embedding-multilingual-mini-instruct-v2.5": "KaLM-Emb"
+    }
+
+    if model_name in mapping:
+        model_name = mapping[model_name]
+
     return data, model_name
 
 
@@ -65,6 +79,10 @@ def clean_prepare(data):
     return merged
 
 
+def fmt(x):
+    return f"{x * 100:.1f}" if x is not None else "-"
+
+
 def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
     doc = Document()
     doc.packages.append(Package('graphicx'))
@@ -92,6 +110,7 @@ def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
                 MultiColumn(4, align='c', data='Averages')
             ))
             table.append(NoEscape(r'\midrule'))
+
             table.add_row([
                 'Model',
                 rotate('PAWS-X'), rotate('MRPC'), rotate('STS-H'),
@@ -100,10 +119,9 @@ def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
                 'Clfy', 'Min', 'Max', NoEscape(r'$\overline{F1}$') if f1 else NoEscape(r'$\overline{Err}$')
             ])
             table.append(NoEscape(r'\midrule'))
-
-            def fmt(x):
-                return f"{x * 100:.1f}" if x is not None else "-"
-
+            
+            thresholds, classifiers = [], []
+            bests = {}
             for filename in sorted(os.listdir(input_dir)):
 
                 filepath = os.path.join(input_dir, filename)
@@ -115,6 +133,22 @@ def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
                 else:
                     thr = clean_prepare(data["threshold_error"])
                     clf = clean_prepare(data["classifier_error"])
+
+                for i in thr.keys():
+                    if i not in bests:
+                        bests[i] = thr[i]
+                    else:
+                        if thr[i] is not None:
+                            if f1:
+                                if thr[i] > bests[i] and thr[i] > clf[i]:
+                                    bests[i] = thr[i]
+                                elif clf[i] > bests[i] and clf[i] > thr[i]:
+                                    bests[i] = clf[i]
+                            else:
+                                if thr[i] < bests[i] and thr[i] < clf[i]:
+                                    bests[i] = thr[i]
+                                elif clf[i] < bests[i] and clf[i] < thr[i]:
+                                    bests[i] = clf[i]
 
                 # Threshold calibration row
                 row1 = [
@@ -136,7 +170,7 @@ def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
                 ]
                 # Classifier calibration row
                 row2 = [
-                    model_name + "*",
+                    model_name,
                     fmt(clf.get("PAWS-X")),
                     fmt(clf.get("MRPC")),
                     fmt(clf.get("STS-H")),
@@ -153,13 +187,55 @@ def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
                     fmt(clf.get("overall_mean")),
                 ]
                 
-                if clf_only:
-                    table.add_row(row2)
-                else:
-                    table.add_row(row1)
-                    table.add_row(row2)
+                thresholds.append(row1)
+                classifiers.append(row2)
+
+            order = [
+                "PAWS-X",
+                "MRPC",
+                "STS-H",
+                "SNLI",
+                "ANLI",
+                "XNLI",
+                "SICK-STS",
+                "TRUE",
+                "SIMP",
+                "TAPACO",
+                "overall_classify",
+                "overall_minimize",
+                "overall_maximize",
+                "overall_mean"
+            ]
+
+            bests = {k: bests[k] for k in order}
+
+            def get_best(row):
+                new = []
+                new.append(row[0])
+                for i in range(1, len(row)):
+                    if row[i] == fmt(list(bests.values())[i-1]):
+                        if i == row.index(row[-1]):
+                            new.append(NoEscape(r'\textbf{' + row[i] + '}' + r'$\star$'))
+                        else:
+                            new.append(NoEscape(r'\textbf{' + row[i] + '}'))
+                    else:
+                        new.append(row[i])
+                return new
+
+            if clf_only:
+                for row in classifiers:
+                    table.add_row(get_best(row))
+            else:
+                for row in thresholds:
+                    table.add_row(get_best(row))
+                table.append(NoEscape(r'\midrule'))
+                for row in classifiers:
+                    table.add_row(get_best(row))
                     
         table.append(NoEscape(r'\bottomrule'))
+
+    if not os.path.exists(output_filepath.split('/')[0]):
+        os.makedirs(output_filepath.split('/')[0])
 
     doc.generate_tex(output_filepath)
     print(f"LaTeX table saved to {output_filepath}.tex")
