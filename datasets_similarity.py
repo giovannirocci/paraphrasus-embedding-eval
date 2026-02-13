@@ -37,19 +37,32 @@ def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str, 
             # Compute embeddings for all sentences in the dataset
             cache_dir = os.path.join("_embedding_cache", model_id.replace("/", "_"))
             os.makedirs(cache_dir, exist_ok=True)
-            cache_path = os.path.join(cache_dir, f"{os.path.basename(ds_name)}.npz")
+            cache_path = os.path.join(cache_dir, f"{os.path.basename(ds_file)}.npz")
 
             if os.path.exists(cache_path):
+                print(f"Loading cached embeddings for dataset {ds_name} from {cache_path}")
                 data = np.load(cache_path)
                 emb1, emb2 = data["emb1"], data["emb2"]
                 embeddings = np.vstack([emb1, emb2])
             else:
                 embeddings = model.encode(sentences, show_progress_bar=True)
 
-
-            dataset_names.append(ds_name)
+            mapping = {
+                "paws-x-test": "PAWS-X",
+                "ms-mrpc": "MRPC",
+                "stsbenchmark-test-sts": "STS-H",
+                "sickr-sts": "SICK-STS",
+                "amr_true_paraphrases": "TRUE",
+                "onestop_parallel_all_pairs": "SIMP",
+                "tapaco_paraphrases": "TAPACO",
+                "stannlp-snli-pre-hyp": "SNLI",
+                "fb-anli-pre-hyp": "ANLI",
+                "fb-xnli-pre-hyp": "XNLI",
+            }
+            
+            dataset_names.append(mapping.get(ds_name, ds_name))
             avg_embedding = np.mean(embeddings, axis=0)
-            dataset_embeddings[ds_name] = avg_embedding
+            dataset_embeddings[mapping.get(ds_name, ds_name)] = avg_embedding
 
     # Compute similarity matrix using cosine similarity
     num_datasets = len(dataset_names)
@@ -64,12 +77,14 @@ def compute_dataset_similarity(model_id: str, datasets_dir: str, out_path: str, 
     mask = np.triu(np.ones_like(matrix, dtype=bool))
 
     # Plot heatmap
-    plt.figure(figsize=(10, 8))
+    plt.rcParams.update({'font.size': 24, 'xtick.labelsize': 26, 'ytick.labelsize': 26})
+
+    plt.figure(figsize=(15, 12))
     sns.heatmap(matrix, xticklabels=dataset_names, yticklabels=dataset_names, annot=True, fmt=".2f", cmap="Purples", mask=mask)
-    plt.title(f"Dataset Similarity Matrix using {model_id.split('/')[-1]}")
+    plt.title(f"Dataset Similarity Matrix using {model_id.split('/')[-1]}", pad=20)
     plt.tight_layout()
 
-    plt.savefig(out_path)
+    plt.savefig(out_path, format="pdf")
     print(f"Dataset similarity heatmap saved to {out_path}")
 
 
@@ -77,7 +92,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Compute and visualize dataset similarity based on embeddings.")
     parser.add_argument("--model", type=str, required=True, help="Embedding model ID (e.g., 'sentence-transformers/all-MiniLM-L6-v2')")
     parser.add_argument("--datasets_dir", type=str, default="datasets_no_results", help="Directory containing dataset JSON files")
-    parser.add_argument("--out_path", type=str, default="plots/dataset_similarity_heatmap.png", help="Output path for the heatmap image")
+    parser.add_argument("--out_path", type=str, default="plots/dataset_similarity_heatmap.pdf", help="Output path for the heatmap image")
     parser.add_argument("--only_paraphrasus", action="store_true", help="Only include original PARAPHRASUS datasets in the similarity computation")
     args = parser.parse_args()
 
