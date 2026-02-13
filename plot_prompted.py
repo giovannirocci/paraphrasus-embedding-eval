@@ -52,8 +52,10 @@ def plot_combined_results(prompted_dir, baseline_path, output_path):
     df_threshold['Short Prompt'] = df_threshold['Prompt'].map(short_labels)
     df_classifier['Short Prompt'] = df_classifier['Prompt'].map(short_labels)
 
+    plt.rcParams.update({'font.size': 20, 'axes.labelsize': 24})
+
     # Create a 4x2 grid (4 metrics x 2 calibration types)
-    fig, axes = plt.subplots(4, 2, figsize=(10, 12), sharex=True, sharey=True)
+    fig, axes = plt.subplots(4, 2, figsize=(15, 18), sharex=True, sharey=True)
     
     # Adjust spacing for "Density"
     plt.subplots_adjust(wspace=0.1, hspace=0.3)
@@ -63,7 +65,7 @@ def plot_combined_results(prompted_dir, baseline_path, output_path):
 
     for col in range(2):
         df = dataframes[col]
-        axes[0, col].set_title(col_titles[col], fontsize=14, fontweight='bold', pad=20)
+        axes[0, col].set_title(col_titles[col], fontsize=28, fontweight='bold', pad=40)
         
         for row, avg in enumerate(avg_types):
             ax = axes[row, col]
@@ -74,12 +76,12 @@ def plot_combined_results(prompted_dir, baseline_path, output_path):
 
             # Subtitles for each row (only center-ish or on each)
             if col == 0:
-                ax.set_ylabel("Avg. Error", fontsize=10)
+                ax.set_ylabel("Avg. Error", fontsize=24)
             else:
                 ax.set_ylabel("")
 
             # Set row titles (Subtitles)
-            ax.text(0.5, 1.02, avg, transform=ax.transAxes, ha='center', fontsize=11)
+            ax.text(0.5, 1.02, avg, transform=ax.transAxes, ha='center', fontsize=26)
             
             # Styling
             ax.grid(True, axis='y', linestyle='--', alpha=0.5)
@@ -88,17 +90,17 @@ def plot_combined_results(prompted_dir, baseline_path, output_path):
             
             # Value labels
             for container in ax.containers:
-                ax.bar_label(container, fmt='%.3f', padding=2, fontsize=9)
+                ax.bar_label(container, fmt='%.3f', padding=2, fontsize=22)
 
     plt.tight_layout(rect=[0, 0.03, 1, 0.98])
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, format="pdf", bbox_inches="tight")
     print(f"Combined plot saved to {output_path}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--prompted_dir', type=str, default='embedding_benchmarks/prompted')
     parser.add_argument('--baseline_path', type=str, default='embedding_benchmarks/comparable/intfloat_multilingual-e5-large-instruct_comparable_full_results.json')
-    parser.add_argument('--output_path', type=str, default='plots/prompt_errors.png')
+    parser.add_argument('--output_path', type=str, default='plots/prompt_errors.pdf')
     args = parser.parse_args()
 
     plot_combined_results(args.prompted_dir, args.baseline_path, args.output_path)
