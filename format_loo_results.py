@@ -20,14 +20,15 @@ def load_results(input_filepath):
         model_name = input_filepath.split('/')[-1].split('_')[-1]
 
     mapping = {
-        "paraphrase-multilingual-mpnet-base-v2": "Para-SBERT",
+        "paraphrase-multilingual-mpnet-base-v2": "M-MPNET",
         "multilingual-e5-large-instruct": "mE5-instr",
         "multilingual-e5-large": "mE5",
         "bge-m3": "BGE-m3",
         "gte-multilingual-base": "mGTE",
         "jina-embeddings-v3": "Jina-v3",
         "Qwen3-Embedding-0.6B": "Qwen3-Emb",
-        "KaLM-embedding-multilingual-mini-instruct-v2.5": "KaLM-Emb"
+        "KaLM-embedding-multilingual-mini-instruct-v2.5": "KaLM-Emb",
+        "paraphrase-multilingual-MiniLM-L12-v2": "M-MiniLM",
     }
 
     if model_name in mapping:
@@ -243,7 +244,7 @@ def create_results_table(input_dir, output_filepath, clf_only=False, f1=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate LaTeX results table from JSONs.")
-    parser.add_argument("--input_dir", type=str, default="embedding_benchmarks/balanced", help="Directory containing *_full_results.json files")
+    parser.add_argument("--input_dir", type=str, default="embedding_benchmarks/comparable", help="Directory containing *_full_results.json files")
     parser.add_argument("--output", type=str, default="tables/loo_results", help="Output filename (without .tex)")
     parser.add_argument("--clf_only", action='store_true', help="Generate only classifier calibration results")
     parser.add_argument("--f1", action='store_true', help="Generate F1 score table instead of error rates")
