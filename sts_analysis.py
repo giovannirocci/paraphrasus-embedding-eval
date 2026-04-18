@@ -60,7 +60,7 @@ def compute_similarity(model_id: str, dataset:str, out_path: str, max_samples: i
     if threshold:
         scores = np.where(scores >= threshold, 1, 0)
 
-    mask = np.tril(np.ones_like(scores, dtype=bool), k=-1)
+    mask = np.triu(np.ones_like(scores, dtype=bool), k=1)
 
     cmap = "viridis_r" if not threshold else ListedColormap([color_1, color_2])
 
@@ -69,15 +69,15 @@ def compute_similarity(model_id: str, dataset:str, out_path: str, max_samples: i
     plt.figure(figsize=(15, 12))
     ax = sns.heatmap(scores, mask=mask, cmap=cmap, xticklabels=False, yticklabels=False, square=True, cbar=False)
     
-    ax.xaxis.set_label_position('top')
-    ax.yaxis.set_label_position('right')
+    #ax.xaxis.set_label_position('top')
+    #ax.yaxis.set_label_position('right')
     
     if threshold:
         legend_elements = [
             mpatches.Patch(facecolor=color_1, label="Not Paraphrase"),
             mpatches.Patch(facecolor=color_2, label="Paraphrase")
         ]
-        plt.legend(handles=legend_elements, loc='lower left', fontsize=24)
+        plt.legend(handles=legend_elements, loc='upper right', fontsize=24)
     
     if threshold:
         plt.title(f"Predictions for {dataset.split('/')[-1].upper()} using {model_id.split('/')[-1]} (Thresholded at {threshold})", pad=50, fontsize=22)
@@ -87,7 +87,7 @@ def compute_similarity(model_id: str, dataset:str, out_path: str, max_samples: i
     ax.set_xlabel("Sentences", fontsize=22)
     ax.set_ylabel("Sentences", fontsize=22)
     plt.tight_layout()  
-    plt.savefig(out_path, format="png", dpi=400)
+    plt.savefig(out_path, format="pdf")
     
     total_time = time.time() - start_time
     print(f"Total computation time: {total_time:.2f} seconds")
