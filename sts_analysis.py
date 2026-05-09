@@ -8,6 +8,9 @@ from matplotlib.colors import ListedColormap
 import matplotlib.patches as mpatches
 import time
 
+
+from scipy.spatial.distance import squareform
+from scipy.cluster.hierarchy import linkage, leaves_list, optimal_leaf_ordering
 from embedding import load_embedder
 
 
@@ -57,17 +60,32 @@ def compute_similarity(model_id: str, dataset:str, out_path: str, max_samples: i
     sim_time = time.time() - sim_start
     print(f"Similarity computation time: {sim_time:.2f} seconds")
 
-    if threshold:
-        scores = np.where(scores >= threshold, 1, 0)
+    scores = np.asarray(scores)
+    dist = np.maximum(1.0 - scores, 0.0)
 
-    mask = np.triu(np.ones_like(scores, dtype=bool), k=1)
+    if not dist.flags.writeable:
+        dist = dist.copy()
+    np.fill_diagonal(dist, 0.0)
+
+    condensed = squareform(dist, checks=False)
+
+    Z = linkage(condensed, method='average')
+    Z_opt = optimal_leaf_ordering(Z, condensed)
+
+    order = leaves_list(Z_opt)
+    clustered_scores = scores[order][:, order]
+
+    if threshold:
+        clustered_scores = np.where(clustered_scores >= threshold, 1, 0)
+
+    mask = np.triu(np.ones_like(clustered_scores, dtype=bool), k=0)
 
     cmap = "viridis_r" if not threshold else ListedColormap([color_1, color_2])
 
     plt.rcParams.update({'font.size': 24})
 
     plt.figure(figsize=(15, 12))
-    ax = sns.heatmap(scores, mask=mask, cmap=cmap, xticklabels=False, yticklabels=False, square=True, cbar=False)
+    ax = sns.heatmap(clustered_scores, mask=mask, cmap=cmap, xticklabels=False, yticklabels=False, square=True, cbar=False if threshold else True)
     
     #ax.xaxis.set_label_position('top')
     #ax.yaxis.set_label_position('right')
@@ -89,7 +107,7 @@ def compute_similarity(model_id: str, dataset:str, out_path: str, max_samples: i
     plt.tight_layout()  
     plt.savefig(out_path, format="pdf")
     
-    total_time = time.time() - start_time
+    total_time = np.abs(time.time() - start_time)
     print(f"Total computation time: {total_time:.2f} seconds")
 
 
@@ -97,7 +115,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_id', type=str, default='intfloat/multilingual-e5-large-instruct')
     parser.add_argument('--dataset', type=str, default='sentence-transformers/stsb')
-    parser.add_argument('--out_path', type=str, default='plots/sts_similarity.png')
+    parser.add_argument('--out_path', type=str, default='plots/sts_similarity.pdf')
     parser.add_argument('--max_samples', type=int, default=500)
     parser.add_argument('--threshold', type=float, help="Similarity threshold for considering pairs as paraphrases", required=False)
     parser.add_argument("--color_1", type=str, choices=["#fcba03", "#460457", "#0F172A", "#FB7185", "#1A1B26", "#2AC3DE"], default="#FFF77E", help="First color for thresholded heatmap")
