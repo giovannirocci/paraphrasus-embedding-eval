@@ -80,16 +80,24 @@ def compute_similarity(model_id: str, dataset:str, out_path: str, max_samples: i
 
     mask = np.triu(np.ones_like(clustered_scores, dtype=bool), k=0)
 
-    cmap = "viridis_r" if not threshold else ListedColormap([color_1, color_2])
+    cmap = "Blues" if not threshold else ListedColormap([color_1, color_2])
 
     plt.rcParams.update({'font.size': 24})
 
     plt.figure(figsize=(15, 12))
-    ax = sns.heatmap(clustered_scores, mask=mask, cmap=cmap, xticklabels=False, yticklabels=False, square=True, cbar=False if threshold else True)
+    ax = sns.heatmap(clustered_scores, mask=mask, cmap=cmap, xticklabels=False, yticklabels=False, square=True, cbar=False if threshold else True, cbar_kws={"label": "Cosine Similarity"})
     
     #ax.xaxis.set_label_position('top')
     #ax.yaxis.set_label_position('right')
     
+    # Draw only the outer border so the heatmap square remains visible
+
+    n = clustered_scores.shape[0]
+    ax.set_xlim(0, n)
+    ax.set_ylim(n, 0)
+    rect = mpatches.Rectangle((0, 0), n, n, fill=False, edgecolor='black', linewidth=2.0, zorder=4)
+    ax.add_patch(rect)
+
     if threshold:
         legend_elements = [
             mpatches.Patch(facecolor=color_1, label="Not Paraphrase"),
