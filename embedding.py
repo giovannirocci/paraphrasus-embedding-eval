@@ -127,18 +127,18 @@ def encode_pairs(model: SentenceTransformer, model_name:str, pairs: list[tuple[s
         if prompt:
             texts1 = [prompt_instruction(t, prompt) for t in texts1]
             texts2 = [prompt_instruction(t, prompt) for t in texts2]
-            emb1 = model.encode(texts1, show_progress_bar=True)
-            emb2 = model.encode(texts2, show_progress_bar=True)
+            emb1 = model.encode(texts1, show_progress_bar=True, normalize_embeddings=True)
+            emb2 = model.encode(texts2, show_progress_bar=True, normalize_embeddings=True)
         else:
-            emb1 = model.encode(texts1, show_progress_bar=True, prompt_name="query")
-            emb2 = model.encode(texts2, show_progress_bar=True, prompt_name="query")
+            emb1 = model.encode(texts1, show_progress_bar=True, prompt_name="query", normalize_embeddings=True)
+            emb2 = model.encode(texts2, show_progress_bar=True, prompt_name="query", normalize_embeddings=True)
     elif model_name == "jinaai/jina-embeddings-v3":
         task = "text-matching"
-        emb1 = model.encode(texts1, show_progress_bar=True, task=task, prompt_name=task)
-        emb2 = model.encode(texts2, show_progress_bar=True, task=task, prompt_name=task)
+        emb1 = model.encode(texts1, show_progress_bar=True, task=task, prompt_name=task, normalize_embeddings=True)
+        emb2 = model.encode(texts2, show_progress_bar=True, task=task, prompt_name=task, normalize_embeddings=True)
     else:
-        emb1, emb2 = model.encode(texts1, show_progress_bar=True), model.encode(texts2, show_progress_bar=True)
-    
+        emb1, emb2 = model.encode(texts1, show_progress_bar=True, normalize_embeddings=True), model.encode(texts2, show_progress_bar=True, normalize_embeddings=True)
+
     return emb1, emb2
 
 
