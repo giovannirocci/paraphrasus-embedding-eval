@@ -30,7 +30,7 @@ def compute_all_datasets(model_id: str, datasets_dir: str, clf_method: str, para
     return results
 
 
-def loo_eval(datasets: dict, metric: str, calibration: str, held_out_dataset: str = None):
+def loo_eval(datasets: dict, metric: str, calibration: str, held_out_dataset: str = None, calibration_sample_size: int = 500):
     """
     Leave-One-Out evaluation with calibration.
     Args:
@@ -38,7 +38,7 @@ def loo_eval(datasets: dict, metric: str, calibration: str, held_out_dataset: st
         metric: evaluation metric ("auc", "f1", "error")
         calibration: calibration method ("threshold", "classifier")
         held_out_dataset: specific dataset to hold out (optional). If None, performs LOO on all datasets.
-        
+        calibration_sample_size: number of samples per dataset to use for calibration.
     Returns:
         results: dict with evaluation results
     """
@@ -62,12 +62,12 @@ def loo_eval(datasets: dict, metric: str, calibration: str, held_out_dataset: st
             if ds_name == held_out:
                 continue
 
-            if len(data["labels"]) > 500:
-                idxs = random.sample(range(len(data["labels"])), 500)
+            if len(data["labels"]) > calibration_sample_size:
+                idxs = random.sample(range(len(data["labels"])), calibration_sample_size)
                 labels = [data["labels"][i] for i in idxs]
                 scores = [data["scores"][i] for i in idxs]
                 diffs = [data["diffs"][i] for i in idxs]
-                print(f"Sampled 500 pairs from {ds_name} for training (avoid overfitting).")
+                print(f"Sampled {calibration_sample_size} pairs from {ds_name} for training (avoid overfitting).")
             else:
                 labels = data["labels"]
                 scores = data["scores"]
@@ -201,12 +201,12 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
             else:
                 # ---------- Threshold calibration ----------
                 print(f"\nRunning {met.upper()} eval with THRESHOLD calibration")
-                threshold_results = loo_eval(datasets, met, "threshold", args.held_out_dataset)
+                threshold_results = loo_eval(datasets, met, "threshold", args.held_out_dataset, calibration_sample_size=args.calibration_sample_size)
                 results[f"threshold_{met}"] = threshold_results
 
                 # ---------- Classifier calibration ----------
                 print(f"\nRunning {met.upper()} eval with CLASSIFIER calibration")
-                classifier_results = loo_eval(datasets, met, "classifier", args.held_out_dataset)
+                classifier_results = loo_eval(datasets, met, "classifier", args.held_out_dataset, calibration_sample_size=args.calibration_sample_size)
                 results[f"classifier_{met}"] = classifier_results
 
         if args.paraphrasus_consistent:
@@ -230,7 +230,7 @@ def main(model: str, metric: str, calibration: str, datasets_dir: str, outdir: s
             auc = roc_auc_score(all_labels, all_scores)
             results = {"overall_auc": auc}
         else:
-            results = loo_eval(datasets, metric, calibration, args.held_out_dataset)
+            results = loo_eval(datasets, metric, calibration, args.held_out_dataset, calibration_sample_size=args.calibration_sample_size)
 
         results_path = os.path.join(outdir,
                                     f"{model.replace('/', '_')}_{metric}_{calibration if calibration else ''}"
@@ -254,11 +254,13 @@ if __name__ == "__main__":
     parser.add_argument("--full", action="store_true", help="Evaluate on all metrics and all calibration methods")
     parser.add_argument("--paraphrasus_consistent", action="store_true",
                         help="Use only datasets from original Paraphrasus paper, to get comparable results.")
-    parser.add_argument("--method", choices=["elementwise_diff", "multiplication", "sum"], default="elementwise_diff")
+    parser.add_argument("--method", choices=["elementwise_diff", "multiplication", "sum", "signed_diff", "concatenation"], default="elementwise_diff")
     parser.add_argument("--single_dataset", help="Evaluate on a single dataset", action="store_true")
     parser.add_argument("--ds_path", help="Path to the single dataset JSON file")
     parser.add_argument("--held_out_dataset", help="Specific dataset to hold out in leave-one-out evaluation (optional)")
     parser.add_argument("--prompt", help="Custom prompt for models that support it", default=None)
+    parser.add_argument("--calibration_sample_size", type=int, default=500,
+                        help="Number of samples per dataset to use for calibration (default: 500)")
     args = parser.parse_args()
 
     if args.metric in ["error", "f1"] and args.calibration is None and not args.full:

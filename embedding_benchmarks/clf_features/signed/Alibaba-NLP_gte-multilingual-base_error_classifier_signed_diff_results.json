@@ -1,0 +1,18 @@
+{
+    "amr_true_paraphrases": 1.0,
+    "fb-anli-hyp-pre": 0.2844611528822055,
+    "fb-anli-pre-hyp": 0.2042606516290727,
+    "fb-xnli-hyp-pre": 0.07035928143712578,
+    "fb-xnli-pre-hyp": 0.15209580838323356,
+    "ms-mrpc": 0.664927536231884,
+    "onestop_parallel_all_pairs": 1.0,
+    "paws-x-test": 0.44892857142857145,
+    "sickr-sts": 0.000604412209126659,
+    "stannlp-snli-hyp-pre": 0.018546441495778,
+    "stannlp-snli-pre-hyp": 0.018244873341375145,
+    "stsbenchmark-test-sts": 0.3224852071005917,
+    "overall_classify": 0.4787804382536824,
+    "overall_minimize": 0.10693894591113105,
+    "overall_maximize": 1.0,
+    "overall_mean": 0.5285731280549378
+}

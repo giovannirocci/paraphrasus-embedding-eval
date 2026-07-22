@@ -153,7 +153,7 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
         model: the embedding model
         model_name: name of the embedding model (for caching purposes)
         dataset_path: path to the dataset JSON file
-        classifier_method: method to compute differences ("elementwise_diff", "multiplication", "sum")
+        classifier_method: method to compute differences ("elementwise_diff", "multiplication", "sum", "signed_diff", "concatenation")
         sample: whether to sample a subset of pairs for evaluation
     Returns:
         dict with keys: scores, diffs, labels, goal
@@ -178,6 +178,10 @@ def compute_scores(model: SentenceTransformer, model_name:str, dataset_path: str
 
     if classifier_method == "elementwise_diff":
         diffs = np.abs(emb1 - emb2)
+    elif classifier_method == "signed_diff":
+        diffs = emb1 - emb2
+    elif classifier_method == "concatenation":
+        diffs = np.concatenate([emb1, emb2], axis=1)
     elif classifier_method == "multiplication":
         diffs = emb1 * emb2
     elif classifier_method == "sum":
