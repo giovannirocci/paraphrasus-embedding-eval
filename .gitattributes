@@ -1,0 +1,5 @@
+*.ipynb -linguist-detectable
+
+benches/** linguist-vendored
+datasets_no_results/** linguist-vendored
+original_reproduction_code/datasets/** linguist-vendored
